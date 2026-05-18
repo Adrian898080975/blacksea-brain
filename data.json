@@ -1,0 +1,432 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-05-18T22:00:00Z",
+  "owner": "Adrián Páleš",
+  "brand": {
+    "id": "blacksea",
+    "name": "Black Sea",
+    "tagline": "Where capital meets complexity",
+    "established": "2023"
+  },
+  "businessModels": [
+    {
+      "id": "bm_otc",
+      "name": "Black Sea SPV (OTC + Crypto)",
+      "type": "operational",
+      "status": "active",
+      "color": "#8B6F47",
+      "description": "Existing OTC trading desk with licence. Legacy crypto + corporate advisory work. Includes AIR Labs / Seena Houman consulting mandate.",
+      "revenue_y1_target_eur": 150000,
+      "revenue_y1_realistic_eur": 80000,
+      "x": 200,
+      "y": 200
+    },
+    {
+      "id": "bm_defense",
+      "name": "Defense Capital Advisory",
+      "type": "growth",
+      "status": "build_phase",
+      "color": "#2E8B6F",
+      "description": "EU defense + dual-use fund advisory. Family offices, emerging fund managers, defense startups. Premium positioning, 6-12 month build to recurring revenue.",
+      "revenue_y1_target_eur": 500000,
+      "revenue_y1_realistic_eur": 250000,
+      "x": 600,
+      "y": 200
+    },
+    {
+      "id": "bm_frontier",
+      "name": "Frontier Markets",
+      "type": "expansion",
+      "status": "outreach_phase",
+      "color": "#C97A2B",
+      "description": "Azerbaijan, Kazakhstan (AIFC), West Africa Crypto. Fastest cashflow trh (Nigeria SEC ARIP), AIFC framework changes, AZ pre-licensing positioning.",
+      "revenue_y1_target_eur": 300000,
+      "revenue_y1_realistic_eur": 150000,
+      "x": 400,
+      "y": 450
+    }
+  ],
+  "services": [
+    {
+      "id": "svc_mica_audit",
+      "name": "MiCA Readiness Audit",
+      "businessModel": "bm_defense",
+      "price_min_eur": 2500,
+      "price_max_eur": 4000,
+      "duration_days": 5,
+      "description": "Gap analysis pre EU crypto firmu pred MiCA deadline"
+    },
+    {
+      "id": "svc_fund_structuring",
+      "name": "Fund Structuring Strategy",
+      "businessModel": "bm_defense",
+      "price_min_eur": 25000,
+      "price_max_eur": 75000,
+      "duration_days": 60,
+      "description": "Flagship product — full fund setup blueprint pre defense/dual-use VC"
+    },
+    {
+      "id": "svc_fractional_cco",
+      "name": "Fractional CCO",
+      "businessModel": "bm_defense",
+      "price_min_eur": 3500,
+      "price_max_eur": 15000,
+      "duration_days": 365,
+      "description": "Monthly retainer ako Chief Compliance Officer pre malé-stredné fondy"
+    },
+    {
+      "id": "svc_nigeria_arip",
+      "name": "Nigerian SEC ARIP Support",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 25000,
+      "price_max_eur": 60000,
+      "duration_days": 90,
+      "description": "ARIP application preparation pre Nigerian crypto exchanges"
+    },
+    {
+      "id": "svc_aifc_gap",
+      "name": "AIFC Compliance Gap Analysis",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 8000,
+      "price_max_eur": 15000,
+      "duration_days": 14,
+      "description": "Review compliance vs. amended frameworks (Jan 2026)"
+    },
+    {
+      "id": "svc_az_positioning",
+      "name": "Azerbaijan Regulatory Positioning",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 8000,
+      "price_max_eur": 15000,
+      "duration_days": 30,
+      "description": "Pre-licensing positioning pre AZ fintech/payment firmy"
+    },
+    {
+      "id": "svc_otc_compliance",
+      "name": "OTC Compliance Setup",
+      "businessModel": "bm_otc",
+      "price_min_eur": 10000,
+      "price_max_eur": 30000,
+      "duration_days": 45,
+      "description": "Compliance infrastructure pre crypto OTC operations"
+    }
+  ],
+  "prospects": [
+    {
+      "id": "pr_bitmama",
+      "name": "Bitmama",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Crypto Exchange",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "Ruth Iselema (CEO)",
+      "channel": "LinkedIn + email",
+      "expected_value_eur": 35000,
+      "probability": 15,
+      "nextAction": "Send outreach email",
+      "nextActionDate": "2026-05-19",
+      "notes": "P2P + exchange platform, Nigerian-Egyptian-Ghanaian operations. Series A funded. Nepodali ARIP. Urgent."
+    },
+    {
+      "id": "pr_yellowcard",
+      "name": "Yellow Card",
+      "businessModel": "bm_frontier",
+      "country": "Pan-African",
+      "segment": "Crypto Exchange",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "Janet Bandele (Compliance Director)",
+      "channel": "LinkedIn",
+      "expected_value_eur": 45000,
+      "probability": 10,
+      "nextAction": "Send compliance-to-compliance email",
+      "nextActionDate": "2026-05-19",
+      "notes": "Series B+, 16 countries. Compliance team likely has primary counsel. Multi-jurisdiction angle."
+    },
+    {
+      "id": "pr_quidax",
+      "name": "Quidax",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Crypto Exchange",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "Buchi Okoro (CEO)",
+      "channel": "Email + LinkedIn",
+      "expected_value_eur": 30000,
+      "probability": 20,
+      "nextAction": "Send post-AIP advisory email",
+      "nextActionDate": "2026-05-19",
+      "notes": "Initial SEC approval received. Full registration in progress. Ongoing advisory need."
+    },
+    {
+      "id": "pr_pashapay",
+      "name": "PashaPay",
+      "businessModel": "bm_frontier",
+      "country": "Azerbaijan",
+      "segment": "Payment Infrastructure",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "TBD (compliance/strategy)",
+      "channel": "LinkedIn cez Pasha Holding IR",
+      "expected_value_eur": 40000,
+      "probability": 8,
+      "nextAction": "Research LinkedIn, find decision-maker",
+      "nextActionDate": "2026-05-22",
+      "notes": "Pasha Holding IPO 2025 = international compliance pressure. Long-term positioning play."
+    },
+    {
+      "id": "pr_goldenpay",
+      "name": "GoldenPay",
+      "businessModel": "bm_frontier",
+      "country": "Azerbaijan",
+      "segment": "Payment Platform",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "TBD",
+      "channel": "Direct email + AzFina",
+      "expected_value_eur": 20000,
+      "probability": 10,
+      "nextAction": "Email cez goldenpay.az",
+      "nextActionDate": "2026-05-22",
+      "notes": "AzFina member. Smaller than PashaPay = faster decision-making."
+    },
+    {
+      "id": "pr_aifc_freedom",
+      "name": "Freedom Holding Corp",
+      "businessModel": "bm_frontier",
+      "country": "Kazakhstan",
+      "segment": "Broker-Dealer / Asset Manager",
+      "stage": "lead",
+      "warmth": "cold",
+      "primaryContact": "Investor Relations team",
+      "channel": "LinkedIn",
+      "expected_value_eur": 50000,
+      "probability": 5,
+      "nextAction": "Research IR team, prepare email",
+      "nextActionDate": "2026-05-20",
+      "notes": "AIX listed. Large player ale emerging fund management arm môže byť entry."
+    },
+    {
+      "id": "pr_seena",
+      "name": "Seena Houman / AIR Labs",
+      "businessModel": "bm_otc",
+      "country": "TBD",
+      "segment": "Crypto Fund",
+      "stage": "active_client",
+      "warmth": "active",
+      "primaryContact": "Seena Houman",
+      "channel": "Direct",
+      "expected_value_eur": 0,
+      "probability": 100,
+      "nextAction": "Continue active mandate",
+      "nextActionDate": "",
+      "notes": "Active consulting mandate. Work tracked in Notion (Seena's workspace)."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_credentials_pdf",
+      "title": "Pripraviť 1-page credentials PDF",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "1-2 hod",
+      "dueDate": "2026-05-19",
+      "description": "Black Sea credentials one-pager pre cold outreach. Obsah hotový v Execution Day 1 dokumente."
+    },
+    {
+      "id": "task_nigeria_emails",
+      "title": "Odoslať 3 Nigerian outreach emails",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "30 min",
+      "dueDate": "2026-05-19",
+      "description": "Bitmama (Ruth Iselema), Yellow Card (Janet Bandele), Quidax (Buchi Okoro). Drafty hotové."
+    },
+    {
+      "id": "task_aifc_research",
+      "title": "AIFC public register research — 5 targets",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "45 min",
+      "dueDate": "2026-05-20",
+      "description": "publicreg.myafsa.com — identifikovať top 5 emerging Authorised Firms / DASPs"
+    },
+    {
+      "id": "task_aifc_emails",
+      "title": "Odoslať 5 AIFC outreach emails",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "1 hod",
+      "dueDate": "2026-05-21",
+      "description": "AIFC Capital Market + Digital Assets framework amendments outreach"
+    },
+    {
+      "id": "task_az_research",
+      "title": "AZ research — LinkedIn na PashaPay, GoldenPay",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "30 min",
+      "dueDate": "2026-05-22",
+      "description": "Nájsť konkrétnych decision-makers"
+    },
+    {
+      "id": "task_az_emails",
+      "title": "Odoslať AZ outreach emails",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "45 min",
+      "dueDate": "2026-05-23",
+      "description": "PashaPay, GoldenPay, AzFina inquiry"
+    },
+    {
+      "id": "task_substack",
+      "title": "Substack založiť + prvý article draft",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "estimatedTime": "2-3 hod",
+      "dueDate": "2026-05-25",
+      "description": "Topic: \"Why European Family Offices Are Reconsidering Defense Allocation in 2026\""
+    },
+    {
+      "id": "task_warm_network",
+      "title": "Mapovať warm network — zoznam 30-50 ľudí",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "estimatedTime": "2 hod",
+      "dueDate": "2026-05-20",
+      "description": "Z mailov/Telegramu/kontaktov — identifikácia Tier A/B/C. Pôvodný úloha z Master Strategic Document."
+    },
+    {
+      "id": "task_web_rewrite",
+      "title": "Black Sea SPV web — copy review",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_otc",
+      "estimatedTime": "1 hod",
+      "dueDate": "2026-05-25",
+      "description": "Aktuálny web má 'sovereign necessity / where others hesitate' jazyk. Treba rozhodnúť: prepísať alebo nechať pre OTC?"
+    },
+    {
+      "id": "task_compliance_partner",
+      "title": "Compliance counsel retainer — research firms",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "1 hod",
+      "dueDate": "2026-05-26",
+      "description": "Charles Russell Speechlys, Kingsley Napley, K2 Integrity. Quote na €5-15K/rok retainer."
+    },
+    {
+      "id": "task_worldcheck",
+      "title": "World-Check / LexisNexis trial subscription",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "estimatedTime": "30 min",
+      "dueDate": "2026-05-26",
+      "description": "Sanctions + PEP screening tool. Free trials available."
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_strategic_playbook",
+      "title": "Black Sea Defense Advisory Playbook",
+      "type": "strategy",
+      "businessModel": "bm_defense",
+      "filename": "Black_Sea_Defense_Advisory_Playbook.docx",
+      "description": "Verzia 1.0 — strategický playbook pre defense fund advisory",
+      "created": "2026-05-18"
+    },
+    {
+      "id": "doc_master_strategic",
+      "title": "Master Strategic Document",
+      "type": "strategy",
+      "businessModel": "bm_defense",
+      "filename": "Black_Sea_HQ_Master_Strategic_Document.docx",
+      "description": "Verzia 2.0 — Notion blueprint + financial model + strategic deep-dive + operational playbook + 90-day Gantt",
+      "created": "2026-05-18"
+    },
+    {
+      "id": "doc_knowledge_base",
+      "title": "Knowledge Base & Templates",
+      "type": "knowledge",
+      "businessModel": "bm_defense",
+      "filename": "Black_Sea_HQ_Knowledge_Base.docx",
+      "description": "Fund Structures, EU Defense Funding, Regulators, Glossary, all email/document templates",
+      "created": "2026-05-18"
+    },
+    {
+      "id": "doc_frontier_pack",
+      "title": "Frontier Markets Intelligence Pack",
+      "type": "strategy",
+      "businessModel": "bm_frontier",
+      "filename": "Frontier_Markets_Intelligence_Pack.docx",
+      "description": "Azerbaijan + Kazakhstan + West Africa Crypto strategic intelligence",
+      "created": "2026-05-18"
+    },
+    {
+      "id": "doc_execution",
+      "title": "Execution Day 1",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "Execution_Day_1.docx",
+      "description": "Komu zajtra píšeš, prečo, čo posielaš. 10 prospects, pripravené emaily, týždeň plán",
+      "created": "2026-05-18"
+    }
+  ],
+  "insights": [
+    {
+      "id": "ins_compliance",
+      "title": "Compliance mindset clarification",
+      "date": "2026-05-18",
+      "content": "Po diskusii o compliance: prijatý mindset B (compliance je často zle implementovaná ale pre tvoj profil treba reálnu compliance). Red lines nastavené v Frontier Markets Pack. Žiadne dummy wallets pre business income."
+    },
+    {
+      "id": "ins_brand_split",
+      "title": "Brand architektúra",
+      "date": "2026-05-18",
+      "content": "Rozhodnutie: Black Sea ostáva ako brand mozog. Tri biznis modely pod ním. Žiadna 4. entita pre 'sovereign-adjacent' klientov — to bola eskalácia v ADHD-stres móde."
+    },
+    {
+      "id": "ins_nigeria_window",
+      "title": "Nigeria fastest cash window",
+      "date": "2026-05-18",
+      "content": "ISA 2025 + ARIP live. ₦500M minimum capital, penalty ₦10M/mes pre non-compliance. 50+ firiem v licensing wave. Toto je primárny target pre prvý cashflow."
+    },
+    {
+      "id": "ins_aifc_window",
+      "title": "AIFC framework transition window",
+      "date": "2026-05-18",
+      "content": "AFSA frameworks update 1.1.2026. 149 Authorised Firms + 30 DASPs musia adaptovať. 6-mes transition pre Crowdfunding (deadline jún-júl 2026). Sweet spot."
+    }
+  ],
+  "edges": [
+    {"from": "blacksea", "to": "bm_otc", "type": "owns"},
+    {"from": "blacksea", "to": "bm_defense", "type": "owns"},
+    {"from": "blacksea", "to": "bm_frontier", "type": "owns"},
+    {"from": "bm_otc", "to": "pr_seena", "type": "client"},
+    {"from": "bm_frontier", "to": "pr_bitmama", "type": "prospect"},
+    {"from": "bm_frontier", "to": "pr_yellowcard", "type": "prospect"},
+    {"from": "bm_frontier", "to": "pr_quidax", "type": "prospect"},
+    {"from": "bm_frontier", "to": "pr_pashapay", "type": "prospect"},
+    {"from": "bm_frontier", "to": "pr_goldenpay", "type": "prospect"},
+    {"from": "bm_frontier", "to": "pr_aifc_freedom", "type": "prospect"},
+    {"from": "bm_defense", "to": "svc_mica_audit", "type": "service"},
+    {"from": "bm_defense", "to": "svc_fund_structuring", "type": "service"},
+    {"from": "bm_defense", "to": "svc_fractional_cco", "type": "service"},
+    {"from": "bm_frontier", "to": "svc_nigeria_arip", "type": "service"},
+    {"from": "bm_frontier", "to": "svc_aifc_gap", "type": "service"},
+    {"from": "bm_frontier", "to": "svc_az_positioning", "type": "service"},
+    {"from": "bm_otc", "to": "svc_otc_compliance", "type": "service"}
+  ]
+}
