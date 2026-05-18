@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "lastUpdated": "2026-05-18T22:00:00Z",
   "owner": "Adrián Páleš",
   "brand": {
@@ -411,22 +411,110 @@
     }
   ],
   "edges": [
-    {"from": "blacksea", "to": "bm_otc", "type": "owns"},
-    {"from": "blacksea", "to": "bm_defense", "type": "owns"},
-    {"from": "blacksea", "to": "bm_frontier", "type": "owns"},
-    {"from": "bm_otc", "to": "pr_seena", "type": "client"},
-    {"from": "bm_frontier", "to": "pr_bitmama", "type": "prospect"},
-    {"from": "bm_frontier", "to": "pr_yellowcard", "type": "prospect"},
-    {"from": "bm_frontier", "to": "pr_quidax", "type": "prospect"},
-    {"from": "bm_frontier", "to": "pr_pashapay", "type": "prospect"},
-    {"from": "bm_frontier", "to": "pr_goldenpay", "type": "prospect"},
-    {"from": "bm_frontier", "to": "pr_aifc_freedom", "type": "prospect"},
-    {"from": "bm_defense", "to": "svc_mica_audit", "type": "service"},
-    {"from": "bm_defense", "to": "svc_fund_structuring", "type": "service"},
-    {"from": "bm_defense", "to": "svc_fractional_cco", "type": "service"},
-    {"from": "bm_frontier", "to": "svc_nigeria_arip", "type": "service"},
-    {"from": "bm_frontier", "to": "svc_aifc_gap", "type": "service"},
-    {"from": "bm_frontier", "to": "svc_az_positioning", "type": "service"},
-    {"from": "bm_otc", "to": "svc_otc_compliance", "type": "service"}
-  ]
+    {
+      "from": "blacksea",
+      "to": "bm_otc",
+      "type": "owns"
+    },
+    {
+      "from": "blacksea",
+      "to": "bm_defense",
+      "type": "owns"
+    },
+    {
+      "from": "blacksea",
+      "to": "bm_frontier",
+      "type": "owns"
+    },
+    {
+      "from": "bm_otc",
+      "to": "pr_seena",
+      "type": "client"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_bitmama",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_yellowcard",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_quidax",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_pashapay",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_goldenpay",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_aifc_freedom",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_mica_audit",
+      "type": "service"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_fund_structuring",
+      "type": "service"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_fractional_cco",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_nigeria_arip",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_aifc_gap",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_az_positioning",
+      "type": "service"
+    },
+    {
+      "from": "bm_otc",
+      "to": "svc_otc_compliance",
+      "type": "service"
+    }
+  ],
+  "stickyNotes": [
+    {
+      "id": "note_welcome",
+      "content": "Drag this note around. Double-click to edit. Use these for half-formed thoughts you don't know where to file yet.",
+      "x": 100,
+      "y": 100,
+      "rotate": -2,
+      "color": "amber"
+    }
+  ],
+  "customEdges": [],
+  "inbox": [],
+  "warmNetwork": [],
+  "nodePositions": {},
+  "settings": {
+    "currency": "EUR",
+    "defaultView": "graph",
+    "showCompletedTasks": true,
+    "todayFocusEnabled": true
+  }
 }
