@@ -22,6 +22,7 @@
     --steel-deep: #4F6A82;
     --signal:     #18C26B;
     --alert:      #B83D2C;
+    --amber:      #E8A82B;
     --line:       rgba(124, 149, 171, 0.18);
     --line-bright:rgba(124, 149, 171, 0.32);
     --line-dim:   rgba(124, 149, 171, 0.10);
@@ -47,7 +48,7 @@
       linear-gradient(90deg, rgba(124,149,171,0.025) 1px, transparent 1px);
     background-size: 48px 48px; pointer-events: none; z-index: 0;
   }
-  /* topbar */
+  /* ===== TOPBAR ===== */
   .topbar {
     position: relative; z-index: 50; height: 64px;
     background: var(--navy-deep); border-bottom: 1px solid var(--line);
@@ -86,27 +87,52 @@
     content: ''; position: absolute; bottom: -1px; left: 18px; right: 18px;
     height: 2px; background: var(--signal);
   }
+  .nav-item .badge {
+    display: inline-block; margin-left: 6px;
+    padding: 1px 5px; background: var(--alert); color: var(--frost);
+    font-size: 8px; border-radius: 8px; letter-spacing: 0;
+  }
   .topbar-meta {
-    display: flex; align-items: center; gap: 20px;
+    display: flex; align-items: center; gap: 16px;
     font-family: var(--t-mono); font-size: 10px;
     letter-spacing: 0.2em; text-transform: uppercase; color: var(--steel);
   }
+  .topbar-btn {
+    padding: 7px 12px; background: transparent;
+    border: 1px solid var(--line-bright); color: var(--steel);
+    font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.15em;
+    text-transform: uppercase; cursor: pointer; transition: all 0.15s;
+  }
+  .topbar-btn:hover { color: var(--signal); border-color: var(--signal); }
+  .topbar-btn.signal { color: var(--signal); border-color: var(--signal); }
+  .topbar-btn.signal:hover { background: var(--signal); color: var(--ink); }
   .status { display: flex; align-items: center; gap: 8px; }
   .status-dot {
     width: 6px; height: 6px; background: var(--signal);
     box-shadow: 0 0 0 2px var(--signal-dim);
     animation: pulse 2s ease-in-out infinite;
   }
+  .status-dot.dirty { background: var(--amber); box-shadow: 0 0 0 2px rgba(232,168,43,0.18); }
+  .status-dot.syncing {
+    background: var(--steel);
+    box-shadow: 0 0 0 2px rgba(124,149,171,0.3);
+    animation: spin 1.5s linear infinite;
+  }
+  .status-dot.error { background: var(--alert); box-shadow: 0 0 0 2px var(--alert-dim); }
+  @keyframes spin {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
   @keyframes pulse {
     0%, 100% { opacity: 1; box-shadow: 0 0 0 2px var(--signal-dim); }
     50%      { opacity: 0.6; box-shadow: 0 0 0 6px transparent; }
   }
   .clock { font-variant-numeric: tabular-nums; color: var(--frost); }
-  /* main */
+  /* ===== MAIN ===== */
   .main { position: relative; z-index: 1; height: calc(100vh - 64px); overflow: hidden; }
   .view { display: none; width: 100%; height: 100%; position: relative; }
   .view.active { display: flex; flex-direction: column; }
-  /* view headers */
+  /* ===== VIEW HEADERS ===== */
   .view-header {
     padding: 36px 44px 24px;
     display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end;
@@ -127,9 +153,10 @@
   .view-meta {
     text-align: right; font-family: var(--t-mono); font-size: 10px;
     letter-spacing: 0.2em; text-transform: uppercase; color: var(--steel); line-height: 1.8;
+    display: flex; flex-direction: column; gap: 8px; align-items: flex-end;
   }
   .view-body { flex: 1; overflow-y: auto; padding: 32px 44px 60px; }
-  /* graph */
+  /* ===== GRAPH ===== */
   #graph-view { padding: 0; }
   #graph-view.active { display: block; }
   #graph-canvas {
@@ -138,31 +165,82 @@
       radial-gradient(ellipse at 30% 40%, rgba(24, 194, 107, 0.04), transparent 60%),
       radial-gradient(ellipse at 70% 70%, rgba(124, 149, 171, 0.04), transparent 60%),
       var(--ink);
-    position: relative;
+    position: relative; overflow: hidden;
   }
   #graph-canvas svg { display: block; width: 100%; height: 100%; }
   .graph-chrome { position: absolute; inset: 0; pointer-events: none; }
   .graph-chrome > * { pointer-events: auto; }
   .graph-coord {
-    position: absolute; top: 24px; left: 28px;
+    position: absolute; top: 20px; left: 28px;
     font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.2em;
     color: var(--steel); text-transform: uppercase;
   }
   .graph-coord .idx { color: var(--signal); margin-right: 10px; }
-  .graph-coord-right {
-    position: absolute; top: 24px; right: 28px;
-    font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.2em;
-    color: var(--steel); text-transform: uppercase; text-align: right;
+  .graph-toolbar {
+    position: absolute; top: 16px; right: 28px;
+    display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;
+    max-width: 60%;
   }
+  .filter-chip {
+    padding: 6px 12px; background: rgba(15, 28, 46, 0.88);
+    backdrop-filter: blur(8px); border: 1px solid var(--line-bright);
+    color: var(--steel); font-family: var(--t-mono); font-size: 10px;
+    letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer;
+    transition: all 0.15s;
+  }
+  .filter-chip:hover { color: var(--frost); }
+  .filter-chip.active {
+    color: var(--ink); border-color: currentColor;
+  }
+  .filter-chip.active[data-filter="defense"] { background: var(--signal); border-color: var(--signal); }
+  .filter-chip.active[data-filter="frontier"] { background: var(--alert); border-color: var(--alert); color: var(--frost); }
+  .filter-chip.active[data-filter="otc"] { background: var(--steel); border-color: var(--steel); color: var(--ink); }
+  .filter-chip.active[data-filter="cold"] { background: var(--alert); border-color: var(--alert); color: var(--frost); }
+  .filter-chip.active[data-filter="active"] { background: var(--signal); border-color: var(--signal); }
+  .filter-chip.active[data-filter="notes"] { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+  .graph-search {
+    position: absolute; top: 60px; right: 28px;
+    width: 320px; max-width: 60vw;
+    padding: 10px 14px; background: rgba(15, 28, 46, 0.94);
+    backdrop-filter: blur(8px); border: 1px solid var(--line-bright);
+    color: var(--frost); font-family: var(--t-mono); font-size: 12px;
+    outline: none; display: none;
+  }
+  .graph-search.visible { display: block; }
+  .graph-search::placeholder { color: var(--steel); }
+  .search-results {
+    position: absolute; top: 100px; right: 28px;
+    width: 320px; max-width: 60vw; max-height: 400px; overflow-y: auto;
+    background: rgba(15, 28, 46, 0.96); backdrop-filter: blur(8px);
+    border: 1px solid var(--line-bright); display: none;
+  }
+  .search-results.visible { display: block; }
+  .search-result {
+    padding: 10px 14px; cursor: pointer; border-bottom: 1px solid var(--line-dim);
+    transition: background 0.15s;
+  }
+  .search-result:hover { background: var(--bg-elev); }
+  .search-result-title { font-family: var(--t-body); font-size: 13px; color: var(--frost); margin-bottom: 3px; }
+  .search-result-sub { font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.15em; color: var(--steel); text-transform: uppercase; }
+  .graph-fab {
+    position: absolute; bottom: 28px; right: 28px;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--signal); color: var(--ink);
+    border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(24,194,107,0.4);
+    font-size: 26px; font-weight: 300; display: flex; align-items: center; justify-content: center;
+    transition: all 0.18s; line-height: 1;
+  }
+  .graph-fab:hover { transform: scale(1.08); }
   .graph-legend {
     position: absolute; bottom: 28px; left: 28px;
-    display: flex; flex-direction: column; gap: 10px;
-    padding: 16px 18px; background: rgba(15, 28, 46, 0.88);
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 14px 16px; background: rgba(15, 28, 46, 0.88);
     backdrop-filter: blur(8px); border: 1px solid var(--line);
+    max-width: 200px;
   }
   .legend-title {
     font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.24em;
-    text-transform: uppercase; color: var(--steel); margin-bottom: 4px;
+    text-transform: uppercase; color: var(--steel); margin-bottom: 2px;
   }
   .legend-row {
     display: flex; align-items: center; gap: 10px;
@@ -170,14 +248,7 @@
     letter-spacing: 0.1em; color: var(--frost);
   }
   .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-  .graph-hint {
-    position: absolute; bottom: 28px; right: 28px;
-    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.18em;
-    color: var(--steel); text-transform: uppercase; padding: 10px 14px;
-    background: rgba(15, 28, 46, 0.88); backdrop-filter: blur(8px);
-    border: 1px solid var(--line);
-  }
-  .graph-hint strong { color: var(--frost); }
+  /* graph nodes */
   .node-label {
     font-family: var(--t-display); font-weight: 600; font-size: 11px;
     letter-spacing: 0.04em; fill: var(--frost); pointer-events: none; text-anchor: middle;
@@ -191,58 +262,108 @@
   }
   .link { stroke: rgba(124, 149, 171, 0.20); stroke-width: 1; fill: none; }
   .link.highlight { stroke: var(--signal); stroke-width: 1.5; }
+  .link.custom { stroke: var(--amber); stroke-width: 1.2; stroke-dasharray: 4 3; }
   .node-group { cursor: pointer; }
   .node-group:hover .node-circle { filter: brightness(1.25); }
-  /* side panel */
+  .node-group.dimmed { opacity: 0.18; }
+  .node-pinned-indicator {
+    fill: var(--amber); pointer-events: none;
+  }
+  /* sticky notes on canvas */
+  .sticky-note {
+    position: absolute; width: 200px; min-height: 120px;
+    background: #f4e4a8; color: #4a3a1a;
+    padding: 16px 18px; font-family: var(--t-body); font-size: 13px;
+    line-height: 1.5; cursor: grab; user-select: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.2);
+    transform-origin: center; z-index: 5; transition: box-shadow 0.15s;
+  }
+  .sticky-note:active { cursor: grabbing; }
+  .sticky-note:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.5), 0 4px 8px rgba(0,0,0,0.3); }
+  .sticky-note.editing { z-index: 100; }
+  .sticky-note-content { outline: none; min-height: 80px; }
+  .sticky-note-content[contenteditable] { cursor: text; }
+  .sticky-note-delete {
+    position: absolute; top: 4px; right: 4px;
+    width: 20px; height: 20px; background: none; border: none;
+    color: #4a3a1a; cursor: pointer; opacity: 0.4; font-size: 14px; line-height: 1;
+  }
+  .sticky-note-delete:hover { opacity: 1; }
+  .sticky-note.amber { background: #f4e4a8; color: #4a3a1a; }
+  .sticky-note.pink { background: #f4c4c4; color: #4a1a1a; }
+  .sticky-note.green { background: #c8e4b8; color: #1a3a1a; }
+  .sticky-note.blue { background: #b8d4e4; color: #1a2a4a; }
+  .sticky-note-delete:hover { color: #c44d4d; }
+  /* ===== SIDE PANEL ===== */
   .side-panel {
-    position: absolute; top: 0; right: 0; width: 420px; height: 100%;
+    position: absolute; top: 0; right: 0; width: 460px; height: 100%;
     background: var(--navy-deep); border-left: 1px solid var(--line);
     transform: translateX(100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 10; overflow-y: auto; display: flex; flex-direction: column;
+    z-index: 20; overflow-y: auto; display: flex; flex-direction: column;
   }
   .side-panel.open { transform: translateX(0); }
   .panel-top {
-    padding: 24px 28px 16px; border-bottom: 1px solid var(--line);
+    padding: 20px 28px 14px; border-bottom: 1px solid var(--line);
     position: sticky; top: 0; background: var(--navy-deep); z-index: 2;
     display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
   }
+  .panel-tag-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
   .panel-tag {
     font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.22em;
     color: var(--steel); text-transform: uppercase;
   }
   .panel-tag .idx { color: var(--signal); margin-right: 8px; }
-  .panel-close {
+  .panel-actions { display: flex; gap: 6px; }
+  .panel-icon-btn {
     width: 28px; height: 28px; background: transparent;
     border: 1px solid var(--line-bright); color: var(--steel); cursor: pointer;
-    font-family: var(--t-mono); font-size: 14px; line-height: 1; transition: all 0.15s;
+    font-family: var(--t-mono); font-size: 12px; line-height: 1; transition: all 0.15s;
+    display: flex; align-items: center; justify-content: center;
   }
-  .panel-close:hover { color: var(--frost); border-color: var(--signal); }
-  .panel-content { padding: 24px 28px 48px; }
+  .panel-icon-btn:hover { color: var(--frost); border-color: var(--signal); }
+  .panel-icon-btn.danger:hover { color: var(--alert); border-color: var(--alert); }
+  .panel-content { padding: 22px 28px 48px; }
   .panel-title {
-    font-family: var(--t-display); font-weight: 800; font-size: 30px;
-    line-height: 1.05; color: var(--frost); margin-bottom: 10px; letter-spacing: -0.01em;
+    font-family: var(--t-display); font-weight: 800; font-size: 28px;
+    line-height: 1.1; color: var(--frost); margin-bottom: 8px; letter-spacing: -0.01em;
   }
   .panel-sub {
     font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--steel); margin-bottom: 28px;
+    text-transform: uppercase; color: var(--steel); margin-bottom: 24px;
   }
   .panel-section {
-    margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--line);
+    margin-bottom: 22px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
   }
   .panel-section:last-child { border-bottom: none; }
   .panel-label {
     font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.22em;
-    color: var(--steel); text-transform: uppercase; margin-bottom: 10px;
+    color: var(--steel); text-transform: uppercase; margin-bottom: 8px;
+    display: flex; justify-content: space-between; align-items: center;
   }
   .panel-value {
     font-family: var(--t-body); font-size: 14px; color: var(--frost); line-height: 1.55;
   }
+  /* editable fields */
+  .editable {
+    display: block; cursor: text; padding: 6px 8px; margin: -6px -8px;
+    border-radius: 2px; transition: background 0.15s;
+    min-height: 20px;
+  }
+  .editable:hover { background: var(--graphite); }
+  .editable:focus, .editable.editing {
+    background: var(--graphite); outline: 1px solid var(--signal); cursor: text;
+  }
+  .editable[contenteditable] { white-space: pre-wrap; }
+  .editable-empty::before {
+    content: attr(data-placeholder);
+    color: var(--steel); opacity: 0.5;
+  }
   .panel-value.serif {
-    font-family: var(--t-serif); font-size: 24px; font-weight: 400; line-height: 1.1;
+    font-family: var(--t-serif); font-size: 22px; font-weight: 400; line-height: 1.1;
   }
   .panel-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .stat-box {
-    padding: 16px; background: var(--graphite); border-left: 2px solid var(--signal);
+    padding: 14px; background: var(--graphite); border-left: 2px solid var(--signal);
   }
   .stat-box.alert { border-left-color: var(--alert); }
   .stat-box.steel { border-left-color: var(--steel); }
@@ -251,13 +372,22 @@
     color: var(--steel); text-transform: uppercase; margin-bottom: 6px;
   }
   .stat-value {
-    font-family: var(--t-serif); font-size: 28px; font-weight: 400;
+    font-family: var(--t-serif); font-size: 26px; font-weight: 400;
     color: var(--frost); line-height: 1;
   }
-  .panel-list-item { padding: 12px 0; border-bottom: 1px solid var(--line-dim); }
+  .stat-value.editable { font-family: var(--t-serif); font-size: 26px; }
+  .panel-list-item { padding: 10px 0; border-bottom: 1px solid var(--line-dim); }
   .panel-list-item:last-child { border-bottom: none; }
   .panel-list-item-title { font-family: var(--t-body); font-size: 13px; color: var(--frost); margin-bottom: 4px; }
   .panel-list-item-sub { font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.12em; color: var(--steel); }
+  /* select for editable enums */
+  .field-select {
+    background: var(--graphite); color: var(--frost);
+    border: 1px solid var(--line-bright); padding: 6px 10px;
+    font-family: var(--t-body); font-size: 13px; cursor: pointer;
+    width: 100%;
+  }
+  .field-select:focus { outline: 1px solid var(--signal); }
   /* dashboard */
   .dash-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
   .plate { background: var(--navy); border: 1px solid var(--line); padding: 24px; position: relative; }
@@ -280,6 +410,54 @@
     padding-bottom: 14px; border-bottom: 1px solid var(--line);
   }
   .plate-header .idx { color: var(--signal); margin-right: 10px; }
+  /* TODAY view */
+  .today-grid {
+    display: grid; grid-template-columns: 2fr 1fr; gap: 20px;
+  }
+  .today-section {
+    background: var(--navy); border: 1px solid var(--line); padding: 28px;
+  }
+  .today-section h3 {
+    font-family: var(--t-display); font-weight: 700; font-size: 22px;
+    color: var(--frost); margin-bottom: 4px; letter-spacing: -0.005em;
+  }
+  .today-section h3 em {
+    font-family: var(--t-serif); font-style: italic; font-weight: 400; color: var(--steel);
+  }
+  .today-section .section-sub {
+    font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--steel); margin-bottom: 24px;
+  }
+  .today-task {
+    display: grid; grid-template-columns: 32px 1fr auto; gap: 14px;
+    align-items: center; padding: 16px 0; border-bottom: 1px solid var(--line-dim);
+  }
+  .today-task:last-child { border-bottom: none; }
+  .today-task .task-check {
+    width: 22px; height: 22px;
+  }
+  .today-task-title { font-family: var(--t-body); font-size: 15px; color: var(--frost); }
+  .today-task-title.done { text-decoration: line-through; color: var(--steel); }
+  .today-task-meta { font-family: var(--t-mono); font-size: 10px; color: var(--steel); letter-spacing: 0.15em; }
+  .today-empty {
+    padding: 40px 0; text-align: center;
+    font-family: var(--t-serif); font-style: italic; font-size: 22px; color: var(--steel);
+  }
+  .today-stat {
+    margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--line-dim);
+  }
+  .today-stat:last-child { border-bottom: none; }
+  .today-stat-label {
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.22em;
+    color: var(--steel); text-transform: uppercase; margin-bottom: 6px;
+  }
+  .today-stat-value {
+    font-family: var(--t-serif); font-size: 38px; line-height: 1; color: var(--frost);
+  }
+  .today-streak {
+    background: var(--graphite); border-left: 3px solid var(--signal); padding: 16px;
+  }
+  /* business model cards */
   .bm-card {
     margin-bottom: 14px; padding: 18px 20px;
     background: var(--graphite); border-left: 3px solid var(--signal);
@@ -333,8 +511,8 @@
   /* tasks */
   .task-list { display: flex; flex-direction: column; gap: 1px; background: var(--line); }
   .task-row {
-    display: grid; grid-template-columns: 44px 1fr 90px 130px 140px;
-    align-items: center; gap: 16px; padding: 18px 22px;
+    display: grid; grid-template-columns: 44px 1fr 90px 130px 140px 40px;
+    align-items: center; gap: 16px; padding: 16px 22px;
     background: var(--navy); transition: background 0.15s;
   }
   .task-row:hover { background: var(--bg-elev); }
@@ -362,6 +540,7 @@
   .task-priority {
     font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.22em;
     text-transform: uppercase; text-align: center; padding: 4px 8px; border: 1px solid;
+    cursor: pointer;
   }
   .task-priority.P1 { color: var(--alert); border-color: var(--alert); background: var(--alert-dim); }
   .task-priority.P2 { color: var(--signal); border-color: var(--signal); background: var(--signal-dim); }
@@ -372,6 +551,13 @@
     font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.18em;
     text-transform: uppercase; color: var(--steel); text-align: right;
   }
+  .task-delete {
+    width: 24px; height: 24px; background: transparent; border: 1px solid var(--line-dim);
+    color: var(--steel); cursor: pointer; opacity: 0; transition: opacity 0.15s;
+    font-family: var(--t-mono); font-size: 12px;
+  }
+  .task-row:hover .task-delete { opacity: 1; }
+  .task-delete:hover { color: var(--alert); border-color: var(--alert); }
   /* pipeline */
   .pipeline-board { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; min-height: 500px; }
   .pipe-col { background: var(--navy); border: 1px solid var(--line); padding: 16px; position: relative; }
@@ -421,12 +607,143 @@
   .insight-list { display: flex; flex-direction: column; gap: 14px; max-width: 880px; }
   .insight-card {
     background: var(--navy); border: 1px solid var(--line);
-    border-left: 3px solid var(--signal); padding: 24px 28px;
+    border-left: 3px solid var(--signal); padding: 20px 24px;
+    position: relative;
   }
-  .insight-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; gap: 16px; }
-  .insight-title { font-family: var(--t-display); font-weight: 700; font-size: 18px; color: var(--frost); letter-spacing: -0.005em; }
+  .insight-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; gap: 16px; }
+  .insight-title { font-family: var(--t-display); font-weight: 700; font-size: 18px; color: var(--frost); letter-spacing: -0.005em; flex: 1; }
   .insight-date { font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.18em; color: var(--steel); text-transform: uppercase; white-space: nowrap; }
   .insight-content { font-family: var(--t-body); font-size: 14px; line-height: 1.6; color: var(--frost); }
+  .insight-delete {
+    position: absolute; top: 12px; right: 12px;
+    width: 22px; height: 22px; background: transparent; border: 1px solid var(--line-dim);
+    color: var(--steel); cursor: pointer; opacity: 0; transition: opacity 0.15s;
+    font-family: var(--t-mono); font-size: 11px;
+  }
+  .insight-card:hover .insight-delete { opacity: 0.7; }
+  .insight-delete:hover { opacity: 1; color: var(--alert); border-color: var(--alert); }
+  /* INBOX view */
+  .inbox-grid {
+    display: grid; grid-template-columns: 1fr 380px; gap: 24px;
+    height: 100%;
+  }
+  .inbox-capture {
+    background: var(--navy); border: 1px solid var(--line); padding: 24px;
+    display: flex; flex-direction: column;
+  }
+  .inbox-textarea {
+    flex: 1; min-height: 280px;
+    background: var(--ink); border: 1px solid var(--line-bright); color: var(--frost);
+    padding: 20px; font-family: var(--t-body); font-size: 15px; line-height: 1.6;
+    resize: none; outline: none;
+  }
+  .inbox-textarea:focus { border-color: var(--signal); }
+  .inbox-textarea::placeholder { color: var(--steel); }
+  .inbox-actions {
+    display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap;
+  }
+  .inbox-list {
+    background: var(--navy); border: 1px solid var(--line); padding: 18px;
+    overflow-y: auto;
+  }
+  .inbox-item {
+    padding: 12px 14px; margin-bottom: 8px;
+    background: var(--graphite); border-left: 2px solid var(--amber);
+    cursor: pointer; transition: all 0.15s;
+    position: relative;
+  }
+  .inbox-item:hover { background: var(--bg-elev); }
+  .inbox-item-text {
+    font-family: var(--t-body); font-size: 13px; line-height: 1.5; color: var(--frost);
+    padding-right: 24px;
+  }
+  .inbox-item-date {
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.15em;
+    color: var(--steel); text-transform: uppercase; margin-top: 6px;
+  }
+  .inbox-item-delete {
+    position: absolute; top: 8px; right: 8px;
+    width: 20px; height: 20px; background: transparent; border: none;
+    color: var(--steel); cursor: pointer; opacity: 0; transition: opacity 0.15s;
+    font-family: var(--t-mono); font-size: 12px;
+  }
+  .inbox-item:hover .inbox-item-delete { opacity: 1; }
+  .inbox-item-delete:hover { color: var(--alert); }
+  /* MODAL */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(10, 16, 24, 0.85);
+    backdrop-filter: blur(4px);
+    display: none; z-index: 1000;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--navy); border: 1px solid var(--line-bright);
+    padding: 32px; width: 480px; max-width: 90vw; max-height: 90vh; overflow-y: auto;
+    position: relative;
+  }
+  .modal-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--line);
+  }
+  .modal-tag {
+    font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.22em;
+    color: var(--signal); text-transform: uppercase;
+  }
+  .modal-title {
+    font-family: var(--t-display); font-weight: 800; font-size: 24px;
+    color: var(--frost); margin-top: 6px; letter-spacing: -0.01em;
+  }
+  .modal-close {
+    background: transparent; border: 1px solid var(--line-bright);
+    color: var(--steel); width: 28px; height: 28px; cursor: pointer;
+    font-family: var(--t-mono); font-size: 14px;
+  }
+  .modal-close:hover { color: var(--frost); border-color: var(--signal); }
+  .form-field { margin-bottom: 16px; }
+  .form-label {
+    display: block; font-family: var(--t-mono); font-size: 9px;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--steel);
+    margin-bottom: 6px;
+  }
+  .form-input, .form-textarea, .form-select {
+    width: 100%; background: var(--graphite); color: var(--frost);
+    border: 1px solid var(--line-bright); padding: 10px 12px;
+    font-family: var(--t-body); font-size: 14px; outline: none;
+  }
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: var(--signal);
+  }
+  .form-textarea { min-height: 80px; resize: vertical; font-family: var(--t-body); }
+  .form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .modal-actions {
+    display: flex; gap: 10px; justify-content: flex-end; margin-top: 24px;
+    padding-top: 16px; border-top: 1px solid var(--line);
+  }
+  /* TYPE PICKER (Quick Capture modal) */
+  .type-picker {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px;
+  }
+  .type-option {
+    padding: 20px; background: var(--graphite); border: 1px solid var(--line);
+    cursor: pointer; transition: all 0.15s; text-align: center;
+  }
+  .type-option:hover {
+    background: var(--bg-elev); border-color: var(--signal);
+  }
+  .type-option-icon {
+    font-family: var(--t-serif); font-size: 32px; color: var(--signal);
+    line-height: 1; margin-bottom: 8px;
+  }
+  .type-option-name {
+    font-family: var(--t-display); font-weight: 700; font-size: 14px;
+    color: var(--frost); margin-bottom: 4px;
+  }
+  .type-option-desc {
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.15em;
+    color: var(--steel); text-transform: uppercase;
+  }
   /* button */
   .btn {
     padding: 10px 18px; background: transparent; border: 1px solid var(--signal);
@@ -434,6 +751,28 @@
     letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer; transition: all 0.15s;
   }
   .btn:hover { background: var(--signal); color: var(--ink); }
+  .btn.secondary { border-color: var(--steel); color: var(--steel); }
+  .btn.secondary:hover { background: var(--steel); color: var(--ink); }
+  .btn.danger { border-color: var(--alert); color: var(--alert); }
+  .btn.danger:hover { background: var(--alert); color: var(--frost); }
+  /* TOAST */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--navy-deep); border: 1px solid var(--signal);
+    padding: 14px 22px; color: var(--frost);
+    font-family: var(--t-mono); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; z-index: 2000;
+    opacity: 0; transition: all 0.3s; pointer-events: none;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+  .toast.alert { border-color: var(--alert); }
+  .toast.amber { border-color: var(--amber); }
+  .toast-btn {
+    background: transparent; border: 1px solid currentColor; color: var(--frost);
+    padding: 4px 10px; font-family: var(--t-mono); font-size: 10px;
+    letter-spacing: 0.15em; cursor: pointer; text-transform: uppercase;
+  }
   /* scrollbar */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: var(--ink); }
@@ -442,19 +781,22 @@
   /* mobile */
   @media (max-width: 900px) {
     .topbar { grid-template-columns: auto 1fr; grid-template-rows: 64px auto; gap: 0; height: auto; padding: 0 16px; }
-    .topbar-meta { grid-column: 1 / -1; padding: 8px 0; border-top: 1px solid var(--line); justify-content: space-between; }
+    .topbar-meta { grid-column: 1 / -1; padding: 8px 0; border-top: 1px solid var(--line); justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     .nav { grid-column: 1 / -1; padding: 4px 0; border-top: 1px solid var(--line); }
     .nav-item { padding: 10px 12px; font-size: 10px; }
     .brand { border-right: none; padding-right: 0; }
-    .main { height: calc(100vh - 64px - 80px); }
+    .main { height: calc(100vh - 64px - 100px); }
     .view-header { padding: 24px 20px 18px; }
-    .view-title { font-size: 30px; }
+    .view-title { font-size: 28px; }
     .view-body { padding: 24px 20px 60px; }
-    .dash-grid { grid-template-columns: 1fr; }
+    .dash-grid, .today-grid { grid-template-columns: 1fr; }
     .pipeline-board { grid-template-columns: 1fr; }
     .task-row { grid-template-columns: 32px 1fr 70px; gap: 12px; }
     .task-row > :nth-child(n+4) { display: none; }
     .side-panel { width: 100%; }
+    .inbox-grid { grid-template-columns: 1fr; }
+    .graph-toolbar { top: auto; bottom: 100px; max-width: 90%; }
+    .graph-legend { display: none; }
   }
 </style>
 </head>
@@ -469,32 +811,79 @@
     </svg>
     <div class="brand-text">
       <div class="brand-wordmark">BLACK<span class="dot">·</span>SEA</div>
-      <div class="brand-sub">Command · Manual № 001</div>
+      <div class="brand-sub">Command · v1.1</div>
     </div>
   </div>
 
   <nav class="nav" id="nav">
+    <button class="nav-item" data-view="today"><span class="nav-idx">§00</span>Today</button>
     <button class="nav-item active" data-view="graph"><span class="nav-idx">§01</span>MAP</button>
     <button class="nav-item" data-view="dashboard"><span class="nav-idx">§02</span>Dashboard</button>
     <button class="nav-item" data-view="tasks"><span class="nav-idx">§03</span>Tasks</button>
     <button class="nav-item" data-view="pipeline"><span class="nav-idx">§04</span>Pipeline</button>
     <button class="nav-item" data-view="docs"><span class="nav-idx">§05</span>Documents</button>
     <button class="nav-item" data-view="insights"><span class="nav-idx">§06</span>Insights</button>
+    <button class="nav-item" data-view="inbox"><span class="nav-idx">§07</span>Inbox<span class="badge" id="inbox-badge" style="display:none">0</span></button>
   </nav>
 
   <div class="topbar-meta">
-    <div class="status"><span class="status-dot"></span><span>Operational</span></div>
+    <button class="topbar-btn" id="search-btn" title="Search (Cmd+K)">⌕ Search</button>
+    <button class="topbar-btn" id="sync-btn" title="Push to GitHub now">↑ Sync</button>
+    <button class="topbar-btn" id="export-btn" title="Download data.json">↓ Export</button>
+    <button class="topbar-btn signal" id="quick-add-btn" title="Quick add (N)">+ Quick Add</button>
+    <button class="topbar-btn" id="settings-btn" title="Settings">⚙</button>
+    <div class="status" id="sync-status"><span class="status-dot" id="status-dot"></span><span id="status-text">Saved</span></div>
     <div class="clock" id="clock">— · — · —</div>
   </div>
 </header>
 
 <main class="main">
 
+  <!-- TODAY VIEW (new) -->
+  <section class="view" id="today-view">
+    <div class="view-header">
+      <div>
+        <div class="view-section-tag"><span class="idx">§00</span>Focus</div>
+        <h1 class="view-title">Today <em id="today-date">—</em></h1>
+      </div>
+      <div class="view-meta">
+        <div id="today-summary">— Active · — Done</div>
+      </div>
+    </div>
+    <div class="view-body">
+      <div class="today-grid">
+        <div class="today-section">
+          <h3>Next <em>actions</em></h3>
+          <div class="section-sub">P1 critical + items due today</div>
+          <div id="today-tasks"></div>
+        </div>
+        <div class="today-section">
+          <h3>Today <em>stats</em></h3>
+          <div class="section-sub">Momentum</div>
+          <div id="today-stats"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPH VIEW -->
   <section class="view active" id="graph-view">
     <div id="graph-canvas"></div>
     <div class="graph-chrome">
       <div class="graph-coord"><span class="idx">§01.0</span>System Map · Black Sea Operations</div>
-      <div class="graph-coord-right" id="graph-stats">— Nodes · — Connections</div>
+
+      <div class="graph-toolbar" id="filter-chips">
+        <div class="filter-chip" data-filter="defense">Defense</div>
+        <div class="filter-chip" data-filter="frontier">Frontier</div>
+        <div class="filter-chip" data-filter="otc">OTC</div>
+        <div class="filter-chip" data-filter="cold">Cold</div>
+        <div class="filter-chip" data-filter="active">Active</div>
+        <div class="filter-chip" data-filter="notes">Notes</div>
+      </div>
+
+      <input class="graph-search" id="search-input" placeholder="Type to search…" />
+      <div class="search-results" id="search-results"></div>
+
       <div class="graph-legend">
         <div class="legend-title">Legend</div>
         <div class="legend-row"><span class="legend-dot" style="background:#DCE3E8"></span>Brand</div>
@@ -503,17 +892,26 @@
         <div class="legend-row"><span class="legend-dot" style="background:#B83D2C"></span>Prospect (cold)</div>
         <div class="legend-row"><span class="legend-dot" style="background:#18C26B; opacity:0.7"></span>Active Client</div>
       </div>
-      <div class="graph-hint"><strong>CLICK</strong> nodes&nbsp;·&nbsp;<strong>DRAG</strong> to move&nbsp;·&nbsp;<strong>SCROLL</strong> to zoom</div>
+
+      <button class="graph-fab" id="graph-fab" title="Quick add">+</button>
     </div>
+
     <aside class="side-panel" id="side-panel">
       <div class="panel-top">
-        <div class="panel-tag" id="panel-tag"><span class="idx">§01</span>Detail</div>
-        <button class="panel-close" id="panel-close" aria-label="Close">×</button>
+        <div class="panel-tag-row">
+          <div class="panel-tag" id="panel-tag"><span class="idx">§01</span>Detail</div>
+        </div>
+        <div class="panel-actions">
+          <button class="panel-icon-btn" id="panel-pin-btn" title="Pin position">📌</button>
+          <button class="panel-icon-btn danger" id="panel-delete-btn" title="Delete">🗑</button>
+          <button class="panel-icon-btn" id="panel-close-btn" title="Close">×</button>
+        </div>
       </div>
       <div class="panel-content" id="panel-content"></div>
     </aside>
   </section>
 
+  <!-- DASHBOARD -->
   <section class="view" id="dashboard-view">
     <div class="view-header">
       <div>
@@ -529,7 +927,7 @@
       <div class="dash-grid">
         <div class="plate">
           <div class="plate-crosshair-bl">+</div><div class="plate-crosshair-br">+</div>
-          <div class="plate-header"><span><span class="idx">§02.1</span>Business Models</span><span id="bm-count">— Active</span></div>
+          <div class="plate-header"><span><span class="idx">§02.1</span>Business Models</span><button class="btn" onclick="openAddModal('businessModel')" style="padding:4px 10px;font-size:9px">+ Add</button></div>
           <div id="bm-list"></div>
         </div>
         <div class="plate">
@@ -546,6 +944,7 @@
     </div>
   </section>
 
+  <!-- TASKS -->
   <section class="view" id="tasks-view">
     <div class="view-header">
       <div>
@@ -554,7 +953,7 @@
       </div>
       <div class="view-meta">
         <div id="tasks-count">— Active · — Done</div>
-        <button class="btn" onclick="addTask()">+ New Task</button>
+        <button class="btn" onclick="openAddModal('task')">+ New Task</button>
       </div>
     </div>
     <div class="view-body">
@@ -562,6 +961,7 @@
     </div>
   </section>
 
+  <!-- PIPELINE -->
   <section class="view" id="pipeline-view">
     <div class="view-header">
       <div>
@@ -570,6 +970,7 @@
       </div>
       <div class="view-meta">
         <div id="pipeline-count">— Prospects · €—</div>
+        <button class="btn" onclick="openAddModal('prospect')">+ New Prospect</button>
       </div>
     </div>
     <div class="view-body">
@@ -577,6 +978,7 @@
     </div>
   </section>
 
+  <!-- DOCS -->
   <section class="view" id="docs-view">
     <div class="view-header">
       <div>
@@ -592,6 +994,7 @@
     </div>
   </section>
 
+  <!-- INSIGHTS -->
   <section class="view" id="insights-view">
     <div class="view-header">
       <div>
@@ -599,7 +1002,7 @@
         <h1 class="view-title">Insights <em>log</em></h1>
       </div>
       <div class="view-meta">
-        <button class="btn" onclick="addInsight()">+ New Insight</button>
+        <button class="btn" onclick="openAddModal('insight')">+ New Insight</button>
       </div>
     </div>
     <div class="view-body">
@@ -607,11 +1010,180 @@
     </div>
   </section>
 
+  <!-- INBOX (new) -->
+  <section class="view" id="inbox-view">
+    <div class="view-header">
+      <div>
+        <div class="view-section-tag"><span class="idx">§07</span>Brain Dump</div>
+        <h1 class="view-title">Inbox <em>unfiled</em></h1>
+      </div>
+      <div class="view-meta">
+        <div id="inbox-count">— Items</div>
+      </div>
+    </div>
+    <div class="view-body">
+      <div class="inbox-grid">
+        <div class="inbox-capture">
+          <div style="font-family:var(--t-mono);font-size:10px;letter-spacing:0.22em;color:var(--steel);text-transform:uppercase;margin-bottom:14px">Quick capture</div>
+          <textarea class="inbox-textarea" id="inbox-textarea" placeholder="Type anything. Half-thoughts. Random ideas. Things you don't know where to file yet. Ctrl+Enter to save."></textarea>
+          <div class="inbox-actions">
+            <button class="btn" id="inbox-save-btn">Save to Inbox</button>
+            <button class="btn secondary" id="inbox-toinsight-btn">→ Insight</button>
+            <button class="btn secondary" id="inbox-totask-btn">→ Task</button>
+          </div>
+        </div>
+        <div class="inbox-list" id="inbox-list"></div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
+<!-- SETTINGS MODAL -->
+<div class="modal-overlay" id="settings-modal">
+  <div class="modal" style="width: 560px">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">SETTINGS</div>
+        <div class="modal-title">Configure brain</div>
+      </div>
+      <button class="modal-close" onclick="closeSettingsModal()">×</button>
+    </div>
+
+    <div style="margin-bottom: 28px">
+      <div style="font-family:var(--t-display);font-weight:700;font-size:16px;color:var(--frost);margin-bottom:14px">GitHub auto-sync</div>
+      <div style="font-family:var(--t-body);font-size:13px;color:var(--steel);line-height:1.6;margin-bottom:18px">
+        Auto-push changes to your GitHub repository. Changes save locally first, then push after 5 seconds of inactivity. Your token never leaves this browser except to call api.github.com directly.
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Repository (owner/name)</label>
+        <input class="form-input" type="text" id="settings-repo" placeholder="palesadrian/blacksea-brain" />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Branch</label>
+        <input class="form-input" type="text" id="settings-branch" placeholder="main" value="main" />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">File path in repo</label>
+        <input class="form-input" type="text" id="settings-path" placeholder="data.json" value="data.json" />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Personal Access Token (fine-grained)</label>
+        <input class="form-input" type="password" id="settings-token" placeholder="github_pat_..." />
+        <div style="font-family:var(--t-mono);font-size:9px;color:var(--steel);letter-spacing:0.15em;text-transform:uppercase;margin-top:6px">Stored in localStorage · click eye to reveal</div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Auto-sync mode</label>
+        <select class="form-select" id="settings-automode">
+          <option value="auto">Auto (push 5s after each change)</option>
+          <option value="manual">Manual (push only when I click Sync)</option>
+          <option value="off">Off (local only)</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <button class="btn secondary" id="settings-test-btn">Test connection</button>
+        <button class="btn secondary" id="settings-pull-btn" style="margin-left:8px">⇣ Pull from GitHub</button>
+      </div>
+      <div id="settings-test-result" style="margin-top:12px;font-family:var(--t-mono);font-size:11px;letter-spacing:0.1em"></div>
+    </div>
+
+    <div style="border-top:1px solid var(--line);padding-top:20px;margin-top:20px">
+      <div style="font-family:var(--t-display);font-weight:700;font-size:16px;color:var(--frost);margin-bottom:14px">Danger zone</div>
+      <button class="btn danger" onclick="resetLocalStorage()">Reset local data</button>
+      <div style="font-family:var(--t-mono);font-size:10px;color:var(--steel);margin-top:8px;letter-spacing:0.1em">Wipes localStorage and reloads from data.json. GitHub repo unaffected.</div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn secondary" onclick="closeSettingsModal()">Cancel</button>
+      <button class="btn" id="settings-save-btn">Save settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK ADD MODAL -->
+<div class="modal-overlay" id="quick-add-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">QUICK CAPTURE</div>
+        <div class="modal-title">What goes in?</div>
+      </div>
+      <button class="modal-close" onclick="closeQuickAdd()">×</button>
+    </div>
+    <div class="type-picker">
+      <div class="type-option" onclick="openAddModal('prospect')">
+        <div class="type-option-icon">⊕</div>
+        <div class="type-option-name">Prospect</div>
+        <div class="type-option-desc">Lead · Client</div>
+      </div>
+      <div class="type-option" onclick="openAddModal('task')">
+        <div class="type-option-icon">▸</div>
+        <div class="type-option-name">Task</div>
+        <div class="type-option-desc">Action · Todo</div>
+      </div>
+      <div class="type-option" onclick="openAddModal('insight')">
+        <div class="type-option-icon">✦</div>
+        <div class="type-option-name">Insight</div>
+        <div class="type-option-desc">Decision · Learning</div>
+      </div>
+      <div class="type-option" onclick="openAddModal('inboxItem')">
+        <div class="type-option-icon">~</div>
+        <div class="type-option-name">Brain dump</div>
+        <div class="type-option-desc">Unfiled · Later</div>
+      </div>
+      <div class="type-option" onclick="openAddModal('stickyNote')">
+        <div class="type-option-icon">▤</div>
+        <div class="type-option-name">Sticky Note</div>
+        <div class="type-option-desc">Floats on map</div>
+      </div>
+      <div class="type-option" onclick="openAddModal('service')">
+        <div class="type-option-icon">§</div>
+        <div class="type-option-name">Service</div>
+        <div class="type-option-desc">Offering</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD/EDIT FORM MODAL -->
+<div class="modal-overlay" id="form-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag" id="form-tag">NEW</div>
+        <div class="modal-title" id="form-title">Item</div>
+      </div>
+      <button class="modal-close" onclick="closeFormModal()">×</button>
+    </div>
+    <div id="form-fields"></div>
+    <div class="modal-actions">
+      <button class="btn secondary" onclick="closeFormModal()">Cancel</button>
+      <button class="btn" id="form-submit-btn">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
 <script>
+/* Loaded in next script block — split for clarity */
+</script>
+<script>
+/* =====================================================
+   BLACK SEA BRAIN v1.1
+   ===================================================== */
+
 let DATA = null;
 let SIM = null;
+let activeNode = null;
+let activeFilters = new Set();
+let pendingUndo = null;
 
 const BM_COLORS = {
   bm_otc:      '#7C95AB',
@@ -619,7 +1191,18 @@ const BM_COLORS = {
   bm_frontier: '#B83D2C',
 };
 
+const NODE_TYPE_TAGS = {
+  brand: { idx: '§01', label: 'Brand' },
+  businessModel: { idx: '§01', label: 'Business Model' },
+  service: { idx: '§01', label: 'Service' },
+  prospect: { idx: '§01', label: 'Prospect' },
+};
+
+/* =====================================================
+   INIT
+   ===================================================== */
 async function init() {
+  // Try fetch data.json
   try {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error('no data.json');
@@ -632,21 +1215,44 @@ async function init() {
     }
   }
 
+  // Override with localStorage if present
   try {
-    const saved = localStorage.getItem('blacksea_brain_v2');
+    const saved = localStorage.getItem('blacksea_brain_v11');
     if (saved) {
       const parsed = JSON.parse(saved);
-      if (parsed && parsed.tasks) DATA = parsed;
+      if (parsed && parsed.tasks) {
+        DATA = parsed;
+        markDirty();
+      }
     }
   } catch (e) {}
 
+  // Ensure schema completeness (for older saved data)
+  if (!DATA.stickyNotes) DATA.stickyNotes = [];
+  if (!DATA.customEdges) DATA.customEdges = [];
+  if (!DATA.inbox) DATA.inbox = [];
+  if (!DATA.warmNetwork) DATA.warmNetwork = [];
+  if (!DATA.nodePositions) DATA.nodePositions = {};
+  if (!DATA.settings) DATA.settings = { defaultView: 'graph' };
+
   setupNav();
+  setupTopbar();
+  setupModals();
+  setupSettingsModal();
+  setupGraphChrome();
+  setupKeyboard();
   startClock();
+  updateSyncStatus();
+
+  buildToday();
   buildDashboard();
   buildTasks();
   buildPipeline();
   buildDocs();
   buildInsights();
+  buildInbox();
+  buildStickyNotes();
+
   requestAnimationFrame(() => buildGraph());
 
   let resizeT;
@@ -656,19 +1262,455 @@ async function init() {
   });
 }
 
+/* =====================================================
+   NAV / VIEW SWITCHING
+   ===================================================== */
 function setupNav() {
   document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('click', () => switchView(item.dataset.view));
   });
-  document.getElementById('panel-close').addEventListener('click', closePanel);
 }
 
 function switchView(view) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.view === view));
   document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === view + '-view'));
   if (view === 'graph') setTimeout(() => buildGraph(), 50);
+  if (view === 'today') buildToday();
+  if (view === 'inbox') document.getElementById('inbox-textarea').focus();
 }
 
+/* =====================================================
+   TOPBAR ACTIONS
+   ===================================================== */
+function setupTopbar() {
+  document.getElementById('quick-add-btn').addEventListener('click', openQuickAdd);
+  document.getElementById('export-btn').addEventListener('click', exportData);
+  document.getElementById('search-btn').addEventListener('click', toggleSearch);
+}
+
+function exportData() {
+  DATA.lastUpdated = new Date().toISOString();
+  const blob = new Blob([JSON.stringify(DATA, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `data.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast('Downloaded data.json — commit it to GitHub to deploy', 'amber');
+  markClean();
+}
+
+/* =====================================================
+   MODALS
+   ===================================================== */
+function setupModals() {
+  document.querySelectorAll('.modal-overlay').forEach(m => {
+    m.addEventListener('click', (e) => { if (e.target === m) m.classList.remove('open'); });
+  });
+}
+
+function openQuickAdd() {
+  document.getElementById('quick-add-modal').classList.add('open');
+}
+function closeQuickAdd() {
+  document.getElementById('quick-add-modal').classList.remove('open');
+}
+
+function openAddModal(type, existing) {
+  closeQuickAdd();
+  const modal = document.getElementById('form-modal');
+  const tag = document.getElementById('form-tag');
+  const title = document.getElementById('form-title');
+  const fields = document.getElementById('form-fields');
+  const submitBtn = document.getElementById('form-submit-btn');
+
+  const config = getFormConfig(type);
+  tag.textContent = (existing ? 'EDIT · ' : 'NEW · ') + config.tag;
+  title.textContent = config.title;
+
+  // Build form
+  fields.innerHTML = config.fields.map(f => {
+    const val = existing ? (existing[f.key] || '') : (f.default || '');
+    if (f.type === 'textarea') {
+      return `<div class="form-field"><label class="form-label">${f.label}</label><textarea class="form-textarea" id="f_${f.key}" placeholder="${f.placeholder || ''}">${val}</textarea></div>`;
+    }
+    if (f.type === 'select') {
+      return `<div class="form-field"><label class="form-label">${f.label}</label>
+        <select class="form-select" id="f_${f.key}">
+          ${f.options.map(o => `<option value="${o.value}" ${o.value === val ? 'selected' : ''}>${o.label}</option>`).join('')}
+        </select></div>`;
+    }
+    if (f.type === 'grid2') {
+      return `<div class="form-grid-2">${f.fields.map(sub => {
+        const subVal = existing ? (existing[sub.key] || '') : (sub.default || '');
+        return `<div class="form-field"><label class="form-label">${sub.label}</label>
+          <input class="form-input" type="${sub.inputType || 'text'}" id="f_${sub.key}" value="${subVal}" placeholder="${sub.placeholder || ''}"></div>`;
+      }).join('')}</div>`;
+    }
+    return `<div class="form-field"><label class="form-label">${f.label}</label>
+      <input class="form-input" type="${f.inputType || 'text'}" id="f_${f.key}" value="${val}" placeholder="${f.placeholder || ''}"></div>`;
+  }).join('');
+
+  submitBtn.onclick = () => submitForm(type, existing, config);
+  modal.classList.add('open');
+
+  // Focus first field
+  setTimeout(() => {
+    const firstInput = fields.querySelector('input, textarea, select');
+    if (firstInput) firstInput.focus();
+  }, 100);
+}
+
+function closeFormModal() {
+  document.getElementById('form-modal').classList.remove('open');
+}
+
+function getFormConfig(type) {
+  const bmOptions = DATA.businessModels.map(bm => ({ value: bm.id, label: bm.name }));
+
+  const configs = {
+    prospect: {
+      tag: 'PROSPECT',
+      title: 'New Prospect',
+      fields: [
+        { key: 'name', label: 'Name', placeholder: 'Company Name' },
+        { type: 'grid2', fields: [
+          { key: 'country', label: 'Country', placeholder: 'Nigeria' },
+          { key: 'segment', label: 'Segment', placeholder: 'Crypto Exchange' },
+        ]},
+        { key: 'businessModel', label: 'Business Model', type: 'select', options: bmOptions, default: 'bm_frontier' },
+        { key: 'stage', label: 'Stage', type: 'select', options: [
+          { value: 'lead', label: 'Lead' }, { value: 'qualified', label: 'Qualified' },
+          { value: 'discovery', label: 'Discovery' }, { value: 'proposal', label: 'Proposal' },
+          { value: 'active_client', label: 'Active Client' },
+        ], default: 'lead' },
+        { key: 'warmth', label: 'Warmth', type: 'select', options: [
+          { value: 'cold', label: 'Cold' }, { value: 'warm', label: 'Warm' }, { value: 'active', label: 'Active' },
+        ], default: 'cold' },
+        { key: 'primaryContact', label: 'Primary Contact', placeholder: 'Name (Role)' },
+        { key: 'channel', label: 'Channel', placeholder: 'LinkedIn + email' },
+        { type: 'grid2', fields: [
+          { key: 'expected_value_eur', label: 'Expected (EUR)', inputType: 'number', placeholder: '25000' },
+          { key: 'probability', label: 'Probability %', inputType: 'number', placeholder: '20' },
+        ]},
+        { key: 'nextAction', label: 'Next Action', placeholder: 'Send outreach email' },
+        { key: 'nextActionDate', label: 'Due Date', inputType: 'date' },
+        { key: 'notes', label: 'Notes', type: 'textarea' },
+      ]
+    },
+    task: {
+      tag: 'TASK',
+      title: 'New Task',
+      fields: [
+        { key: 'title', label: 'Title', placeholder: 'What needs to be done' },
+        { key: 'description', label: 'Description', type: 'textarea' },
+        { type: 'grid2', fields: [
+          { key: 'priority', label: 'Priority' },
+          { key: 'dueDate', label: 'Due Date', inputType: 'date' },
+        ]},
+        { key: 'priority', label: 'Priority', type: 'select', options: [
+          { value: 'P1', label: 'P1 — Critical' }, { value: 'P2', label: 'P2 — Important' }, { value: 'P3', label: 'P3 — Nice to do' },
+        ], default: 'P2' },
+        { key: 'businessModel', label: 'Business Model', type: 'select', options: [{ value: '', label: '— None —' }, ...bmOptions] },
+        { key: 'dueDate', label: 'Due Date', inputType: 'date' },
+      ]
+    },
+    insight: {
+      tag: 'INSIGHT',
+      title: 'New Insight',
+      fields: [
+        { key: 'title', label: 'Title', placeholder: 'What did you decide / learn' },
+        { key: 'content', label: 'Content', type: 'textarea', placeholder: 'Context, reasoning, decision...' },
+      ]
+    },
+    inboxItem: {
+      tag: 'INBOX',
+      title: 'Brain Dump',
+      fields: [
+        { key: 'content', label: 'Content', type: 'textarea', placeholder: 'Anything. Half-thoughts. Random ideas.' },
+      ]
+    },
+    stickyNote: {
+      tag: 'STICKY',
+      title: 'New Sticky Note',
+      fields: [
+        { key: 'content', label: 'Content', type: 'textarea', placeholder: 'Drop a note onto the map' },
+        { key: 'color', label: 'Color', type: 'select', options: [
+          { value: 'amber', label: 'Amber' }, { value: 'pink', label: 'Pink' },
+          { value: 'green', label: 'Green' }, { value: 'blue', label: 'Blue' },
+        ], default: 'amber' },
+      ]
+    },
+    service: {
+      tag: 'SERVICE',
+      title: 'New Service',
+      fields: [
+        { key: 'name', label: 'Name' },
+        { key: 'businessModel', label: 'Business Model', type: 'select', options: bmOptions },
+        { type: 'grid2', fields: [
+          { key: 'price_min_eur', label: 'Price floor (EUR)', inputType: 'number' },
+          { key: 'price_max_eur', label: 'Price ceiling (EUR)', inputType: 'number' },
+        ]},
+        { key: 'duration_days', label: 'Duration (days)', inputType: 'number' },
+        { key: 'description', label: 'Description', type: 'textarea' },
+      ]
+    },
+    businessModel: {
+      tag: 'BUSINESS MODEL',
+      title: 'New Business Model',
+      fields: [
+        { key: 'name', label: 'Name' },
+        { key: 'description', label: 'Description', type: 'textarea' },
+        { key: 'type', label: 'Type', type: 'select', options: [
+          { value: 'operational', label: 'Operational' }, { value: 'growth', label: 'Growth' }, { value: 'expansion', label: 'Expansion' },
+        ], default: 'growth' },
+        { key: 'status', label: 'Status', type: 'select', options: [
+          { value: 'active', label: 'Active' }, { value: 'build_phase', label: 'Build phase' }, { value: 'outreach_phase', label: 'Outreach phase' },
+        ], default: 'build_phase' },
+        { key: 'color', label: 'Color (hex)', placeholder: '#18C26B', default: '#18C26B' },
+        { type: 'grid2', fields: [
+          { key: 'revenue_y1_target_eur', label: 'Y1 target (EUR)', inputType: 'number' },
+          { key: 'revenue_y1_realistic_eur', label: 'Y1 realistic (EUR)', inputType: 'number' },
+        ]},
+      ]
+    },
+  };
+  return configs[type];
+}
+
+function submitForm(type, existing, config) {
+  const collected = {};
+  // Walk all fields incl grid2
+  const walk = (fields) => {
+    fields.forEach(f => {
+      if (f.type === 'grid2') { walk(f.fields); return; }
+      const el = document.getElementById('f_' + f.key);
+      if (!el) return;
+      let v = el.value;
+      if (f.inputType === 'number') v = v ? parseFloat(v) : 0;
+      collected[f.key] = v;
+    });
+  };
+  walk(config.fields);
+
+  if (!existing) {
+    // Create new
+    const id = type + '_' + Date.now();
+    const item = { id, ...collected };
+
+    if (type === 'prospect') {
+      DATA.prospects.push(item);
+    } else if (type === 'task') {
+      item.status = 'todo';
+      DATA.tasks.push(item);
+    } else if (type === 'insight') {
+      item.date = new Date().toISOString().split('T')[0];
+      DATA.insights.unshift(item);
+    } else if (type === 'inboxItem') {
+      item.date = new Date().toISOString();
+      DATA.inbox.unshift(item);
+    } else if (type === 'stickyNote') {
+      item.x = 200 + Math.random() * 200;
+      item.y = 200 + Math.random() * 200;
+      item.rotate = (Math.random() - 0.5) * 6;
+      DATA.stickyNotes.push(item);
+    } else if (type === 'service') {
+      DATA.services.push(item);
+    } else if (type === 'businessModel') {
+      DATA.businessModels.push(item);
+    }
+    toast(`${type} created`);
+  } else {
+    // Update existing — merge
+    Object.assign(existing, collected);
+    toast(`${type} updated`);
+  }
+
+  save();
+  closeFormModal();
+  rebuildAll();
+}
+
+/* =====================================================
+   GRAPH CHROME — filter chips, search, FAB
+   ===================================================== */
+function setupGraphChrome() {
+  // Filter chips
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const f = chip.dataset.filter;
+      if (activeFilters.has(f)) {
+        activeFilters.delete(f);
+        chip.classList.remove('active');
+      } else {
+        activeFilters.add(f);
+        chip.classList.add('active');
+      }
+      applyGraphFilters();
+    });
+  });
+
+  // FAB
+  document.getElementById('graph-fab').addEventListener('click', openQuickAdd);
+
+  // Side panel close + pin + delete
+  document.getElementById('panel-close-btn').addEventListener('click', closePanel);
+  document.getElementById('panel-pin-btn').addEventListener('click', togglePinNode);
+  document.getElementById('panel-delete-btn').addEventListener('click', deleteActiveNode);
+
+  // Search
+  const search = document.getElementById('search-input');
+  search.addEventListener('input', performSearch);
+  search.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') toggleSearch(false);
+    if (e.key === 'Enter') {
+      const first = document.querySelector('.search-result');
+      if (first) first.click();
+    }
+  });
+
+  // Inbox actions
+  document.getElementById('inbox-save-btn').addEventListener('click', saveInboxQuick);
+  document.getElementById('inbox-toinsight-btn').addEventListener('click', () => convertInbox('insight'));
+  document.getElementById('inbox-totask-btn').addEventListener('click', () => convertInbox('task'));
+  document.getElementById('inbox-textarea').addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') saveInboxQuick();
+  });
+}
+
+function toggleSearch(force) {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const show = force !== undefined ? force : !input.classList.contains('visible');
+  input.classList.toggle('visible', show);
+  if (!show) {
+    results.classList.remove('visible');
+    input.value = '';
+  } else {
+    if (!document.getElementById('graph-view').classList.contains('active')) {
+      switchView('graph');
+    }
+    setTimeout(() => input.focus(), 100);
+  }
+}
+
+function performSearch() {
+  const q = document.getElementById('search-input').value.trim().toLowerCase();
+  const resultsDiv = document.getElementById('search-results');
+  if (!q) { resultsDiv.classList.remove('visible'); return; }
+
+  const all = [
+    ...DATA.businessModels.map(b => ({...b, _type: 'businessModel'})),
+    ...DATA.prospects.map(p => ({...p, _type: 'prospect'})),
+    ...DATA.services.map(s => ({...s, _type: 'service'})),
+    ...DATA.tasks.map(t => ({...t, _type: 'task'})),
+    ...DATA.insights.map(i => ({...i, _type: 'insight'})),
+  ];
+  const matches = all.filter(item => {
+    const haystack = JSON.stringify(item).toLowerCase();
+    return haystack.includes(q);
+  }).slice(0, 10);
+
+  if (matches.length === 0) {
+    resultsDiv.innerHTML = '<div class="search-result"><div class="search-result-title">No results</div></div>';
+  } else {
+    resultsDiv.innerHTML = matches.map(m => {
+      const title = m.name || m.title || m.content?.substring(0, 50) || m.id;
+      return `<div class="search-result" onclick="jumpToItem('${m._type}','${m.id}')">
+        <div class="search-result-title">${title}</div>
+        <div class="search-result-sub">${m._type}${m.country ? ' · ' + m.country : ''}</div>
+      </div>`;
+    }).join('');
+  }
+  resultsDiv.classList.add('visible');
+}
+
+function jumpToItem(type, id) {
+  document.getElementById('search-results').classList.remove('visible');
+  toggleSearch(false);
+  if (type === 'task') { switchView('tasks'); return; }
+  if (type === 'insight') { switchView('insights'); return; }
+  // For graph nodes:
+  switchView('graph');
+  setTimeout(() => {
+    const node = SIM ? SIM.nodes().find(n => n.id === id) : null;
+    if (node) showPanel(node);
+  }, 100);
+}
+
+function applyGraphFilters() {
+  if (!SIM) return;
+  d3.selectAll('.node-group').classed('dimmed', d => {
+    if (activeFilters.size === 0) return false;
+    let show = false;
+    if (activeFilters.has('defense') && d.bmId === 'bm_defense') show = true;
+    if (activeFilters.has('frontier') && d.bmId === 'bm_frontier') show = true;
+    if (activeFilters.has('otc') && d.bmId === 'bm_otc') show = true;
+    if (activeFilters.has('cold') && d.type === 'prospect' && d.data?.warmth === 'cold') show = true;
+    if (activeFilters.has('active') && d.type === 'prospect' && d.data?.stage === 'active_client') show = true;
+    if (d.id === 'blacksea') show = true;  // always show brand
+    if (d.type === 'businessModel') {
+      if (activeFilters.has('defense') && d.id === 'bm_defense') show = true;
+      if (activeFilters.has('frontier') && d.id === 'bm_frontier') show = true;
+      if (activeFilters.has('otc') && d.id === 'bm_otc') show = true;
+    }
+    return !show;
+  });
+  // sticky notes visibility
+  document.querySelectorAll('.sticky-note').forEach(el => {
+    if (activeFilters.size > 0 && !activeFilters.has('notes')) {
+      el.style.opacity = '0.18';
+    } else {
+      el.style.opacity = '1';
+    }
+  });
+}
+
+/* =====================================================
+   KEYBOARD SHORTCUTS
+   ===================================================== */
+function setupKeyboard() {
+  document.addEventListener('keydown', (e) => {
+    // Ignore if typing in input
+    const target = e.target;
+    const isTyping = target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable;
+
+    // Cmd+K / Ctrl+K — search
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      toggleSearch(true);
+      return;
+    }
+
+    if (isTyping) return;
+
+    // N — quick add
+    if (e.key === 'n' || e.key === 'N') {
+      e.preventDefault();
+      openQuickAdd();
+    }
+    // Escape — close panels/modals
+    if (e.key === 'Escape') {
+      closePanel();
+      closeQuickAdd();
+      closeFormModal();
+      toggleSearch(false);
+    }
+    // Number keys for views
+    const keyMap = { '0': 'today', '1': 'graph', '2': 'dashboard', '3': 'tasks', '4': 'pipeline', '5': 'docs', '6': 'insights', '7': 'inbox' };
+    if (keyMap[e.key]) {
+      e.preventDefault();
+      switchView(keyMap[e.key]);
+    }
+  });
+}
+
+/* =====================================================
+   CLOCK
+   ===================================================== */
 function startClock() {
   const tick = () => {
     const d = new Date();
@@ -677,16 +1719,81 @@ function startClock() {
     const ss = String(d.getSeconds()).padStart(2, '0');
     const el = document.getElementById('clock');
     if (el) el.textContent = `${hh}:${mm}:${ss}`;
+
     const dd = document.getElementById('dash-date');
+    const td = document.getElementById('today-date');
     if (dd) {
       const opts = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
       dd.textContent = d.toLocaleDateString('en-GB', opts).toUpperCase();
+    }
+    if (td) {
+      const opts = { weekday: 'long', day: 'numeric', month: 'long' };
+      td.textContent = d.toLocaleDateString('en-GB', opts);
     }
   };
   tick();
   setInterval(tick, 1000);
 }
 
+/* =====================================================
+   TODAY VIEW
+   ===================================================== */
+function buildToday() {
+  const today = new Date().toISOString().split('T')[0];
+  const tasks = DATA.tasks;
+  const todayTasks = tasks.filter(t => {
+    if (t.status === 'done') return false;
+    if (t.priority === 'P1') return true;
+    if (t.dueDate === today) return true;
+    return false;
+  }).sort((a, b) => {
+    const o = { P1: 0, P2: 1, P3: 2 };
+    return (o[a.priority] || 99) - (o[b.priority] || 99);
+  });
+
+  const list = document.getElementById('today-tasks');
+  if (todayTasks.length === 0) {
+    list.innerHTML = '<div class="today-empty">No critical tasks today. Breathe.</div>';
+  } else {
+    list.innerHTML = todayTasks.map(t => {
+      const bm = DATA.businessModels.find(b => b.id === t.businessModel);
+      const color = bm ? (BM_COLORS[bm.id] || bm.color) : 'var(--steel)';
+      return `
+        <div class="today-task">
+          <div class="task-check ${t.status === 'done' ? 'done' : ''}" onclick="toggleTask('${t.id}')"></div>
+          <div>
+            <div class="today-task-title ${t.status === 'done' ? 'done' : ''}">${escapeHtml(t.title)}</div>
+            <div class="today-task-meta">${t.priority}${t.dueDate ? ' · ' + t.dueDate : ''}${bm ? ' · ' + bm.name.split(' ')[0] : ''}</div>
+          </div>
+          <div></div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Stats
+  const totalActive = tasks.filter(t => t.status !== 'done').length;
+  const totalDone = tasks.filter(t => t.status === 'done').length;
+  const p1Count = tasks.filter(t => t.priority === 'P1' && t.status !== 'done').length;
+  const dueToday = tasks.filter(t => t.dueDate === today && t.status !== 'done').length;
+  const overdue = tasks.filter(t => t.dueDate && t.dueDate < today && t.status !== 'done').length;
+
+  document.getElementById('today-stats').innerHTML = `
+    <div class="today-stat"><div class="today-stat-label">P1 Critical</div><div class="today-stat-value" style="color:${p1Count > 0 ? 'var(--alert)' : 'var(--steel)'}">${p1Count}</div></div>
+    <div class="today-stat"><div class="today-stat-label">Due today</div><div class="today-stat-value">${dueToday}</div></div>
+    <div class="today-stat"><div class="today-stat-label">Overdue</div><div class="today-stat-value" style="color:${overdue > 0 ? 'var(--alert)' : 'var(--frost)'}">${overdue}</div></div>
+    <div class="today-stat"><div class="today-stat-label">Completed</div><div class="today-stat-value" style="color:var(--signal)">${totalDone}</div></div>
+    <div class="today-streak">
+      <div class="today-stat-label">Total active</div>
+      <div class="today-stat-value">${totalActive}</div>
+    </div>
+  `;
+  document.getElementById('today-summary').textContent = `${totalActive} active · ${totalDone} done`;
+}
+
+/* =====================================================
+   GRAPH
+   ===================================================== */
 function buildGraph() {
   const canvas = document.getElementById('graph-canvas');
   if (!canvas) return;
@@ -707,15 +1814,18 @@ function buildGraph() {
   const nodes = [];
   const links = [];
 
-  nodes.push({
+  // Brand center
+  const brandNode = {
     id: 'blacksea', label: 'BLACK · SEA', sub: 'BRAND', type: 'brand',
     r: 38, color: '#DCE3E8', fillOpacity: 0.10, strokeWidth: 2,
-  });
+  };
+  nodes.push(brandNode);
 
   DATA.businessModels.forEach(bm => {
     nodes.push({
       id: bm.id, label: bm.name, sub: bm.type.toUpperCase(),
       type: 'businessModel', r: 26, color: BM_COLORS[bm.id] || bm.color, data: bm,
+      bmId: bm.id,
       fillOpacity: 0.18, strokeWidth: 1.5,
     });
     links.push({ source: 'blacksea', target: bm.id });
@@ -726,6 +1836,7 @@ function buildGraph() {
       id: s.id, label: s.name,
       sub: `€${(s.price_min_eur/1000).toFixed(0)}–${(s.price_max_eur/1000).toFixed(0)}K`,
       type: 'service', r: 13, color: '#7C95AB', data: s,
+      bmId: s.businessModel,
       fillOpacity: 0.18, strokeWidth: 1,
     });
     links.push({ source: s.businessModel, target: s.id });
@@ -737,12 +1848,22 @@ function buildGraph() {
       id: p.id, label: p.name, sub: p.country.toUpperCase(),
       type: 'prospect', r: 15,
       color: isClient ? '#18C26B' : '#B83D2C', data: p,
+      bmId: p.businessModel,
       fillOpacity: isClient ? 0.20 : 0.14, strokeWidth: 1.2,
     });
     links.push({ source: p.businessModel, target: p.id });
   });
 
-  document.getElementById('graph-stats').textContent = `${nodes.length} Nodes · ${links.length} Connections`;
+  // Custom edges from DATA.customEdges
+  DATA.customEdges.forEach(e => links.push({ source: e.source, target: e.target, custom: true }));
+
+  // Apply pinned positions
+  nodes.forEach(n => {
+    const pos = DATA.nodePositions[n.id];
+    if (pos) {
+      n.fx = pos.x; n.fy = pos.y; n.pinned = true;
+    }
+  });
 
   SIM = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).id(d => d.id)
@@ -752,7 +1873,8 @@ function buildGraph() {
     .force('center', d3.forceCenter(width / 2, height / 2))
     .force('collision', d3.forceCollide().radius(d => d.r + 22));
 
-  const link = root.append('g').selectAll('line').data(links).enter().append('line').attr('class', 'link');
+  const link = root.append('g').selectAll('line').data(links).enter().append('line')
+    .attr('class', d => 'link' + (d.custom ? ' custom' : ''));
 
   const node = root.append('g').selectAll('g').data(nodes).enter().append('g')
     .attr('class', 'node-group')
@@ -767,6 +1889,14 @@ function buildGraph() {
     .attr('stroke-width', d => d.strokeWidth);
 
   node.append('circle').attr('r', d => d.type === 'brand' ? 5 : 3).attr('fill', d => d.color);
+
+  // Pin indicator for pinned nodes
+  node.filter(d => d.pinned)
+    .append('circle')
+    .attr('class', 'node-pinned-indicator')
+    .attr('r', 3)
+    .attr('cx', d => d.r * 0.7)
+    .attr('cy', d => -d.r * 0.7);
 
   node.append('text')
     .attr('class', d => 'node-label' + (d.type === 'brand' ? ' large' : ''))
@@ -791,20 +1921,109 @@ function buildGraph() {
 
   function dragStart(e, d) { if (!e.active) SIM.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }
   function dragged(e, d) { d.fx = e.x; d.fy = e.y; }
-  function dragEnd(e, d) { if (!e.active) SIM.alphaTarget(0); d.fx = null; d.fy = null; }
+  function dragEnd(e, d) {
+    if (!e.active) SIM.alphaTarget(0);
+    if (!d.pinned) { d.fx = null; d.fy = null; }
+    else {
+      // Update pinned position
+      DATA.nodePositions[d.id] = { x: d.x, y: d.y };
+      save();
+    }
+  }
+
+  buildStickyNotes();
+  applyGraphFilters();
 }
 
+/* =====================================================
+   STICKY NOTES on map
+   ===================================================== */
+function buildStickyNotes() {
+  // Remove existing
+  document.querySelectorAll('.sticky-note').forEach(n => n.remove());
+
+  const canvas = document.getElementById('graph-canvas');
+  if (!canvas || !DATA.stickyNotes) return;
+
+  DATA.stickyNotes.forEach(note => {
+    const el = document.createElement('div');
+    el.className = 'sticky-note ' + (note.color || 'amber');
+    el.style.left = note.x + 'px';
+    el.style.top = note.y + 'px';
+    el.style.transform = `rotate(${note.rotate || 0}deg)`;
+    el.dataset.noteId = note.id;
+    el.innerHTML = `
+      <button class="sticky-note-delete" onclick="deleteStickyNote('${note.id}')">×</button>
+      <div class="sticky-note-content" contenteditable="true">${escapeHtml(note.content)}</div>
+    `;
+
+    // Drag
+    let isDrag = false, startX, startY, startNoteX, startNoteY;
+    el.addEventListener('mousedown', (e) => {
+      if (e.target.classList.contains('sticky-note-delete')) return;
+      if (e.target.classList.contains('sticky-note-content') && document.activeElement === e.target) return;
+      isDrag = true;
+      startX = e.clientX; startY = e.clientY;
+      startNoteX = note.x; startNoteY = note.y;
+      el.classList.add('editing');
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!isDrag) return;
+      note.x = startNoteX + (e.clientX - startX);
+      note.y = startNoteY + (e.clientY - startY);
+      el.style.left = note.x + 'px';
+      el.style.top = note.y + 'px';
+    });
+    document.addEventListener('mouseup', () => {
+      if (isDrag) { isDrag = false; el.classList.remove('editing'); save(); }
+    });
+
+    // Edit content
+    const contentEl = el.querySelector('.sticky-note-content');
+    contentEl.addEventListener('blur', () => {
+      note.content = contentEl.textContent;
+      save();
+    });
+
+    canvas.appendChild(el);
+  });
+}
+
+function deleteStickyNote(id) {
+  DATA.stickyNotes = DATA.stickyNotes.filter(n => n.id !== id);
+  save();
+  buildStickyNotes();
+}
+
+/* =====================================================
+   SIDE PANEL — with inline editing
+   ===================================================== */
 function showPanel(node) {
+  activeNode = node;
   const panel = document.getElementById('side-panel');
   const tag = document.getElementById('panel-tag');
   const content = document.getElementById('panel-content');
-  let tagHtml = '<span class="idx">§01</span>';
+  const pinBtn = document.getElementById('panel-pin-btn');
+  const deleteBtn = document.getElementById('panel-delete-btn');
+
+  const typeInfo = NODE_TYPE_TAGS[node.type] || { idx: '§01', label: node.type };
+  let tagHtml = `<span class="idx">${typeInfo.idx}</span>${typeInfo.label}`;
+
+  // Show/hide pin button
+  pinBtn.style.display = node.type === 'brand' ? 'none' : '';
+  pinBtn.textContent = node.pinned ? '📍' : '📌';
+  pinBtn.title = node.pinned ? 'Unpin position' : 'Pin position';
+
+  // Hide delete for brand
+  deleteBtn.style.display = node.type === 'brand' ? 'none' : '';
+
   let html = '';
 
   if (node.type === 'brand') {
-    tagHtml += 'Brand';
-    const totalTarget = DATA.businessModels.reduce((s,b) => s + b.revenue_y1_target_eur, 0);
-    const totalReal = DATA.businessModels.reduce((s,b) => s + b.revenue_y1_realistic_eur, 0);
+    tag.innerHTML = tagHtml;
+    const totalTarget = DATA.businessModels.reduce((s,b) => s + (parseFloat(b.revenue_y1_target_eur) || 0), 0);
+    const totalReal = DATA.businessModels.reduce((s,b) => s + (parseFloat(b.revenue_y1_realistic_eur) || 0), 0);
     html = `
       <div class="panel-title">${DATA.brand.name}</div>
       <div class="panel-sub">${DATA.brand.tagline} · Est. ${DATA.brand.established}</div>
@@ -829,20 +2048,26 @@ function showPanel(node) {
     const bm = node.data;
     const services = DATA.services.filter(s => s.businessModel === bm.id);
     const prospects = DATA.prospects.filter(p => p.businessModel === bm.id);
-    const weighted = prospects.reduce((s,p) => s + (p.expected_value_eur * p.probability / 100), 0);
-    tagHtml += `Business Model · ${bm.type.toUpperCase()}`;
+    const weighted = prospects.reduce((s,p) => s + ((p.expected_value_eur||0) * (p.probability||0) / 100), 0);
+    tag.innerHTML = `<span class="idx">§01</span>Business Model · ${bm.type.toUpperCase()}`;
     html = `
-      <div class="panel-title">${bm.name}</div>
-      <div class="panel-sub">Status · ${bm.status.replace(/_/g, ' ')}</div>
+      <div class="panel-title editable" contenteditable="true" data-bind="bm.${bm.id}.name">${escapeHtml(bm.name)}</div>
+      <div class="panel-sub">Status · <span class="editable" data-bind="bm.${bm.id}.status">${bm.status.replace(/_/g, ' ')}</span></div>
       <div class="panel-section">
         <div class="panel-label">Description</div>
-        <div class="panel-value">${bm.description}</div>
+        <div class="panel-value editable" contenteditable="true" data-bind="bm.${bm.id}.description">${escapeHtml(bm.description)}</div>
       </div>
       <div class="panel-section">
         <div class="panel-label">Revenue · Year 1</div>
         <div class="panel-stat-grid">
-          <div class="stat-box"><div class="stat-label">Target</div><div class="stat-value">€${(bm.revenue_y1_target_eur/1000).toFixed(0)}K</div></div>
-          <div class="stat-box steel"><div class="stat-label">Realistic</div><div class="stat-value">€${(bm.revenue_y1_realistic_eur/1000).toFixed(0)}K</div></div>
+          <div class="stat-box">
+            <div class="stat-label">Target (EUR)</div>
+            <div class="stat-value editable" contenteditable="true" data-bind="bm.${bm.id}.revenue_y1_target_eur" data-numeric="1">${(bm.revenue_y1_target_eur||0).toLocaleString()}</div>
+          </div>
+          <div class="stat-box steel">
+            <div class="stat-label">Realistic (EUR)</div>
+            <div class="stat-value editable" contenteditable="true" data-bind="bm.${bm.id}.revenue_y1_realistic_eur" data-numeric="1">${(bm.revenue_y1_realistic_eur||0).toLocaleString()}</div>
+          </div>
         </div>
       </div>
       <div class="panel-section">
@@ -850,74 +2075,199 @@ function showPanel(node) {
         ${services.map(s => `
           <div class="panel-list-item">
             <div class="panel-list-item-title">${s.name}</div>
-            <div class="panel-list-item-sub">€${s.price_min_eur.toLocaleString()} – €${s.price_max_eur.toLocaleString()} · ${s.duration_days}d</div>
+            <div class="panel-list-item-sub">€${(s.price_min_eur||0).toLocaleString()} – €${(s.price_max_eur||0).toLocaleString()} · ${s.duration_days||0}d</div>
           </div>
         `).join('')}
       </div>
       <div class="panel-section">
         <div class="panel-label">Pipeline · ${prospects.length} Prospects</div>
-        <div class="panel-value serif">€${(weighted/1000).toFixed(1)}K <span style="font-family:var(--t-mono);font-size:11px;color:var(--steel);letter-spacing:0.18em">WEIGHTED</span></div>
+        <div class="panel-value serif">€${(weighted/1000).toFixed(1)}K WEIGHTED</div>
+      </div>
+      <div class="panel-section">
+        <button class="btn" onclick="openAddModal('businessModel', findById('businessModels','${bm.id}'))">Edit details</button>
       </div>
     `;
   }
   else if (node.type === 'prospect') {
     const p = node.data;
-    tagHtml += `Prospect · ${p.stage.replace(/_/g, ' ').toUpperCase()}`;
+    tag.innerHTML = `<span class="idx">§01</span>Prospect · ${p.stage.replace(/_/g, ' ').toUpperCase()}`;
     html = `
-      <div class="panel-title">${p.name}</div>
+      <div class="panel-title editable" contenteditable="true" data-bind="prospect.${p.id}.name">${escapeHtml(p.name)}</div>
       <div class="panel-sub">${p.country} · ${p.segment}</div>
       <div class="panel-section">
         <div class="panel-label">Primary Contact</div>
-        <div class="panel-value">${p.primaryContact}</div>
-        <div class="panel-list-item-sub" style="margin-top:6px">Channel · ${p.channel}</div>
+        <div class="panel-value editable" contenteditable="true" data-bind="prospect.${p.id}.primaryContact">${escapeHtml(p.primaryContact||'')}</div>
+        <div class="panel-list-item-sub" style="margin-top:8px">Channel · <span class="editable" contenteditable="true" data-bind="prospect.${p.id}.channel">${escapeHtml(p.channel||'')}</span></div>
       </div>
       <div class="panel-section">
         <div class="panel-label">Deal Sizing</div>
         <div class="panel-stat-grid">
-          <div class="stat-box"><div class="stat-label">Expected</div><div class="stat-value">€${(p.expected_value_eur/1000).toFixed(0)}K</div></div>
-          <div class="stat-box steel"><div class="stat-label">Probability</div><div class="stat-value">${p.probability}%</div></div>
+          <div class="stat-box"><div class="stat-label">Expected (EUR)</div><div class="stat-value editable" contenteditable="true" data-bind="prospect.${p.id}.expected_value_eur" data-numeric="1">${(p.expected_value_eur||0).toLocaleString()}</div></div>
+          <div class="stat-box steel"><div class="stat-label">Probability %</div><div class="stat-value editable" contenteditable="true" data-bind="prospect.${p.id}.probability" data-numeric="1">${p.probability||0}</div></div>
         </div>
       </div>
       <div class="panel-section">
         <div class="panel-label">Next Action</div>
-        <div class="panel-value" style="color:var(--signal)">${p.nextAction}</div>
-        ${p.nextActionDate ? `<div class="panel-list-item-sub" style="margin-top:6px">Due · ${p.nextActionDate}</div>` : ''}
+        <div class="panel-value editable" contenteditable="true" data-bind="prospect.${p.id}.nextAction" style="color:var(--signal)">${escapeHtml(p.nextAction||'')}</div>
+        <div class="panel-list-item-sub" style="margin-top:6px">Due · <span class="editable" contenteditable="true" data-bind="prospect.${p.id}.nextActionDate">${escapeHtml(p.nextActionDate||'—')}</span></div>
+      </div>
+      <div class="panel-section">
+        <div class="panel-label">Stage</div>
+        <select class="field-select" onchange="updateField('prospect','${p.id}','stage',this.value)">
+          <option value="lead" ${p.stage==='lead'?'selected':''}>Lead</option>
+          <option value="qualified" ${p.stage==='qualified'?'selected':''}>Qualified</option>
+          <option value="discovery" ${p.stage==='discovery'?'selected':''}>Discovery</option>
+          <option value="proposal" ${p.stage==='proposal'?'selected':''}>Proposal</option>
+          <option value="active_client" ${p.stage==='active_client'?'selected':''}>Active Client</option>
+        </select>
       </div>
       <div class="panel-section">
         <div class="panel-label">Notes</div>
-        <div class="panel-value">${p.notes}</div>
+        <div class="panel-value editable" contenteditable="true" data-bind="prospect.${p.id}.notes">${escapeHtml(p.notes||'')}</div>
+      </div>
+      <div class="panel-section">
+        <button class="btn" onclick="openAddModal('prospect', findById('prospects','${p.id}'))">Edit all fields</button>
       </div>
     `;
   }
   else if (node.type === 'service') {
     const s = node.data;
-    tagHtml += 'Service';
+    tag.innerHTML = `<span class="idx">§01</span>Service`;
     html = `
-      <div class="panel-title">${s.name}</div>
-      <div class="panel-sub">Standard delivery · ${s.duration_days} days</div>
+      <div class="panel-title editable" contenteditable="true" data-bind="service.${s.id}.name">${escapeHtml(s.name)}</div>
+      <div class="panel-sub">Standard delivery · <span class="editable" contenteditable="true" data-bind="service.${s.id}.duration_days" data-numeric="1">${s.duration_days||0}</span> days</div>
       <div class="panel-section">
         <div class="panel-label">Price Range</div>
         <div class="panel-stat-grid">
-          <div class="stat-box"><div class="stat-label">Floor</div><div class="stat-value">€${(s.price_min_eur/1000).toFixed(0)}K</div></div>
-          <div class="stat-box steel"><div class="stat-label">Ceiling</div><div class="stat-value">€${(s.price_max_eur/1000).toFixed(0)}K</div></div>
+          <div class="stat-box"><div class="stat-label">Floor (EUR)</div><div class="stat-value editable" contenteditable="true" data-bind="service.${s.id}.price_min_eur" data-numeric="1">${(s.price_min_eur||0).toLocaleString()}</div></div>
+          <div class="stat-box steel"><div class="stat-label">Ceiling (EUR)</div><div class="stat-value editable" contenteditable="true" data-bind="service.${s.id}.price_max_eur" data-numeric="1">${(s.price_max_eur||0).toLocaleString()}</div></div>
         </div>
       </div>
       <div class="panel-section">
         <div class="panel-label">Description</div>
-        <div class="panel-value">${s.description}</div>
+        <div class="panel-value editable" contenteditable="true" data-bind="service.${s.id}.description">${escapeHtml(s.description||'')}</div>
       </div>
     `;
   }
-  tag.innerHTML = tagHtml;
+
   content.innerHTML = html;
   panel.classList.add('open');
+
+  // Attach edit handlers
+  attachEditHandlers();
+}
+
+function attachEditHandlers() {
+  document.querySelectorAll('.editable[contenteditable]').forEach(el => {
+    el.addEventListener('blur', () => {
+      const bind = el.dataset.bind;
+      if (!bind) return;
+      const isNumeric = el.dataset.numeric === '1';
+      let val = el.textContent.trim();
+      if (isNumeric) {
+        val = val.replace(/[^\d.-]/g, '');
+        val = parseFloat(val) || 0;
+      }
+      const [collection, id, field] = bind.split('.');
+      const map = { bm: 'businessModels', prospect: 'prospects', service: 'services', task: 'tasks', insight: 'insights' };
+      const arr = DATA[map[collection]];
+      if (!arr) return;
+      const item = arr.find(x => x.id === id);
+      if (!item) return;
+      if (item[field] !== val) {
+        item[field] = val;
+        save();
+        // Don't rebuildAll() — that would lose focus. Just update specific UIs.
+        if (collection === 'bm') buildDashboard();
+        if (collection === 'task') buildTasks();
+      }
+    });
+    // Tab and Enter handling
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey && el.tagName !== 'DIV' || (e.key === 'Enter' && !e.shiftKey && el.classList.contains('panel-title'))) {
+        e.preventDefault();
+        el.blur();
+      }
+    });
+  });
+}
+
+function updateField(collection, id, field, value) {
+  const map = { prospect: 'prospects', task: 'tasks', insight: 'insights', service: 'services', bm: 'businessModels' };
+  const arr = DATA[map[collection]];
+  const item = arr.find(x => x.id === id);
+  if (!item) return;
+  item[field] = value;
+  save();
+  rebuildAll();
 }
 
 function closePanel() {
   document.getElementById('side-panel').classList.remove('open');
   d3.selectAll('.link').classed('highlight', false);
+  activeNode = null;
 }
 
+function togglePinNode() {
+  if (!activeNode || activeNode.type === 'brand') return;
+  if (activeNode.pinned) {
+    delete DATA.nodePositions[activeNode.id];
+    activeNode.pinned = false;
+    activeNode.fx = null; activeNode.fy = null;
+    toast('Position unpinned');
+  } else {
+    DATA.nodePositions[activeNode.id] = { x: activeNode.x, y: activeNode.y };
+    activeNode.pinned = true;
+    activeNode.fx = activeNode.x; activeNode.fy = activeNode.y;
+    toast('Position pinned');
+  }
+  save();
+  buildGraph();
+}
+
+function deleteActiveNode() {
+  if (!activeNode || activeNode.type === 'brand') return;
+  const name = activeNode.label;
+  const id = activeNode.id;
+  const type = activeNode.type;
+
+  const collectionMap = {
+    businessModel: 'businessModels',
+    prospect: 'prospects',
+    service: 'services',
+  };
+  const coll = collectionMap[type];
+  if (!coll) return;
+
+  const item = DATA[coll].find(x => x.id === id);
+  if (!item) return;
+
+  // Soft delete with undo
+  const idx = DATA[coll].indexOf(item);
+  DATA[coll].splice(idx, 1);
+  delete DATA.nodePositions[id];
+
+  pendingUndo = { coll, item, idx };
+
+  closePanel();
+  save();
+  rebuildAll();
+
+  toast(`${type} "${name}" deleted`, 'alert', { actionLabel: 'Undo', action: undoDelete });
+}
+
+function undoDelete() {
+  if (!pendingUndo) return;
+  DATA[pendingUndo.coll].splice(pendingUndo.idx, 0, pendingUndo.item);
+  pendingUndo = null;
+  save();
+  rebuildAll();
+  toast('Restored');
+}
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
 function buildDashboard() {
   const bmList = document.getElementById('bm-list');
   bmList.innerHTML = DATA.businessModels.map(bm => {
@@ -925,22 +2275,21 @@ function buildDashboard() {
     return `
       <div class="bm-card" style="border-left-color:${color}" onclick="jumpToNode('${bm.id}')">
         <div class="bm-card-top">
-          <div class="bm-card-name">${bm.name}</div>
+          <div class="bm-card-name">${escapeHtml(bm.name)}</div>
           <div class="bm-card-status" style="color:${color}">${bm.status.replace(/_/g, ' ')}</div>
         </div>
-        <div class="bm-card-desc">${bm.description}</div>
+        <div class="bm-card-desc">${escapeHtml(bm.description)}</div>
         <div class="bm-card-stats">
-          <div><div class="bm-card-stat-label">Target Y1</div><div class="bm-card-stat-value">€${(bm.revenue_y1_target_eur/1000).toFixed(0)}K</div></div>
-          <div><div class="bm-card-stat-label">Realistic</div><div class="bm-card-stat-value" style="color:var(--steel)">€${(bm.revenue_y1_realistic_eur/1000).toFixed(0)}K</div></div>
+          <div><div class="bm-card-stat-label">Target Y1</div><div class="bm-card-stat-value">€${((bm.revenue_y1_target_eur||0)/1000).toFixed(0)}K</div></div>
+          <div><div class="bm-card-stat-label">Realistic</div><div class="bm-card-stat-value" style="color:var(--steel)">€${((bm.revenue_y1_realistic_eur||0)/1000).toFixed(0)}K</div></div>
         </div>
       </div>
     `;
   }).join('');
-  document.getElementById('bm-count').textContent = `${DATA.businessModels.length} Active`;
 
   const totalProspects = DATA.prospects.length;
-  const totalPipeline = DATA.prospects.reduce((s,p) => s + p.expected_value_eur, 0);
-  const weightedPipeline = DATA.prospects.reduce((s,p) => s + (p.expected_value_eur * p.probability / 100), 0);
+  const totalPipeline = DATA.prospects.reduce((s,p) => s + (p.expected_value_eur||0), 0);
+  const weightedPipeline = DATA.prospects.reduce((s,p) => s + ((p.expected_value_eur||0) * (p.probability||0) / 100), 0);
   const activeClients = DATA.prospects.filter(p => p.stage === 'active_client').length;
 
   document.getElementById('kpi-list').innerHTML = `
@@ -969,6 +2318,9 @@ function jumpToNode(id) {
   }, 100);
 }
 
+/* =====================================================
+   TASKS
+   ===================================================== */
 function buildTasks() {
   const list = document.getElementById('task-list');
   const sorted = [...DATA.tasks].sort((a, b) => {
@@ -986,13 +2338,14 @@ function buildTasks() {
     return `
       <div class="task-row">
         <div class="task-check ${t.status === 'done' ? 'done' : ''}" onclick="toggleTask('${t.id}')"></div>
-        <div>
-          <div class="task-title ${t.status === 'done' ? 'done' : ''}">${t.title}</div>
-          ${t.description ? `<div class="task-desc">${t.description}</div>` : ''}
+        <div style="cursor:pointer" onclick="openAddModal('task', findById('tasks','${t.id}'))">
+          <div class="task-title ${t.status === 'done' ? 'done' : ''}">${escapeHtml(t.title)}</div>
+          ${t.description ? `<div class="task-desc">${escapeHtml(t.description)}</div>` : ''}
         </div>
-        <div class="task-priority ${t.priority}">${t.priority}</div>
+        <div class="task-priority ${t.priority}" onclick="cyclePriority('${t.id}')">${t.priority}</div>
         <div class="task-due ${isOverdue ? 'urgent' : ''}">${t.dueDate || '—'}</div>
         <div class="task-bm" style="color:${color}">${bm ? bm.name.split(' ')[0] : '—'}</div>
+        <button class="task-delete" onclick="deleteTask('${t.id}')" title="Delete">×</button>
       </div>
     `;
   }).join('');
@@ -1008,22 +2361,38 @@ function toggleTask(id) {
   t.status = t.status === 'done' ? 'todo' : 'done';
   save();
   buildTasks();
+  buildToday();
   buildDashboard();
 }
 
-function addTask() {
-  const title = prompt('Task title:');
-  if (!title) return;
-  DATA.tasks.push({
-    id: 'task_' + Date.now(),
-    title, priority: 'P2', status: 'todo',
-    businessModel: null, dueDate: '', description: ''
-  });
+function cyclePriority(id) {
+  const t = DATA.tasks.find(x => x.id === id);
+  if (!t) return;
+  const order = ['P1', 'P2', 'P3'];
+  const i = order.indexOf(t.priority);
+  t.priority = order[(i + 1) % order.length];
   save();
   buildTasks();
+  buildToday();
   buildDashboard();
 }
 
+function deleteTask(id) {
+  const idx = DATA.tasks.findIndex(t => t.id === id);
+  if (idx === -1) return;
+  const item = DATA.tasks[idx];
+  DATA.tasks.splice(idx, 1);
+  pendingUndo = { coll: 'tasks', item, idx };
+  save();
+  buildTasks();
+  buildToday();
+  buildDashboard();
+  toast(`Task "${item.title}" deleted`, 'alert', { actionLabel: 'Undo', action: undoDelete });
+}
+
+/* =====================================================
+   PIPELINE
+   ===================================================== */
 function buildPipeline() {
   const stages = ['lead', 'qualified', 'discovery', 'proposal', 'active_client'];
   const labels = { lead: 'Lead', qualified: 'Qualified', discovery: 'Discovery', proposal: 'Proposal', active_client: 'Active' };
@@ -1041,14 +2410,14 @@ function buildPipeline() {
           const color = bm ? (BM_COLORS[bm.id] || bm.color) : '#18C26B';
           return `
             <div class="prospect-card" style="border-left-color:${color}" onclick="jumpToNode('${p.id}')">
-              <div class="prospect-name">${p.name}</div>
+              <div class="prospect-name">${escapeHtml(p.name)}</div>
               <div class="prospect-meta">
                 <span class="prospect-tag">${p.country}</span>
                 <span class="prospect-tag">${p.warmth}</span>
               </div>
               <div>
-                <span class="prospect-value">€${(p.expected_value_eur/1000).toFixed(0)}K</span>
-                <span class="prospect-prob">· ${p.probability}%</span>
+                <span class="prospect-value">€${((p.expected_value_eur||0)/1000).toFixed(0)}K</span>
+                <span class="prospect-prob">· ${p.probability||0}%</span>
               </div>
             </div>
           `;
@@ -1056,10 +2425,13 @@ function buildPipeline() {
       </div>
     `;
   }).join('');
-  const total = DATA.prospects.reduce((s,p) => s + p.expected_value_eur, 0);
+  const total = DATA.prospects.reduce((s,p) => s + (p.expected_value_eur||0), 0);
   document.getElementById('pipeline-count').textContent = `${DATA.prospects.length} Prospects · €${(total/1000).toFixed(0)}K`;
 }
 
+/* =====================================================
+   DOCS
+   ===================================================== */
 function buildDocs() {
   const grid = document.getElementById('docs-grid');
   grid.innerHTML = DATA.documents.map(d => {
@@ -1068,8 +2440,8 @@ function buildDocs() {
     return `
       <div class="doc-card">
         <div class="doc-type">${d.type}</div>
-        <div class="doc-title">${d.title}</div>
-        <div class="doc-desc">${d.description}</div>
+        <div class="doc-title">${escapeHtml(d.title)}</div>
+        <div class="doc-desc">${escapeHtml(d.description)}</div>
         <div class="doc-meta">
           <span>${d.created}</span>
           <span style="color:${color}">${bm ? bm.name.split(' ').slice(0, 2).join(' ') : '—'}</span>
@@ -1080,36 +2452,432 @@ function buildDocs() {
   document.getElementById('docs-count').textContent = `${DATA.documents.length} Files`;
 }
 
+/* =====================================================
+   INSIGHTS
+   ===================================================== */
 function buildInsights() {
   const list = document.getElementById('insight-list');
   list.innerHTML = DATA.insights.map(i => `
     <div class="insight-card">
+      <button class="insight-delete" onclick="deleteInsight('${i.id}')" title="Delete">×</button>
       <div class="insight-head">
-        <div class="insight-title">${i.title}</div>
+        <div class="insight-title editable" contenteditable="true" data-bind="insight.${i.id}.title">${escapeHtml(i.title)}</div>
         <div class="insight-date">${i.date}</div>
       </div>
-      <div class="insight-content">${i.content}</div>
+      <div class="insight-content editable" contenteditable="true" data-bind="insight.${i.id}.content">${escapeHtml(i.content)}</div>
     </div>
   `).join('');
+  attachEditHandlers();
 }
 
-function addInsight() {
-  const title = prompt('Insight title:');
-  if (!title) return;
-  const content = prompt('Content:');
-  if (!content) return;
-  DATA.insights.unshift({
-    id: 'ins_' + Date.now(), title,
-    date: new Date().toISOString().split('T')[0], content
-  });
+function deleteInsight(id) {
+  const idx = DATA.insights.findIndex(x => x.id === id);
+  if (idx === -1) return;
+  const item = DATA.insights[idx];
+  DATA.insights.splice(idx, 1);
+  pendingUndo = { coll: 'insights', item, idx };
   save();
   buildInsights();
+  toast(`Insight deleted`, 'alert', { actionLabel: 'Undo', action: undoDelete });
+}
+
+/* =====================================================
+   INBOX
+   ===================================================== */
+function buildInbox() {
+  const list = document.getElementById('inbox-list');
+  if (DATA.inbox.length === 0) {
+    list.innerHTML = '<div style="text-align:center;padding:40px 0;font-family:var(--t-serif);font-style:italic;font-size:18px;color:var(--steel)">Inbox is empty.<br>Capture freely.</div>';
+  } else {
+    list.innerHTML = `<div style="font-family:var(--t-mono);font-size:10px;letter-spacing:0.22em;color:var(--steel);text-transform:uppercase;margin-bottom:14px">Captured (${DATA.inbox.length})</div>` +
+      DATA.inbox.map(item => `
+      <div class="inbox-item">
+        <button class="inbox-item-delete" onclick="deleteInboxItem('${item.id}')">×</button>
+        <div class="inbox-item-text">${escapeHtml(item.content)}</div>
+        <div class="inbox-item-date">${new Date(item.date).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</div>
+      </div>
+    `).join('');
+  }
+
+  document.getElementById('inbox-count').textContent = `${DATA.inbox.length} Items`;
+  const badge = document.getElementById('inbox-badge');
+  if (DATA.inbox.length > 0) {
+    badge.style.display = 'inline-block';
+    badge.textContent = DATA.inbox.length;
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function saveInboxQuick() {
+  const ta = document.getElementById('inbox-textarea');
+  const content = ta.value.trim();
+  if (!content) return;
+  DATA.inbox.unshift({
+    id: 'inbox_' + Date.now(),
+    content,
+    date: new Date().toISOString(),
+  });
+  ta.value = '';
+  save();
+  buildInbox();
+  toast('Saved to Inbox');
+}
+
+function convertInbox(toType) {
+  const ta = document.getElementById('inbox-textarea');
+  const content = ta.value.trim();
+  if (!content) return;
+
+  if (toType === 'insight') {
+    const lines = content.split('\n');
+    const title = lines[0].substring(0, 80);
+    const body = lines.slice(1).join('\n').trim() || lines[0];
+    DATA.insights.unshift({
+      id: 'ins_' + Date.now(),
+      title,
+      content: body,
+      date: new Date().toISOString().split('T')[0],
+    });
+    ta.value = '';
+    save();
+    buildInsights();
+    toast('Converted to insight');
+    setTimeout(() => switchView('insights'), 500);
+  } else if (toType === 'task') {
+    DATA.tasks.push({
+      id: 'task_' + Date.now(),
+      title: content.split('\n')[0].substring(0, 100),
+      description: content.split('\n').slice(1).join('\n').trim() || '',
+      priority: 'P2',
+      status: 'todo',
+      businessModel: null,
+      dueDate: '',
+    });
+    ta.value = '';
+    save();
+    buildTasks();
+    buildToday();
+    toast('Converted to task');
+    setTimeout(() => switchView('tasks'), 500);
+  }
+}
+
+function deleteInboxItem(id) {
+  DATA.inbox = DATA.inbox.filter(x => x.id !== id);
+  save();
+  buildInbox();
+}
+
+/* =====================================================
+   UTILITIES
+   ===================================================== */
+function findById(collection, id) {
+  return DATA[collection].find(x => x.id === id);
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+}
+
+function rebuildAll() {
+  buildToday();
+  buildDashboard();
+  buildTasks();
+  buildPipeline();
+  buildDocs();
+  buildInsights();
+  buildInbox();
+  buildGraph();
+}
+
+function markDirty() {
+  document.getElementById('status-dot').classList.add('dirty');
+  document.getElementById('status-text').textContent = 'Unsaved';
+}
+function markClean() {
+  document.getElementById('status-dot').classList.remove('dirty');
+  document.getElementById('status-text').textContent = 'Saved';
 }
 
 function save() {
   DATA.lastUpdated = new Date().toISOString();
-  try { localStorage.setItem('blacksea_brain_v2', JSON.stringify(DATA)); }
-  catch (e) { console.error('Save failed:', e); }
+  try {
+    localStorage.setItem('blacksea_brain_v11', JSON.stringify(DATA));
+    markDirty();
+    scheduleAutoSync();
+  } catch (e) { console.error('Save failed:', e); }
+}
+
+/* =====================================================
+   GITHUB SYNC — Personal Access Token, debounced auto-push
+   ===================================================== */
+
+const SYNC_KEY = 'blacksea_sync_config';
+let syncConfig = loadSyncConfig();
+let syncDebounceTimer = null;
+let lastSyncedSha = null;
+let lastSyncTime = null;
+
+function loadSyncConfig() {
+  try {
+    const saved = localStorage.getItem(SYNC_KEY);
+    if (saved) return JSON.parse(saved);
+  } catch (e) {}
+  return {
+    repo: '',
+    branch: 'main',
+    path: 'data.json',
+    token: '',
+    autoMode: 'auto',
+  };
+}
+
+function saveSyncConfig(cfg) {
+  syncConfig = cfg;
+  try { localStorage.setItem(SYNC_KEY, JSON.stringify(cfg)); } catch(e) {}
+}
+
+function setupSettingsModal() {
+  // Open
+  document.getElementById('settings-btn').addEventListener('click', openSettingsModal);
+  // Save
+  document.getElementById('settings-save-btn').addEventListener('click', () => {
+    const cfg = {
+      repo: document.getElementById('settings-repo').value.trim(),
+      branch: document.getElementById('settings-branch').value.trim() || 'main',
+      path: document.getElementById('settings-path').value.trim() || 'data.json',
+      token: document.getElementById('settings-token').value.trim(),
+      autoMode: document.getElementById('settings-automode').value,
+    };
+    saveSyncConfig(cfg);
+    closeSettingsModal();
+    toast('Settings saved');
+    updateSyncStatus();
+  });
+  // Test connection
+  document.getElementById('settings-test-btn').addEventListener('click', testGithubConnection);
+  // Pull
+  document.getElementById('settings-pull-btn').addEventListener('click', pullFromGitHub);
+  // Sync now button in topbar
+  document.getElementById('sync-btn').addEventListener('click', () => pushToGitHub(true));
+}
+
+function openSettingsModal() {
+  document.getElementById('settings-repo').value = syncConfig.repo || '';
+  document.getElementById('settings-branch').value = syncConfig.branch || 'main';
+  document.getElementById('settings-path').value = syncConfig.path || 'data.json';
+  document.getElementById('settings-token').value = syncConfig.token || '';
+  document.getElementById('settings-automode').value = syncConfig.autoMode || 'auto';
+  document.getElementById('settings-test-result').textContent = '';
+  document.getElementById('settings-modal').classList.add('open');
+}
+
+function closeSettingsModal() {
+  document.getElementById('settings-modal').classList.remove('open');
+}
+
+function resetLocalStorage() {
+  if (!confirm('Wipe local changes and reload from data.json on GitHub? This cannot be undone.')) return;
+  localStorage.removeItem('blacksea_brain_v11');
+  location.reload();
+}
+
+async function testGithubConnection() {
+  const cfg = {
+    repo: document.getElementById('settings-repo').value.trim(),
+    branch: document.getElementById('settings-branch').value.trim() || 'main',
+    path: document.getElementById('settings-path').value.trim() || 'data.json',
+    token: document.getElementById('settings-token').value.trim(),
+  };
+  const result = document.getElementById('settings-test-result');
+  if (!cfg.repo || !cfg.token) {
+    result.style.color = 'var(--alert)';
+    result.textContent = '✗ Fill repo and token first';
+    return;
+  }
+  result.style.color = 'var(--steel)';
+  result.textContent = 'Testing...';
+  try {
+    const r = await fetch(`https://api.github.com/repos/${cfg.repo}/contents/${cfg.path}?ref=${cfg.branch}`, {
+      headers: { 'Authorization': `Bearer ${cfg.token}`, 'Accept': 'application/vnd.github+json' }
+    });
+    if (r.ok) {
+      const j = await r.json();
+      result.style.color = 'var(--signal)';
+      result.textContent = `✓ Connected · current SHA: ${j.sha.substring(0,8)} · ${(j.size/1024).toFixed(1)}KB`;
+    } else {
+      const j = await r.json();
+      result.style.color = 'var(--alert)';
+      result.textContent = `✗ ${r.status}: ${j.message || 'Failed'}`;
+    }
+  } catch (e) {
+    result.style.color = 'var(--alert)';
+    result.textContent = `✗ Network error: ${e.message}`;
+  }
+}
+
+function updateSyncStatus(state, msg) {
+  const dot = document.getElementById('status-dot');
+  const text = document.getElementById('status-text');
+  dot.className = 'status-dot';
+  if (state === 'synced') {
+    text.textContent = 'Synced';
+  } else if (state === 'syncing') {
+    dot.classList.add('syncing');
+    text.textContent = 'Syncing…';
+  } else if (state === 'error') {
+    dot.classList.add('error');
+    text.textContent = msg || 'Sync error';
+  } else if (state === 'unsynced') {
+    dot.classList.add('dirty');
+    text.textContent = 'Unsynced';
+  } else if (state === 'local') {
+    dot.classList.add('dirty');
+    text.textContent = 'Local only';
+  } else {
+    text.textContent = syncConfig.token ? 'Synced' : 'Local only';
+  }
+}
+
+function scheduleAutoSync() {
+  if (syncConfig.autoMode !== 'auto') return;
+  if (!syncConfig.token || !syncConfig.repo) return;
+  clearTimeout(syncDebounceTimer);
+  updateSyncStatus('unsynced');
+  syncDebounceTimer = setTimeout(() => pushToGitHub(false), 5000);
+}
+
+async function pushToGitHub(showToast) {
+  if (!syncConfig.token || !syncConfig.repo) {
+    if (showToast) toast('Configure GitHub in Settings first', 'alert');
+    return;
+  }
+  updateSyncStatus('syncing');
+  try {
+    // Get current SHA
+    let currentSha = null;
+    const getRes = await fetch(
+      `https://api.github.com/repos/${syncConfig.repo}/contents/${syncConfig.path}?ref=${syncConfig.branch}`,
+      { headers: { 'Authorization': `Bearer ${syncConfig.token}`, 'Accept': 'application/vnd.github+json' } }
+    );
+    if (getRes.ok) {
+      const j = await getRes.json();
+      currentSha = j.sha;
+    } else if (getRes.status !== 404) {
+      const j = await getRes.json();
+      throw new Error(`${getRes.status}: ${j.message}`);
+    }
+
+    // Encode content
+    DATA.lastUpdated = new Date().toISOString();
+    const content = JSON.stringify(DATA, null, 2);
+    const encoded = btoa(unescape(encodeURIComponent(content)));
+
+    // Commit
+    const commitMsg = `brain sync · ${new Date().toISOString().split('T')[0]}`;
+    const putRes = await fetch(
+      `https://api.github.com/repos/${syncConfig.repo}/contents/${syncConfig.path}`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${syncConfig.token}`,
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: commitMsg,
+          content: encoded,
+          branch: syncConfig.branch,
+          ...(currentSha ? { sha: currentSha } : {})
+        })
+      }
+    );
+
+    if (!putRes.ok) {
+      const j = await putRes.json();
+      throw new Error(`${putRes.status}: ${j.message}`);
+    }
+    const j = await putRes.json();
+    lastSyncedSha = j.content.sha;
+    lastSyncTime = new Date();
+    updateSyncStatus('synced');
+    if (showToast) toast(`✓ Pushed to GitHub · ${lastSyncedSha.substring(0,8)}`);
+  } catch (e) {
+    updateSyncStatus('error', 'Sync failed');
+    if (showToast || syncConfig.autoMode === 'auto') {
+      toast(`Sync failed: ${e.message}`, 'alert', { actionLabel: 'Retry', action: () => pushToGitHub(true) });
+    }
+    console.error('Push failed', e);
+  }
+}
+
+async function pullFromGitHub() {
+  if (!syncConfig.token || !syncConfig.repo) {
+    toast('Configure GitHub in Settings first', 'alert');
+    return;
+  }
+  if (!confirm('Pull latest data.json from GitHub? This will overwrite your local changes.')) return;
+  updateSyncStatus('syncing');
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${syncConfig.repo}/contents/${syncConfig.path}?ref=${syncConfig.branch}`,
+      { headers: { 'Authorization': `Bearer ${syncConfig.token}`, 'Accept': 'application/vnd.github+json' } }
+    );
+    if (!r.ok) {
+      const j = await r.json();
+      throw new Error(`${r.status}: ${j.message}`);
+    }
+    const j = await r.json();
+    const decoded = decodeURIComponent(escape(atob(j.content.replace(/\n/g, ''))));
+    const newData = JSON.parse(decoded);
+    DATA = newData;
+    // Re-ensure schema
+    if (!DATA.stickyNotes) DATA.stickyNotes = [];
+    if (!DATA.customEdges) DATA.customEdges = [];
+    if (!DATA.inbox) DATA.inbox = [];
+    if (!DATA.warmNetwork) DATA.warmNetwork = [];
+    if (!DATA.nodePositions) DATA.nodePositions = {};
+    if (!DATA.settings) DATA.settings = {};
+    try { localStorage.setItem('blacksea_brain_v11', JSON.stringify(DATA)); } catch (e) {}
+    lastSyncedSha = j.sha;
+    closeSettingsModal();
+    rebuildAll();
+    updateSyncStatus('synced');
+    toast(`✓ Pulled from GitHub · ${j.sha.substring(0,8)}`);
+  } catch (e) {
+    updateSyncStatus('error', 'Pull failed');
+    toast(`Pull failed: ${e.message}`, 'alert');
+    console.error('Pull failed', e);
+  }
+}
+
+/* =====================================================
+   TOAST
+   ===================================================== */
+let toastTimer = null;
+function toast(msg, kind = 'signal', options = {}) {
+  const el = document.getElementById('toast');
+  el.className = 'toast ' + (kind === 'signal' ? '' : kind);
+  let html = `<span>${msg}</span>`;
+  if (options.actionLabel && options.action) {
+    html += `<button class="toast-btn" id="toast-action-btn">${options.actionLabel}</button>`;
+  }
+  el.innerHTML = html;
+
+  if (options.action) {
+    document.getElementById('toast-action-btn').addEventListener('click', () => {
+      options.action();
+      el.classList.remove('show');
+    });
+  }
+
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 5000);
 }
 
 const EMBEDDED_DATA = /*__DATA_PLACEHOLDER__*/ null;
