@@ -1,6 +1,6 @@
 {
-  "version": "1.2-airlabs-merge",
-  "lastUpdated": "2026-05-19T03:56:30.924173Z",
+  "version": "1.2-airlabs-merge-clean",
+  "lastUpdated": "2026-05-19T14:15:20.854383+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -660,6 +660,60 @@
   ],
   "insights": [
     {
+      "id": "ins_brain_show_whole_map_doctrine",
+      "title": "Brain operating doctrine — show the WHOLE map",
+      "date": "2026-05-18",
+      "content": "Operating principle for brain.blackseaspv.com (and for me when working with Adrián): never reduce him to a checklist. He explicitly stated: 'ja funugjem na vizualzácii veľkých cielov a plánov... vždy som sníval a chcel a chcem aj dnes... aj ked moja hlava má v sebe často veľké temno, smuto a černotu'. PRACTICAL IMPLICATIONS: (1) Map view (§01) is PRIMARY — it shows the whole multi-business system at once; (2) Today view (§00) is for dopamine ticks but NEVER becomes the default — that would collapse the picture; (3) When proposing new work, frame it within the 3-business architecture first, THEN drill to tactical tasks; (4) Insights view (§06) is where the THINKING lives — must keep growing; (5) Inbox (§07) catches half-thoughts so they don't get lost in the dark periods; (6) Sticky notes on map = floating thoughts on Adrián's mental canvas, NEVER auto-organize them away."
+    },
+    {
+      "id": "ins_complex_clients_comfort",
+      "title": "Comfort with complex environment clients — operational stance",
+      "date": "2026-05-11",
+      "content": "Direct quote: 'už som jednal s rôznymi ľuďmi a nemám s tým problém'. Adrián has dealt with non-standard clients before through A27 + Black Sea SPV OTC work. This is not naïveté but earned position — he knows where the compliance lines are because he's the one who built them. Implication for client triage: 'complex' is fine as a client attribute IF deal hits ≥2 of military/finance/compliance AND clears red lines (no sanctioned persons / shell opacity / UBO nominee evasion / sanctions evasion facilitation / dummy wallets). Adrián is NOT looking for 'easy' clients — he's looking for clients where his expertise is the differentiating value. A 'difficult' client at Bitmama or PashaPay scale is exactly the kind of work that justifies €25-75K engagements."
+    },
+    {
+      "id": "ins_public_procurement_nuance",
+      "title": "Public procurement & 'War Dogs' archetype — nuanced read",
+      "date": "2026-05-11",
+      "content": "Adrián's actual position (not War Dogs as cautionary tale): public procurement — Slovak VO, US gov contracts, Dubai — represents a genuine pattern where one tender has zero applicants because nobody understands compliance + dual-use + military overlap. He's not naive about War Dogs ('to bol prúser') — uses it as ARCHETYPE for the pattern of finding complex scaled deals with few competitors. Translation for Black Sea: NOT actual arms procurement (compliance kills us). YES the pattern applied to: cross-border crypto compliance under emerging frameworks (Nigeria ARIP, AIFC), defense-fund advisory where most consultancies have no fund-launch credibility, AZ pre-licensing positioning. Same underlying instinct (find complex, scaled, low-competition deal flow) at radically lower criminal risk."
+    },
+    {
+      "id": "ins_multi_role_positioning",
+      "title": "Multi-role positioning across entities",
+      "date": "2026-05-18",
+      "content": "Active operational roles: Fund Manager A27 IC SICAV (Malta, separating), Managing Director A27 Management Services (Prague), Owner Black Sea SPV (Bratislava), CCO Opportunity Fund (Amsterdam), External CCO + Operator AIR Labs (BVI/US Seena). FIVE distinct hats across 4 jurisdictions. Each one is verifiable and clean. This is what credibility looks like for a defense fund advisory pitch — not a deck about 'experience' but a registry trail across MFSA/AFM/CFR/BVI. Use sparingly in outreach (no resume dump) but make available in data room. Implication: A27 separation logistics must close cleanly Q3 2026 — current dual MD+Fund Manager status is the messiest variable."
+    },
+    {
+      "id": "ins_attraction_zones",
+      "title": "Adrián's attraction zones (what energizes vs. what drains)",
+      "date": "2026-05-11",
+      "content": "Quote: 'laka ma aj svery military/finance/ complaice'. These are the three zones where Adrián naturally lights up. Defense Capital Advisory = military × finance × compliance — perfect overlap = bm_defense exists. Frontier Markets = finance × compliance × complex jurisdiction = bm_frontier exists. Black Sea SPV OTC = finance × crypto compliance = bm_otc. Implication for picking deals: when a prospect inquiry comes in, primary filter is 'does this hit at least 2 of military/finance/compliance?' If no — politely decline or refer out. If yes — accept and let purpose vs. depression dynamic kick in. This is the working filter, not 'will it pay X'."
+    },
+    {
+      "id": "ins_sovereign_adjacent_rejected",
+      "title": "Anti-decision: NO separate US LLC for 'complex environment clients'",
+      "date": "2026-05-18",
+      "content": "ADHD-stress mode briefly proposed: 'alebo založil black sea niekde v usa anonymne a pod ešte' — separate anonymous US LLC for 'kokoti who pay big.' Considered, pushed back, rejected. Reasons: (1) anonymous US LLC for opacity = exactly the structure that gets you flagged in DD; (2) Adrián's enforcement profile (former MFSA fund manager + lawsuit visibility) makes him a high-quality target for prosecutors making examples; (3) volume of legitimate work in defense + frontier markets is enough — no need for opacity premium. Red lines locked from this discussion: no sanctioned persons, no shell opacity, no UBO nominee evasion, no facilitation of sanctions evasion. Captured in note_no_baddeals sticky note."
+    },
+    {
+      "id": "ins_three_business_lock_v2",
+      "title": "3-business architecture — final lock (v2)",
+      "date": "2026-05-18",
+      "content": "Adrián's original framing (from transcript): 'kludne to sprav tak že Black sea je brand mozog a z toho idu business modely čo sme tu rieišli. eu defeence, consulting, potom to čo je teraz na webe čo posobí ako dual use pre ruských kokotov ale napríklad aj to čo sme riešili teraz azerbajdžan atd.' Final mapping: bm_otc (existing dual-use OTC at blackseaspv.com + AIR Labs Seena), bm_defense (EU defense fund advisory, new), bm_frontier (AZ/KZ AIFC/Nigeria, new). Brand colors: Steel/Signal Green/Alert. No 4th business. ALL future Black Sea work falls in one of these three buckets — if it doesn't, it's a sticky note in Inbox, not a new business model."
+    },
+    {
+      "id": "ins_tax_exposure_reality",
+      "title": "Tax exposure reality check (Slovakia)",
+      "date": "2026-05-11",
+      "content": "Adrián's self-assessment: 'možno nepodané daňové priznanie na Slovensku alebo niečo, ale moja expozícia je do 1000€ na týchto veciach.' = small ADHD-bordel typical, NOT a structural problem. Counterweight: years of clean track record — built structures, moved millions across the world, everything clean+upraced+documented. Profile of someone who knows where the lines are (compliance officer mindset). Implication: not a blocker for licensed work. But: any backlog (unfiled returns, late filings) should be cleaned up Q3 2026 BEFORE any Defense Capital Advisory family-office prospect runs DD on Adrián personally."
+    },
+    {
+      "id": "ins_track_record_exits",
+      "title": "Adrián track record — exits & build patterns",
+      "date": "2026-05-09",
+      "content": "Prior exits (verifiable): Komoio (IP sale), Ridelo (patent sale). Recent build: A27 IC SICAV — built from idea to Bloomberg ticker. This pattern is rare. Most crypto people can't finish a fund; most fund people can't move with startup speed. Adrián has documented both. Implication for positioning: NOT 'compliance consultant who knows crypto.' YES 'operator who built a regulated fund and exited IP and now offers what only operators can — full-stack structuring + execution.' This is what justifies €25-75K fund structuring price points and €5-15K/mo Fractional CCO retainers vs. consultancy €2-5K commodity work."
+    },
+    {
       "id": "ins_seena_workspace_separation",
       "title": "Notion workspace separation — AIR Labs is separate",
       "date": "2026-05-18",
@@ -875,72 +929,73 @@
   ],
   "stickyNotes": [
     {
-      "id": "note_welcome",
-      "content": "Drag this note around. Double-click to edit. Use these for half-formed thoughts you don't know where to file yet.",
-      "x": 100,
-      "y": 100,
-      "rotate": -2,
-      "color": "amber"
-    },
-    {
       "id": "note_purpose_anchor",
       "content": "PURPOSE > PROFIT.\n\nWhen depression is loud, build something. Cash follows.\n\n— 2026-05-11 self",
-      "x": 80,
+      "x": 60,
       "y": 80,
       "rotate": -2.5,
       "color": "amber"
     },
     {
-      "id": "note_cashflow_priority",
-      "content": "Q2 2026 cashflow priority order:\n\n1. Quidax (post-AIP, highest %)\n2. Bitmama / Yellow Card (ARIP urgent)\n3. AIFC DASP gap analysis (volume play)\n4. AZ in-person Baku trip",
-      "x": 80,
-      "y": 280,
-      "rotate": 1.5,
-      "color": "green"
-    },
-    {
       "id": "note_no_baddeals",
       "content": "RED LINES (locked):\n\n• No sanctioned persons\n• No shell opacity\n• No UBO nominee evasion\n• No sanctions evasion facilitation\n• No dummy wallets for income\n\nWhen in doubt → escalate to counsel.",
-      "x": 80,
-      "y": 500,
-      "rotate": -1,
+      "x": 60,
+      "y": 420,
+      "rotate": -1.0,
       "color": "pink"
     },
     {
-      "id": "note_substack_topic",
-      "content": "First Substack article:\n\n\"Why European Family Offices Are Reconsidering Defense Allocation in 2026\"\n\nDue 2026-05-25",
-      "x": 1200,
-      "y": 80,
-      "rotate": 2,
-      "color": "blue"
-    },
-    {
-      "id": "note_brain_motto",
-      "content": "Brain is the visualization layer.\n\nDon't reduce me to a checklist.\nShow me the WHOLE map.",
-      "x": 1200,
-      "y": 280,
-      "rotate": -2,
-      "color": "amber"
-    },
-    {
-      "id": "note_airlabs_active_client",
-      "content": "AIR LABS = active client\n(Seena Houman, BVI)\n\nPhase 1: personal accounts approach\nRevenue: 20% Licence Fee\n\nLong term: Phase 2 fund → €29-590k/yr",
-      "x": 700,
-      "y": 80,
-      "rotate": 1,
+      "id": "note_attraction_filter",
+      "content": "DEAL FILTER:\n\nDoes it hit ≥2 of:\n• Military\n• Finance\n• Compliance\n\nIF YES → engage.\nIF NO → decline or refer out.",
+      "x": 60,
+      "y": 760,
+      "rotate": 1.5,
       "color": "green"
-    },
-    {
-      "id": "note_airlabs_us_nexus",
-      "content": "AIR LABS PROBLEM:\nUS nexus (Seena) → exchange rejection.\n\nFIX: Adrián = personal accounts.\nSlovak passport bypasses geo-block.\n\nProtection: whitelist + Seena's own API.",
-      "x": 700,
-      "y": 280,
-      "rotate": -1.5,
-      "color": "pink"
     }
   ],
   "customEdges": [],
   "inbox": [
+    {
+      "id": "inbox_from_note_airlabs_us_nexus",
+      "content": "AIR LABS PROBLEM:\nUS nexus (Seena) → exchange rejection.\n\nFIX: Adrián = personal accounts.\nSlovak passport bypasses geo-block.\n\nProtection: whitelist + Seena's own API.",
+      "date": "2026-05-19T14:15:20.854362+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_from_note_airlabs_active_client",
+      "content": "AIR LABS = active client\n(Seena Houman, BVI)\n\nPhase 1: personal accounts approach\nRevenue: 20% Licence Fee\n\nLong term: Phase 2 fund → €29-590k/yr",
+      "date": "2026-05-19T14:15:20.854359+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_from_note_brain_motto",
+      "content": "Brain is the visualization layer.\n\nDon't reduce me to a checklist.\nShow me the WHOLE map.",
+      "date": "2026-05-19T14:15:20.854356+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_from_note_substack_topic",
+      "content": "First Substack article:\n\n\"Why European Family Offices Are Reconsidering Defense Allocation in 2026\"\n\nDue 2026-05-25",
+      "date": "2026-05-19T14:15:20.854353+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_from_note_cashflow_priority",
+      "content": "Q2 2026 cashflow priority order:\n\n1. Quidax (post-AIP, highest %)\n2. Bitmama / Yellow Card (ARIP urgent)\n3. AIFC DASP gap analysis (volume play)\n4. AZ in-person Baku trip",
+      "date": "2026-05-19T14:15:20.854349+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_from_note_welcome",
+      "content": "Drag this note around. Double-click to edit. Use these for half-formed thoughts you don't know where to file yet.",
+      "date": "2026-05-19T14:15:20.854273+00:00",
+      "source": "demoted from sticky note for map cleanup"
+    },
+    {
+      "id": "inbox_a27_separation",
+      "content": "A27 SEPARATION — operational context\n\nCurrent state: Adrián still Fund Manager A27 IC SICAV (Malta, MFSA-regulated) + Managing Director A27 Management Services (Prague). Separation in progress. Lawsuit with A27 pending — highest court ruling expected to dismiss; if not, appeal → years.\n\nLEGAL POSITION (per Adrián):\n• No NDA from A27\n• No competition clause\n• No restrictions on referencing former role publicly\n• Free to engage in advisory work in same domain\n\nSTRATEGIC IMPLICATIONS:\n• Public credentials one-pager CAN reference A27 work + Bloomberg ticker delivery\n• LinkedIn currently OFF (depression + lawsuit caution) — can stay off, advisory work uses email/Telegram/Signal warmth channels\n• Defense Capital Advisory positioning should NOT obscure A27 work — it's an asset, not a liability\n• Family office DD will ask about A27 separation — have a clean 2-sentence story ready: 'separating to focus on independent advisory; no restrictions; lawsuit is procedural, expected to dismiss'\n\nTIMELINE TO CLEAN STATUS:\n• Q3 2026: ideal A27 separation closed\n• Q4 2026: lawsuit dismissed or appeal stage (years)\n• Either way: 'in separation' is acceptable framing for prospects through 2026",
+      "date": "2026-05-19T00:00:00Z"
+    },
     {
       "id": "inbox_airlabs_revenue_projections",
       "content": "AIR LABS REVENUE PROJECTIONS (full fund economics)\n\nAt various AUM levels with 30% return + 1.5% mgmt + 20% carry:\n\n• €500k AUM → €29.5k/yr (Adrián's share after Seena split TBD)\n• €1M AUM → €59k/yr\n• €2M AUM → €118k/yr\n• €5M AUM → €295k/yr\n• €10M AUM → €590k/yr\n\nINVESTMENT ROADMAP (36-month total: €99k-213k)\n• Phase 1 (M1-6): €800-1,400 — agreements + security\n• Phase 2 Company (M6-12): €3,300-6,400 — Czech s.r.o.\n• Phase 2 Fund (M6-18): €40,000-70,000 — QIIF + audit + LP agreements + data room\n• Phase 3 Token (M18-36): €25,000-55,000 — tokenization + smart contracts\n• Phase 3 Scale (M18-36): €30,000-80,000 — regulatory infrastructure\n\nREVENUE ROADMAP:\n• M1-6: €20-60k trading P&L (own capital)\n• M6-12: €30-80k (first LPs €200-500k AUM)\n• M12-18: €80-200k (€500k-2M AUM)\n• M18-24: €200-500k (€2-5M AUM)\n• M24-36: €500k-1M (€5-10M AUM)\n\nBREAK-EVEN: ~Month 12, when external AUM >€500k generates fee revenue exceeding ongoing costs.",
