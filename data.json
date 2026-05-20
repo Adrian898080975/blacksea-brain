@@ -1,6 +1,6 @@
 {
-  "version": "1.2-airlabs-merge-clean",
-  "lastUpdated": "2026-05-19T14:15:20.854383+00:00",
+  "version": "1.2-gdrive-gmail-integrated",
+  "lastUpdated": "2026-05-20T11:58:07.500404+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -262,7 +262,10 @@
         "agreementStatus": "DRAFT v1.0 dated 3 May 2026. Slovak law governing. Slovak Arbitration Court (Bratislava) jurisdiction. PENDING SIGNATURE both parties.",
         "complianceCerts": "Adrián holds: ACAMS, CKYCA, MAR UK, EU Sanctions, AML/CTF",
         "phase2Gaps": "Sales process (Seena), Marketing/outreach (Seena), Reporting template (Adrián), Branding/deck (both), Performance tracking system (Seena), Whitepaper (Seena), Legal structure decision QIIF vs other (Adrián)"
-      }
+      },
+      "driveFolder": "https://drive.google.com/drive/folders/1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
+      "retainerStatus": "$600/mo agreed, pending formal addendum",
+      "invoiceStatus": "Invoice 2 (2K) due now. Invoice 1 (2K) paid 30d ago."
     },
     {
       "id": "pr_eu_familyoffice_target",
@@ -628,7 +631,8 @@
       "businessModel": "bm_defense",
       "filename": "Black_Sea_HQ_Master_Strategic_Document.docx",
       "description": "Verzia 2.0 — Notion blueprint + financial model + strategic deep-dive + operational playbook + 90-day Gantt",
-      "created": "2026-05-18"
+      "created": "2026-05-18",
+      "driveUrl": "https://docs.google.com/document/d/13Lq6OFRkTpHIUgZdltDz-MPH5wPM-oQ-WNsDxrrG0Q4"
     },
     {
       "id": "doc_knowledge_base",
@@ -646,7 +650,8 @@
       "businessModel": "bm_frontier",
       "filename": "Frontier_Markets_Intelligence_Pack.docx",
       "description": "Azerbaijan + Kazakhstan + West Africa Crypto strategic intelligence",
-      "created": "2026-05-18"
+      "created": "2026-05-18",
+      "driveUrl": "https://docs.google.com/document/d/1CO77XVkvnFtOE88tbh-dN5gAhNccUiSkzi5UVXNVohE"
     },
     {
       "id": "doc_execution",
@@ -956,6 +961,16 @@
   "customEdges": [],
   "inbox": [
     {
+      "id": "inbox_gdrive_setup",
+      "content": "GOOGLE DRIVE HQ STRUCTURE — set up 20 May 2026\n\nRoot: Black Sea HQ\nhttps://drive.google.com/drive/folders/1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6\n\n01 — Strategy & Brand\n02 — Clients\n   AIR Labs — Seena Houman (subfolder)\n03 — Business Development\n04 — Intelligence & Research\n05 — Web & Marketing\n\nKey docs uploaded:\n- Master Strategic Document v2.0\n- AIR Labs Engagement Summary\n- Frontier Markets Intelligence\n- Outreach Tracker (High Priority 12)\n- Substack Article 1 (live)\n- Substack Article 2 (draft)\n\nTODO: Upload credentials one-pager PDF, brand manual",
+      "date": "2026-05-20T12:00:00Z"
+    },
+    {
+      "id": "inbox_gmail_drafts_status",
+      "content": "GMAIL DRAFTS STATUS (20 May 2026)\n\nSent from iCloud (before Gmail migration):\n- GoldenPay (Hafiz Aliyev) — info@goldenpay.az\n- Blockvault (Chimezirim) — legal@blockvault.global\n- Busha (Olaolu) — compliance@busha.co\n- Quidax (Buchi) — legal@quidax.com\n- NASD OTC (Eguarekhide) — info@nasdng.com\n- HXafrica (Ugochukwu) — hello@hxafrica.com\n\nIn Gmail Drafts (ready to send):\n- Trovotech (Ezenwugo) — info@trovotech.io\n- Hashgreed (Ighodaro) — support@hashgreed.com\n- DreamCity (Benjamin) — benjamin@dreamcitygroup.com\n- cNGN (Uyoyo) — contact@asc.africa\n\nBOUNCED:\n- Bitmama — ruth@bitmama.io (550-5.1.1, email does not exist)\n  Action: Try info@bitmama.io or LinkedIn DM Ruth Iselema\n\nSent to partnerships@ (not named contact):\n- Yellow Card — partnerships@yellowcard.io",
+      "date": "2026-05-20T11:00:00Z"
+    },
+    {
       "id": "inbox_from_note_airlabs_us_nexus",
       "content": "AIR LABS PROBLEM:\nUS nexus (Seena) → exchange rejection.\n\nFIX: Adrián = personal accounts.\nSlovak passport bypasses geo-block.\n\nProtection: whitelist + Seena's own API.",
       "date": "2026-05-19T14:15:20.854362+00:00",
@@ -1107,5 +1122,60 @@
     "defaultView": "graph",
     "showCompletedTasks": true,
     "todayFocusEnabled": true
+  },
+  "googleDrive": {
+    "rootFolder": {
+      "id": "1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6",
+      "url": "https://drive.google.com/drive/folders/1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6",
+      "name": "Black Sea HQ"
+    },
+    "folders": {
+      "strategy": {
+        "id": "11dveLbjj5bIcs8PFuGFHpwuwmEVuMgJa",
+        "url": "https://drive.google.com/drive/folders/11dveLbjj5bIcs8PFuGFHpwuwmEVuMgJa",
+        "name": "01 — Strategy & Brand"
+      },
+      "clients": {
+        "id": "1TOp7Kk6Lbm8jZ1_JsPkUdwC9P9MhLg4q",
+        "url": "https://drive.google.com/drive/folders/1TOp7Kk6Lbm8jZ1_JsPkUdwC9P9MhLg4q",
+        "name": "02 — Clients"
+      },
+      "bizdev": {
+        "id": "1D9zxIoGGBSy-ES8rwUAGB9_BNCVKFlpZ",
+        "url": "https://drive.google.com/drive/folders/1D9zxIoGGBSy-ES8rwUAGB9_BNCVKFlpZ",
+        "name": "03 — Business Development"
+      },
+      "intelligence": {
+        "id": "16vdka21IH8Xu5XIoRgoEbth_2Cp6DFIX",
+        "url": "https://drive.google.com/drive/folders/16vdka21IH8Xu5XIoRgoEbth_2Cp6DFIX",
+        "name": "04 — Intelligence & Research"
+      },
+      "web": {
+        "id": "161dSYGvIFd9Fgq7XkIjQ3sVM9NCJj9fP",
+        "url": "https://drive.google.com/drive/folders/161dSYGvIFd9Fgq7XkIjQ3sVM9NCJj9fP",
+        "name": "05 — Web & Marketing"
+      },
+      "airlabs": {
+        "id": "1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
+        "url": "https://drive.google.com/drive/folders/1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
+        "name": "02 — Clients / AIR Labs — Seena Houman"
+      }
+    },
+    "keyDocs": {
+      "masterStrategy": "https://docs.google.com/document/d/13Lq6OFRkTpHIUgZdltDz-MPH5wPM-oQ-WNsDxrrG0Q4",
+      "airlabsEngagement": "https://docs.google.com/document/d/10FFNfrnt2--KgcE3H6esawvfMuoj7onnHeXvFew2mAM",
+      "frontierIntelligence": "https://docs.google.com/document/d/1CO77XVkvnFtOE88tbh-dN5gAhNccUiSkzi5UVXNVohE",
+      "outreachTracker": "https://docs.google.com/document/d/1FSNXGK2WHf1gkFXjHb3D9NziawTtRK5ttmBSj49BWuU",
+      "substack1": "https://docs.google.com/document/d/1dHmpO5sbDBj_LBMVG-2Ws_8gb01CUZxEc2yVO-hlfsg",
+      "substack2Draft": "https://docs.google.com/document/d/1och9fbr5Z1QcTDLq1WphbgbsKSeDn7IRhOmHr_W8aZc"
+    }
+  },
+  "googleWorkspace": {
+    "email": "adrian@blackseaspv.com",
+    "gmail": "https://mail.google.com",
+    "drive": "https://drive.google.com",
+    "calendar": "https://calendar.google.com",
+    "provider": "Google Workspace Business Starter",
+    "setupDate": "2026-05-20"
   }
 }
