@@ -1,6 +1,6 @@
 {
   "version": "1.2-gdrive-gmail-integrated",
-  "lastUpdated": "2026-05-20T14:21:28.318Z",
+  "lastUpdated": "2026-05-20T11:58:07.500404+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -337,7 +337,7 @@
       "id": "task_credentials_pdf",
       "title": "Pripraviť 1-page credentials PDF",
       "priority": "P1",
-      "status": "done",
+      "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "1-2 hod",
       "dueDate": "2026-05-19",
@@ -347,7 +347,7 @@
       "id": "task_nigeria_emails",
       "title": "Odoslať 3 Nigerian outreach emails",
       "priority": "P1",
-      "status": "done",
+      "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-19",
@@ -357,7 +357,7 @@
       "id": "task_aifc_research",
       "title": "AIFC public register research — 5 targets",
       "priority": "P1",
-      "status": "done",
+      "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "45 min",
       "dueDate": "2026-05-20",
@@ -367,7 +367,7 @@
       "id": "task_aifc_emails",
       "title": "Odoslať 5 AIFC outreach emails",
       "priority": "P1",
-      "status": "done",
+      "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-21",
@@ -946,7 +946,7 @@
       "content": "RED LINES (locked):\n\n• No sanctioned persons\n• No shell opacity\n• No UBO nominee evasion\n• No sanctions evasion facilitation\n• No dummy wallets for income\n\nWhen in doubt → escalate to counsel.",
       "x": 60,
       "y": 420,
-      "rotate": -1,
+      "rotate": -1.0,
       "color": "pink"
     },
     {
