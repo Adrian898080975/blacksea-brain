@@ -773,6 +773,115 @@
     padding: 4px 10px; font-family: var(--t-mono); font-size: 10px;
     letter-spacing: 0.15em; cursor: pointer; text-transform: uppercase;
   }
+  /* CRM */
+  .crm-layout { display: grid; grid-template-columns: 260px 1fr; gap: 0; height: 100%; }
+  .crm-sidebar {
+    border-right: 1px solid var(--line); padding: 20px 16px;
+    overflow-y: auto; background: var(--navy-deep);
+  }
+  .crm-sidebar-title {
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--steel); margin-bottom: 12px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  .crm-region-btn {
+    display: block; width: 100%; text-align: left; padding: 10px 12px;
+    background: transparent; border: none; color: var(--steel);
+    font-family: var(--t-mono); font-size: 10px; letter-spacing: 0.15em;
+    text-transform: uppercase; cursor: pointer; border-radius: 2px;
+    transition: all 0.15s; margin-bottom: 2px;
+  }
+  .crm-region-btn:hover { background: var(--graphite); color: var(--frost); }
+  .crm-region-btn.active { background: var(--graphite); color: var(--signal); }
+  .crm-region-count {
+    float: right; font-family: var(--t-serif); font-size: 14px;
+    color: var(--signal); line-height: 1;
+  }
+  .crm-urgency {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    margin-right: 6px; vertical-align: middle;
+  }
+  .crm-urgency.now { background: var(--alert); }
+  .crm-urgency.q3 { background: var(--amber); }
+  .crm-urgency.done { background: var(--signal); }
+  .crm-main { overflow-y: auto; padding: 24px 28px; }
+  .crm-filters {
+    display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .crm-filter-btn {
+    padding: 6px 12px; background: var(--graphite); border: 1px solid var(--line-bright);
+    color: var(--steel); font-family: var(--t-mono); font-size: 10px;
+    letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer;
+    transition: all 0.15s;
+  }
+  .crm-filter-btn:hover { color: var(--frost); }
+  .crm-filter-btn.active { background: var(--signal); color: var(--ink); border-color: var(--signal); }
+  .crm-table { width: 100%; border-collapse: collapse; }
+  .crm-table th {
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--steel); padding: 10px 12px;
+    text-align: left; border-bottom: 1px solid var(--line);
+    background: var(--navy-deep); position: sticky; top: 0; z-index: 2;
+    cursor: pointer;
+  }
+  .crm-table th:hover { color: var(--frost); }
+  .crm-table td {
+    padding: 12px 12px; border-bottom: 1px solid var(--line-dim);
+    font-family: var(--t-body); font-size: 13px; color: var(--frost);
+    vertical-align: top;
+  }
+  .crm-table tr:hover td { background: var(--graphite); }
+  .crm-status {
+    display: inline-block; padding: 3px 8px;
+    font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.15em;
+    text-transform: uppercase; border: 1px solid;
+  }
+  .crm-status.not-sent { color: var(--steel); border-color: var(--line); }
+  .crm-status.draft { color: var(--amber); border-color: var(--amber); }
+  .crm-status.sent { color: var(--signal); border-color: var(--signal); }
+  .crm-status.replied { color: var(--signal); border-color: var(--signal); background: var(--signal-dim); }
+  .crm-status.bounced { color: var(--alert); border-color: var(--alert); }
+  .crm-priority-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    margin-right: 6px; vertical-align: middle; flex-shrink: 0;
+  }
+  .crm-priority-dot.High { background: var(--alert); }
+  .crm-priority-dot.Medium { background: var(--amber); }
+  .crm-priority-dot.Low { background: var(--steel); }
+  .crm-company { font-weight: 600; margin-bottom: 2px; }
+  .crm-product { font-family: var(--t-mono); font-size: 9px; color: var(--steel); letter-spacing: 0.1em; }
+  .crm-email { font-family: var(--t-mono); font-size: 10px; color: var(--steel); }
+  .crm-action-btn {
+    padding: 4px 8px; background: transparent; border: 1px solid var(--line-bright);
+    color: var(--steel); font-family: var(--t-mono); font-size: 9px;
+    letter-spacing: 0.12em; cursor: pointer; transition: all 0.15s;
+  }
+  .crm-action-btn:hover { color: var(--signal); border-color: var(--signal); }
+  .crm-stats-row {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+    margin-bottom: 20px;
+  }
+  .crm-stat {
+    background: var(--navy); border: 1px solid var(--line); padding: 14px 16px;
+    border-left: 3px solid var(--signal);
+  }
+  .crm-stat.alert { border-left-color: var(--alert); }
+  .crm-stat.amber { border-left-color: var(--amber); }
+  .crm-stat.steel { border-left-color: var(--steel); }
+  .crm-stat-label { font-family: var(--t-mono); font-size: 9px; letter-spacing: 0.2em; color: var(--steel); text-transform: uppercase; margin-bottom: 4px; }
+  .crm-stat-value { font-family: var(--t-serif); font-size: 28px; color: var(--frost); line-height: 1; }
+  .google-links {
+    display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .google-link-btn {
+    padding: 7px 14px; background: var(--graphite); border: 1px solid var(--line-bright);
+    color: var(--steel); font-family: var(--t-mono); font-size: 10px;
+    letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    transition: all 0.15s;
+  }
+  .google-link-btn:hover { color: var(--signal); border-color: var(--signal); }
+
   /* scrollbar */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: var(--ink); }
@@ -824,6 +933,10 @@
     <button class="nav-item" data-view="docs"><span class="nav-idx">§05</span>Documents</button>
     <button class="nav-item" data-view="insights"><span class="nav-idx">§06</span>Insights</button>
     <button class="nav-item" data-view="inbox"><span class="nav-idx">§07</span>Inbox<span class="badge" id="inbox-badge" style="display:none">0</span></button>
+    <button class="nav-item" data-view="crm"><span class="nav-idx">§08</span>CRM</button>
+    <button class="nav-item" id="gmail-nav-btn" onclick="window.open('https://mail.google.com','_blank')" title="Open Gmail"><span class="nav-idx">✉</span>Gmail</button>
+    <button class="nav-item" id="drive-nav-btn" onclick="window.open('https://drive.google.com/drive/folders/1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6','_blank')" title="Open Drive"><span class="nav-idx">◈</span>Drive</button>
+    <button class="nav-item" id="cal-nav-btn" onclick="window.open('https://calendar.google.com','_blank')" title="Open Calendar"><span class="nav-idx">◷</span>Calendar</button>
   </nav>
 
   <div class="topbar-meta">
@@ -1033,6 +1146,119 @@
           </div>
         </div>
         <div class="inbox-list" id="inbox-list"></div>
+      </div>
+    </div>
+  </section>
+  <!-- CRM VIEW -->
+  <section class="view" id="crm-view">
+    <div class="view-header">
+      <div>
+        <div class="view-section-tag"><span class="idx">§08</span>Deal Tracker</div>
+        <h1 class="view-title">CRM <em>outreach</em></h1>
+      </div>
+      <div class="view-meta">
+        <div id="crm-summary">— contacts · — sent · — replied</div>
+        <div class="google-links">
+          <a href="https://mail.google.com" target="_blank" class="google-link-btn">✉ Gmail</a>
+          <a href="https://drive.google.com/drive/folders/1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6" target="_blank" class="google-link-btn">◈ Drive</a>
+          <a href="https://calendar.google.com" target="_blank" class="google-link-btn">◷ Calendar</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;height:calc(100% - 120px)">
+      <!-- Sidebar -->
+      <div class="crm-sidebar">
+        <div class="crm-sidebar-title">Regions</div>
+        <button class="crm-region-btn active" data-region="ALL" onclick="filterCRM('ALL',this)">
+          <span class="crm-urgency now"></span>All regions
+          <span class="crm-region-count" id="crm-count-ALL">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Uzbekistan" onclick="filterCRM('Uzbekistan',this)">
+          <span class="crm-urgency now"></span>Uzbekistan
+          <span class="crm-region-count" id="crm-count-Uzbekistan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Nigeria" onclick="filterCRM('Nigeria',this)">
+          <span class="crm-urgency now"></span>Nigeria
+          <span class="crm-region-count" id="crm-count-Nigeria">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Azerbaijan" onclick="filterCRM('Azerbaijan',this)">
+          <span class="crm-urgency now"></span>Azerbaijan
+          <span class="crm-region-count" id="crm-count-Azerbaijan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Kazakhstan (AIFC)" onclick="filterCRM('Kazakhstan (AIFC)',this)">
+          <span class="crm-urgency done"></span>AIFC Kazakhstan
+          <span class="crm-region-count" id="crm-count-Kazakhstan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="UAE / ADGM" onclick="filterCRM('UAE / ADGM',this)">
+          <span class="crm-urgency q3"></span>UAE / ADGM
+          <span class="crm-region-count" id="crm-count-UAE">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Pan-Africa" onclick="filterCRM('Pan-Africa',this)">
+          <span class="crm-urgency q3"></span>Pan-Africa
+          <span class="crm-region-count" id="crm-count-PanAfrica">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Kyrgyzstan" onclick="filterCRM('Kyrgyzstan',this)">
+          <span class="crm-urgency now"></span>Kyrgyzstan
+          <span class="crm-region-count" id="crm-count-Kyrgyzstan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Georgia" onclick="filterCRM('Georgia',this)">
+          <span class="crm-urgency now"></span>Georgia
+          <span class="crm-region-count" id="crm-count-Georgia">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Armenia" onclick="filterCRM('Armenia',this)">
+          <span class="crm-urgency q3"></span>Armenia
+          <span class="crm-region-count" id="crm-count-Armenia">0</span>
+        </button>
+
+        <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line)">
+          <div class="crm-sidebar-title">Quick links</div>
+          <a href="https://drive.google.com/drive/folders/1D9zxIoGGBSy-ES8rwUAGB9_BNCVKFlpZ" target="_blank"
+             style="display:block;font-family:var(--t-mono);font-size:9px;color:var(--steel);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-dim);letter-spacing:0.12em;text-transform:uppercase">
+            ◈ BizDev Drive folder
+          </a>
+          <a href="https://docs.google.com/document/d/1FSNXGK2WHf1gkFXjHb3D9NziawTtRK5ttmBSj49BWuU" target="_blank"
+             style="display:block;font-family:var(--t-mono);font-size:9px;color:var(--steel);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-dim);letter-spacing:0.12em;text-transform:uppercase">
+            ◈ Outreach tracker doc
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#drafts" target="_blank"
+             style="display:block;font-family:var(--t-mono);font-size:9px;color:var(--amber);text-decoration:none;padding:8px 0;letter-spacing:0.12em;text-transform:uppercase">
+            ✉ Gmail drafts
+          </a>
+        </div>
+      </div>
+
+      <!-- Main CRM table -->
+      <div class="crm-main" style="flex:1">
+        <div class="crm-stats-row" id="crm-stats-row">
+          <div class="crm-stat alert"><div class="crm-stat-label">High Priority</div><div class="crm-stat-value" id="crm-s-high">0</div></div>
+          <div class="crm-stat"><div class="crm-stat-label">Sent</div><div class="crm-stat-value" id="crm-s-sent">0</div></div>
+          <div class="crm-stat amber"><div class="crm-stat-label">Drafts</div><div class="crm-stat-value" id="crm-s-draft">0</div></div>
+          <div class="crm-stat steel"><div class="crm-stat-label">Replied</div><div class="crm-stat-value" id="crm-s-replied">0</div></div>
+        </div>
+
+        <div class="crm-filters">
+          <button class="crm-filter-btn active" onclick="setCRMStatusFilter('ALL',this)">All</button>
+          <button class="crm-filter-btn" onclick="setCRMStatusFilter('High',this)">High only</button>
+          <button class="crm-filter-btn" onclick="setCRMStatusFilter('sent',this)">Sent</button>
+          <button class="crm-filter-btn" onclick="setCRMStatusFilter('draft',this)">Drafts</button>
+          <button class="crm-filter-btn" onclick="setCRMStatusFilter('replied',this)">Replied</button>
+          <button class="crm-filter-btn" onclick="setCRMStatusFilter('bounced',this)">Bounced</button>
+        </div>
+
+        <table class="crm-table" id="crm-table">
+          <thead>
+            <tr>
+              <th onclick="sortCRM('company')">Company ↕</th>
+              <th onclick="sortCRM('region')">Region ↕</th>
+              <th>Email</th>
+              <th>Product</th>
+              <th onclick="sortCRM('priority')">Priority ↕</th>
+              <th onclick="sortCRM('status')">Status ↕</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="crm-tbody"></tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -1252,6 +1478,7 @@ async function init() {
   buildInsights();
   buildInbox();
   buildStickyNotes();
+  initCRM();
 
   requestAnimationFrame(() => buildGraph());
 
@@ -1277,6 +1504,7 @@ function switchView(view) {
   if (view === 'graph') setTimeout(() => buildGraph(), 50);
   if (view === 'today') buildToday();
   if (view === 'inbox') document.getElementById('inbox-textarea').focus();
+  if (view === 'crm') renderCRM();
 }
 
 /* =====================================================
@@ -1700,7 +1928,7 @@ function setupKeyboard() {
       toggleSearch(false);
     }
     // Number keys for views
-    const keyMap = { '0': 'today', '1': 'graph', '2': 'dashboard', '3': 'tasks', '4': 'pipeline', '5': 'docs', '6': 'insights', '7': 'inbox' };
+    const keyMap = { '0': 'today', '1': 'graph', '2': 'dashboard', '3': 'tasks', '4': 'pipeline', '5': 'docs', '6': 'insights', '7': 'inbox', '8': 'crm' };
     if (keyMap[e.key]) {
       e.preventDefault();
       switchView(keyMap[e.key]);
@@ -2856,8 +3084,225 @@ async function pullFromGitHub() {
 }
 
 /* =====================================================
-   TOAST
+   CRM ENGINE
    ===================================================== */
+
+let CRM_CONTACTS = [];
+let CRM_REGION_FILTER = 'ALL';
+let CRM_STATUS_FILTER = 'ALL';
+let CRM_SORT = { key: 'priority', dir: 1 };
+
+const STATUS_ORDER = { 'replied': 0, 'sent': 1, 'draft': 2, 'not-sent': 3, 'bounced': 4 };
+const PRIORITY_ORDER = { 'High': 0, 'Medium': 1, 'Low': 2 };
+
+// Known sent/draft/bounced from outreach history
+const OUTREACH_STATUS = {
+  'info@goldenpay.az': 'sent',
+  'legal@blockvault.global': 'sent',
+  'compliance@busha.co': 'sent',
+  'legal@quidax.com': 'sent',
+  'info@nasdng.com': 'sent',
+  'hello@hxafrica.com': 'sent',
+  'partnerships@yellowcard.io': 'sent',
+  'ruth@bitmama.io': 'bounced',
+  'ruth.iselema@bitmama.io': 'bounced',
+  'info@trovotech.io': 'draft',
+  'support@hashgreed.com': 'draft',
+  'benjamin@dreamcitygroup.com': 'draft',
+  'contact@asc.africa': 'draft',
+  'legal@lockton.uz': 'draft',
+  'info@humo-token.uz': 'draft',
+  'finbrok@umail.uz': 'draft',
+  'info@napp.uz': 'draft',
+  'compliance@burjx.com': 'draft',
+};
+
+function initCRM() {
+  // Build CRM contacts from prospects + hardcoded DB snapshot for non-prospects
+  CRM_CONTACTS = buildCRMContacts();
+  renderCRM();
+}
+
+function buildCRMContacts() {
+  // Base from prospects in DATA
+  const contacts = DATA.prospects.map(p => ({
+    id: p.id,
+    company: p.name,
+    region: p.country,
+    email: p.primaryContact || '',
+    contactPerson: p.primaryContact || '',
+    product: DATA.services.find(s => s.businessModel === p.businessModel)?.name || p.segment || '',
+    priority: p.warmth === 'active' ? 'High' : (p.probability > 30 ? 'High' : 'Medium'),
+    status: p.stage === 'active_client' ? 'replied' :
+            (OUTREACH_STATUS[p.primaryContact] || 'not-sent'),
+    notes: p.notes || '',
+    stage: p.stage,
+    source: 'brain',
+  }));
+
+  // Add CRM-specific contacts from outreach DB (those not already in prospects)
+  const extraContacts = [
+    // Uzbekistan
+    { id:'crm_lockton', company:'Lockton Hub LLC', region:'Uzbekistan', email:'legal@lockton.uz', contactPerson:'', product:'Token Compliance + AML (€8-15K)', priority:'High', status: OUTREACH_STATUS['legal@lockton.uz'] || 'draft', notes:'Issues LCH + CTH tokens. NAPP regulated.' },
+    { id:'crm_humo', company:'Humo Digital LLC', region:'Uzbekistan', email:'info@humo-token.uz', contactPerson:'', product:'Token Compliance (€8-15K)', priority:'High', status: OUTREACH_STATUS['info@humo-token.uz'] || 'draft', notes:'State-adjacent brand. High credibility.' },
+    { id:'crm_finbrok', company:'Finance Invest Brok LLC', region:'Uzbekistan', email:'finbrok@umail.uz', contactPerson:'', product:'Token Compliance + AML (€8-15K)', priority:'High', status: OUTREACH_STATUS['finbrok@umail.uz'] || 'draft', notes:'AUZ token April 21 2026 — freshest.' },
+    { id:'crm_napp', company:'NAPP (Uzbek regulator)', region:'Uzbekistan', email:'info@napp.uz', contactPerson:'V. Pak', product:'Regulatory Intelligence + Partner Channel', priority:'High', status: OUTREACH_STATUS['info@napp.uz'] || 'draft', notes:'Regulator. Stablecoin legal April 2026.' },
+    { id:'crm_kobea', company:'KOBEA GROUP', region:'Uzbekistan', email:'kobea@kobea.biz', contactPerson:'', product:'Crypto Exchange Compliance (€8-15K)', priority:'Medium', status:'not-sent', notes:'CE #0003. Licensed exchange.' },
+    { id:'crm_coinpay', company:'COINPAY LLC', region:'Uzbekistan', email:'info@coinuz.net', contactPerson:'', product:'Crypto Exchange Compliance (€8-15K)', priority:'Medium', status:'not-sent', notes:'CE #0004.' },
+    { id:'crm_asterium', company:'ASTERIUM LLC', region:'Uzbekistan', email:'info@asterium.uz', contactPerson:'', product:'Crypto Exchange Compliance (€8-15K)', priority:'Medium', status:'not-sent', notes:'CE #0005.' },
+    // UAE
+    { id:'crm_burjx', company:'BurjX', region:'UAE / ADGM', email:'compliance@burjx.com', contactPerson:'', product:'ADGM Exchange Compliance', priority:'Medium', status: OUTREACH_STATUS['compliance@burjx.com'] || 'draft', notes:'First UAE-born ADGM licensed exchange.' },
+    // Georgia, Kyrgyzstan, Armenia
+    { id:'crm_georgia', company:'Georgian VASP Market', region:'Georgia', email:'', contactPerson:'', product:'VASP Registration + AML (€8-15K)', priority:'Medium', status:'not-sent', notes:'NBG crackdown Oct 2025. No direct contact yet.' },
+    { id:'crm_kyrgyzstan', company:'Kyrgyz VASP Market', region:'Kyrgyzstan', email:'', contactPerson:'', product:'AML/CFT Advisory', priority:'Medium', status:'not-sent', notes:'IMF flagged AML gap. New VA law Jan 2026.' },
+  ];
+
+  // Deduplicate by id
+  const existingIds = new Set(contacts.map(c => c.id));
+  for (const ec of extraContacts) {
+    if (!existingIds.has(ec.id)) contacts.push(ec);
+  }
+
+  return contacts;
+}
+
+function filterCRM(region, btn) {
+  CRM_REGION_FILTER = region;
+  document.querySelectorAll('.crm-region-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderCRM();
+}
+
+function setCRMStatusFilter(filter, btn) {
+  CRM_STATUS_FILTER = filter;
+  document.querySelectorAll('.crm-filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderCRM();
+}
+
+function sortCRM(key) {
+  if (CRM_SORT.key === key) CRM_SORT.dir *= -1;
+  else { CRM_SORT.key = key; CRM_SORT.dir = 1; }
+  renderCRM();
+}
+
+function renderCRM() {
+  let contacts = [...CRM_CONTACTS];
+
+  // Region filter
+  if (CRM_REGION_FILTER !== 'ALL') {
+    contacts = contacts.filter(c =>
+      c.region === CRM_REGION_FILTER ||
+      c.region.includes(CRM_REGION_FILTER.split(' ')[0])
+    );
+  }
+
+  // Status filter
+  if (CRM_STATUS_FILTER === 'High') contacts = contacts.filter(c => c.priority === 'High');
+  else if (CRM_STATUS_FILTER !== 'ALL') contacts = contacts.filter(c => c.status === CRM_STATUS_FILTER);
+
+  // Sort
+  contacts.sort((a, b) => {
+    let va, vb;
+    if (CRM_SORT.key === 'priority') { va = PRIORITY_ORDER[a.priority] ?? 99; vb = PRIORITY_ORDER[b.priority] ?? 99; }
+    else if (CRM_SORT.key === 'status') { va = STATUS_ORDER[a.status] ?? 99; vb = STATUS_ORDER[b.status] ?? 99; }
+    else if (CRM_SORT.key === 'company') { va = a.company; vb = b.company; }
+    else if (CRM_SORT.key === 'region') { va = a.region; vb = b.region; }
+    else { va = a[CRM_SORT.key]; vb = b[CRM_SORT.key]; }
+    if (va < vb) return -CRM_SORT.dir;
+    if (va > vb) return CRM_SORT.dir;
+    return 0;
+  });
+
+  // Update stats
+  const all = CRM_CONTACTS;
+  document.getElementById('crm-s-high').textContent = all.filter(c => c.priority === 'High').length;
+  document.getElementById('crm-s-sent').textContent = all.filter(c => c.status === 'sent').length;
+  document.getElementById('crm-s-draft').textContent = all.filter(c => c.status === 'draft').length;
+  document.getElementById('crm-s-replied').textContent = all.filter(c => c.status === 'replied').length;
+
+  // Update region counts
+  const regionMap = {
+    'ALL': all.length,
+    'Uzbekistan': all.filter(c => c.region === 'Uzbekistan').length,
+    'Nigeria': all.filter(c => c.region.includes('Nigeria')).length,
+    'Azerbaijan': all.filter(c => c.region === 'Azerbaijan').length,
+    'Kazakhstan': all.filter(c => c.region.includes('Kazakhstan')).length,
+    'UAE': all.filter(c => c.region.includes('UAE')).length,
+    'PanAfrica': all.filter(c => c.region.includes('Africa') && !c.region.includes('Nigeria')).length,
+    'Kyrgyzstan': all.filter(c => c.region === 'Kyrgyzstan').length,
+    'Georgia': all.filter(c => c.region === 'Georgia').length,
+    'Armenia': all.filter(c => c.region === 'Armenia').length,
+  };
+  Object.entries(regionMap).forEach(([key, val]) => {
+    const el = document.getElementById('crm-count-' + key);
+    if (el) el.textContent = val;
+  });
+
+  document.getElementById('crm-summary').textContent =
+    `${contacts.length} contacts · ${all.filter(c=>c.status==='sent').length} sent · ${all.filter(c=>c.status==='replied').length} replied`;
+
+  // Render table
+  const tbody = document.getElementById('crm-tbody');
+  if (contacts.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--steel);font-family:var(--t-serif);font-style:italic;font-size:18px">No contacts match this filter.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = contacts.map(c => {
+    const statusClass = c.status || 'not-sent';
+    const statusLabel = {
+      'not-sent': 'Not sent', 'draft': 'Draft', 'sent': 'Sent',
+      'replied': 'Replied', 'bounced': 'Bounced'
+    }[statusClass] || statusClass;
+
+    const emailLink = c.email
+      ? `<a href="mailto:${c.email}" style="color:var(--steel);font-family:var(--t-mono);font-size:10px;text-decoration:none">${c.email}</a>`
+      : '<span style="color:var(--line-bright);font-family:var(--t-mono);font-size:10px">—</span>';
+
+    const nextAction = c.status === 'not-sent'
+      ? `<button class="crm-action-btn" onclick="markCRMStatus('${c.id}','draft')">→ Draft</button>`
+      : c.status === 'draft'
+      ? `<button class="crm-action-btn" onclick="markCRMStatus('${c.id}','sent')">✓ Sent</button>`
+      : c.status === 'sent'
+      ? `<button class="crm-action-btn" onclick="markCRMStatus('${c.id}','replied')">★ Replied</button>`
+      : '';
+
+    return `<tr>
+      <td>
+        <div class="crm-company">
+          <span class="crm-priority-dot ${c.priority}"></span>${escapeHtml(c.company)}
+        </div>
+        <div class="crm-product">${escapeHtml(c.product)}</div>
+      </td>
+      <td style="font-family:var(--t-mono);font-size:10px;color:var(--steel)">${escapeHtml(c.region)}</td>
+      <td>${emailLink}</td>
+      <td style="font-family:var(--t-mono);font-size:9px;color:var(--steel);max-width:160px">${escapeHtml(c.notes || '').substring(0,80)}</td>
+      <td><span class="crm-priority-dot ${c.priority}"></span>${c.priority}</td>
+      <td><span class="crm-status ${statusClass}">${statusLabel}</span></td>
+      <td>${nextAction}</td>
+    </tr>`;
+  }).join('');
+}
+
+function markCRMStatus(id, newStatus) {
+  const contact = CRM_CONTACTS.find(c => c.id === id);
+  if (!contact) return;
+  contact.status = newStatus;
+
+  // Also update in DATA.prospects if it came from there
+  const prospect = DATA.prospects.find(p => p.id === id);
+  if (prospect && newStatus === 'replied') {
+    prospect.stage = 'discovery';
+    prospect.warmth = 'warm';
+  }
+
+  save();
+  renderCRM();
+  toast(contact.company + ' marked as ' + newStatus);
+}
+
+
 let toastTimer = null;
 function toast(msg, kind = 'signal', options = {}) {
   const el = document.getElementById('toast');
