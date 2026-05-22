@@ -1,6 +1,6 @@
 {
-  "version": "1.2-gdrive-gmail-integrated",
-  "lastUpdated": "2026-05-20T11:58:07.500404+00:00",
+  "version": "1.3-session2-cleanup",
+  "lastUpdated": "2026-05-22T07:13:18.829686+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -330,6 +330,175 @@
       "nextAction": "Need to lock: pitch deck, monthly reporting template, 6+ month track record",
       "nextActionDate": "2026-09-01",
       "notes": "Phase 2 fundraise target: €200k-500k FFF by Month 6-12. Requires QIIF fund formed in CZ. Adrián's revenue: 1.5% mgmt fee + 20% perf fee carry. At €500k AUM with 30% return: ~€29.5k/year. At €2M AUM: ~€118k/year."
+    },
+    {
+      "id": "pr_lockton",
+      "name": "Lockton Hub LLC",
+      "country": "Uzbekistan",
+      "businessModel": "bm_frontier",
+      "segment": "Token Issuer",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 20,
+      "primaryContact": "legal@lockton.uz",
+      "notes": "NAPP-licensed token issuer. Email sent. Stablecoin framework April 2026.",
+      "value": 12000
+    },
+    {
+      "id": "pr_humo",
+      "name": "Humo Digital LLC",
+      "country": "Uzbekistan",
+      "businessModel": "bm_frontier",
+      "segment": "Token Issuer",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 20,
+      "primaryContact": "info@humo-token.uz",
+      "notes": "State-adjacent brand. High credibility. Email sent.",
+      "value": 12000
+    },
+    {
+      "id": "pr_finbrok",
+      "name": "Finance Invest Brok LLC",
+      "country": "Uzbekistan",
+      "businessModel": "bm_frontier",
+      "segment": "Token Issuer",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 25,
+      "primaryContact": "finbrok@umail.uz",
+      "notes": "AUZ token issued April 21 2026 — freshest. Email sent.",
+      "value": 12000
+    },
+    {
+      "id": "pr_napp",
+      "name": "NAPP (Uzbek regulator)",
+      "country": "Uzbekistan",
+      "businessModel": "bm_frontier",
+      "segment": "Regulator",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 15,
+      "primaryContact": "info@napp.uz",
+      "notes": "Regulator outreach — credibility play. Email sent.",
+      "value": 0
+    },
+    {
+      "id": "pr_burjx",
+      "name": "BurjX",
+      "country": "UAE / ADGM",
+      "businessModel": "bm_frontier",
+      "segment": "Exchange",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 20,
+      "primaryContact": "compliance@burjx.com",
+      "notes": "First UAE-born ADGM-licensed exchange. Email sent.",
+      "value": 25000
+    },
+    {
+      "id": "pr_sunfish",
+      "name": "Sunfish Partners",
+      "country": "Germany",
+      "businessModel": "bm_defense",
+      "segment": "VC Fund",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 25,
+      "primaryContact": "info@sunfish.vc",
+      "notes": "EU/NATO deep tech VC. AIFMD II angle. Email sent (after hello@ bounce).",
+      "value": 50000
+    },
+    {
+      "id": "pr_underline",
+      "name": "Underline Ventures",
+      "country": "Romania",
+      "businessModel": "bm_defense",
+      "segment": "Solo GP",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 25,
+      "primaryContact": "bogdan@underline.vc",
+      "notes": "Solo GP raising Fund II. LP onboarding angle. Email sent.",
+      "value": 40000
+    },
+    {
+      "id": "pr_smartcap",
+      "name": "SmartCap",
+      "country": "Estonia",
+      "businessModel": "bm_defense",
+      "segment": "Fund Manager",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 20,
+      "primaryContact": "info@smartcap.ee",
+      "notes": "Baltic, NATO eastern frontier. AIFMD II gap. Email sent.",
+      "value": 40000
+    },
+    {
+      "id": "pr_eif",
+      "name": "European Investment Fund (EIF)",
+      "country": "Luxembourg",
+      "businessModel": "bm_defense",
+      "segment": "Institutional LP",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 10,
+      "primaryContact": "info@eif.org",
+      "notes": "Referral relationship angle for portfolio managers. Email sent.",
+      "value": 0
+    },
+    {
+      "id": "pr_nif",
+      "name": "NATO Innovation Fund",
+      "country": "EU",
+      "businessModel": "bm_defense",
+      "segment": "Institutional LP",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 10,
+      "primaryContact": "info@nif.fund",
+      "notes": "Investee fund manager advisory angle. Email sent.",
+      "value": 0
+    },
+    {
+      "id": "pr_binance",
+      "name": "Binance",
+      "country": "Global",
+      "businessModel": "bm_otc",
+      "segment": "Exchange",
+      "stage": "contacted",
+      "warmth": "cold",
+      "probability": 15,
+      "primaryContact": "link@binance.com",
+      "notes": "Binance Link partnership email sent. AIFC + frontier markets angle.",
+      "value": 75000
+    },
+    {
+      "id": "pr_okx",
+      "name": "OKX Institutional",
+      "country": "Global",
+      "businessModel": "bm_otc",
+      "segment": "Exchange",
+      "stage": "contacted",
+      "warmth": "warm",
+      "probability": 30,
+      "primaryContact": "Telegram: Black Sea <> OKX (Insti)",
+      "notes": "Direct Telegram channel — Qing Rui, Ryan Dawson, Simon OKG. Warm.",
+      "value": 75000
+    },
+    {
+      "id": "pr_kraken",
+      "name": "Kraken",
+      "country": "Global",
+      "businessModel": "bm_otc",
+      "segment": "Exchange",
+      "stage": "contacted",
+      "warmth": "warm",
+      "probability": 30,
+      "primaryContact": "Mats (account manager)",
+      "notes": "Existing AM relationship with Mats. Reconnected as Black Sea founder.",
+      "value": 75000
     }
   ],
   "tasks": [
@@ -337,41 +506,45 @@
       "id": "task_credentials_pdf",
       "title": "Pripraviť 1-page credentials PDF",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "1-2 hod",
       "dueDate": "2026-05-19",
-      "description": "Black Sea credentials one-pager pre cold outreach. Obsah hotový v Execution Day 1 dokumente."
+      "description": "Black Sea credentials one-pager pre cold outreach. Obsah hotový v Execution Day 1 dokumente.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_nigeria_emails",
       "title": "Odoslať 3 Nigerian outreach emails",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-19",
-      "description": "Bitmama (Ruth Iselema), Yellow Card (Janet Bandele), Quidax (Buchi Okoro). Drafty hotové."
+      "description": "Bitmama (Ruth Iselema), Yellow Card (Janet Bandele), Quidax (Buchi Okoro). Drafty hotové.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_aifc_research",
       "title": "AIFC public register research — 5 targets",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "45 min",
       "dueDate": "2026-05-20",
-      "description": "publicreg.myafsa.com — identifikovať top 5 emerging Authorised Firms / DASPs"
+      "description": "publicreg.myafsa.com — identifikovať top 5 emerging Authorised Firms / DASPs",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_aifc_emails",
       "title": "Odoslať 5 AIFC outreach emails",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-21",
-      "description": "AIFC Capital Market + Digital Assets framework amendments outreach"
+      "description": "AIFC Capital Market + Digital Assets framework amendments outreach",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_az_research",
@@ -391,7 +564,8 @@
       "businessModel": "bm_frontier",
       "estimatedTime": "45 min",
       "dueDate": "2026-05-23",
-      "description": "PashaPay, GoldenPay, AzFina inquiry"
+      "description": "PashaPay, GoldenPay, AzFina inquiry",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_substack",
@@ -401,7 +575,8 @@
       "businessModel": "bm_defense",
       "estimatedTime": "2-3 hod",
       "dueDate": "2026-05-25",
-      "description": "Topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. 1500-2000 words. Anchor: NATO 5% GDP commitment + Defense Equity Facility €500M + proposed €1B Fund-of-Funds Q1 2026 + family office allocation gaps. Soft CTA: 'If you're navigating this allocation shift, reach out — we structure these mandates from the LP side.' Goal: 2-3 inbound DMs/emails in first 30 days."
+      "description": "Topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. 1500-2000 words. Anchor: NATO 5% GDP commitment + Defense Equity Facility €500M + proposed €1B Fund-of-Funds Q1 2026 + family office allocation gaps. Soft CTA: 'If you're navigating this allocation shift, reach out — we structure these mandates from the LP side.' Goal: 2-3 inbound DMs/emails in first 30 days.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_warm_network",
@@ -417,11 +592,12 @@
       "id": "task_web_rewrite",
       "title": "Black Sea SPV web — copy review",
       "priority": "P2",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-25",
-      "description": "Current web has 'sovereign necessity / where others hesitate' tone — works for OTC positioning, problematic for Defense Capital Advisory institutional credibility. Decision tree: (A) keep current for OTC, build separate brand.blackseaspv.com positioning (done — brain is there); (B) rewrite entirely for legitimacy; (C) two-page split — front page neutral, /otc page keeps current tone. Default lean: C."
+      "description": "Current web has 'sovereign necessity / where others hesitate' tone — works for OTC positioning, problematic for Defense Capital Advisory institutional credibility. Decision tree: (A) keep current for OTC, build separate brand.blackseaspv.com positioning (done — brain is there); (B) rewrite entirely for legitimacy; (C) two-page split — front page neutral, /otc page keeps current tone. Default lean: C.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_compliance_partner",
@@ -434,34 +610,26 @@
       "description": "Three firms to quote for €5-15K/year retainer: Charles Russell Speechlys (London — financial services + private wealth, premium), Kingsley Napley (London — financial crime + regulatory enforcement, mid-tier with depth), K2 Integrity (New York/London — investigations + sanctions advisory, best for due diligence). Email each: 'Looking for retainer for sanctions/PEP review on cross-border crypto + fund advisory engagements, target client base in MENA/CIS/West Africa.'"
     },
     {
-      "id": "task_worldcheck",
-      "title": "World-Check / LexisNexis trial subscription",
-      "priority": "P2",
-      "status": "todo",
-      "businessModel": "bm_frontier",
-      "estimatedTime": "30 min",
-      "dueDate": "2026-05-26",
-      "description": "Sanctions + PEP screening tool. Free trials available."
-    },
-    {
       "id": "task_credentials_onepager_design",
       "title": "Black Sea credentials one-pager — DESIGN + COPY",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "2 hod",
       "dueDate": "2026-05-19",
-      "description": "Content already in Execution_Day_1.docx. Format: A4 PDF, Black Sea brand manual aesthetic (Frost/Steel/Signal Green/Alert palette, Archivo + Inter + JetBrains Mono). Sections: (1) Who we are, (2) Adrián credentials (MFSA, MiFID II, Bloomberg ticker, etc.), (3) Service modules, (4) Engagement model, (5) Contact. Use Horizon Mark + BLACK·SEA wordmark per brand manual."
+      "description": "Content already in Execution_Day_1.docx. Format: A4 PDF, Black Sea brand manual aesthetic (Frost/Steel/Signal Green/Alert palette, Archivo + Inter + JetBrains Mono). Sections: (1) Who we are, (2) Adrián credentials (MFSA, MiFID II, Bloomberg ticker, etc.), (3) Service modules, (4) Engagement model, (5) Contact. Use Horizon Mark + BLACK·SEA wordmark per brand manual.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_substack_setup",
       "title": "Substack setup — domain blackseapublication.substack.com (or similar)",
       "priority": "P2",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_defense",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-24",
-      "description": "Create Substack publication. Suggested name options: 'Black Sea Briefings', 'The Black Sea Memo', 'Sovereign Capital Notes'. Theme: institutional capital meets complex jurisdictions / defense / dual-use. Cadence: 1-2 long-form per month, plus shorter 'briefings' for paid tier eventually."
+      "description": "Create Substack publication. Suggested name options: 'Black Sea Briefings', 'The Black Sea Memo', 'Sovereign Capital Notes'. Theme: institutional capital meets complex jurisdictions / defense / dual-use. Cadence: 1-2 long-form per month, plus shorter 'briefings' for paid tier eventually.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_az_baku_trip",
@@ -487,11 +655,12 @@
       "id": "task_nigeria_email_review",
       "title": "Review 3 Nigerian email drafts BEFORE sending",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "20 min",
       "dueDate": "2026-05-19",
-      "description": "Drafts in Execution_Day_1.docx. Last sanity check: Subject line punch, opening line specificity, NOT generic 'I noticed your firm' language. Each must reference specific public fact (Quidax AIP, Yellow Card 16 countries, Bitmama Series A) to prove research."
+      "description": "Drafts in Execution_Day_1.docx. Last sanity check: Subject line punch, opening line specificity, NOT generic 'I noticed your firm' language. Each must reference specific public fact (Quidax AIP, Yellow Card 16 countries, Bitmama Series A) to prove research.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_warm_network_export",
@@ -517,21 +686,12 @@
       "id": "task_brain_v12_deploy",
       "title": "Deploy brain v1.2 + Cloudflare Access end-to-end",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-19",
-      "description": "v1.2 deployed. Cloudflare Access policy created. PAT generated. data.json sync verified. Push tested with auto-sync. Currently sync was failing due to wrong setting — fixed by Adrián."
-    },
-    {
-      "id": "task_world_check_subscribe",
-      "title": "World-Check / LexisNexis trial signup",
-      "priority": "P2",
-      "status": "todo",
-      "businessModel": "bm_frontier",
-      "estimatedTime": "45 min",
-      "dueDate": "2026-05-26",
-      "description": "Both offer trials. World-Check (Refinitiv) is gold standard for PEP + sanctions screening. LexisNexis Bridger is cheaper alternative. Need this BEFORE first Frontier Markets engagement starts. Without screening tool, can't responsibly accept the AZ/AIFC/Nigeria clients."
+      "description": "v1.2 deployed. Cloudflare Access policy created. PAT generated. data.json sync verified. Push tested with auto-sync. Currently sync was failing due to wrong setting — fixed by Adrián.",
+      "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_seena_agreement_sign",
@@ -612,6 +772,78 @@
       "estimatedTime": "ongoing",
       "dueDate": "2026-05-31",
       "description": "Per Phase 2 timeline. Monthly reports from May 2026. Target metrics: Sharpe >1.5 by Month 6, Max DD <20% by Month 12, Win rate >55%. Mandatory for any external fundraise. Tools: exchange CSV exports → reporting system Seena building."
+    },
+    {
+      "id": "task_bulk_batches",
+      "title": "Bulk email script — daily 30 batch (291 remaining)",
+      "status": "in_progress",
+      "priority": "high",
+      "businessModel": "bm_frontier",
+      "notes": "Run: cd ~/Desktop/blacksea-bulk && source .venv/bin/activate && python3 blacksea_bulk_email.py --batch 30"
+    },
+    {
+      "id": "task_substack_4",
+      "title": "Substack article #4 — AFSA deadline urgency",
+      "status": "todo",
+      "priority": "high",
+      "businessModel": "bm_frontier",
+      "notes": "Deadline angle, 3 weeks out. Strongest timing."
+    },
+    {
+      "id": "task_twitter_weekly",
+      "title": "Twitter @BlackSeaOps — 7 posts/week via Buffer",
+      "status": "in_progress",
+      "priority": "medium",
+      "businessModel": "bm_otc",
+      "notes": "Branded cards, hook text. Claude writes Mondays."
+    },
+    {
+      "id": "task_okx_telegram",
+      "title": "OKX Institutional — follow up via Telegram channel",
+      "status": "in_progress",
+      "priority": "high",
+      "businessModel": "bm_otc",
+      "notes": "Direct channel: Qing Rui, Ryan Dawson, Simon OKG"
+    },
+    {
+      "id": "task_kraken_mats",
+      "title": "Kraken — reconnect with Mats as Black Sea founder",
+      "status": "in_progress",
+      "priority": "high",
+      "businessModel": "bm_otc",
+      "notes": "Existing AM relationship. Advisory angle not job-seeking."
+    },
+    {
+      "id": "task_binance_link",
+      "title": "Binance Link — partnership email sent, await reply",
+      "status": "in_progress",
+      "priority": "medium",
+      "businessModel": "bm_otc",
+      "notes": "link@binance.com"
+    },
+    {
+      "id": "task_airlabs_agreement",
+      "title": "AIR Labs — sign Software Licensing Agreement",
+      "status": "todo",
+      "priority": "high",
+      "businessModel": "bm_otc",
+      "notes": "Draft v1.0 dated 3 May 2026. Pending signature."
+    },
+    {
+      "id": "task_speaker_proposals",
+      "title": "Speaker proposals — Astana Finance Days, Africa Fintech Summit, Malta",
+      "status": "todo",
+      "priority": "medium",
+      "businessModel": "bm_frontier",
+      "notes": "Free exposure to target audience at scale."
+    },
+    {
+      "id": "task_new_markets",
+      "title": "Source contacts — Kyrgyzstan, Georgia, more UAE/ADGM",
+      "status": "todo",
+      "priority": "high",
+      "businessModel": "bm_frontier",
+      "notes": "New VASP markets with regulatory urgency."
     }
   ],
   "documents": [
@@ -843,6 +1075,34 @@
       "title": "AIFC framework transition window",
       "date": "2026-05-18",
       "content": "AFSA frameworks update 1.1.2026. 149 Authorised Firms + 30 DASPs musia adaptovať. 6-mes transition pre Crowdfunding (deadline jún-júl 2026). Sweet spot."
+    },
+    {
+      "id": "ins_uzbek_window",
+      "title": "Uzbekistan is the hottest new frontier market",
+      "content": "Stablecoins legal April 2026. 3 licensed exchanges, 4 token issuers. NAPP regulator active and reachable. Zero EU advisory presence. Direct contacts available for all licensed players.",
+      "businessModel": "bm_frontier",
+      "date": "2026-05-22T07:13:18.829686+00:00"
+    },
+    {
+      "id": "ins_kyrgyz_gap",
+      "title": "Kyrgyzstan — IMF-flagged AML gap = direct fit",
+      "content": "New virtual assets law signed Jan 2026. $11.4B turnover in 7 months 2025. 13 licensed exchanges. IMF April 2026 recommended stronger AML/CFT monitoring. Black Sea Compliance Advisory is exactly that. Zero EU advisors present.",
+      "businessModel": "bm_frontier",
+      "date": "2026-05-22T07:13:18.829686+00:00"
+    },
+    {
+      "id": "ins_georgia_crackdown",
+      "title": "Georgia NBG crackdown creates peak compliance demand",
+      "content": "NBG enforcing VASP registration since Oct 2025. Grey-market OTC desks and unregistered brokers must register or close. Registration + AML framework = direct Black Sea product, EUR 8-15K.",
+      "businessModel": "bm_frontier",
+      "date": "2026-05-22T07:13:18.829686+00:00"
+    },
+    {
+      "id": "ins_big_players_warm",
+      "title": "OKX and Kraken are warm, not cold",
+      "content": "OKX: direct Telegram institutional channel exists. Kraken: existing account manager relationship (Mats). These are the highest-probability big-ticket leads — warm intros beat cold email.",
+      "businessModel": "bm_otc",
+      "date": "2026-05-22T07:13:18.829686+00:00"
     }
   ],
   "edges": [
@@ -961,14 +1221,14 @@
   "customEdges": [],
   "inbox": [
     {
+      "id": "inbox_status_22may",
+      "content": "BLACK SEA — STATUS 22 MAY 2026\n\nINFRASTRUCTURE (all live):\n+ blackseaspv.com — web live, 3 briefings\n+ brain.blackseaspv.com — v1.3, Cloudflare Access\n+ Google Workspace — adrian@blackseaspv.com\n+ Substack — 3 articles published\n+ Twitter @BlackSeaOps — 7 posts scheduled (Buffer)\n+ Google Drive HQ — 5 folders structured\n\nOUTREACH:\n+ ~90 emails sent (High priority + AIFC bulk)\n+ Bulk script running — 291 remaining, 30/day\n+ Defense EU — 6 sent\n+ Uzbekistan — 5 sent\n+ Big players — Binance Link sent, OKX via Telegram, Kraken via Mats\n\nACTIVE CLIENT:\n+ AIR Labs — invoices 1+2 paid, retainer $600/mo agreed\n\nNEXT:\n- Substack article #4 (AFSA deadline)\n- New markets: Kyrgyzstan, Georgia, UAE/ADGM\n- Sign AIR Labs agreement",
+      "date": "2026-05-22T07:12:48.630949+00:00"
+    },
+    {
       "id": "inbox_gdrive_setup",
       "content": "GOOGLE DRIVE HQ STRUCTURE — set up 20 May 2026\n\nRoot: Black Sea HQ\nhttps://drive.google.com/drive/folders/1Iv998d2YLvduz8gX--VhOHgV-9vWT2e6\n\n01 — Strategy & Brand\n02 — Clients\n   AIR Labs — Seena Houman (subfolder)\n03 — Business Development\n04 — Intelligence & Research\n05 — Web & Marketing\n\nKey docs uploaded:\n- Master Strategic Document v2.0\n- AIR Labs Engagement Summary\n- Frontier Markets Intelligence\n- Outreach Tracker (High Priority 12)\n- Substack Article 1 (live)\n- Substack Article 2 (draft)\n\nTODO: Upload credentials one-pager PDF, brand manual",
       "date": "2026-05-20T12:00:00Z"
-    },
-    {
-      "id": "inbox_gmail_drafts_status",
-      "content": "GMAIL DRAFTS STATUS (20 May 2026)\n\nSent from iCloud (before Gmail migration):\n- GoldenPay (Hafiz Aliyev) — info@goldenpay.az\n- Blockvault (Chimezirim) — legal@blockvault.global\n- Busha (Olaolu) — compliance@busha.co\n- Quidax (Buchi) — legal@quidax.com\n- NASD OTC (Eguarekhide) — info@nasdng.com\n- HXafrica (Ugochukwu) — hello@hxafrica.com\n\nIn Gmail Drafts (ready to send):\n- Trovotech (Ezenwugo) — info@trovotech.io\n- Hashgreed (Ighodaro) — support@hashgreed.com\n- DreamCity (Benjamin) — benjamin@dreamcitygroup.com\n- cNGN (Uyoyo) — contact@asc.africa\n\nBOUNCED:\n- Bitmama — ruth@bitmama.io (550-5.1.1, email does not exist)\n  Action: Try info@bitmama.io or LinkedIn DM Ruth Iselema\n\nSent to partnerships@ (not named contact):\n- Yellow Card — partnerships@yellowcard.io",
-      "date": "2026-05-20T11:00:00Z"
     },
     {
       "id": "inbox_from_note_airlabs_us_nexus",
@@ -983,12 +1243,6 @@
       "source": "demoted from sticky note for map cleanup"
     },
     {
-      "id": "inbox_from_note_brain_motto",
-      "content": "Brain is the visualization layer.\n\nDon't reduce me to a checklist.\nShow me the WHOLE map.",
-      "date": "2026-05-19T14:15:20.854356+00:00",
-      "source": "demoted from sticky note for map cleanup"
-    },
-    {
       "id": "inbox_from_note_substack_topic",
       "content": "First Substack article:\n\n\"Why European Family Offices Are Reconsidering Defense Allocation in 2026\"\n\nDue 2026-05-25",
       "date": "2026-05-19T14:15:20.854353+00:00",
@@ -998,12 +1252,6 @@
       "id": "inbox_from_note_cashflow_priority",
       "content": "Q2 2026 cashflow priority order:\n\n1. Quidax (post-AIP, highest %)\n2. Bitmama / Yellow Card (ARIP urgent)\n3. AIFC DASP gap analysis (volume play)\n4. AZ in-person Baku trip",
       "date": "2026-05-19T14:15:20.854349+00:00",
-      "source": "demoted from sticky note for map cleanup"
-    },
-    {
-      "id": "inbox_from_note_welcome",
-      "content": "Drag this note around. Double-click to edit. Use these for half-formed thoughts you don't know where to file yet.",
-      "date": "2026-05-19T14:15:20.854273+00:00",
       "source": "demoted from sticky note for map cleanup"
     },
     {
@@ -1069,16 +1317,6 @@
     {
       "id": "inbox_screening_tools",
       "content": "SCREENING TOOLS for PEP + sanctions checks\n\n• World-Check (Refinitiv / LSEG) — gold standard. Used by tier-1 banks. Expensive but most defensible. Trial: 30 days.\n\n• LexisNexis Bridger — cheaper alternative. Solid coverage. Trial: 14 days.\n\n• OpenSanctions — free, open-data. Useful for cross-check but NOT defensible as sole tool.\n\nRECOMMENDATION: World-Check primary + OpenSanctions cross-check. Get World-Check trial THIS WEEK before any Frontier Markets engagement starts. Without this, can't responsibly onboard AZ/AIFC/Nigeria clients.",
-      "date": "2026-05-18T19:00:00Z"
-    },
-    {
-      "id": "inbox_email_drafts_nigeria",
-      "content": "DRAFT — Bitmama outreach (Ruth Iselema, CEO)\n\nSubject: ARIP gap audit — 30 min\n\nRuth,\n\nNoticed Bitmama has not yet filed under the SEC ARIP framework, while Quidax and Busha received initial approvals. With the ₦10M/month penalty exposure for non-compliance once the runway closes, the timeline matters.\n\nWe run focused ARIP gap audits for Series A+ crypto firms — typically 30 minutes of your time, EU/MiCA-side perspective on what's likely missing from your structuring before the full filing. Fee €2-3K, 5 working days. No retainer commitment.\n\nIf useful, I can send a one-pager + walk through 3-4 specific gaps we'd assess based on what's public about Bitmama's structure.\n\nBest,\n[Adrián Páleš]\nBlack Sea — Defense + Frontier Markets Advisory\n\n---\n\nSimilar drafts for Yellow Card (Janet Bandele) + Quidax (Buchi Okoro) in Execution_Day_1.docx.",
-      "date": "2026-05-18T19:00:00Z"
-    },
-    {
-      "id": "inbox_brain_design_principle",
-      "content": "BRAIN DESIGN PRINCIPLE — for Claude's own reference\n\nFrom Adrián 2026-05-11:\n\n'ja funugjem aj naprikald na vizualzácii veľkých cielov a plánov atd. a nie na micro veciach vždy som sníval a chcel a chcem aj dnes a budem chieť aj zajtra'\n\nIMPLICATION:\n• Map view (network graph) is the PRIMARY view, not Tasks.\n• Show the WHOLE structure — brand → 3 business models → services + prospects.\n• Today view exists for dopamine (small wins), but the Map is the purpose anchor.\n• Don't linearize into checklists. Visualize the system.\n\nAlso from 2026-05-18:\n'chcel by som tam vidieť aj viac ako keby moj šialnený adhd mozog v tej mape'\n\nIMPLICATION: Map should accommodate sticky notes / random thoughts (DONE in v1.1). Future v1.3+: draw custom connections, write thoughts directly on canvas, color-code clusters.",
       "date": "2026-05-18T19:00:00Z"
     },
     {
