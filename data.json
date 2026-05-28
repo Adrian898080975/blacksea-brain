@@ -1,6 +1,6 @@
 {
-  "version": "2.0-bd-blitz-megamap",
-  "lastUpdated": "2026-05-28T10:22:07.852493+00:00",
+  "version": "2.2-defense-attack-complete",
+  "lastUpdated": "2026-05-28T12:32:21.112221+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -31,9 +31,9 @@
       "id": "bm_defense",
       "name": "Defense Capital Advisory",
       "type": "growth",
-      "status": "build_phase",
+      "status": "attack_mode_launching",
       "color": "#2E8B6F",
-      "description": "EU defense + dual-use fund advisory. Target client segments: emerging fund managers (1st-2nd time GPs), European family offices reconsidering defense allocation, defense-tech startups raising Series A-B needing institutional readiness. Premium positioning, 6-12 month build to recurring revenue. Anchor on Adrián's MFSA + MiFID II + fund-launch credibility. EU policy tailwind: Defense Equity Facility (€500M+ by 2026), proposed €1B Fund-of-Funds Q1 2026, NATO 5% GDP commitment, EDF €1B in 2026.",
+      "description": "EU defense + dual-use fund advisory. HIGHEST TICKET business model (€25-75K per fund structuring + €3.5-15K/mo retainers). Target client segments: (1) Emerging defense fund managers (1st-2nd time GPs), (2) European family offices reconsidering defense allocation, (3) Defense-tech startups raising Series A-B needing institutional readiness. Premium positioning on Adrian's MFSA + MiFID II + A27 SICAV (Bloomberg ticker) credibility. EU policy tailwind: Defense Equity Facility (€500M+), proposed €1B Fund-of-Funds, NATO 5% GDP commitment, EDF €1B in 2026. BD attack launching May 28: research targets, draft emails, Substack content, speaker applications. Previously contacted: Sunfish Partners (DE), Underline Ventures (RO), SmartCap (EE), EIF, NATO Innovation Fund.",
       "revenue_y1_target_eur": 500000,
       "revenue_y1_realistic_eur": 250000,
       "x": 600,
@@ -201,6 +201,33 @@
       "price_max_eur": 75000,
       "duration_days": 90,
       "description": "Cross-border compliance framework for operators in 3+ frontier jurisdictions. No two regulatory frameworks are identical. Separate but aligned frameworks per market."
+    },
+    {
+      "id": "svc_defense_fund_setup",
+      "name": "Defense Fund Full Setup",
+      "businessModel": "bm_defense",
+      "price_min_eur": 50000,
+      "price_max_eur": 150000,
+      "duration_days": 120,
+      "description": "End-to-end defense/dual-use fund formation. AIFMD II compliance, MFSA/FCA/BaFin licensing pathway, LP onboarding infrastructure, compliance framework, regulatory filings. Adrian's A27 SICAV experience is the differentiator."
+    },
+    {
+      "id": "svc_aifmd2_gap",
+      "name": "AIFMD II Compliance Gap Analysis",
+      "businessModel": "bm_defense",
+      "price_min_eur": 5000,
+      "price_max_eur": 12000,
+      "duration_days": 10,
+      "description": "Gap analysis for existing fund managers vs. AIFMD II requirements. Specific focus on defense/dual-use classification, LP reporting, risk management framework updates."
+    },
+    {
+      "id": "svc_lp_readiness",
+      "name": "Institutional LP Readiness Package",
+      "businessModel": "bm_defense",
+      "price_min_eur": 15000,
+      "price_max_eur": 35000,
+      "duration_days": 30,
+      "description": "For defense-tech startups raising Series A-B. Compliance infrastructure, DD room, KYC/AML framework, governance documentation that institutional LPs expect."
     }
   ],
   "prospects": [
@@ -354,7 +381,7 @@
       "businessModel": "bm_defense",
       "country": "EU multi (DE/CH/AT/NL primary)",
       "segment": "Family Office · Defense allocation",
-      "stage": "lead",
+      "stage": "archetype",
       "warmth": "cold",
       "primaryContact": "TBD — identify via Substack engagement",
       "channel": "Substack article → LinkedIn / intro",
@@ -362,7 +389,7 @@
       "probability": 8,
       "nextAction": "Publish first Substack article — 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'",
       "nextActionDate": "2026-05-25",
-      "notes": "Archetype prospect, not specific company. Strategy: thought leadership via Substack → inbound from family office CIOs / next-gen members. Median ticket: €50-80K fund structuring or €5-15K/mo Fractional CCO retainer."
+      "notes": "TARGET ARCHETYPE - not a specific company. Strategy: Substack thought leadership -> inbound from family office CIOs. Defense Capital Advisory primary channel."
     },
     {
       "id": "pr_defense_startup_target",
@@ -370,7 +397,7 @@
       "businessModel": "bm_defense",
       "country": "EU (DE/FR/PL/NL primary)",
       "segment": "Defense-tech · raising Series A-B",
-      "stage": "lead",
+      "stage": "archetype",
       "warmth": "cold",
       "primaryContact": "TBD — track via EDF / Defense Equity Facility recipients",
       "channel": "EDF recipients list + Bruegel/Dechert reports",
@@ -378,7 +405,7 @@
       "probability": 10,
       "nextAction": "Identify 10 Defense Equity Facility recipients lacking institutional fund structure",
       "nextActionDate": "2026-05-26",
-      "notes": "Archetype prospect. Trigger: Defense Equity Facility (€500M+ by 2026) + €1B Fund-of-Funds (Q1 2026) recipients often technical founders without fund operations expertise. Service angle: 'institutional readiness' before bigger raise."
+      "notes": "TARGET ARCHETYPE - not a specific company. Track EDF / Defense Equity Facility recipients. Look for Series A-B defense-tech without fund ops."
     },
     {
       "id": "pr_aifc_emerging_dasp",
@@ -386,7 +413,7 @@
       "businessModel": "bm_frontier",
       "country": "Kazakhstan (AIFC, Astana)",
       "segment": "Digital Asset Service Provider · transitioning to amended framework",
-      "stage": "lead",
+      "stage": "archetype",
       "warmth": "cold",
       "primaryContact": "TBD — research publicreg.myafsa.com",
       "channel": "Cold email after register research",
@@ -394,7 +421,7 @@
       "probability": 15,
       "nextAction": "AIFC public register research — identify top 5 emerging DASPs at risk under amendments",
       "nextActionDate": "2026-05-20",
-      "notes": "Archetype prospect. AFSA framework amendments effective 1.1.2026. 30 DASPs in AIFC need to adapt. Crowdfunding transition deadline Jun-Jul 2026. Gap analysis €8-15K, 14-day turnaround. Volume play — could close 3-5 of these for €30-60K total Q3 2026."
+      "notes": "TARGET ARCHETYPE - 30 DASPs in AIFC need to adapt to new frameworks. Volume play. Specific contacts in AIFC follow-up list."
     },
     {
       "id": "pr_airlabs_fff_lp",
@@ -1268,6 +1295,329 @@
       "nextAction": "Send membership application",
       "nextActionDate": "2026-05-29",
       "notes": "Crypto Asset Association SA. Membership = credibility + network access. Original caasa.co.za was WRONG domain (commercial aviation!). Corrected to sacryptoassociation.org."
+    },
+    {
+      "id": "pr_darkstar",
+      "name": "Darkstar Coalition",
+      "businessModel": "bm_defense",
+      "country": "Estonia (Tallinn)",
+      "segment": "Defense VC Fund (1st-time GP)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Ragnar Sass (Founder, ex-Pipedrive co-founder)",
+      "channel": "Website + X (@ragnars)",
+      "expected_value_eur": 50000,
+      "probability": 20,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-01",
+      "notes": "EUR 25M pure-defense fund (EUR 15M first close, backed by SmartCap). Founded 2024. Pre-seed/seed, EUR 500K-1M tickets. FIRST-TIME GP = prime candidate for fund structuring + AIFMD II compliance.",
+      "tier": 1
+    },
+    {
+      "id": "pr_d3vc",
+      "name": "D3 Venture Capital",
+      "businessModel": "bm_defense",
+      "country": "Ukraine (EU operations)",
+      "segment": "Defense VC Fund (1st-time GP)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Eveline Buchatskiy (Founder)",
+      "channel": "Website d3.vc + LinkedIn",
+      "expected_value_eur": 40000,
+      "probability": 20,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-01",
+      "notes": "Founded 2023. Early-stage defense VC. 16 investments, 5 countries. Backed by Denmark EIFO ($5M). Young GP scaling rapidly - needs institutional readiness as they attract sovereign LPs.",
+      "tier": 1
+    },
+    {
+      "id": "pr_scalewolf",
+      "name": "ScaleWolf",
+      "businessModel": "bm_defense",
+      "country": "Lithuania (Vilnius)",
+      "segment": "Defense VC + Accelerator (1st-time GP)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via website",
+      "channel": "Website scalewolf.vc + LinkedIn",
+      "expected_value_eur": 35000,
+      "probability": 20,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-01",
+      "notes": "Founded 2023. VC fund + dual-use tech accelerator aligned with NATO EDTs. Backed by INVEGA + Lithuanian Ministry of Economy. First-time GP needing fund structuring.",
+      "tier": 1
+    },
+    {
+      "id": "pr_presto_tech",
+      "name": "Presto Tech Horizons",
+      "businessModel": "bm_defense",
+      "country": "Czech Republic (Prague)",
+      "segment": "Defense VC Fund",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "hello@prestoventures.com",
+      "channel": "Email: hello@prestoventures.com",
+      "expected_value_eur": 50000,
+      "probability": 15,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-01",
+      "notes": "EUR 150M fund launched 2024 with Czechoslovak Group (CSG). EUR 500K-5M tickets. Focus defense/security/resilience from NATO countries. New defense vehicle from established VC (Presto Ventures, 2016). Prague = Adrian can visit easily.",
+      "tier": 1
+    },
+    {
+      "id": "pr_greenflag",
+      "name": "Green Flag Ventures",
+      "businessModel": "bm_defense",
+      "country": "USA/Ukraine",
+      "segment": "Defense VC Fund (1st-time GP)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Justin Zeefe (Co-founder)",
+      "channel": "Website greenflag.vc + LinkedIn",
+      "expected_value_eur": 35000,
+      "probability": 15,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-02",
+      "notes": "$20M fund backing Ukrainian dual-use/defense startups. Earliest US fund with full-time Kyiv presence. As they grow European portfolio, need EU fund structuring + AIFMD compliance.",
+      "tier": 1
+    },
+    {
+      "id": "pr_expeditions",
+      "name": "Expeditions Fund",
+      "businessModel": "bm_defense",
+      "country": "Poland (Warsaw) + London + Paris",
+      "segment": "Defense VC Fund (2nd-time GP)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Stanislaw Kastory / Dr. Mikolaj Firlej (Co-founders)",
+      "channel": "Website expeditionsfund.com",
+      "expected_value_eur": 50000,
+      "probability": 15,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-02",
+      "notes": "Fund II at EUR 100M first close (target EUR 150M). Backed by NATO Innovation Fund + Polish Development Fund. Dual-use deep tech: cyber, autonomy, AI, quantum, space. Second-time GP scaling significantly - needs institutional LP onboarding infrastructure.",
+      "tier": 2
+    },
+    {
+      "id": "pr_hyperion",
+      "name": "Hyperion Fund",
+      "businessModel": "bm_defense",
+      "country": "Spain (Madrid)",
+      "segment": "Defense/Aerospace VC Fund",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Pablo Casado / Ricardo Gomez-Acebo Botin (Founders)",
+      "channel": "Website hyperionfund.eu",
+      "expected_value_eur": 60000,
+      "probability": 12,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-02",
+      "notes": "First European fund specializing in defense+aerospace. EUR 150M raised. Planning EUR 500M Fund II for 2026. Fast-growing GP needing institutional compliance as they scale to Fund II. HIGH POTENTIAL.",
+      "tier": 2
+    },
+    {
+      "id": "pr_join_capital",
+      "name": "Join Capital",
+      "businessModel": "bm_defense",
+      "country": "Germany (Berlin) + London + Milan",
+      "segment": "Defense/Dual-Use VC Fund",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "hello@join.capital",
+      "channel": "Email: hello@join.capital",
+      "expected_value_eur": 50000,
+      "probability": 10,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-02",
+      "notes": "Fund III targeting EUR 235M for defense/dual-use/space deeptech. EUR 50M commitment from EIF (largest EIF defense commitment to date). 25 early-stage investments planned. Fund III is major step-up into defense - needs defense-specific compliance infrastructure.",
+      "tier": 2
+    },
+    {
+      "id": "pr_karista",
+      "name": "Karista (Tech I Fund)",
+      "businessModel": "bm_defense",
+      "country": "France (Paris)",
+      "segment": "SpaceTech/Defence/Cyber VC",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "contact@karista.vc",
+      "channel": "Email: contact@karista.vc",
+      "expected_value_eur": 40000,
+      "probability": 12,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-03",
+      "notes": "Established VC (founded 2001) but Tech I is new SpaceTech/Defence/Cyber fund sponsored by CNES (French space agency). Dual-use, software, AI for defense. New defense-specific vehicle from experienced manager.",
+      "tier": 2
+    },
+    {
+      "id": "pr_gohub",
+      "name": "GoHub Ventures",
+      "businessModel": "bm_defense",
+      "country": "Spain (Valencia)",
+      "segment": "AI/Dual-Use VC",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via website",
+      "channel": "Website gohub.vc + LinkedIn",
+      "expected_value_eur": 25000,
+      "probability": 10,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-03",
+      "notes": "Early-stage VC, B2B software in AI and dual-use. Actively publishing defense tech market maps. Emerging into defense as new vertical.",
+      "tier": 2
+    },
+    {
+      "id": "pr_keen_ventures",
+      "name": "Keen Venture Partners (Defense Fund)",
+      "businessModel": "bm_defense",
+      "country": "Netherlands (Amsterdam)",
+      "segment": "Defense VC Fund (largest EU)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "info@keenventurepartners.com",
+      "channel": "Email: info@keenventurepartners.com",
+      "expected_value_eur": 30000,
+      "probability": 8,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-03",
+      "notes": "EUR 150M+ = Europe's largest defense-tech VC fund. EUR 40M from EIF, EUR 40M from Dutch pension PME. Invests EUR 1-10M. Large enough for in-house compliance, BUT portfolio companies (25+) all need compliance help. Referral partnership angle.",
+      "tier": 3
+    },
+    {
+      "id": "pr_tikehau",
+      "name": "Tikehau Capital (TDS Fund)",
+      "businessModel": "bm_defense",
+      "country": "France (Paris)",
+      "segment": "Alternative Asset Manager (Defense PE)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "contact@tikehaucapital.com",
+      "channel": "Email: contact@tikehaucapital.com",
+      "expected_value_eur": 0,
+      "probability": 5,
+      "nextAction": "Research portfolio companies for direct outreach",
+      "nextActionDate": "2026-06-05",
+      "notes": "Major alt asset manager. Launched 'Tikehau Defence et Securite' (TDS) = Europe's first unlisted PE fund for defense/security. EUR 800M fund with Airbus, Safran, Thales. TOO LARGE for fund structuring. BUT portfolio companies = direct compliance leads. Referral target.",
+      "tier": 3
+    },
+    {
+      "id": "pr_otb_ventures",
+      "name": "OTB Ventures",
+      "businessModel": "bm_defense",
+      "country": "Poland (Warsaw) / Netherlands",
+      "segment": "DeepTech VC (NATO-backed)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "contact@otb.vc",
+      "channel": "Email: contact@otb.vc",
+      "expected_value_eur": 30000,
+      "probability": 10,
+      "nextAction": "Draft outreach email",
+      "nextActionDate": "2026-06-03",
+      "notes": "$185M deeptech Fund II, backed by NATO Innovation Fund. SpaceTech, AI, FinTech, Cybersecurity. $350M+ total AUM. Second-time GP with NATO backing scaling into defense.",
+      "tier": 2
+    },
+    {
+      "id": "pr_nato_diana",
+      "name": "NATO DIANA",
+      "businessModel": "bm_defense",
+      "country": "Pan-NATO (London, Tallinn, Halifax)",
+      "segment": "Defense Accelerator (Referral Partner)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via website diana.nato.int",
+      "channel": "Website",
+      "expected_value_eur": 0,
+      "probability": 20,
+      "nextAction": "Research partnership/advisory model",
+      "nextActionDate": "2026-06-05",
+      "notes": "150 companies in 2026 cohort across 24 NATO countries. EUR 100K each. 16 accelerator sites, 200+ test centers. These startups need compliance help to raise institutional capital post-accelerator. REFERRAL PIPELINE.",
+      "partnerType": "accelerator_referral"
+    },
+    {
+      "id": "pr_eudis",
+      "name": "EUDIS Business Accelerator",
+      "businessModel": "bm_defense",
+      "country": "EU-wide (European Commission)",
+      "segment": "Defense Accelerator (Referral Partner)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via European Commission DG DEFIS",
+      "channel": "Website eudis-business-accelerator.eu",
+      "expected_value_eur": 0,
+      "probability": 15,
+      "nextAction": "Apply as mentor/advisor",
+      "nextActionDate": "2026-06-07",
+      "notes": "EU's own defense accelerator. 20 startups/cohort (Spring + Autumn 2026). EUR 120K seed voucher per company. EUR 1.5B budget 2025-2027. EUDIS Matchmaking events connect founders with capital. Portfolio companies = direct compliance leads.",
+      "partnerType": "accelerator_referral"
+    },
+    {
+      "id": "pr_edth",
+      "name": "European Defense Tech Hub (EDTH)",
+      "businessModel": "bm_defense",
+      "country": "Pan-European",
+      "segment": "Defense Network (Referral Partner)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via eurodefense.tech",
+      "channel": "Website + community portal",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Join community + apply to speak",
+      "nextActionDate": "2026-06-05",
+      "notes": "Connects builders, investors, policymakers. Organized Invest in Bravery Summit. Community platform for defense tech ecosystem. Speaking/partnership opportunity.",
+      "partnerType": "network"
+    },
+    {
+      "id": "pr_edin",
+      "name": "European Defense Investor Network (EDIN)",
+      "businessModel": "bm_defense",
+      "country": "Pan-European",
+      "segment": "Investor Network",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via europeandefense.org",
+      "channel": "Website + membership",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Apply for membership",
+      "nextActionDate": "2026-06-05",
+      "notes": "Community of investors supporting defense/security tech ventures. Directly connects investors with founders. Membership = direct access to defense GP network. HIGH PRIORITY for visibility.",
+      "partnerType": "investor_network"
+    },
+    {
+      "id": "pr_gpfo",
+      "name": "GPFO (Global Partnership Family Offices)",
+      "businessModel": "bm_defense",
+      "country": "UK (London), 20+ jurisdictions",
+      "segment": "Family Office Network",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via gpfo.com",
+      "channel": "Website + speaking applications",
+      "expected_value_eur": 0,
+      "probability": 15,
+      "nextAction": "Apply to speak at GPFO event",
+      "nextActionDate": "2026-06-10",
+      "notes": "Leading European FO network for 15+ years. Private investment clubs, discrete forums. FOs increasingly interested in defense/dual-use. Speaking at GPFO events positions Black Sea as defense compliance advisor to LP base.",
+      "partnerType": "fo_network"
+    },
+    {
+      "id": "pr_campden",
+      "name": "Campden Wealth",
+      "businessModel": "bm_defense",
+      "country": "UK (London)",
+      "segment": "Family Office Research + Events",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "Via campdenwealth.com",
+      "channel": "Website + event applications",
+      "expected_value_eur": 0,
+      "probability": 10,
+      "nextAction": "Research speaking/publishing opportunities",
+      "nextActionDate": "2026-06-10",
+      "notes": "Produces European Family Office Report (102 FOs, 20 countries). European Family Office Forum (27th edition). 24% of avg FO portfolio in private markets. Platform to publish thought leadership on defense allocation.",
+      "partnerType": "fo_research"
     }
   ],
   "tasks": [
@@ -1318,12 +1668,13 @@
     {
       "id": "task_az_research",
       "title": "AZ research — LinkedIn na PashaPay, GoldenPay",
-      "priority": "P2",
-      "status": "todo",
+      "priority": "P3",
+      "status": "blocked",
       "businessModel": "bm_frontier",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-22",
-      "description": "Nájsť konkrétnych decision-makers"
+      "description": "Nájsť konkrétnych decision-makers",
+      "notes": "LinkedIn not being used. Deprioritized until Baku trip planning activates."
     },
     {
       "id": "task_az_emails",
@@ -1354,8 +1705,9 @@
       "status": "todo",
       "businessModel": "bm_defense",
       "estimatedTime": "2 hod",
-      "dueDate": "2026-05-20",
-      "description": "Z mailov/Telegramu/kontaktov — identifikácia Tier A/B/C. Pôvodný úloha z Master Strategic Document."
+      "dueDate": "2026-06-07",
+      "description": "Z mailov/Telegramu/kontaktov — identifikácia Tier A/B/C. Pôvodný úloha z Master Strategic Document.",
+      "notes": "Rescheduled. Critical for Defense Capital Advisory BD. Adrian needs to export contacts."
     },
     {
       "id": "task_web_rewrite",
@@ -1375,8 +1727,9 @@
       "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "1 hod",
-      "dueDate": "2026-05-26",
-      "description": "Three firms to quote for €5-15K/year retainer: Charles Russell Speechlys (London — financial services + private wealth, premium), Kingsley Napley (London — financial crime + regulatory enforcement, mid-tier with depth), K2 Integrity (New York/London — investigations + sanctions advisory, best for due diligence). Email each: 'Looking for retainer for sanctions/PEP review on cross-border crypto + fund advisory engagements, target client base in MENA/CIS/West Africa.'"
+      "dueDate": "2026-06-10",
+      "description": "Three firms to quote for €5-15K/year retainer: Charles Russell Speechlys (London — financial services + private wealth, premium), Kingsley Napley (London — financial crime + regulatory enforcement, mid-tier with depth), K2 Integrity (New York/London — investigations + sanctions advisory, best for due diligence). Email each: 'Looking for retainer for sanctions/PEP review on cross-border crypto + fund advisory engagements, target client base in MENA/CIS/West Africa.'",
+      "notes": "Rescheduled. Prioritize after first Frontier Markets payment lands."
     },
     {
       "id": "task_credentials_onepager_design",
@@ -1418,7 +1771,8 @@
       "businessModel": "bm_defense",
       "estimatedTime": "3 hod",
       "dueDate": "2026-05-30",
-      "description": "When prospects ask 'tell me about you' beyond credentials one-pager — need actual data room: licensing docs (MFSA, A27), prior engagement testimonials (anonymized if needed), case study from A27 launch, sample compliance work product. Use existing Google Drive or set up dedicated DocSend-style access."
+      "description": "When prospects ask 'tell me about you' beyond credentials one-pager — need actual data room: licensing docs (MFSA, A27), prior engagement testimonials (anonymized if needed), case study from A27 launch, sample compliance work product. Use existing Google Drive or set up dedicated DocSend-style access.",
+      "notes": "Important for both Defense and Frontier. Google Drive setup exists. Need to add: credentials PDF, case study, sample work product."
     },
     {
       "id": "task_nigeria_email_review",
@@ -1438,8 +1792,9 @@
       "status": "todo",
       "businessModel": "bm_defense",
       "estimatedTime": "1 hod",
-      "dueDate": "2026-05-19",
-      "description": "Extracted from: Gmail contacts, Telegram chat list, A27 client database (only what's permissible post-departure), Malta/Prague/Amsterdam connections. Goal: list of 30-50 names. Tier A (warm, can DM directly today), Tier B (warm but cold for a year — needs re-engagement), Tier C (cold but plausibly receptive)."
+      "dueDate": "2026-06-07",
+      "description": "Extracted from: Gmail contacts, Telegram chat list, A27 client database (only what's permissible post-departure), Malta/Prague/Amsterdam connections. Goal: list of 30-50 names. Tier A (warm, can DM directly today), Tier B (warm but cold for a year — needs re-engagement), Tier C (cold but plausibly receptive).",
+      "notes": "Rescheduled. Merge with warm_network task. Adrian needs to do this manually."
     },
     {
       "id": "task_lawsuit_status_review",
@@ -1448,8 +1803,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
-      "dueDate": "2026-06-01",
-      "description": "Highest court ruling lets case be dismissed. If not dismissed, can appeal and case drags for years. Mostly affecting positioning (Adrián references former role freely as no NDA / non-compete). Periodic status check with counsel — every 60 days minimum."
+      "dueDate": "2026-07-01",
+      "description": "Highest court ruling lets case be dismissed. If not dismissed, can appeal and case drags for years. Mostly affecting positioning (Adrián references former role freely as no NDA / non-compete). Periodic status check with counsel — every 60 days minimum.",
+      "notes": "Periodic review. Next check Q3 2026."
     },
     {
       "id": "task_brain_v12_deploy",
@@ -1469,8 +1825,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
-      "dueDate": "2026-05-22",
-      "description": "DRAFT v1.0 dated 3 May 2026. Slovak law. Bratislava arbitration. CRITICAL before further capital deployment. Both signatures needed. Schedule C (wallet addresses) needs Seena to fill BTC/ERC-20/TRC-20 addresses. Schedule A (exchange accounts) — confirm current status. Suggest review by qualified SK lawyer before signing."
+      "dueDate": "2026-06-05",
+      "description": "DRAFT v1.0 dated 3 May 2026. Slovak law. Bratislava arbitration. CRITICAL before further capital deployment. Both signatures needed. Schedule C (wallet addresses) needs Seena to fill BTC/ERC-20/TRC-20 addresses. Schedule A (exchange accounts) — confirm current status. Suggest review by qualified SK lawyer before signing.",
+      "notes": "OVERDUE. DRAFT v1.0 dated 3 May 2026. Pending signature. CRITICAL before capital deployment."
     },
     {
       "id": "task_seena_yubikey",
@@ -1479,8 +1836,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "2 hod",
-      "dueDate": "2026-05-20",
-      "description": "Per Phase 1 Action Plan. ~€60 YubiKey. Authy backup 2FA. Per agreement Part V — mandatory security. Then withdrawal whitelist Seena's wallet addresses on all accounts."
+      "dueDate": "2026-06-05",
+      "description": "Per Phase 1 Action Plan. ~€60 YubiKey. Authy backup 2FA. Per agreement Part V — mandatory security. Then withdrawal whitelist Seena's wallet addresses on all accounts.",
+      "notes": "OVERDUE. Blocked by agreement signing. Do immediately after signing."
     },
     {
       "id": "task_seena_whitelist_addresses",
@@ -1489,8 +1847,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "15 min",
-      "dueDate": "2026-05-20",
-      "description": "Required for Schedule C of agreement + technical whitelist setup on each exchange. 24-48h exchange-enforced delay after each new whitelist add — needs to happen BEFORE any capital deployment."
+      "dueDate": "2026-06-05",
+      "description": "Required for Schedule C of agreement + technical whitelist setup on each exchange. 24-48h exchange-enforced delay after each new whitelist add — needs to happen BEFORE any capital deployment.",
+      "notes": "OVERDUE. Waiting on Seena to provide addresses."
     },
     {
       "id": "task_seena_api_keys",
@@ -1499,8 +1858,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
-      "dueDate": "2026-05-21",
-      "description": "Per agreement clause 3.2 — within 48h of opening each exchange account. Seena gets full trading + withdrawal permissions, IP-whitelisted to his device(s). Separate from Adrián's admin access."
+      "dueDate": "2026-06-05",
+      "description": "Per agreement clause 3.2 — within 48h of opening each exchange account. Seena gets full trading + withdrawal permissions, IP-whitelisted to his device(s). Separate from Adrián's admin access.",
+      "notes": "OVERDUE. Do after whitelist setup."
     },
     {
       "id": "task_seena_binance_kyc",
@@ -1509,8 +1869,9 @@
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "2 hod",
-      "dueDate": "2026-05-25",
-      "description": "Both started (email verified). Need personal KYC: Slovak passport + selfie + proof of address. Binance has 24-72h verification turnaround typically. After active = configure sub-accounts + API."
+      "dueDate": "2026-06-03",
+      "description": "Both started (email verified). Need personal KYC: Slovak passport + selfie + proof of address. Binance has 24-72h verification turnaround typically. After active = configure sub-accounts + API.",
+      "notes": "OVERDUE. Adrian needs to complete personal KYC on Binance + OKX."
     },
     {
       "id": "task_airlabs_monthly_reporting_template",
@@ -1545,10 +1906,10 @@
     {
       "id": "task_bulk_batches",
       "title": "Bulk email script — daily 30 batch (291 remaining)",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
-      "notes": "Run: cd ~/Desktop/blacksea-bulk && source .venv/bin/activate && python3 blacksea_bulk_email.py --batch 30"
+      "notes": "Bulk script approach replaced by targeted Gmail draft approach. 85+ drafts created manually with personalization. Adrian sending 10-15/day."
     },
     {
       "id": "task_substack_4",
@@ -1560,11 +1921,11 @@
     },
     {
       "id": "task_twitter_weekly",
-      "title": "Twitter @BlackSeaOps — 7 posts/week via Buffer",
-      "status": "in_progress",
+      "title": "Twitter/X @BlackSeaSPV - Launch profile + start posting",
+      "status": "todo",
       "priority": "medium",
-      "businessModel": "bm_otc",
-      "notes": "Branded cards, hook text. Claude writes Mondays."
+      "businessModel": "bm_frontier",
+      "notes": "Full Twitter playbook created (TWITTER_PLAYBOOK.md). 7 days content ready. Adrian needs to set up profile and start posting. Buffer approach replaced by direct posting strategy."
     },
     {
       "id": "task_okx_telegram",
@@ -1591,14 +1952,6 @@
       "notes": "link@binance.com"
     },
     {
-      "id": "task_airlabs_agreement",
-      "title": "AIR Labs — sign Software Licensing Agreement",
-      "status": "todo",
-      "priority": "high",
-      "businessModel": "bm_otc",
-      "notes": "Draft v1.0 dated 3 May 2026. Pending signature."
-    },
-    {
       "id": "task_speaker_proposals",
       "title": "Speaker proposals — Astana Finance Days, Africa Fintech Summit, Malta",
       "status": "todo",
@@ -1613,6 +1966,186 @@
       "priority": "high",
       "businessModel": "bm_frontier",
       "notes": "New VASP markets with regulatory urgency."
+    },
+    {
+      "id": "task_meeting_chainup",
+      "title": "ChainUp meeting - bilateral referral partnership",
+      "priority": "P0",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-29",
+      "description": "May 29, 10:00 CEST. Jacelynn Pang. Partnership: ChainUp refers compliance clients, Black Sea refers infrastructure clients. Prep done (MEETING_PREP_ChainUp_May29.md)."
+    },
+    {
+      "id": "task_meeting_algoz",
+      "title": "AlgoZ meeting - VARA compliance advisory",
+      "priority": "P0",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-29",
+      "description": "May 29, 13:00 CEST. VARA-licensed market maker. Prep done (MEETING_PREP_AlgoZ_May29.md)."
+    },
+    {
+      "id": "task_meeting_xerof",
+      "title": "Xerof meeting - OTC compliance advisory",
+      "priority": "P0",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-06-01",
+      "description": "June 1, 13:00 CEST. Swiss OTC crypto broker. Prep done (MEETING_PREP_Xerof_Jun1.md)."
+    },
+    {
+      "id": "task_google_alerts_setup",
+      "title": "Set up 10 Google Alerts for enforcement + FATF",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-29",
+      "description": "FATF grey list, FATF plenary, VARA fine, FSCA CASP, CMB crypto, CBN AML, Kenya VASP, PVARA, AIFC digital assets, Kuwait AML. All 'as it happens' to adrian@blackseaspv.com. List in FATF_RAPID_RESPONSE.md."
+    },
+    {
+      "id": "task_telegram_join_groups",
+      "title": "Join 5-10 Telegram groups and start posting value",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-30",
+      "description": "Search: VARA compliance, crypto compliance, Web3 Dubai, Kenya crypto, Nigeria crypto, Pakistan crypto, Turkey crypto. Lurk 2-3 days then start posting Week 1 content from TELEGRAM_CONTENT_READY.md."
+    },
+    {
+      "id": "task_substack_publish_blogs",
+      "title": "Publish 3 blog posts on Substack",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-31",
+      "description": "Turkey CMB Deadline, Nigeria CBN AML, Kenya VASP Act. All written and ready in BLOG_POST_1/2/3.md files. Copy-paste to Substack."
+    },
+    {
+      "id": "task_newsletter_publish",
+      "title": "Publish Newsletter Issue #1 on Substack",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-31",
+      "description": "Frontier Compliance Brief Issue #1. Ready in NEWSLETTER_ISSUE_1.md."
+    },
+    {
+      "id": "task_send_vc_pitches",
+      "title": "Send VC fund outreach emails (CV VC, Shorooq first)",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-30",
+      "description": "6 VC fund pitches drafted. CV VC and Shorooq are highest priority (100+ portfolio companies combined). Send within daily email limit."
+    },
+    {
+      "id": "task_send_media_pitches",
+      "title": "Send media/podcast pitches (CoinDesk, Solidus, Chainalysis)",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-31",
+      "description": "5 media pitches drafted. CoinDesk op-ed is highest impact (permanent SEO). Send within daily email limit."
+    },
+    {
+      "id": "task_amcone_followup",
+      "title": "AMC One Capital follow-up",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-05-30",
+      "description": "Warm lead from AIFC Kazakhstan. Follow up if no response by May 30."
+    },
+    {
+      "id": "task_continue_sending_schedule",
+      "title": "Continue daily email sending per schedule (10-15/day)",
+      "priority": "P1",
+      "status": "in_progress",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-06-10",
+      "description": "85+ drafts in Gmail. Adrian sending manually per schedule in CONTACTS_MASTER.md. May 29: AIFC+Turkey. May 30: AIFC+SA. Jun 1: AIFC+SA. Jun 2: Nigeria. Jun 3: PK+KE. Jun 4: Kenya. Jun 5+: remaining."
+    },
+    {
+      "id": "task_coindesk_article_write",
+      "title": "Write full CoinDesk op-ed article (not just pitch)",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-06-05",
+      "description": "The Compliance Crisis Nobody Is Watching - full 1500-word article ready to submit if CoinDesk accepts the pitch."
+    },
+    {
+      "id": "task_whatsapp_business_setup",
+      "title": "Set up WhatsApp Business for Black Sea SPV",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-06-07",
+      "description": "WhatsApp broadcast list for regulatory alerts. 90%+ open rate in Nigeria, Kenya, Pakistan, Middle East."
+    },
+    {
+      "id": "task_defense_bd_research",
+      "title": "Research Defense Capital Advisory BD targets",
+      "priority": "P1",
+      "status": "in_progress",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-05-29",
+      "description": "Identify 15-20 defense VC funds, accelerators, associations, family office networks. Research agent running."
+    },
+    {
+      "id": "task_defense_email_drafts",
+      "title": "Draft Defense Capital Advisory outreach emails",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-06-01",
+      "description": "After research completes: draft personalized emails for defense VCs, accelerators, associations. Fund structuring + Fractional CCO angles."
+    },
+    {
+      "id": "task_defense_substack_article",
+      "title": "Write Defense-focused Substack article",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-06-05",
+      "description": "Topic: 'AIFMD II and the Defense Fund Compliance Gap' or 'EU Defense Equity Facility: What Emerging GPs Need to Know'. Inbound channel for defense fund managers."
+    },
+    {
+      "id": "task_defense_data_room",
+      "title": "Build Defense Capital Advisory credentials package",
+      "priority": "P1",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-06-07",
+      "description": "One-pager focused on defense fund structuring. Case study: A27 IC SICAV build (anonymized). MFSA + MiFID II + Bloomberg ticker proof points. Data room link."
+    },
+    {
+      "id": "task_defense_speaker_applications",
+      "title": "Apply as speaker to defense/investment conferences",
+      "priority": "P2",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-06-10",
+      "description": "DSEI, Eurosatory, European Defense Tech Summit, defense investment events. Talk: 'Structuring Defense Funds Under AIFMD II'. Speaker = free entry + credibility + leads."
+    },
+    {
+      "id": "task_defense_linkedin_content",
+      "title": "Prepare LinkedIn content for Defense (when ready to activate)",
+      "priority": "P3",
+      "status": "todo",
+      "businessModel": "bm_defense",
+      "dueDate": "2026-06-15",
+      "description": "Defense fund managers ARE on LinkedIn (unlike crypto). When Adrian activates LinkedIn, have defense-focused content ready. Not activating yet - but prep the content."
+    },
+    {
+      "id": "task_gmail_monitor",
+      "title": "Monitor Gmail for replies and new leads",
+      "priority": "P1",
+      "status": "in_progress",
+      "businessModel": "bm_frontier",
+      "dueDate": "2026-06-10",
+      "description": "Check daily. Draft replies to any responses. Track bounces and fix. Report warm leads immediately."
     }
   ],
   "documents": [
@@ -2028,6 +2561,36 @@
       "title": "FATF plenary = biggest BD moment 3x per year",
       "date": "2026-05-28T10:22:07.852493+00:00",
       "content": "June 2026 plenary (final under Mexican Presidency). Countries to watch: Kenya, Kuwait, Nigeria, Turkey, Pakistan, SA. Window: be among the FIRST to publish analysis. Most firms take 24-48h. We publish within 2-4h. Pre-written templates ready for all scenarios. Multi-channel blast: Twitter, Substack, email, Telegram. This is the single highest-impact content event in the compliance calendar."
+    },
+    {
+      "id": "ins_defense_attack_launch",
+      "title": "Defense Capital Advisory BD attack launching",
+      "date": "2026-05-28T10:31:47.182972+00:00",
+      "content": "May 28, 2026: Adrian realized we completely forgot Defense Capital Advisory in the BD blitz. This is the HIGHEST TICKET business model (€25-75K per engagement, €3.5-15K/mo retainers). EU defense spending explosion creates massive fund formation demand. Emerging GPs need someone who has actually built an MFSA-regulated fund from zero. That is Adrian. Launching: research defense VC targets, draft outreach, write Substack content, speaker applications."
+    },
+    {
+      "id": "ins_defense_eu_spending_boom",
+      "title": "EU defense spending boom = fund formation boom",
+      "date": "2026-05-28T10:31:47.182972+00:00",
+      "content": "EU Defense Roadmap March 2026 opens defense sector to innovation. Defense Equity Facility: €500M+ equity (EIF-backed). Proposed €1B Fund-of-Funds. NATO 5% GDP commitment. EDF €1B in 2026. This capital needs fund structures. Emerging GPs with defense-tech deal flow need compliant fund vehicles. Most law firms can do fund formation. Almost none have someone who built an MFSA SICAV AND understands crypto/dual-use compliance. Adrian is that person. The defense fund structuring market is underserved by people with actual operator experience."
+    },
+    {
+      "id": "ins_defense_vs_frontier_synergy",
+      "title": "Defense and Frontier are not separate - they feed each other",
+      "date": "2026-05-28T10:31:47.182972+00:00",
+      "content": "Defense fund managers need cross-border compliance (some invest in MENA, CIS, frontier markets). Frontier market crypto firms sometimes have defense/dual-use technology angles. The credibility from closing frontier market deals (real compliance work, real regulatory deadlines) strengthens the defense pitch ('we do this under pressure, in hard jurisdictions'). Vice versa: defense fund credentials (MFSA, MiFID II) strengthen the frontier pitch ('we are not just consultants, we built a regulated fund'). Both business models reinforce each other."
+    },
+    {
+      "id": "ins_defense_linkedin_needed",
+      "title": "Defense BD needs LinkedIn - unlike crypto, defense GPs live there",
+      "date": "2026-05-28T10:31:47.182972+00:00",
+      "content": "For frontier markets (crypto), LinkedIn is not needed - Telegram, Twitter, email work. For defense capital advisory, LinkedIn IS the primary channel. Fund managers, family office CIOs, defense-tech founders - they are all on LinkedIn. When Adrian is ready to activate LinkedIn, defense content should be the primary use case. Prepare content now, activate when ready."
+    },
+    {
+      "id": "ins_defense_target_map",
+      "title": "Defense BD target map complete - 13 VCs, 6 accelerators, 7 associations, 8 events",
+      "date": "2026-05-28T12:32:21.112221+00:00",
+      "content": "Full defense BD research completed. Key findings: TIER 1 targets (1st-time GPs, highest need): Darkstar Coalition (EST), D3 VC (UKR), ScaleWolf (LIT), Presto Tech Horizons (CZE - Prague!), Green Flag Ventures (USA/UKR). TIER 2 targets (scaling GPs): Expeditions Fund (POL, NATO-backed), Hyperion (ESP, EUR 500M Fund II), Join Capital (DEU, EIF's largest defense commitment), Karista (FRA, CNES), OTB Ventures (POL, NATO). Accelerator partnerships: NATO DIANA (150 companies), EUDIS (EU, EUR 1.5B budget). Investor networks: EDIN = highest priority for immediate membership. Events: SuperReturn Tech Sovereignty (Berlin Jun 11) = #1 priority. Czech target Presto is particularly interesting - Prague proximity for Adrian."
     }
   ],
   "edges": [
@@ -2255,6 +2818,136 @@
       "from": "bm_frontier",
       "to": "pr_lex_bridge",
       "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_defense_fund_setup",
+      "type": "service"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_aifmd2_gap",
+      "type": "service"
+    },
+    {
+      "from": "bm_defense",
+      "to": "svc_lp_readiness",
+      "type": "service"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_sunfish",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_underline",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_smartcap",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_eif",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_nif",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_darkstar",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_d3vc",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_scalewolf",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_presto_tech",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_greenflag",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_expeditions",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_hyperion",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_join_capital",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_karista",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_otb_ventures",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_keen_ventures",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_tikehau",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_nato_diana",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_eudis",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_edth",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_edin",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_gpfo",
+      "type": "channel"
+    },
+    {
+      "from": "bm_defense",
+      "to": "pr_campden",
+      "type": "channel"
     }
   ],
   "stickyNotes": [
@@ -2289,10 +2982,28 @@
       "y": 1100,
       "rotate": 1.0,
       "color": "green"
+    },
+    {
+      "id": "note_defense_attack",
+      "content": "DEFENSE CAPITAL ADVISORY\nHighest ticket: €25-75K/deal\n+ €3.5-15K/mo retainers\n\nA27 SICAV = proof.\nEU defense boom = timing.\n\nATTACK MODE.",
+      "x": 600,
+      "y": 1100,
+      "rotate": -1.5,
+      "color": "green"
     }
   ],
   "customEdges": [],
   "inbox": [
+    {
+      "id": "inbox_defense_attack_ready",
+      "content": "DEFENSE CAPITAL ADVISORY - BD ATTACK READY\n\nTARGETS IDENTIFIED:\n- 13 defense VC funds (5 Tier 1, 6 Tier 2, 2 Tier 3)\n- 6 accelerators/networks for referral pipeline\n- 4 industry associations to join\n- 8 conferences to apply as speaker\n- 2 family office networks for LP access\n\nPRIORITY OUTREACH (Tier 1 - first-time GPs):\n1. Darkstar Coalition (Estonia) - EUR 25M defense fund\n2. D3 Venture Capital (Ukraine) - scaling defense VC\n3. ScaleWolf (Lithuania) - dual-use accelerator+fund\n4. Presto Tech Horizons (Prague!) - EUR 150M with CSG\n5. Green Flag Ventures (USA/Ukraine) - $20M\n\nIMMEDIATE ACTIONS:\n1. Draft outreach emails for Tier 1 (5 emails)\n2. Apply to EDIN membership (investor network)\n3. Apply to speak at SuperReturn Tech Sovereignty (Jun 11)\n4. Write defense Substack article (AIFMD II angle)\n5. Draft Tier 2 emails (6 emails)\n\nTOTAL ADDRESSABLE VALUE:\nTier 1+2 combined: ~EUR 450K potential pipeline\nPlus: accelerator referral pipeline ongoing",
+      "date": "2026-05-28T12:32:21.112221+00:00"
+    },
+    {
+      "id": "inbox_status_28may_v2_defense",
+      "content": "BLACK SEA - FULL STATUS - MAY 28, 2026 (v2)\n\nTWO-FRONT BD ATTACK:\n\nFRONT 1: FRONTIER MARKETS (bm_frontier)\nStatus: FULL ATTACK MODE\n- 85+ email drafts across 13 markets\n- 10 BD channels active/ready\n- 3 meetings booked (May 29 + Jun 1)\n- 1 warm lead (AMC One)\n- Sending 10-15/day per schedule\n- Key deadlines: Nigeria Jun 10, Turkey Jun 30, FATF Jun 2026\n\nFRONT 2: DEFENSE CAPITAL ADVISORY (bm_defense)\nStatus: LAUNCHING\n- Previously contacted: Sunfish, Underline, SmartCap, EIF, NATO IF\n- Research agent running: 15-20 new defense targets\n- Email drafts: pending research results\n- Substack article: planned (AIFMD II + defense)\n- Speaker apps: planned (DSEI, Eurosatory, etc.)\n- HIGHEST TICKET: €25-75K/deal + €3.5-15K/mo retainers\n\nFRONT 3: OTC / AIR LABS (bm_otc)\nStatus: ACTIVE CLIENT\n- AIR Labs: invoices paid, retainer $600/mo\n- Agreement signing OVERDUE\n- Exchange KYC OVERDUE (Binance, OKX)\n- OKX: warm Telegram channel\n- Kraken: warm AM relationship (Mats)\n\nTOMORROW:\n1. ChainUp meeting 10:00 CEST\n2. AlgoZ meeting 13:00 CEST\n3. Continue email sending per schedule\n4. Defense research results expected",
+      "date": "2026-05-28T10:31:47.182972+00:00"
+    },
     {
       "id": "inbox_status_28may_megamap",
       "content": "BLACK SEA - FULL ATTACK MODE STATUS - MAY 28, 2026\n\nBD BLITZ SUMMARY (May 27-28):\n+ 85+ Gmail drafts created across 13+ markets\n+ 10 BD channels designed and activated\n+ 3 meetings booked (ChainUp May 29, AlgoZ May 29, Xerof Jun 1)\n+ 1 warm lead (AMC One Capital, AIFC)\n+ 3 blog posts written and ready for Substack\n+ 1 newsletter issue ready\n+ Full Twitter playbook (7 days content, 30+ accounts)\n+ Full Telegram strategy (3 weeks content, 7+ groups)\n+ FATF rapid response plan (pre-written for all scenarios)\n+ 6 VC fund pitches drafted\n+ 5 regtech partnership proposals drafted\n+ 6 law firm partnership proposals drafted\n+ 5 media/podcast pitches drafted\n\nMARKETS COVERED:\nUAE (VARA + ADGM), Turkey (CMB), Nigeria (CBN/SEC),\nKenya (CMA), Pakistan (PVARA), South Africa (FSCA),\nKazakhstan (AIFC/AFSA), Ghana (SEC), Kuwait (CBK),\nUzbekistan (NAPP), Kyrgyzstan, Georgia (NBG), Azerbaijan\n\nIMMEDIATE DEADLINES:\n- Nigeria CBN: June 10 (13 days)\n- Turkey CMB: June 30 (33 days)\n- FATF plenary: June 2026 (imminent)\n- AIFC AFSA: July 2026 (34 days)\n\nNEXT ACTIONS:\n1. ChainUp meeting May 29 10:00 CEST\n2. AlgoZ meeting May 29 13:00 CEST\n3. Continue sending 10-15 emails/day per schedule\n4. Set up Google Alerts for enforcement actions\n5. Join 3-5 Telegram groups and start posting\n6. Set up Twitter profile and start posting\n7. Publish blog posts on Substack\n8. AMC One follow-up May 30\n9. Xerof meeting Jun 1 13:00 CEST",
@@ -2888,6 +3599,89 @@
         }
       ],
       "color": "#C97A2B"
+    },
+    {
+      "id": "ch_defense_cold_email",
+      "name": "Defense VC/GP Cold Email",
+      "status": "targets_identified",
+      "priority": "P1",
+      "description": "Direct outreach to emerging defense fund managers, defense VCs, and dual-use fund GPs. AIFMD II compliance gap + fund structuring angle.",
+      "targets": {
+        "tier1_emerging_gps": [
+          "Darkstar Coalition (EST, EUR 25M, 1st GP)",
+          "D3 Venture Capital (UKR, defense VC, 1st GP)",
+          "ScaleWolf (LIT, dual-use, 1st GP)",
+          "Presto Tech Horizons (CZE, EUR 150M with CSG)",
+          "Green Flag Ventures (USA/UKR, $20M)"
+        ],
+        "tier2_scaling_gps": [
+          "Expeditions Fund (POL, EUR 150M Fund II, NATO-backed)",
+          "Hyperion Fund (ESP, EUR 500M Fund II planned)",
+          "Join Capital (DEU, EUR 235M Fund III, EIF-backed)",
+          "Karista Tech I (FRA, CNES-backed)",
+          "OTB Ventures (POL/NLD, $185M, NATO-backed)",
+          "GoHub Ventures (ESP, AI/dual-use)"
+        ],
+        "tier3_referral": [
+          "Keen Venture Partners (NLD, EUR 150M, portfolio referrals)",
+          "Tikehau Capital (FRA, EUR 800M, portfolio referrals)"
+        ]
+      },
+      "angle": "You built the fund idea. We built the compliance and structure for an MFSA-regulated SICAV from zero to Bloomberg ticker. Let us do the same for your defense fund.",
+      "color": "#2E8B6F"
+    },
+    {
+      "id": "ch_defense_substack",
+      "name": "Defense Substack Content",
+      "status": "launching",
+      "priority": "P1",
+      "description": "Thought leadership articles targeting defense fund managers and family office CIOs. Topics: AIFMD II defense gaps, EU Defense Equity Facility, defense allocation trends.",
+      "articles_planned": [
+        "AIFMD II and the Defense Fund Compliance Gap",
+        "EU Defense Equity Facility: What Emerging GPs Need to Know",
+        "Why European Family Offices Are Reconsidering Defense Allocation in 2026"
+      ],
+      "color": "#2E8B6F"
+    },
+    {
+      "id": "ch_defense_accelerators",
+      "name": "Defense Accelerator Partnerships",
+      "status": "targets_identified",
+      "priority": "P1",
+      "description": "Partner with NATO DIANA, defense-tech accelerators, incubators. Their portfolio companies need compliance + fund structuring. Same model as VC portfolio access for frontier markets.",
+      "color": "#2E8B6F",
+      "targets": [
+        "NATO DIANA (150 companies, 24 NATO countries)",
+        "EUDIS Business Accelerator (EU, 20 startups/cohort, EUR 1.5B budget)",
+        "European Defense Tech Hub (EDTH)",
+        "European Defense Investor Network (EDIN)",
+        "Brave1 (Ukraine, 50+ startups, $105M+ raised)",
+        "Tehnopol (Estonia, NATO DIANA accelerator site)"
+      ]
+    },
+    {
+      "id": "ch_defense_conferences",
+      "name": "Defense Conference Speaker Applications",
+      "status": "targets_identified",
+      "priority": "P2",
+      "description": "Apply as speaker to DSEI, Eurosatory, European defense investment events. Talk: 'Structuring Defense Funds Under AIFMD II'. Speaker = free entry + credibility.",
+      "color": "#2E8B6F",
+      "targets": [
+        "SuperReturn Tech Sovereignty (Jun 11, Berlin) - HIGHEST PRIORITY",
+        "Resilience Conference London (Oct 5-6)",
+        "EDIF (Sep 17-18, The Hague)",
+        "Tectonic Defense Summit (Nov, Paris)",
+        "Europe FO Investment Summit (Rome)",
+        "Space Defense & Security Summit (Sep, Paris)"
+      ]
+    },
+    {
+      "id": "ch_defense_associations",
+      "name": "Defense Industry Association Membership",
+      "status": "planned",
+      "priority": "P2",
+      "description": "Join ASD, BDSV, or relevant defense industry associations. Visibility + networking with defense fund managers and defense-tech companies.",
+      "color": "#2E8B6F"
     }
   ],
   "pipelineStatus": {
@@ -3236,6 +4030,123 @@
       "prospectsCount": 2,
       "urgency": "low",
       "color": "#4F6A82"
+    }
+  ],
+  "defenseEvents": [
+    {
+      "id": "evt_superreturn",
+      "name": "SuperReturn Tech Sovereignty Summit",
+      "date": "2026-06-11",
+      "location": "Berlin",
+      "priority": "P1",
+      "why": "World's largest PE event. 6,000+ attendees, 2,000+ LPs, 3,000 GPs. Tech Sovereignty Summit specifically connects private capital with defense/AI/energy. HIGHEST LP DENSITY.",
+      "action": "Apply to speak. If too late, attend.",
+      "website": "informaconnect.com/superreturn-tech-sovereignty/"
+    },
+    {
+      "id": "evt_resilience_london",
+      "name": "Resilience Conference London",
+      "date": "2026-10-05",
+      "location": "London",
+      "priority": "P1",
+      "why": "Dedicated defense tech ecosystem event. Startup showcases, investor networking. Policy Day is invitation-only. London flagship.",
+      "action": "Apply to speak",
+      "website": "resilienceconference.io"
+    },
+    {
+      "id": "evt_edif",
+      "name": "European Defence Innovation Forum (EDIF)",
+      "date": "2026-09-17",
+      "location": "The Hague",
+      "priority": "P1",
+      "why": "Focus on defense innovation to capability. Policymaker + investor audience. Proximity to Dutch defense ecosystem (Keen Venture Partners).",
+      "action": "Apply to speak",
+      "website": "defenceinnovations.eu"
+    },
+    {
+      "id": "evt_tectonic",
+      "name": "Tectonic European Defense Summit",
+      "date": "2026-11-01",
+      "location": "Paris",
+      "priority": "P1",
+      "why": "Founders, investors, military leaders, policymakers. Investment-focused. Access to French defense capital ecosystem (Tikehau, Karista, GICAT).",
+      "action": "Apply to speak",
+      "website": "tectonicdefense.com"
+    },
+    {
+      "id": "evt_defense_security",
+      "name": "6th European Defence and Security Conference",
+      "date": "2026-10-29",
+      "location": "Brussels (Egmont Palace)",
+      "priority": "P2",
+      "why": "Annual independent forum on Europe's defense/security future. High-level networking.",
+      "action": "Apply to speak",
+      "website": "defencesecurityconference.eu"
+    },
+    {
+      "id": "evt_sds_summit",
+      "name": "Space Defense & Security Summit",
+      "date": "2026-09-15",
+      "location": "Paris",
+      "priority": "P2",
+      "why": "Space/defense convergence. Many defense funds (Join Capital, Karista) invest in space+defense. Niche event with high-quality audience.",
+      "action": "Research speaker application",
+      "website": "sds-summit.com"
+    },
+    {
+      "id": "evt_alea_fo_summit",
+      "name": "Europe Family Office Investment Summit",
+      "date": "2026-09-01",
+      "location": "Rome",
+      "priority": "P2",
+      "why": "70+ prominent European family offices. Geopolitics + investment theme. Defense allocation opportunity. Speaking platform.",
+      "action": "Apply to speak on defense allocation",
+      "website": "europefosummit.com"
+    },
+    {
+      "id": "evt_world_fo_forum",
+      "name": "World Family Office Forum (European Edition)",
+      "date": "2026-06-08",
+      "location": "Montreux, Switzerland",
+      "priority": "P2",
+      "why": "Major European FO event. Defense and geopolitical allocation on agenda. UHNW families reconsidering defense exposure.",
+      "action": "Apply to speak or attend",
+      "website": "europe.worldfamilyofficeforum.com"
+    }
+  ],
+  "defenseAssociations": [
+    {
+      "id": "assoc_asd",
+      "name": "ASD (AeroSpace and Defence Industries Association of Europe)",
+      "country": "Belgium (Brussels)",
+      "members": "28 direct companies + 23 national associations, 4,000+ companies, 1M+ employees",
+      "relevance": "Voice of EU defense industry. Membership = visibility across entire defense industrial base.",
+      "action": "Research membership requirements + apply",
+      "website": "asd-europe.org"
+    },
+    {
+      "id": "assoc_edin",
+      "name": "European Defense Investor Network (EDIN)",
+      "country": "Pan-European",
+      "relevance": "Community of investors supporting defense/security tech. Direct access to defense GP network.",
+      "action": "Apply for membership. HIGH PRIORITY.",
+      "website": "europeandefense.org"
+    },
+    {
+      "id": "assoc_bdli",
+      "name": "BDLI (German Aerospace Industries Association)",
+      "country": "Germany (Berlin)",
+      "relevance": "German aerospace industry. Germany = biggest defense spending growth in EU. EUR 100B+ commitment.",
+      "contact": "kontakt@bdli.de",
+      "website": "bdli.de/en"
+    },
+    {
+      "id": "assoc_bdsv",
+      "name": "BDSV (German Defense & Security Industry)",
+      "country": "Germany",
+      "members": "221 companies",
+      "relevance": "Member of BDI, ASD, NATO NIAG. Key defense industry association.",
+      "website": "bdsv.eu"
     }
   ]
 }
