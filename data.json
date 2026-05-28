@@ -1772,7 +1772,7 @@
     {
       "id": "pr_eag_assessor",
       "name": "EAG Experts Pool (FATF-style assessor)",
-      "businessModel": "all",
+      "businessModel": "bm_frontier",
       "country": "Pan-Eurasian (Russia, KZ, UZ, KG, Belarus, China, India, Tajikistan, Turkmenistan)",
       "segment": "FATF Regional Body (Expert Role)",
       "stage": "researched",
@@ -1790,7 +1790,7 @@
     {
       "id": "pr_menafatf_assessor",
       "name": "MENAFATF Assessor (UAE, Turkey, Kuwait)",
-      "businessModel": "all",
+      "businessModel": "bm_frontier",
       "country": "MENA region",
       "segment": "FATF Regional Body (Expert Role)",
       "stage": "researched",
