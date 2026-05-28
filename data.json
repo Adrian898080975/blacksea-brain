@@ -1,6 +1,6 @@
 {
-  "version": "3.0-mega-update",
-  "lastUpdated": "2026-05-28T23:59:00Z",
+  "version": "3.2-full-corrections-edf-sanctions",
+  "lastUpdated": "2026-05-29T01:00:00Z",
   "owner": "Adri\u00e1n P\u00e1le\u0161",
   "brand": {
     "id": "blacksea",
@@ -710,9 +710,10 @@
       "channel": "Email",
       "expected_value_eur": 30000,
       "probability": 35,
-      "nextAction": "Meeting May 29, 13:00 CEST",
+      "nextAction": "Meeting May 29 13:00 CEST with Stephen Wundke (Google Meet)",
       "nextActionDate": "2026-05-29",
-      "notes": "VARA-licensed market maker. Meeting prep done."
+      "notes": "VARA-licensed market maker. Meeting prep done.",
+      "replyStatus": "positive"
     },
     {
       "id": "pr_xerof",
@@ -726,9 +727,10 @@
       "channel": "Email",
       "expected_value_eur": 25000,
       "probability": 30,
-      "nextAction": "Meeting June 1, 13:00 CEST",
+      "nextAction": "Meeting Jun 1 13:00 CEST with Nick Ntigrintakis",
       "nextActionDate": "2026-06-01",
-      "notes": "Swiss OTC crypto broker. Meeting prep done."
+      "notes": "Swiss OTC crypto broker. Meeting prep done.",
+      "replyStatus": "positive"
     },
     {
       "id": "pr_amcone",
@@ -1766,6 +1768,41 @@
       "nextAction": "Contact @bitpapateam on Telegram with July 2026 Russia regulatory pitch",
       "nextActionDate": "2026-05-30",
       "notes": "Email reply May 28: 'Please send your suggestion to Telegram @bitpapateam'. Russia P2P, July 2026 BoR deadline."
+    },
+    {
+      "id": "pr_eag_assessor",
+      "name": "EAG Experts Pool (FATF-style assessor)",
+      "businessModel": "all",
+      "country": "Pan-Eurasian (Russia, KZ, UZ, KG, Belarus, China, India, Tajikistan, Turkmenistan)",
+      "segment": "FATF Regional Body (Expert Role)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "info@eurasiangroup.org",
+      "channel": "Direct application to EAG Secretariat",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Apply to EAG Experts Pool citing Central Asian AML/CFT expertise",
+      "nextActionDate": "2026-06-02",
+      "notes": "UNPAID peer review role BUT: (1) massive credibility builder, (2) access to all central banks/FIUs in member states, (3) insider knowledge of regulatory gaps = client pipeline. Barrier: Slovakia is not EAG member - may need nomination through observer org (UNODC, IMF, OSCE). Apply directly to Secretariat first. Also: MENAFATF for UAE/Turkey (hr@menafatf.org). UAE evaluation onsite Jun 2026 - high profile.",
+      "applicationProcess": "Electronic form + CV to EAG Secretariat. Must complete FATF assessor training (annual). 2-4 weeks for pool entry. First assignment 12-18 months.",
+      "strategicValue": "extreme"
+    },
+    {
+      "id": "pr_menafatf_assessor",
+      "name": "MENAFATF Assessor (UAE, Turkey, Kuwait)",
+      "businessModel": "all",
+      "country": "MENA region",
+      "segment": "FATF Regional Body (Expert Role)",
+      "stage": "researched",
+      "warmth": "cold",
+      "primaryContact": "hr@menafatf.org",
+      "channel": "Via MENAFATF member state delegation or direct",
+      "expected_value_eur": 0,
+      "probability": 15,
+      "nextAction": "Contact hr@menafatf.org about expert assessment opportunities",
+      "nextActionDate": "2026-06-02",
+      "notes": "UAE onsite evaluation JUNE 2026 - happening NOW. Turkey evaluation timing TBD. Assessors nominated by member state delegations. Harder entry than EAG but strategically valuable.",
+      "strategicValue": "extreme"
     }
   ],
   "tasks": [
@@ -2319,12 +2356,12 @@
     {
       "id": "task_expert_networks_signup",
       "title": "Register on GLG + AlphaSights + Guidepoint + Third Bridge",
-      "status": "pending",
+      "status": "in_progress",
       "priority": "critical",
       "businessModel": "all",
       "assignee": "adrian",
       "dueDate": "2026-05-30",
-      "notes": "FASTEST CASH. EUR 400-1200/hour expert calls. Onboarding 1-2 weeks. Apply today."
+      "notes": "DOING THIS NOW. Apply to: GLG (glginsights.com/network-members), AlphaSights (alphasights.com/experts), Guidepoint (guidepointglobaladvisors.com/apply), Third Bridge (thirdbridge.com), CleverX (cleverx.com). EUR 400-1200/hour. Onboarding 1-2 weeks."
     },
     {
       "id": "task_mourant_call",
@@ -2415,6 +2452,66 @@
       "assignee": "both",
       "dueDate": "2026-05-29",
       "notes": "37 bounced emails may have damaged domain reputation. Check mxtoolbox.com/blacklists.aspx, mxtoolbox.com/SuperTool.aspx for full health check."
+    },
+    {
+      "id": "task_eag_apply",
+      "title": "Apply to EAG Experts Pool + MENAFATF",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "all",
+      "assignee": "adrian",
+      "dueDate": "2026-06-02",
+      "notes": "Email info@eurasiangroup.org with CV + application citing Central Asian AML/CFT expertise (AIFC, UZ, KG). Also contact hr@menafatf.org for UAE/Turkey assessment opportunities. Unpaid but EXTREME strategic value (credibility + regulator access + client pipeline)."
+    },
+    {
+      "id": "task_sanctions_advisory_launch",
+      "title": "Launch sanctions compliance advisory service",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "bm_frontier",
+      "assignee": "both",
+      "dueDate": "2026-06-10",
+      "notes": "EUR 3.8B market. Draft service description, identify 10 target companies in UAE/Turkey/KZ. Focus on: banks with Russian correspondents, fintechs near sanctions perimeter, commodity traders, Russian-owned entities outside Russia."
+    },
+    {
+      "id": "task_fatf_public_consultation",
+      "title": "Respond to next FATF public consultation (build visibility)",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "all",
+      "assignee": "both",
+      "dueDate": "2026-06-15",
+      "notes": "Monitor fatf-gafi.org for open consultations. Submit expert response. Easiest path to FATF visibility. Also: subscribe to FATF newsletter for updates."
+    },
+    {
+      "id": "task_edf_register",
+      "title": "Register on EDF Partner Pool + EDA matchmaking platform",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "bm_defense",
+      "assignee": "both",
+      "dueDate": "2026-06-05",
+      "notes": "b2match.com/e/edf-partner-pool + edfnetwork.eu/matchmaking/. Create profile: compliance/regulatory advisory capability for defense consortia. Target SME non-thematic calls (only need 2 entities from 2 states). Prague matchmaking event - Adrian CAN attend!"
+    },
+    {
+      "id": "task_acss_certification",
+      "title": "Get ACSS CSS (Certified Sanctions Specialist) + join ACSS UAE Chapter",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "all",
+      "assignee": "adrian",
+      "dueDate": "2026-07-15",
+      "notes": "ACSS CSS = gold standard sanctions certification. Pearson VUE exam. Also: join ACSS UAE Chapter for Gulf sanctions networking."
+    },
+    {
+      "id": "task_sanctions_targets",
+      "title": "Identify 10 sanctions advisory target companies in UAE/Turkey/KZ",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "bm_frontier",
+      "assignee": "both",
+      "dueDate": "2026-06-10",
+      "notes": "Focus on: banks with Russian correspondents, fintechs near sanctions perimeter, commodity traders, Russian-owned entities outside Russia. Triggers: de-risking pressure, OFAC inquiries, transshipment discoveries."
     }
   ],
   "documents": [
@@ -2925,6 +3022,20 @@
       "category": "strategy",
       "severity": "high",
       "detail": "EUR 500K/month from near-zero in 2 months is not achievable through advisory alone. Realistic 2-month target: EUR 25-75K/month. To reach EUR 500K/month needs: 12-18 months pipeline, 2-3 hires, law firm partnership, published brand, procurement wins, AND defense fund structuring mandates converting."
+    },
+    {
+      "id": "ins_sanctions_advisory_market",
+      "title": "Sanctions advisory = largest addressable market for Black Sea",
+      "date": "2026-05-28",
+      "category": "strategy",
+      "detail": "Global financial crime compliance: EUR 3.8B (2025), projected EUR 9.1B by 2034 (10.2% CAGR). Over EUR 10B in fines in 2026. Adrian's positioning (EU fund license + frontier market + sanctions expertise) is RARE. Russia-owned entities outside Russia (UAE, Turkey, KZ, Georgia) is a massive underserved niche. Legal under EU Article 5n carve-out (lawyer confirmed)."
+    },
+    {
+      "id": "ins_fatf_eag_credibility",
+      "title": "EAG/MENAFATF assessor role = ultimate credibility + pipeline builder",
+      "date": "2026-05-28",
+      "category": "strategy",
+      "detail": "FATF-style mutual evaluation assessor is unpaid BUT gives: (1) direct access to every central bank/FIU in assessed countries, (2) insider knowledge of regulatory gaps that create client demand, (3) 'FATF assessor' on CV = instant credibility with every prospect. EAG covers all Central Asian markets we target. MENAFATF covers UAE + Turkey. UAE onsite evaluation happening June 2026."
     }
   ],
   "edges": [
@@ -3590,7 +3701,8 @@
         "blacksea_bulk_email.py"
       ],
       "color": "#18C26B",
-      "healthWarning": "CRITICAL: 40% bounce rate. Must verify all remaining emails before sending. Domain reputation at risk."
+      "healthWarning": "CRITICAL: 40% bounce rate. Must verify all remaining emails before sending. Domain reputation at risk.",
+      "workflow": "ALWAYS verify email via NeverBounce/ZeroBounce/Hunter.io BEFORE creating Gmail draft. Zero tolerance for unverified sends."
     },
     {
       "id": "ch_vc_portfolio",
@@ -4085,13 +4197,13 @@
       "subChannels": [
         {
           "name": "LinkedIn Articles",
-          "status": "not_started",
-          "note": "Defense GPs live on LinkedIn. 2-3x/week on AIFMD II, defense fund compliance."
+          "status": "blocked_medical",
+          "note": "OFF by doctor orders. A27 psychological impact. NOT reopening. Use Substack, conferences, referral partners instead."
         },
         {
           "name": "Substack",
-          "status": "content_ready",
-          "note": "3 articles + newsletter ready. Publish now."
+          "status": "live",
+          "note": "Articles published and linked from blackseaspv.com. Continue publishing."
         },
         {
           "name": "Podcast Guest Spots",
@@ -4113,7 +4225,8 @@
           ]
         }
       ],
-      "nextAction": "Publish first Substack article + first LinkedIn post this week"
+      "nextAction": "Publish first Substack article + first LinkedIn post this week",
+      "linkedinStatus": "OFF - medical decision (doctor ordered). A27 separation trauma. Compensate through other channels."
     },
     {
       "id": "ch_referral_partnerships",
@@ -4280,6 +4393,23 @@
         }
       ],
       "nextAction": "Register on Preqin + HFM directories. Email Alter Domus with co-referral proposal."
+    },
+    {
+      "id": "ch_sanctions_advisory",
+      "name": "Sanctions Compliance Advisory (B2B direct)",
+      "status": "ready_to_launch",
+      "priority": "P0",
+      "description": "EUR 3.8B global market growing 10% annually. Advise banks, fintechs, commodity traders in UAE/Turkey/Central Asia on sanctions compliance. NOT tendered - direct B2B sales. Triggers: new sanctions rounds, enforcement actions, correspondent banking pressure, Russia-adjacent operations.",
+      "targetClients": [
+        "Banks in UAE/Turkey with Russian correspondents",
+        "Fintechs operating near sanctions perimeter",
+        "Commodity traders (oil, metals) in Central Asia",
+        "Russian-owned entities incorporated in UAE/Turkey/KZ/Georgia (legal under EU Article 5n carve-out)",
+        "Crypto exchanges with Russia-origin volume"
+      ],
+      "pricing": "EUR 15-50K per engagement, or EUR 5-15K/mo retainer",
+      "nextAction": "Draft sanctions advisory service page for blackseaspv.com. Identify 10 target companies in UAE/Turkey.",
+      "color": "#FF6B35"
     }
   ],
   "pipelineStatus": {
@@ -4754,15 +4884,14 @@
     "softBounces": 3,
     "delayedThenFailed": 3,
     "bounceRate": "40%",
-    "status": "CRITICAL",
+    "status": "NEEDS_VERIFICATION_WORKFLOW",
     "domainReputation": "AT RISK - 40% bounce rate is dangerous. Must verify emails before sending.",
     "recommendations": [
-      "STOP sending to unverified emails immediately",
-      "Use email verification tool (Hunter.io, NeverBounce, ZeroBounce) before every send",
-      "37 emails bounced in 7 days = domain reputation damage likely",
-      "Consider warming domain with positive sends (newsletters to opted-in contacts)",
-      "Check SPF/DKIM/DMARC records for blackseaspv.com",
-      "Monitor blacklist status at mxtoolbox.com/blacklists.aspx"
+      "Domain is NOT blacklisted (MXToolbox confirmed green)",
+      "BUT 40% bounce rate is bad practice - verify all future emails before sending",
+      "Use Hunter.io / NeverBounce / ZeroBounce for verification before every draft",
+      "SPF/DKIM/DMARC appears configured correctly (no delivery policy rejections on our end)",
+      "Continue monitoring at mxtoolbox.com periodically"
     ],
     "bouncedAddresses": [
       "info@expeditions.fund",
@@ -4821,7 +4950,9 @@
       "deji.adegoke@whitecase.com",
       "Niamh.Lalor@ogier.com",
       "WokurkaU@schneider-group.com"
-    ]
+    ],
+    "domainBlacklisted": false,
+    "mxtoolboxStatus": "ALL GREEN - checked May 28, 2026"
   },
   "gapAnalysis": {
     "target": "EUR 500K/month by August 2026",
@@ -4829,7 +4960,7 @@
     "currentMonthlyRevenueSource": "Seena/AIR Labs retainer ($600/mo) + pending invoice ($2K)",
     "gapToTarget": 499400,
     "analysisDate": "2026-05-28",
-    "verdictHonest": "EUR 500K/month in 2 months from near-zero is not achievable through advisory alone. BUT EUR 50-100K/month by August IS achievable with the right moves. EUR 500K/month requires 12-18 months of pipeline building OR one massive procurement win OR the AIR Labs fund scaling to EUR 5M+ AUM.",
+    "verdictHonest": "EUR 500K/month in 2 months is extremely aggressive but the infrastructure is better than initially assessed. Website is live with case studies, Substack is publishing, domain is healthy, team includes Adrian + AI + wife (ex-ING KYC). Realistic 2-month target: EUR 25-75K/month. EUR 500K/month requires 12-18 months of pipeline building + subcontractor network + procurement wins.",
     "revenueScenarios": {
       "conservative_2months": {
         "monthlyEur": 25000,
@@ -4874,38 +5005,38 @@
     },
     "criticalGaps": [
       {
-        "gap": "ZERO DELIVERY TEAM",
-        "severity": "critical",
-        "detail": "Adrian is solo. Cannot deliver 5+ mandates simultaneously. Need: 1 junior compliance analyst (EUR 2-3K/mo), 1 senior associate/subcontractor for defense work.",
-        "fix": "Hire one junior (student/intern) immediately. Use subcontractors for overflow. Consider revenue-share model with experienced compliance professionals.",
+        "gap": "TEAM CAPACITY PLANNING",
+        "severity": "medium",
+        "detail": "Team: Adrian (lead) + AI agents (research/drafting) + wife (ex-KYC analyst ING, signatory). Can handle 3-5 concurrent mandates. Need subcontractors for overflow on larger mandates.",
+        "fix": "Build subcontractor network for overflow. Revenue-share model with experienced compliance professionals.",
         "timeToFix": "2-4 weeks"
       },
       {
         "gap": "NO EMAIL VERIFICATION = DOMAIN DAMAGE",
         "severity": "critical",
-        "detail": "40% bounce rate is destroying domain reputation. blackseaspv.com may already be on spam lists.",
-        "fix": "Stop all sending. Run remaining draft emails through NeverBounce/ZeroBounce. Check MXToolbox blacklists. Set up email authentication (SPF/DKIM/DMARC) if not done.",
+        "detail": "MXToolbox blacklist check: ALL GREEN. Domain is not blacklisted. BUT 40% bounce rate is still bad practice. Must verify all future emails before sending to keep it clean.",
+        "fix": "Domain is healthy (confirmed MXToolbox May 28). Implement email verification workflow: always verify via NeverBounce/Hunter.io before creating drafts. Zero tolerance for unverified sends going forward.",
         "timeToFix": "1-2 days"
       },
       {
-        "gap": "NO WEBSITE FOR ADVISORY",
-        "severity": "high",
-        "detail": "blackseaspv.com is OTC-focused. Defense GPs and frontier clients see an OTC desk, not a compliance advisory firm. Need a proper advisory website or at minimum a landing page.",
-        "fix": "Create advisory landing page at blackseaspv.com/advisory or separate domain. Must have: services, credentials, case study outline, contact form.",
+        "gap": "WEBSITE IS STRONG (CORRECTED)",
+        "severity": "resolved",
+        "detail": "blackseaspv.com has: 3 practice areas (EU Defense Capital, Frontier Markets, Regulatory Advisory), 3 anonymized case studies, 9 markets, diagnostic entry point, Substack briefings link, contact form. Website is comprehensive.",
+        "fix": "No fix needed. Website is production-ready.",
         "timeToFix": "1 week"
       },
       {
-        "gap": "NO PUBLISHED THOUGHT LEADERSHIP",
-        "severity": "high",
-        "detail": "3 Substack articles written but not all published. No LinkedIn presence. No op-eds. Defense GPs Google you before responding to cold email - they find nothing.",
-        "fix": "Publish all Substack articles this week. Start LinkedIn posting. Submit 2 op-eds.",
+        "gap": "CONTENT IS LIVE (CORRECTED)",
+        "severity": "resolved",
+        "detail": "Substack articles ARE published and linked from blackseaspv.com/briefings. Content strategy is active.",
+        "fix": "Continue publishing. Add more defense-specific content.",
         "timeToFix": "1 week"
       },
       {
-        "gap": "NO CASE STUDIES OR TESTIMONIALS",
-        "severity": "high",
-        "detail": "A27 SICAV build is the proof point but there is no written case study. No client testimonials. Frontier prospects need social proof.",
-        "fix": "Write A27 SICAV case study (anonymized if needed). Ask Seena for a testimonial quote. Create '3 things we built' credentials doc.",
+        "gap": "CASE STUDIES ARE LIVE (CORRECTED)",
+        "severity": "resolved",
+        "detail": "Website has 3 anonymized case studies: (1) Emerging manager AIFC authorization + dual-use tech fund, (2) Crypto operator Nigerian SEC ARIP with CBN deadline, (3) Licensed operator ADGM/VARA unified AML framework. All properly anonymized.",
+        "fix": "Continue adding case studies as mandates complete. Consider adding defense fund case study from A27 experience.",
         "timeToFix": "3 days"
       },
       {
@@ -4916,10 +5047,10 @@
         "timeToFix": "1-2 weeks to onboard"
       },
       {
-        "gap": "NO LINKEDIN FOR DEFENSE BD",
-        "severity": "medium",
-        "detail": "Defense GPs, family offices, and fund admins live on LinkedIn. Adrian has no active presence. This blocks the entire defense BD channel.",
-        "fix": "Activate LinkedIn (even minimal). Post 1-2x/week on AIFMD II and defense fund compliance. Connect with all defense prospect contacts.",
+        "gap": "LINKEDIN OFF BY MEDICAL ADVICE",
+        "severity": "accepted_risk",
+        "detail": "LinkedIn deactivated on doctor orders due to psychological impact from A27 separation. This is a medical decision and will not be reversed. Defense BD works through other channels: email, conferences, referral partners, Substack.",
+        "fix": "NOT fixing. Medical decision. Compensate through: Substack content, conference speaking, referral partnerships (Mourant, White & Case), expert networks, procurement platforms.",
         "timeToFix": "Ongoing"
       },
       {
@@ -4937,10 +5068,10 @@
         "timeToFix": "3-6 months for first win"
       },
       {
-        "gap": "INVOICING + PAYMENT INFRASTRUCTURE",
-        "severity": "medium",
-        "detail": "Need to ensure Black Sea SPV can invoice in EUR, USD, GBP. Need SWIFT/SEPA capability. Need proper invoice template with VAT handling.",
-        "fix": "Verify bank can handle multi-currency. Set up invoice template. Consider Wise Business for multi-currency if needed.",
+        "gap": "INVOICING INFRASTRUCTURE (MOSTLY READY)",
+        "severity": "low",
+        "detail": "SK firma (Black Sea SPV s.r.o.), SK bank account, crypto exchange account under firm (verified). Basic infrastructure exists.",
+        "fix": "Verify multi-currency capability (EUR/USD/GBP). Set up invoice template with proper VAT handling if not done. Quick setup.",
         "timeToFix": "1 week"
       }
     ],
@@ -5245,5 +5376,175 @@
       "correct": "contact@hashkey.com or support@hashkeyglobal.com",
       "confidence": "MEDIUM"
     }
-  ]
+  ],
+  "team": {
+    "members": [
+      {
+        "name": "Adrian Pales",
+        "role": "Founder, Lead Advisor, Client-facing",
+        "skills": "MFSA license, MiFID II, AIFMD, fund structuring, AML/CFT, sanctions",
+        "capacity": "All client conversations, closing, delivery",
+        "note": "ADHD + dyslexia + dysgraphia - channels into pattern recognition + systems thinking"
+      },
+      {
+        "name": "AI Agent System (Claude + sub-agents)",
+        "role": "Research, drafting, analysis, brain management, BD support",
+        "skills": "Research, email drafting, data analysis, market intelligence, target identification",
+        "capacity": "Unlimited research and drafting. Does not handle client conversations."
+      },
+      {
+        "name": "Adrian's wife",
+        "role": "KYC Analyst (available for project work)",
+        "skills": "Former KYC analyst at ING, signatory experience, compliance operations",
+        "capacity": "Available for KYC review work, document verification, compliance operations support"
+      }
+    ],
+    "scalingModel": "Core team (Adrian + wife + AI) handles 3-5 concurrent mandates. Subcontractors for overflow. Revenue-share model with experienced compliance professionals for larger mandates."
+  },
+  "website": {
+    "url": "blackseaspv.com",
+    "status": "production_live",
+    "lastReview": "2026-05-28",
+    "sections": {
+      "products": "3 practice areas: EU Defense Capital, Frontier Markets, Regulatory Advisory",
+      "markets": "9 jurisdictions detailed (AIFC KZ, Nigeria, UAE + 6 more)",
+      "cases": "3 anonymized case studies (AIFC fund manager, Nigerian crypto ARIP, ADGM/VARA operator)",
+      "approach": "Operator-side methodology, fixed pricing, partner counsel integration",
+      "briefings": "Substack publication linked",
+      "contact": "operations@blackseaspv.com, request a call form, diagnostic entry"
+    },
+    "serviceEligibility": {
+      "yes": [
+        "defense fund raising",
+        "AIFC/ARIP/VARA/ADGM licensing",
+        "digital asset navigation",
+        "fractional CCO",
+        "structural problems",
+        "third-party client support"
+      ],
+      "no": [
+        "general advisory",
+        "legal opinions",
+        "cheapest route seekers",
+        "absent UBO info",
+        "confirmation bias"
+      ]
+    },
+    "diagnosticOffer": "Two-week gap assessment, fixed-price, written report, no obligation",
+    "verdict": "Website is comprehensive and well-positioned. Covers all three business models."
+  },
+  "edfConsortium": {
+    "status": "ready_to_register",
+    "platforms": [
+      {
+        "name": "EDF Partner Pool",
+        "url": "b2match.com/e/edf-partner-pool",
+        "status": "not_registered",
+        "note": "Main virtual marketplace for consortium slots. Register with compliance/regulatory capability profile."
+      },
+      {
+        "name": "EDA Partner Search",
+        "url": "edfnetwork.eu/matchmaking/",
+        "status": "not_registered",
+        "note": "EDA dedicated matchmaking. Free."
+      }
+    ],
+    "events": [
+      {
+        "name": "EDF Onsite Matchmaking Prague",
+        "url": "edfnetwork.eu",
+        "note": "Physical matchmaking! Adrian can attend (Prague is easy)."
+      }
+    ],
+    "bestCallTopics": [
+      "SME non-thematic calls (EUR 60M pool) - only need 2 entities from 2 states",
+      "Disruptive technology calls (EUR 60M) - open to non-traditional actors",
+      "Cybersecurity/secure comms - need regulatory framework analysis",
+      "Any dual-use/export control topic - compliance WP justified"
+    ],
+    "typicalBudget": "EUR 50-200K for compliance work package within multi-million consortium project",
+    "deadline": "2026-09-29",
+    "nextAction": "Register on EDF Partner Pool + EDA matchmaking. Attend Prague matchmaking. Contact Slovak NCP for EDF."
+  },
+  "sanctionsAdvisory": {
+    "marketSize": "EUR 3.8B (2025), projected EUR 9.1B by 2034, CAGR 10.2%",
+    "competitors": {
+      "big": [
+        "Kroll",
+        "Control Risks",
+        "FTI Consulting",
+        "Exiger",
+        "Kharon"
+      ],
+      "specialist": [
+        "K2 Integrity",
+        "Nardello & Co.",
+        "Risk Advisory Group",
+        "Aperio Intelligence"
+      ],
+      "boutique": [
+        "Lamplighter (2025, PE-focused)",
+        "S-RM",
+        "ComplyAdvantage (RegTech)"
+      ]
+    },
+    "services": [
+      "Sanctions screening program design",
+      "Compliance program assessments and gap analysis",
+      "OFAC/EU sanctions license applications",
+      "Investigations (evasion, circumvention schemes)",
+      "Transactional due diligence (M&A near sanctioned jurisdictions)",
+      "Training for compliance teams",
+      "Export control compliance (EAR/ITAR)",
+      "Beneficial ownership analysis + KYC enhancement"
+    ],
+    "pricing": {
+      "hourly": "USD 150-400 consultant, USD 500-1000+ senior/ex-gov",
+      "retainer": "USD 3,500-10,000/month",
+      "project": "USD 25-150K program build, USD 50K+ investigations"
+    },
+    "clientTriggers": [
+      "Correspondent bank threatening cut-off (de-risking)",
+      "Bank closing accounts of Russian-linked entities",
+      "OFAC/OFSI/EU inquiry or subpoena",
+      "Goods transshipped to Russia via UAE/Turkey/Central Asia",
+      "New sanctions designation affecting supplier/customer",
+      "PE/VC DD on targets with sanctioned jurisdiction exposure"
+    ],
+    "certifications": [
+      {
+        "name": "ACAMS CGSS (Certified Global Sanctions Specialist)",
+        "url": "acams.org",
+        "status": "Adrian should get this"
+      },
+      {
+        "name": "ACSS CSS (Certified Sanctions Specialist)",
+        "url": "sanctionsassociation.org",
+        "note": "Gold standard. Pearson VUE exam centers globally."
+      },
+      {
+        "name": "ACSS UAE Chapter",
+        "note": "Best networking for Gulf sanctions market. JOIN."
+      }
+    ],
+    "conferences": [
+      {
+        "name": "ACAMS Assembly Europe",
+        "date": "2026-05-12",
+        "location": "Frankfurt",
+        "status": "passed"
+      },
+      {
+        "name": "ACAMS Assembly Las Vegas",
+        "date": "2026-09-28",
+        "location": "Las Vegas"
+      },
+      {
+        "name": "ACSS UAE Chapter events",
+        "location": "Dubai",
+        "note": "Most targeted for Gulf-facing advisory"
+      }
+    ],
+    "blackSeaAngle": "Russian-owned entities incorporated outside Russia (UAE, Turkey, KZ, Georgia). Legal under EU Article 5n carve-out. Lawyer confirmed. Massive underserved niche. Adrian's positioning (EU fund license + frontier market + OTC) is RARE in this space."
+  }
 }
