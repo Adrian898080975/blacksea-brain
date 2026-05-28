@@ -1,6 +1,6 @@
 {
-  "version": "1.3-session2-cleanup",
-  "lastUpdated": "2026-05-22T07:13:18.829686+00:00",
+  "version": "2.0-bd-blitz-megamap",
+  "lastUpdated": "2026-05-28T10:22:07.852493+00:00",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -44,16 +44,16 @@
     },
     {
       "id": "bm_frontier",
-      "name": "Frontier Markets",
+      "name": "Frontier Markets Compliance Advisory",
       "type": "expansion",
-      "status": "outreach_phase",
+      "status": "full_attack_mode",
       "color": "#C97A2B",
-      "description": "Azerbaijan + Kazakhstan (AIFC) + West Africa Crypto. Fastest cashflow window via Nigeria SEC ARIP (ISA 2025, ₦500M min capital, ₦10M/month penalty for non-compliance, 50+ firms in licensing wave). AIFC AFSA framework amendments effective 1.1.2026 — 149 Authorised Firms + 30 DASPs must adapt by Jun-Jul 2026. Azerbaijan: no crypto framework yet, Pasha Holding IPO 2025 creates international compliance pressure. Mindset: comfortable with 'complex environment' clients, has dealt with 'divní ľudia' before, no problem with that. Red lines locked: no sanctioned persons, no shell opacity, no UBO nominee evasion, no facilitation of sanctions evasion.",
-      "revenue_y1_target_eur": 300000,
-      "revenue_y1_realistic_eur": 150000,
+      "description": "Compliance advisory for digital asset operators across 13+ frontier markets. Active markets: UAE (VARA + ADGM), Turkey (CMB), Nigeria (CBN/SEC), Kenya (CMA), Pakistan (PVARA), South Africa (FSCA), Kazakhstan (AIFC/AFSA), Ghana (SEC), Kuwait (CBK), Uzbekistan (NAPP), Kyrgyzstan, Georgia (NBG), Azerbaijan. Full attack mode launched May 27-28, 2026. 85+ Gmail drafts created. 10 BD channels activated. 3 meetings booked (ChainUp May 29, AlgoZ May 29, Xerof Jun 1). Key regulatory deadlines driving urgency: Turkey CMB Jun 30, Nigeria CBN Jun 10, AIFC AFSA Jul 2026, Kenya VASP Act Nov 2026, FATF plenary Jun 2026.",
+      "revenue_y1_target_eur": 500000,
+      "revenue_y1_realistic_eur": 250000,
       "x": 400,
       "y": 450,
-      "urgencyWindow": "Nigeria ARIP applications NOW (deadline pressure on local crypto firms). AIFC framework transition Jun-Jul 2026 (sweet spot).",
+      "urgencyWindow": "Turkey CMB authorization deadline June 30, 2026 (33 days). Nigeria CBN AML roadmap deadline June 10, 2026 (13 days). AIFC AFSA transition deadline July 2026. Kenya VASP Act licensing deadline November 2026. FATF June 2026 plenary imminent. Pakistan PVARA sandbox live April 2026. South Africa FSCA inspections ongoing (21/30 done).",
       "investmentNeeded": "€15-40K Y1 compliance infrastructure (counsel retainer, World-Check or LexisNexis screening tools, Charles Russell Speechlys / Kingsley Napley / K2 Integrity)."
     }
   ],
@@ -120,6 +120,87 @@
       "price_max_eur": 30000,
       "duration_days": 45,
       "description": "Compliance infrastructure pre crypto OTC operations"
+    },
+    {
+      "id": "svc_turkey_cmb",
+      "name": "Turkey CMB CASP Authorization",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 15000,
+      "price_max_eur": 40000,
+      "duration_days": 60,
+      "description": "Full CMB authorization support for Turkish CASPs. AML/CFT framework, MASAK reporting integration, KYC procedures, board-level policies. 76 CASPs need authorization by June 30, 2026."
+    },
+    {
+      "id": "svc_nigeria_cbn_aml",
+      "name": "Nigeria CBN AML Roadmap",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 20000,
+      "price_max_eur": 50000,
+      "duration_days": 45,
+      "description": "Automated AML implementation roadmap for CBN-regulated VASPs and payment platforms. Personal liability angle for compliance officers. June 10, 2026 deadline."
+    },
+    {
+      "id": "svc_kenya_vasp",
+      "name": "Kenya VASP Act Licensing",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 15000,
+      "price_max_eur": 35000,
+      "duration_days": 90,
+      "description": "VASP Act 2025 licensing preparation for Kenyan crypto operators. 50+ firms, zero licensed, November 2026 deadline. KYC, transaction monitoring, STR reporting, sanctions screening frameworks."
+    },
+    {
+      "id": "svc_pakistan_pvara",
+      "name": "Pakistan PVARA Sandbox Application",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 12000,
+      "price_max_eur": 30000,
+      "duration_days": 60,
+      "description": "PVARA Virtual Assets Act 2026 sandbox application support. 8 license categories. AML/CFT framework from day one. Greenfield market with high bar."
+    },
+    {
+      "id": "svc_sa_fsca",
+      "name": "South Africa FSCA CASP Compliance",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 10000,
+      "price_max_eur": 25000,
+      "duration_days": 30,
+      "description": "FSCA CASP inspection readiness. AML/CFT/CFP framework audit. 310 licensed CASPs, 21/30 inspections completed. Gap analysis between written policies and actual practices."
+    },
+    {
+      "id": "svc_uae_federal_law",
+      "name": "UAE Federal Law AML Update",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 8000,
+      "price_max_eur": 20000,
+      "duration_days": 14,
+      "description": "Federal Decree-Law No. 10/2025 compliance update for VARA and ADGM licensees. VASPs now bank-equivalent for AML/CFT. AED 100M max penalty. Framework gap analysis."
+    },
+    {
+      "id": "svc_kuwait_fatf",
+      "name": "Kuwait FATF Grey List Response",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 15000,
+      "price_max_eur": 40000,
+      "duration_days": 45,
+      "description": "AML/CFT framework strengthening for Kuwaiti financial institutions post-FATF grey listing (Feb 2026). Enhanced due diligence, correspondent banking, STR procedures."
+    },
+    {
+      "id": "svc_ghana_sandbox",
+      "name": "Ghana Sandbox to Full License",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 10000,
+      "price_max_eur": 25000,
+      "duration_days": 60,
+      "description": "Transition from SEC Ghana sandbox to full VASP license. 11 sandbox firms. AML/CFT framework, capital requirements, ongoing reporting."
+    },
+    {
+      "id": "svc_multi_jurisdiction",
+      "name": "Multi-Jurisdiction Compliance Harmonization",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 25000,
+      "price_max_eur": 75000,
+      "duration_days": 90,
+      "description": "Cross-border compliance framework for operators in 3+ frontier jurisdictions. No two regulatory frameworks are identical. Separate but aligned frameworks per market."
     }
   ],
   "prospects": [
@@ -499,6 +580,694 @@
       "primaryContact": "Mats (account manager)",
       "notes": "Existing AM relationship with Mats. Reconnected as Black Sea founder.",
       "value": 75000
+    },
+    {
+      "id": "pr_chainup",
+      "name": "ChainUp",
+      "businessModel": "bm_frontier",
+      "country": "Global (Singapore HQ)",
+      "segment": "White-label Exchange Infrastructure",
+      "stage": "meeting_booked",
+      "warmth": "warm",
+      "primaryContact": "Jacelynn Pang (Partnerships)",
+      "channel": "Email + Meeting",
+      "expected_value_eur": 50000,
+      "probability": 40,
+      "nextAction": "Meeting May 29, 10:00 CEST. Bilateral referral partnership.",
+      "nextActionDate": "2026-05-29",
+      "notes": "White-label exchange provider powering 500+ exchanges globally. Partnership model: ChainUp refers compliance clients to Black Sea, Black Sea refers infrastructure clients to ChainUp. Meeting prep done."
+    },
+    {
+      "id": "pr_algoz",
+      "name": "AlgoZ",
+      "businessModel": "bm_frontier",
+      "country": "UAE (VARA licensed)",
+      "segment": "Exchange / Market Making",
+      "stage": "meeting_booked",
+      "warmth": "warm",
+      "primaryContact": "Via scheduling",
+      "channel": "Email",
+      "expected_value_eur": 30000,
+      "probability": 35,
+      "nextAction": "Meeting May 29, 13:00 CEST",
+      "nextActionDate": "2026-05-29",
+      "notes": "VARA-licensed market maker. Meeting prep done."
+    },
+    {
+      "id": "pr_xerof",
+      "name": "Xerof",
+      "businessModel": "bm_frontier",
+      "country": "Switzerland / UAE",
+      "segment": "OTC Crypto Brokerage",
+      "stage": "meeting_booked",
+      "warmth": "warm",
+      "primaryContact": "Via scheduling",
+      "channel": "Email",
+      "expected_value_eur": 25000,
+      "probability": 30,
+      "nextAction": "Meeting June 1, 13:00 CEST",
+      "nextActionDate": "2026-06-01",
+      "notes": "Swiss OTC crypto broker. Meeting prep done."
+    },
+    {
+      "id": "pr_amcone",
+      "name": "AMC One Capital",
+      "businessModel": "bm_frontier",
+      "country": "AIFC Kazakhstan",
+      "segment": "Asset Management",
+      "stage": "contacted",
+      "warmth": "warm",
+      "primaryContact": "Unknown",
+      "channel": "Email",
+      "expected_value_eur": 15000,
+      "probability": 25,
+      "nextAction": "Follow-up May 30 if no response",
+      "nextActionDate": "2026-05-30",
+      "notes": "AIFC-based asset manager. Warm reply received. Follow-up scheduled."
+    },
+    {
+      "id": "pr_bitexen",
+      "name": "Bitexen",
+      "businessModel": "bm_frontier",
+      "country": "Turkey + ADGM",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Alphan Gogus (Board Advisor)",
+      "channel": "Email: support@bitexen.com",
+      "expected_value_eur": 35000,
+      "probability": 20,
+      "nextAction": "Send email (scheduled May 29)",
+      "nextActionDate": "2026-05-29",
+      "notes": "Just got ADGM license May 21, 2026. Dual CMB+ADGM jurisdiction. HIGH PRIORITY. Draft ready in Gmail."
+    },
+    {
+      "id": "pr_bitci",
+      "name": "Bitci",
+      "businessModel": "bm_frontier",
+      "country": "Turkey",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Onur Altan Tan (CEO)",
+      "channel": "Email: info@bitci.com",
+      "expected_value_eur": 30000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled May 29)",
+      "nextActionDate": "2026-05-29",
+      "notes": "Multi-jurisdiction (TR+BR+ES). Fan tokens. 5M+ users. CMB deadline June 30. Draft ready."
+    },
+    {
+      "id": "pr_kfh",
+      "name": "Kuwait Finance House (KFH)",
+      "businessModel": "bm_frontier",
+      "country": "Kuwait",
+      "segment": "Islamic Bank",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Abdulwahab Alsaddani (Sr AML/CFT)",
+      "channel": "Email: FI.Dept@kfh.com",
+      "expected_value_eur": 40000,
+      "probability": 10,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "Major Islamic bank. FATF grey list since Feb 2026. Direct compliance dept email. Draft ready."
+    },
+    {
+      "id": "pr_almulla",
+      "name": "Al Mulla Exchange",
+      "businessModel": "bm_frontier",
+      "country": "Kuwait",
+      "segment": "Exchange House",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Mustafa Elkhelawy (Sr Compliance)",
+      "channel": "Email: help@almullaexchange.com",
+      "expected_value_eur": 20000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "88 branches. FATF grey list pressure. Draft ready."
+    },
+    {
+      "id": "pr_opay",
+      "name": "OPay",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Fintech / Payments",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Anti-fraud/Compliance team",
+      "channel": "Email: antifraud@opay.team",
+      "expected_value_eur": 50000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "Massive fintech. CBN AML deadline June 10. Personal liability for compliance officers. Draft ready."
+    },
+    {
+      "id": "pr_kuda",
+      "name": "Kuda Bank",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Digital Bank",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: help@kuda.com",
+      "expected_value_eur": 35000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "Leading Nigerian digital bank. CBN AML deadline. Draft ready."
+    },
+    {
+      "id": "pr_palmpay",
+      "name": "PalmPay",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Fintech / Payments",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Compliance team",
+      "channel": "Email: compliance@palmpay.com",
+      "expected_value_eur": 35000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "Major Nigerian payments platform. CBN AML June 10 deadline. Direct compliance email confirmed. Draft ready."
+    },
+    {
+      "id": "pr_carbon",
+      "name": "Carbon (formerly Paylater)",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Digital Bank / Lending",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: customer@getcarbon.co",
+      "expected_value_eur": 25000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "Nigerian digital bank and lending platform. CBN AML deadline. Draft ready."
+    },
+    {
+      "id": "pr_fairmoney",
+      "name": "FairMoney",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "segment": "Digital Bank / Lending",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: help@fairmoney.io",
+      "expected_value_eur": 25000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "Nigerian fintech. Paris-founded. CBN AML deadline. Draft ready."
+    },
+    {
+      "id": "pr_valr",
+      "name": "VALR",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Compliance team",
+      "channel": "Email: compliance@valr.com",
+      "expected_value_eur": 35000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled May 30)",
+      "nextActionDate": "2026-05-30",
+      "notes": "Largest SA exchange. Pantera + Coinbase Ventures backed. $50M Series B. FSCA licensed CASP. Inspection readiness angle. Draft ready."
+    },
+    {
+      "id": "pr_ovex",
+      "name": "OVEX",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Crypto Exchange / OTC",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@ovex.io",
+      "expected_value_eur": 25000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled May 30)",
+      "nextActionDate": "2026-05-30",
+      "notes": "SA exchange + OTC. FSCA CASP. Known for arbitrage. Draft ready."
+    },
+    {
+      "id": "pr_altify",
+      "name": "Altify (formerly Revix)",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Crypto Investment Platform",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@altify.app",
+      "expected_value_eur": 20000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled May 30)",
+      "nextActionDate": "2026-05-30",
+      "notes": "SA crypto investment platform. FSCA licensed. Draft ready."
+    },
+    {
+      "id": "pr_altcointrader",
+      "name": "AltCoinTrader",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@altcointrader.co.za",
+      "expected_value_eur": 20000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled Jun 1)",
+      "nextActionDate": "2026-06-01",
+      "notes": "SA crypto exchange. FSCA licensed CASP. Draft ready."
+    },
+    {
+      "id": "pr_chainex",
+      "name": "ChainEX",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@chainex.io",
+      "expected_value_eur": 15000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled Jun 1)",
+      "nextActionDate": "2026-06-01",
+      "notes": "SA crypto exchange. FSCA licensed. Draft ready."
+    },
+    {
+      "id": "pr_fasset",
+      "name": "Fasset",
+      "businessModel": "bm_frontier",
+      "country": "Pakistan + UAE",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: help@fasset.com",
+      "expected_value_eur": 25000,
+      "probability": 15,
+      "nextAction": "Send email (scheduled Jun 3)",
+      "nextActionDate": "2026-06-03",
+      "notes": "VARA-licensed, expanding to Pakistan. PVARA sandbox opportunity. Draft ready."
+    },
+    {
+      "id": "pr_nayapay",
+      "name": "NayaPay",
+      "businessModel": "bm_frontier",
+      "country": "Pakistan",
+      "segment": "Digital Payments / EMI",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@nayapay.com",
+      "expected_value_eur": 20000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 3)",
+      "nextActionDate": "2026-06-03",
+      "notes": "Pakistani EMI. SBP licensed. PVARA consideration. Draft ready."
+    },
+    {
+      "id": "pr_sadapay",
+      "name": "SadaPay",
+      "businessModel": "bm_frontier",
+      "country": "Pakistan",
+      "segment": "Digital Payments / EMI",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: hello@sadapay.pk",
+      "expected_value_eur": 20000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 3)",
+      "nextActionDate": "2026-06-03",
+      "notes": "Pakistani EMI. SBP licensed. PVARA opportunity. Draft ready. (Original support@ bounced, fixed to hello@)."
+    },
+    {
+      "id": "pr_chippercash",
+      "name": "Chipper Cash",
+      "businessModel": "bm_frontier",
+      "country": "Kenya / Pan-African",
+      "segment": "Fintech / Crypto",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: team@chippercash.com",
+      "expected_value_eur": 35000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 3)",
+      "nextActionDate": "2026-06-03",
+      "notes": "Pan-African fintech with crypto. VASP Act 2025 compliance. Draft ready."
+    },
+    {
+      "id": "pr_aza_finance",
+      "name": "AZA Finance (BitPesa)",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "segment": "Fintech / FX",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Support",
+      "channel": "Email: support@azafinance.com",
+      "expected_value_eur": 30000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 4)",
+      "nextActionDate": "2026-06-04",
+      "notes": "Pioneer African crypto-FX. VASP Act licensing. Draft ready."
+    },
+    {
+      "id": "pr_kotani_pay",
+      "name": "Kotani Pay",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "segment": "Blockchain Payments",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: hello@kotanipay.com",
+      "expected_value_eur": 15000,
+      "probability": 10,
+      "nextAction": "Send email (scheduled Jun 4)",
+      "nextActionDate": "2026-06-04",
+      "notes": "Kenyan blockchain payments. VASP Act 2025. Draft ready."
+    },
+    {
+      "id": "pr_blu_penguin",
+      "name": "Blu Penguin",
+      "businessModel": "bm_frontier",
+      "country": "Ghana",
+      "segment": "Crypto Exchange",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Tenu (CEO)",
+      "channel": "Email: Tenu@theblupenguin.com",
+      "expected_value_eur": 15000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "SEC Ghana sandbox firm. Fastest-growing fintech award. Draft ready."
+    },
+    {
+      "id": "pr_bsystem",
+      "name": "Bsystem Ltd",
+      "businessModel": "bm_frontier",
+      "country": "Ghana",
+      "segment": "Asset Tokenization",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Thomas Baafi (CEO)",
+      "channel": "Email: info@bsystemslimited.com",
+      "expected_value_eur": 12000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "SEC Ghana sandbox. Software co since 1999. Fractionalized ownership. Draft ready."
+    },
+    {
+      "id": "pr_hashkey_mena",
+      "name": "HashKey MENA",
+      "businessModel": "bm_frontier",
+      "country": "UAE (VARA)",
+      "segment": "Exchange / Custody",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Jakub Princ",
+      "channel": "Email: jakub.princ@hashkey.com",
+      "expected_value_eur": 30000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "Hong Kong exchange expanding MENA. VARA licensed. Federal Law angle. Slovak contact (Jakub Princ). Draft ready."
+    },
+    {
+      "id": "pr_mantra",
+      "name": "Mantra Finance",
+      "businessModel": "bm_frontier",
+      "country": "UAE (VARA)",
+      "segment": "DeFi / RWA",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Compliance team",
+      "channel": "Email: compliance@mantra.finance",
+      "expected_value_eur": 25000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-28",
+      "notes": "VARA-licensed RWA/DeFi. Federal Law compliance angle. Draft ready."
+    },
+    {
+      "id": "pr_sumsub",
+      "name": "Sumsub (Partnership)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "RegTech / KYC",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Partnerships",
+      "channel": "Email: partnerships@sumsub.com",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Send partnership proposal",
+      "nextActionDate": "2026-05-29",
+      "notes": "KYC/AML platform. Referral partnership: Sumsub refers compliance advisory clients, Black Sea refers KYC tool clients. Draft ready."
+    },
+    {
+      "id": "pr_chainalysis_partner",
+      "name": "Chainalysis (Partnership)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "RegTech / Blockchain Analytics",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Partnerships",
+      "channel": "Email: partnerships@chainalysis.com",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Send partnership proposal",
+      "nextActionDate": "2026-05-29",
+      "notes": "Blockchain analytics leader. Referral partnership. Draft ready."
+    },
+    {
+      "id": "pr_notabene",
+      "name": "Notabene (Partnership)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "RegTech / Travel Rule",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: hello@notabene.id",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Send partnership proposal",
+      "nextActionDate": "2026-05-29",
+      "notes": "Travel rule compliance. Partnership referral model. Draft ready. (Original partners@ bounced, fixed to hello@)."
+    },
+    {
+      "id": "pr_scorechain",
+      "name": "Scorechain (Partnership)",
+      "businessModel": "bm_frontier",
+      "country": "Luxembourg",
+      "segment": "RegTech / AML",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: info@scorechain.com",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Send partnership proposal",
+      "nextActionDate": "2026-05-29",
+      "notes": "AML/compliance tool. EU-based, good frontier market fit. Draft ready."
+    },
+    {
+      "id": "pr_elliptic",
+      "name": "Elliptic (Partnership)",
+      "businessModel": "bm_frontier",
+      "country": "UK",
+      "segment": "RegTech / Compliance",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: info@elliptic.co",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Send partnership proposal",
+      "nextActionDate": "2026-05-29",
+      "notes": "Blockchain analytics. Partnership referral model. Draft ready."
+    },
+    {
+      "id": "pr_cvvc",
+      "name": "CV VC (VC Portfolio Access)",
+      "businessModel": "bm_frontier",
+      "country": "Switzerland",
+      "segment": "VC Fund (Africa Blockchain)",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: info@cvvc.com",
+      "expected_value_eur": 100000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-29",
+      "notes": "77 African blockchain investments. Backed by Circle Ventures. One meeting = access to 77 portfolio companies. Free diagnostic offer for portfolio founders."
+    },
+    {
+      "id": "pr_shorooq",
+      "name": "Shorooq Partners (VC Portfolio Access)",
+      "businessModel": "bm_frontier",
+      "country": "UAE (ADGM)",
+      "segment": "VC Fund (MENA + Pakistan)",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: info@shorooq.com",
+      "expected_value_eur": 75000,
+      "probability": 15,
+      "nextAction": "Send email",
+      "nextActionDate": "2026-05-29",
+      "notes": "Leading MENA+Pakistan fintech/crypto VC. 50+ portfolio companies. ADGM-regulated. One meeting = portfolio access."
+    },
+    {
+      "id": "pr_pantera",
+      "name": "Pantera Capital (VC Portfolio Access)",
+      "businessModel": "bm_frontier",
+      "country": "USA",
+      "segment": "VC Fund (Global Crypto)",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email via website",
+      "expected_value_eur": 75000,
+      "probability": 10,
+      "nextAction": "Send email (week 2)",
+      "nextActionDate": "2026-06-03",
+      "notes": "Led VALR $50M round. Direct connection to frontier market portfolio companies."
+    },
+    {
+      "id": "pr_coindesk_oped",
+      "name": "CoinDesk (Op-Ed Pitch)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "Media / Authority Building",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Opinion desk",
+      "channel": "Email: opinion@coindesk.com",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Send op-ed pitch",
+      "nextActionDate": "2026-05-29",
+      "notes": "Pitch: 'The Compliance Crisis Nobody Is Watching' - frontier markets angle. Permanent SEO authority if published."
+    },
+    {
+      "id": "pr_solidus_podcast",
+      "name": "Solidus Labs Podcast (Guest Pitch)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "Media / Podcast",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Podcast team",
+      "channel": "Email: podcast@soliduslabs.com",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Send podcast pitch",
+      "nextActionDate": "2026-05-29",
+      "notes": "Digital Assets Compliance podcast. Angle: 'Compliance on the Frontier'. One appearance = thousands of compliance professionals."
+    },
+    {
+      "id": "pr_chainalysis_podcast",
+      "name": "Chainalysis Public Key Podcast (Guest Pitch)",
+      "businessModel": "bm_frontier",
+      "country": "Global",
+      "segment": "Media / Podcast",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Media team",
+      "channel": "Email: media@chainalysis.com",
+      "expected_value_eur": 0,
+      "probability": 20,
+      "nextAction": "Send podcast pitch",
+      "nextActionDate": "2026-05-29",
+      "notes": "Frontier market compliance angle. One of the biggest compliance podcasts."
+    },
+    {
+      "id": "pr_schindlers",
+      "name": "Schindlers Attorneys (SA Law Partner)",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Law Firm Partnership",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Maurice Crespi / Crypto Dept",
+      "channel": "Email: crypto@schindlers.co.za",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Send partnership proposal (scheduled Jun 2)",
+      "nextActionDate": "2026-06-02",
+      "notes": "SA law firm with crypto practice. Co-advisory model: Schindlers handles legal, Black Sea handles compliance. Draft ready."
+    },
+    {
+      "id": "pr_cm_advocates",
+      "name": "CM Advocates LLP (Kenya Law Partner)",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "segment": "Law Firm Partnership",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: law@cmadvocates.com",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Send partnership proposal (scheduled Jun 4)",
+      "nextActionDate": "2026-06-04",
+      "notes": "Kenyan law firm. Co-publishing + referral model. VASP Act expertise. Draft ready."
+    },
+    {
+      "id": "pr_lex_bridge",
+      "name": "Lex Bridge LLP (Pakistan Law Partner)",
+      "businessModel": "bm_frontier",
+      "country": "Pakistan",
+      "segment": "Law Firm Partnership",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "General",
+      "channel": "Email: info@lexbridgellp.com",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Send partnership proposal (scheduled Jun 3)",
+      "nextActionDate": "2026-06-03",
+      "notes": "Pakistani law firm. PVARA expertise. Co-advisory model. Draft ready."
+    },
+    {
+      "id": "pr_caasa",
+      "name": "CAASA Membership (SA Industry Association)",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "segment": "Industry Association",
+      "stage": "drafted",
+      "warmth": "cold",
+      "primaryContact": "Membership",
+      "channel": "Email: membership@sacryptoassociation.org",
+      "expected_value_eur": 0,
+      "probability": 50,
+      "nextAction": "Send membership application",
+      "nextActionDate": "2026-05-29",
+      "notes": "Crypto Asset Association SA. Membership = credibility + network access. Original caasa.co.za was WRONG domain (commercial aviation!). Corrected to sacryptoassociation.org."
     }
   ],
   "tasks": [
@@ -893,6 +1662,114 @@
       "filename": "Execution_Day_1.docx",
       "description": "Komu zajtra píšeš, prečo, čo posielaš. 10 prospects, pripravené emaily, týždeň plán",
       "created": "2026-05-18"
+    },
+    {
+      "id": "doc_contacts_master",
+      "title": "Master Contact List - All Markets",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "CONTACTS_MASTER.md",
+      "description": "Complete contact list for 13+ markets with emails, draft status, and sending schedule. 85+ contacts.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_sales_channels",
+      "title": "Creative Sales Channels (10 channels)",
+      "type": "strategy",
+      "businessModel": "bm_frontier",
+      "filename": "SALES_CHANNELS_CREATIVE.md",
+      "description": "VC portfolio access, podcasts, op-eds, FATF rapid response, compliance health check, WhatsApp, law firm co-publishing, Twitter/X, conferences, enforcement response.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_twitter_playbook",
+      "title": "Twitter/X Playbook",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "TWITTER_PLAYBOOK.md",
+      "description": "Full Twitter strategy: profile setup, 7 days content, 30+ accounts to follow, engagement strategy, DM templates.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_fatf_response",
+      "title": "FATF Plenary Rapid Response Plan",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "FATF_RAPID_RESPONSE.md",
+      "description": "Pre-written templates for all 3 FATF scenarios. Twitter, Substack, email, Telegram templates. Google Alerts list. 2-hour execution plan.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_telegram_content",
+      "title": "Telegram Group Content (3 weeks)",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "TELEGRAM_CONTENT_READY.md",
+      "description": "3 weeks of copy-paste content for 7+ market groups. Search terms, engagement templates, authority-building rules.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_blog_turkey",
+      "title": "Blog: Turkey CMB CASP Deadline",
+      "type": "content",
+      "businessModel": "bm_frontier",
+      "filename": "BLOG_POST_1_Turkey_CMB_Deadline.md",
+      "description": "800+ word SEO-targeted blog post. Ready for Substack.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_blog_nigeria",
+      "title": "Blog: Nigeria CBN AML Compliance",
+      "type": "content",
+      "businessModel": "bm_frontier",
+      "filename": "BLOG_POST_2_Nigeria_CBN_AML.md",
+      "description": "Full blog post on CBN June 10 AML deadline.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_blog_kenya",
+      "title": "Blog: Kenya VASP Act Licensing Guide",
+      "type": "content",
+      "businessModel": "bm_frontier",
+      "filename": "BLOG_POST_3_Kenya_VASP_Act.md",
+      "description": "Full blog post on Kenya VASP Act licensing.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_newsletter_1",
+      "title": "Newsletter Issue #1: Frontier Compliance Brief",
+      "type": "content",
+      "businessModel": "bm_frontier",
+      "filename": "NEWSLETTER_ISSUE_1.md",
+      "description": "First issue ready for Substack. Cross-market regulatory roundup.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_meeting_chainup",
+      "title": "Meeting Prep: ChainUp May 29",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "MEETING_PREP_ChainUp_May29.md",
+      "description": "Full briefing for bilateral referral partnership discussion.",
+      "created": "2026-05-28"
+    },
+    {
+      "id": "doc_outreach_full",
+      "title": "Email Templates - Full Attack Mode",
+      "type": "execution",
+      "businessModel": "bm_frontier",
+      "filename": "OUTREACH_FULL_ATTACK.md",
+      "description": "Market-specific email templates for all 13 markets.",
+      "created": "2026-05-27"
+    },
+    {
+      "id": "doc_bd_supplement",
+      "title": "BD Attack Supplement - Market Research",
+      "type": "intelligence",
+      "businessModel": "bm_frontier",
+      "filename": "BD_ATTACK_SUPPLEMENT.md",
+      "description": "Detailed regulatory research for all target markets.",
+      "created": "2026-05-27"
     }
   ],
   "insights": [
@@ -1103,6 +1980,54 @@
       "content": "OKX: direct Telegram institutional channel exists. Kraken: existing account manager relationship (Mats). These are the highest-probability big-ticket leads — warm intros beat cold email.",
       "businessModel": "bm_otc",
       "date": "2026-05-22T07:13:18.829686+00:00"
+    },
+    {
+      "id": "ins_full_attack_mode",
+      "title": "Full Attack Mode launched - 13 markets, 10 channels",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "May 27-28, 2026: Adrian ordered 'rozbehni vsetky kanaly okrem linkedin a rozheni vsetko co sa da'. Result: 85+ Gmail drafts, 10 BD channels designed, 3 meetings booked, 6 VC pitches, 5 regtech partnerships, 5 media pitches, full Twitter/Telegram/FATF playbooks. Markets expanded from original 3 (AZ/KZ/Nigeria) to 13+ (adding Turkey, Kuwait, Ghana, SA, Pakistan, Kenya, Kyrgyzstan, Georgia, UAE deep dive). Key constraint: domain reputation - max 10-15 emails/day, Adrian decides what sends."
+    },
+    {
+      "id": "ins_turkey_cmb_window",
+      "title": "Turkey CMB - 33-day window for 76 CASPs",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "76 CASPs must get CMB authorization certificates by June 30, 2026. No indication of extension. Biggest gap: firms have KYC tech but not written AML policies and MASAK reporting procedures. Key targets: Bitexen (just got ADGM license May 21 - dual jurisdiction play), Bitci (multi-market). AVOID: ICRYPEX (founder arrested for drug trafficking + murder)."
+    },
+    {
+      "id": "ins_nigeria_personal_liability",
+      "title": "Nigeria CBN - personal liability changes the game",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "CBN circular BSD/DIR/PUB/LAB/019/002: INDIVIDUAL compliance officers face personal regulatory exposure, not just the institution. This is the sharpest hook in any outreach. June 10 deadline for automated AML roadmaps. ISA 2025: DAX capital doubled from N500M to N2B."
+    },
+    {
+      "id": "ins_vc_portfolio_leverage",
+      "title": "VC portfolio access - highest leverage channel",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "One meeting with a VC = access to 20-100 portfolio companies who ALL need compliance. CV VC alone = 77 African blockchain investments. Shorooq = 50+ MENA+Pakistan companies. Pitch: free 30-min diagnostics for portfolio founders. Zero cost to the VC. This is the highest-ROI channel if even one VC says yes."
+    },
+    {
+      "id": "ins_domain_reputation_sacred",
+      "title": "Domain reputation is sacred - never burn it",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "Adrian's exact words: 'do not do that because you will burn the domain'. Max 10-15 emails per day. Always present drafts first. Adrian decides what goes out. Domain blackseaspv.com is fragile. One spam report could destroy deliverability. This constraint shapes everything about the outreach strategy."
+    },
+    {
+      "id": "ins_kenya_scramble_coming",
+      "title": "Kenya - the scramble is coming",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "50+ crypto firms operating in Kenya. Zero licensed. November 2026 hard deadline. VASP Act 2025 live. Draft regs published March 2026, comment period closed April 10. But licensing has NOT started because final regulations are pending. FATF grey-listed since Feb 2024. When licensing opens, it will be a stampede."
+    },
+    {
+      "id": "ins_pakistan_greenfield",
+      "title": "Pakistan PVARA - greenest greenfield in crypto regulation",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "Virtual Assets Act 2026. Brand new federal authority. 8 license categories. Sandbox guidelines launched April 2026. Currently prioritizing firms already licensed elsewhere (Binance and HTX have NOCs). As sandbox opens, new applicants need AML/CFT from day one. Zero EU advisory presence. First-mover advantage massive."
+    },
+    {
+      "id": "ins_fatf_plenary_biggest_moment",
+      "title": "FATF plenary = biggest BD moment 3x per year",
+      "date": "2026-05-28T10:22:07.852493+00:00",
+      "content": "June 2026 plenary (final under Mexican Presidency). Countries to watch: Kenya, Kuwait, Nigeria, Turkey, Pakistan, SA. Window: be among the FIRST to publish analysis. Most firms take 24-48h. We publish within 2-4h. Pre-written templates ready for all scenarios. Multi-channel blast: Twitter, Substack, email, Telegram. This is the single highest-impact content event in the compliance calendar."
     }
   ],
   "edges": [
@@ -1190,6 +2115,146 @@
       "from": "bm_otc",
       "to": "svc_otc_compliance",
       "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_turkey_cmb",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_nigeria_cbn_aml",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_kenya_vasp",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_pakistan_pvara",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_sa_fsca",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_uae_federal_law",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_kuwait_fatf",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_ghana_sandbox",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "svc_multi_jurisdiction",
+      "type": "service"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_chainup",
+      "type": "meeting"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_algoz",
+      "type": "meeting"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_xerof",
+      "type": "meeting"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_amcone",
+      "type": "warm_lead"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_bitexen",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_valr",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_opay",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_fasset",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_chippercash",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_hashkey_mena",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_cvvc",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_shorooq",
+      "type": "prospect"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_coindesk_oped",
+      "type": "channel"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_solidus_podcast",
+      "type": "channel"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_sumsub",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_chainalysis_partner",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_schindlers",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_cm_advocates",
+      "type": "partnership"
+    },
+    {
+      "from": "bm_frontier",
+      "to": "pr_lex_bridge",
+      "type": "partnership"
     }
   ],
   "stickyNotes": [
@@ -1216,10 +2281,23 @@
       "y": 760,
       "rotate": 1.5,
       "color": "green"
+    },
+    {
+      "id": "note_full_attack",
+      "content": "FULL ATTACK MODE\nMay 28, 2026\n\n13 markets. 10 channels.\n85+ drafts. 3 meetings.\n\nFirst payment is coming.",
+      "x": 60,
+      "y": 1100,
+      "rotate": 1.0,
+      "color": "green"
     }
   ],
   "customEdges": [],
   "inbox": [
+    {
+      "id": "inbox_status_28may_megamap",
+      "content": "BLACK SEA - FULL ATTACK MODE STATUS - MAY 28, 2026\n\nBD BLITZ SUMMARY (May 27-28):\n+ 85+ Gmail drafts created across 13+ markets\n+ 10 BD channels designed and activated\n+ 3 meetings booked (ChainUp May 29, AlgoZ May 29, Xerof Jun 1)\n+ 1 warm lead (AMC One Capital, AIFC)\n+ 3 blog posts written and ready for Substack\n+ 1 newsletter issue ready\n+ Full Twitter playbook (7 days content, 30+ accounts)\n+ Full Telegram strategy (3 weeks content, 7+ groups)\n+ FATF rapid response plan (pre-written for all scenarios)\n+ 6 VC fund pitches drafted\n+ 5 regtech partnership proposals drafted\n+ 6 law firm partnership proposals drafted\n+ 5 media/podcast pitches drafted\n\nMARKETS COVERED:\nUAE (VARA + ADGM), Turkey (CMB), Nigeria (CBN/SEC),\nKenya (CMA), Pakistan (PVARA), South Africa (FSCA),\nKazakhstan (AIFC/AFSA), Ghana (SEC), Kuwait (CBK),\nUzbekistan (NAPP), Kyrgyzstan, Georgia (NBG), Azerbaijan\n\nIMMEDIATE DEADLINES:\n- Nigeria CBN: June 10 (13 days)\n- Turkey CMB: June 30 (33 days)\n- FATF plenary: June 2026 (imminent)\n- AIFC AFSA: July 2026 (34 days)\n\nNEXT ACTIONS:\n1. ChainUp meeting May 29 10:00 CEST\n2. AlgoZ meeting May 29 13:00 CEST\n3. Continue sending 10-15 emails/day per schedule\n4. Set up Google Alerts for enforcement actions\n5. Join 3-5 Telegram groups and start posting\n6. Set up Twitter profile and start posting\n7. Publish blog posts on Substack\n8. AMC One follow-up May 30\n9. Xerof meeting Jun 1 13:00 CEST",
+      "date": "2026-05-28T10:22:07.852493+00:00"
+    },
     {
       "id": "inbox_status_22may",
       "content": "BLACK SEA — STATUS 22 MAY 2026\n\nINFRASTRUCTURE (all live):\n+ blackseaspv.com — web live, 3 briefings\n+ brain.blackseaspv.com — v1.3, Cloudflare Access\n+ Google Workspace — adrian@blackseaspv.com\n+ Substack — 3 articles published\n+ Twitter @BlackSeaOps — 7 posts scheduled (Buffer)\n+ Google Drive HQ — 5 folders structured\n\nOUTREACH:\n+ ~90 emails sent (High priority + AIFC bulk)\n+ Bulk script running — 291 remaining, 30/day\n+ Defense EU — 6 sent\n+ Uzbekistan — 5 sent\n+ Big players — Binance Link sent, OKX via Telegram, Kraken via Mats\n\nACTIVE CLIENT:\n+ AIR Labs — invoices 1+2 paid, retainer $600/mo agreed\n\nNEXT:\n- Substack article #4 (AFSA deadline)\n- New markets: Kyrgyzstan, Georgia, UAE/ADGM\n- Sign AIR Labs agreement",
@@ -1415,5 +2493,749 @@
     "calendar": "https://calendar.google.com",
     "provider": "Google Workspace Business Starter",
     "setupDate": "2026-05-20"
-  }
+  },
+  "bdChannels": [
+    {
+      "id": "ch_cold_email",
+      "name": "Cold Email Outreach",
+      "status": "active",
+      "priority": "P0",
+      "description": "Direct email to crypto exchanges, fintechs, banks, and law firms across 13+ markets",
+      "metrics": {
+        "totalDraftsCreated": 85,
+        "totalSent": 90,
+        "sendingCapacity": "10-15/day",
+        "estimatedWeeksToComplete": "5-6"
+      },
+      "markets": [
+        "UAE",
+        "Turkey",
+        "Kuwait",
+        "Ghana",
+        "Nigeria",
+        "South Africa",
+        "Pakistan",
+        "Kenya",
+        "Kazakhstan",
+        "Uzbekistan",
+        "Kyrgyzstan",
+        "Georgia",
+        "Azerbaijan"
+      ],
+      "constraint": "DOMAIN REPUTATION - never bulk send. Adrian decides what goes out.",
+      "tools": [
+        "Gmail API drafts",
+        "blacksea_bulk_email.py"
+      ],
+      "color": "#18C26B"
+    },
+    {
+      "id": "ch_vc_portfolio",
+      "name": "VC Portfolio Access",
+      "status": "drafted",
+      "priority": "P1",
+      "description": "One meeting with a VC = access to 20-100 portfolio companies. Free diagnostic for founders, paid engagement when real work needed.",
+      "targets": [
+        {
+          "name": "CV VC",
+          "focus": "African blockchain (77 investments)",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Shorooq Partners",
+          "focus": "MENA + Pakistan fintech/crypto (50+)",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Pantera Capital",
+          "focus": "Global crypto (led VALR $50M)",
+          "status": "draft_ready"
+        },
+        {
+          "name": "YZi Labs (Binance)",
+          "focus": "Global crypto incubator",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Coinbase Ventures",
+          "focus": "Global crypto (invested in VALR)",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Circle Ventures",
+          "focus": "Stablecoins/payments",
+          "status": "draft_ready"
+        }
+      ],
+      "pitch": "Your portfolio companies will face [specific deadline]. We offer free 30-min diagnostics. Firms that need deeper work engage us. Zero cost to you.",
+      "potentialReach": "100-200 startups per VC",
+      "color": "#E8A82B"
+    },
+    {
+      "id": "ch_podcast",
+      "name": "Podcast Guest Appearances",
+      "status": "drafted",
+      "priority": "P1",
+      "description": "30-minute appearance = thousands of compliance professionals. The frontier markets angle is genuinely novel.",
+      "targets": [
+        {
+          "name": "Solidus Labs Digital Assets Compliance",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Chainalysis Public Key Podcast",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Unchained (Laura Shin)",
+          "status": "next_wave"
+        },
+        {
+          "name": "a16z crypto",
+          "status": "next_wave"
+        },
+        {
+          "name": "The Scoop (The Block)",
+          "status": "next_wave"
+        },
+        {
+          "name": "ACAMS",
+          "status": "next_wave"
+        }
+      ],
+      "angle": "Everyone covers MiCA and US regulation. Nobody covers the 20+ frontier markets building crypto frameworks RIGHT NOW.",
+      "potentialReach": "5,000-50,000 per episode",
+      "color": "#18C26B"
+    },
+    {
+      "id": "ch_guest_articles",
+      "name": "Guest Articles / Op-Eds",
+      "status": "drafted",
+      "priority": "P1",
+      "description": "Bylined article = permanent SEO authority. Prospects who search 'Turkey CMB CASP compliance' find Adrian's name.",
+      "targets": [
+        {
+          "name": "CoinDesk Opinion",
+          "pitch": "The Compliance Crisis Nobody Is Watching",
+          "status": "draft_ready"
+        },
+        {
+          "name": "The Block",
+          "status": "next_wave"
+        },
+        {
+          "name": "Regulation Asia",
+          "status": "next_wave"
+        },
+        {
+          "name": "African Business",
+          "status": "next_wave"
+        },
+        {
+          "name": "Chainalysis Blog",
+          "status": "draft_ready"
+        },
+        {
+          "name": "ComplyAdvantage Blog",
+          "status": "next_wave"
+        }
+      ],
+      "potentialReach": "100,000+ readers per article",
+      "color": "#C97A2B"
+    },
+    {
+      "id": "ch_fatf_response",
+      "name": "FATF Plenary Rapid Response",
+      "status": "ready_to_activate",
+      "priority": "P1",
+      "description": "3x per year opportunity. Within HOURS of announcement, publish analysis across all channels. Pre-written templates ready for all scenarios.",
+      "nextPlenary": "June 2026 (final under Mexican Presidency)",
+      "countriesWatching": [
+        "Kenya",
+        "Kuwait",
+        "Nigeria",
+        "Turkey",
+        "Pakistan",
+        "South Africa"
+      ],
+      "templates": {
+        "scenarioRemoved": "ready",
+        "scenarioRemains": "ready",
+        "scenarioAdded": "ready",
+        "twitterThread": "ready",
+        "substackAlert": "ready",
+        "emailTemplates": "ready",
+        "telegramPosts": "ready"
+      },
+      "googleAlerts": "10 alerts to set up (FATF, VARA, FSCA, CMB, CBN, CMA, PVARA, AIFC, Kuwait)",
+      "executionTime": "~2 hours from announcement to full multi-channel response",
+      "file": "FATF_RAPID_RESPONSE.md",
+      "color": "#B83D2C"
+    },
+    {
+      "id": "ch_enforcement_response",
+      "name": "Enforcement Rapid Response",
+      "status": "ready_to_activate",
+      "priority": "P2",
+      "description": "When a firm gets fined, their competitors panic. Within 24h, email every similar firm in that market.",
+      "googleAlerts": [
+        "VARA fine",
+        "FSCA CASP enforcement",
+        "CMB crypto penalty",
+        "CBN AML fine",
+        "CMA Kenya enforcement"
+      ],
+      "template": "ready (in SALES_CHANNELS_CREATIVE.md)",
+      "color": "#B83D2C"
+    },
+    {
+      "id": "ch_telegram",
+      "name": "Telegram Group Engagement",
+      "status": "content_ready",
+      "priority": "P2",
+      "description": "3 weeks of copy-paste content for 7+ market groups. Value first, pitch never. Build authority as the expert who happens to be in the room.",
+      "content": {
+        "week1": "Value-only posts for UAE, Turkey, Nigeria, Kenya, Pakistan, SA, Global groups",
+        "week2": "Deeper value + subtle authority",
+        "week3Plus": "Engagement + soft authority (answer questions, correct misinformation)"
+      },
+      "searchTerms": [
+        "VARA compliance",
+        "crypto compliance",
+        "Web3 Dubai",
+        "Kenya crypto",
+        "Nigeria crypto",
+        "Pakistan crypto",
+        "Turkey crypto"
+      ],
+      "rules": "NO pitching in group chats. Ever. You are the expert who happens to be in the room.",
+      "file": "TELEGRAM_CONTENT_READY.md",
+      "color": "#7C95AB"
+    },
+    {
+      "id": "ch_twitter",
+      "name": "Twitter/X @BlackSeaSPV",
+      "status": "content_ready",
+      "priority": "P2",
+      "description": "Full playbook: 7 days of ready-to-post content, 30+ accounts to follow, engagement strategy, DM templates, weekly thread format.",
+      "content": {
+        "profileSetup": "ready",
+        "pinnedTweet": "ready",
+        "day1to7Posts": "ready",
+        "accountsToFollow": "30+",
+        "engagementStrategy": "ready",
+        "dmTemplates": "ready",
+        "weeklyThread": "Every Monday - Frontier Compliance Roundup"
+      },
+      "file": "TWITTER_PLAYBOOK.md",
+      "color": "#7C95AB"
+    },
+    {
+      "id": "ch_newsletter",
+      "name": "Substack Newsletter",
+      "status": "active",
+      "priority": "P2",
+      "description": "Frontier Compliance Brief. Weekly regulatory intelligence across 9+ markets.",
+      "url": "https://substack.com/@blackseabriefings",
+      "content": {
+        "issue1": "ready (NEWSLETTER_ISSUE_1.md)",
+        "blogPost1": "ready - Turkey CMB Deadline",
+        "blogPost2": "ready - Nigeria CBN AML",
+        "blogPost3": "ready - Kenya VASP Act"
+      },
+      "color": "#18C26B"
+    },
+    {
+      "id": "ch_whatsapp",
+      "name": "WhatsApp Regulatory Alerts",
+      "status": "planned",
+      "priority": "P3",
+      "description": "In Nigeria, Kenya, Pakistan, Middle East - WhatsApp is THE business tool. 90%+ open rate vs 20% email.",
+      "setup": [
+        "Create WhatsApp Business account",
+        "Start broadcast list",
+        "Weekly 3-4 line alerts"
+      ],
+      "color": "#7C95AB"
+    },
+    {
+      "id": "ch_law_firm_copublish",
+      "name": "Law Firm Co-Publishing",
+      "status": "drafted",
+      "priority": "P2",
+      "description": "Joint publications with law firm partners. Their client list + our expertise = double reach.",
+      "partners": [
+        {
+          "name": "Schindlers Attorneys",
+          "market": "South Africa",
+          "status": "draft_ready"
+        },
+        {
+          "name": "CM Advocates LLP",
+          "market": "Kenya",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Lex Bridge LLP",
+          "market": "Pakistan",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Kurucuk & Associates",
+          "market": "Turkey",
+          "status": "identified"
+        },
+        {
+          "name": "Njaga & Co Advocates",
+          "market": "Kenya",
+          "status": "draft_ready"
+        }
+      ],
+      "color": "#C97A2B"
+    },
+    {
+      "id": "ch_conferences",
+      "name": "Conference Speaker Applications",
+      "status": "planned",
+      "priority": "P3",
+      "description": "Speakers get free entry, credibility, audience, and leads. Always apply as speaker, not attendee.",
+      "targets": [
+        {
+          "name": "Blockchain Africa Conference",
+          "where": "Johannesburg",
+          "talk": "FSCA CASP Compliance"
+        },
+        {
+          "name": "Africa Fintech Summit",
+          "where": "Nairobi/Lagos",
+          "talk": "Cross-Border Compliance"
+        },
+        {
+          "name": "Astana Finance Days",
+          "where": "Astana",
+          "talk": "AIFC VASP Framework"
+        },
+        {
+          "name": "Future Blockchain Summit",
+          "where": "Dubai",
+          "talk": "UAE Federal Law"
+        },
+        {
+          "name": "Pakistan Fintech Festival",
+          "where": "Karachi",
+          "talk": "PVARA Day One"
+        },
+        {
+          "name": "Riyadh event",
+          "where": "Riyadh",
+          "when": "Jun 29-30",
+          "status": "research needed"
+        }
+      ],
+      "color": "#7C95AB"
+    },
+    {
+      "id": "ch_health_check",
+      "name": "Free Compliance Health Check",
+      "status": "ready_to_activate",
+      "priority": "P2",
+      "description": "30-min diagnostic call. 10 specific questions. Firms discover gaps (most will) and become paying clients.",
+      "questions": [
+        "Written AML/CFT policy approved by board in last 12 months?",
+        "Who is designated MLRO and when last trained?",
+        "Transaction monitoring: manual, rule-based, or ML-based?",
+        "Can you file STR with local FIU within 24 hours?",
+        "Screen against all sanctions lists (local + OFAC + EU + UN)?",
+        "CDD/KYC framework risk-based or flat?",
+        "Travel rule compliance solution in place?",
+        "When was last independent compliance audit?",
+        "Documented procedures for each of the above?",
+        "How many jurisdictions, separate frameworks for each?"
+      ],
+      "distribution": [
+        "Email signature CTA",
+        "Telegram group mentions",
+        "Substack newsletter CTA"
+      ],
+      "color": "#18C26B"
+    },
+    {
+      "id": "ch_regtech_partnerships",
+      "name": "RegTech Vendor Partnerships",
+      "status": "drafted",
+      "priority": "P2",
+      "description": "Bilateral referral partnerships with KYC/AML tool providers. They refer compliance clients, we refer tool clients.",
+      "partners": [
+        {
+          "name": "Sumsub",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Chainalysis",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Notabene",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Scorechain",
+          "status": "draft_ready"
+        },
+        {
+          "name": "Elliptic",
+          "status": "draft_ready"
+        }
+      ],
+      "color": "#C97A2B"
+    }
+  ],
+  "pipelineStatus": {
+    "asOf": "2026-05-28",
+    "summary": {
+      "totalDraftsCreated": "85+",
+      "totalSent": "~90 (previous waves)",
+      "meetingsBooked": 3,
+      "warmReplies": 1,
+      "bouncesFixed": 4,
+      "oooFollowupsPending": 4,
+      "bdChannelsActive": 13
+    },
+    "meetings": [
+      {
+        "company": "ChainUp",
+        "date": "2026-05-29",
+        "time": "10:00 CEST",
+        "type": "Partnership (bilateral referral)",
+        "contact": "Jacelynn Pang",
+        "prepFile": "MEETING_PREP_ChainUp_May29.md",
+        "status": "CONFIRMED"
+      },
+      {
+        "company": "AlgoZ",
+        "date": "2026-05-29",
+        "time": "13:00 CEST",
+        "type": "Compliance advisory",
+        "prepFile": "MEETING_PREP_AlgoZ_May29.md",
+        "status": "CONFIRMED"
+      },
+      {
+        "company": "Xerof",
+        "date": "2026-06-01",
+        "time": "13:00 CEST",
+        "type": "Compliance advisory",
+        "prepFile": "MEETING_PREP_Xerof_Jun1.md",
+        "status": "CONFIRMED"
+      }
+    ],
+    "warmLeads": [
+      {
+        "company": "AMC One Capital",
+        "market": "AIFC Kazakhstan",
+        "status": "Warm reply received, follow-up May 30"
+      },
+      {
+        "company": "OKX Institutional",
+        "market": "Global",
+        "status": "Direct Telegram channel (Qing Rui, Ryan Dawson, Simon OKG)"
+      },
+      {
+        "company": "Kraken",
+        "market": "Global",
+        "status": "Existing AM relationship (Mats)"
+      }
+    ],
+    "sendingSchedule": [
+      {
+        "date": "May 29",
+        "emails": "5 AIFC follow-ups + Bitexen + Bitci + OOO (Arnold/Joel)",
+        "markets": "AIFC + Turkey + Referrals"
+      },
+      {
+        "date": "May 30",
+        "emails": "5 AIFC follow-ups + AMC One + SA (VALR, OVEX, Altify)",
+        "markets": "AIFC + KZ + South Africa"
+      },
+      {
+        "date": "Jun 1",
+        "emails": "5 AIFC follow-ups + OOO (Deji/Niamh) + Yellow Card + AltCoinTrader + ChainEX",
+        "markets": "AIFC + Referrals + SA"
+      },
+      {
+        "date": "Jun 2",
+        "emails": "Schindlers + OPay + Kuda + PalmPay + Carbon + FairMoney",
+        "markets": "SA partner + Nigeria"
+      },
+      {
+        "date": "Jun 3",
+        "emails": "Fasset + NayaPay + SadaPay + Lex Bridge + Chipper Cash",
+        "markets": "Pakistan + Kenya"
+      },
+      {
+        "date": "Jun 4",
+        "emails": "AZA Finance + Kotani Pay + CM Advocates + Njaga + Pezesha",
+        "markets": "Kenya"
+      },
+      {
+        "date": "Jun 5+",
+        "emails": "Remaining law firms, VC fund pitches, media pitches",
+        "markets": "Multiple"
+      }
+    ],
+    "repliesReceived": [
+      {
+        "company": "Paystack",
+        "type": "Rejection (already have counsel)",
+        "action": "Graceful close keeping door open"
+      },
+      {
+        "company": "Moniepoint",
+        "type": "Auto-router bounce",
+        "action": "Re-routed to partnerships@moniepoint.com"
+      },
+      {
+        "company": "Ogier (Niamh Lalor)",
+        "type": "OOO - on sabbatical",
+        "action": "Redirected to Julie.Lagadu@ogier.com"
+      },
+      {
+        "company": "Arnold (Joel)",
+        "type": "OOO",
+        "action": "Follow-up May 29"
+      }
+    ],
+    "bouncesFixed": [
+      {
+        "original": "bd@pezesha.com",
+        "fixed": "hello@pezesha.com"
+      },
+      {
+        "original": "membership@caasa.co.za",
+        "fixed": "membership@sacryptoassociation.org",
+        "note": "WRONG DOMAIN - was Commercial Aviation Association!"
+      },
+      {
+        "original": "partners@notabene.id",
+        "fixed": "hello@notabene.id"
+      },
+      {
+        "original": "support@sadapay.pk",
+        "fixed": "hello@sadapay.pk"
+      },
+      {
+        "original": "corporate@exmo.com",
+        "note": "SKIP - UK sanctioned May 2026, 3rd bounce"
+      }
+    ]
+  },
+  "regulatoryDeadlines": [
+    {
+      "date": "2026-06-10",
+      "regulator": "CBN Nigeria",
+      "description": "Automated AML implementation roadmaps due. Personal liability for compliance officers.",
+      "daysLeft": 13,
+      "severity": "critical"
+    },
+    {
+      "date": "2026-06-30",
+      "regulator": "CMB Turkey",
+      "description": "76 CASPs must have authorization certificates. No extension indicated.",
+      "daysLeft": 33,
+      "severity": "critical"
+    },
+    {
+      "date": "2026-06-30",
+      "regulator": "FATF",
+      "description": "June 2026 plenary (final under Mexican Presidency). Grey list review for Kenya, Kuwait, Nigeria, Turkey.",
+      "daysLeft": 33,
+      "severity": "high"
+    },
+    {
+      "date": "2026-07-01",
+      "regulator": "AFSA Kazakhstan",
+      "description": "AIFC framework transition deadline. 149 firms + 30 DASPs must adapt.",
+      "daysLeft": 34,
+      "severity": "high"
+    },
+    {
+      "date": "2026-11-01",
+      "regulator": "CMA Kenya",
+      "description": "VASP Act 2025 licensing deadline. 50+ firms, zero licensed.",
+      "daysLeft": 157,
+      "severity": "medium"
+    },
+    {
+      "date": "2026-12-31",
+      "regulator": "PVARA Pakistan",
+      "description": "Sandbox applications and licensing. 8 categories. Greenfield.",
+      "daysLeft": 217,
+      "severity": "medium"
+    },
+    {
+      "date": "2026-12-31",
+      "regulator": "FSCA South Africa",
+      "description": "Ongoing CASP inspections. 21/30 completed. Focus: AML/CFT/CFP frameworks.",
+      "daysLeft": 217,
+      "severity": "medium"
+    },
+    {
+      "date": "2026-12-31",
+      "regulator": "SEC Ghana",
+      "description": "11 sandbox firms transitioning to full licenses.",
+      "daysLeft": 217,
+      "severity": "low"
+    }
+  ],
+  "marketMap": [
+    {
+      "id": "mkt_uae",
+      "name": "UAE",
+      "subMarkets": [
+        "VARA Dubai (507 VASPs, 49 full license)",
+        "ADGM FSRA (17 active VA firms)"
+      ],
+      "regulator": "VARA + ADGM FSRA",
+      "keyLaw": "Federal Decree-Law No. 10/2025",
+      "maxPenalty": "AED 100M (~$27M)",
+      "status": "active_outreach",
+      "prospectsCount": 4,
+      "urgency": "high",
+      "color": "#18C26B"
+    },
+    {
+      "id": "mkt_turkey",
+      "name": "Turkey",
+      "regulator": "CMB (Capital Markets Board)",
+      "keyLaw": "CASP Authorization Framework",
+      "deadline": "June 30, 2026",
+      "firms": "76 registered CASPs",
+      "status": "active_outreach",
+      "prospectsCount": 3,
+      "urgency": "critical",
+      "color": "#B83D2C"
+    },
+    {
+      "id": "mkt_nigeria",
+      "name": "Nigeria",
+      "regulator": "CBN + SEC",
+      "keyLaw": "ISA 2025 + CBN Circular BSD/DIR/PUB/LAB/019/002",
+      "deadline": "June 10, 2026 (CBN AML roadmaps)",
+      "status": "active_outreach",
+      "prospectsCount": 11,
+      "urgency": "critical",
+      "color": "#B83D2C"
+    },
+    {
+      "id": "mkt_kenya",
+      "name": "Kenya",
+      "regulator": "CMA",
+      "keyLaw": "VASP Act 2025",
+      "deadline": "November 2026",
+      "firms": "50+ operating, 0 licensed",
+      "fatfStatus": "Grey list since Feb 2024",
+      "status": "active_outreach",
+      "prospectsCount": 5,
+      "urgency": "high",
+      "color": "#E8A82B"
+    },
+    {
+      "id": "mkt_pakistan",
+      "name": "Pakistan",
+      "regulator": "PVARA (new federal authority)",
+      "keyLaw": "Virtual Assets Act 2026",
+      "deadline": "Sandbox live April 2026",
+      "status": "active_outreach",
+      "prospectsCount": 4,
+      "urgency": "medium",
+      "color": "#C97A2B"
+    },
+    {
+      "id": "mkt_south_africa",
+      "name": "South Africa",
+      "regulator": "FSCA",
+      "keyLaw": "FAIS Act + CASP licensing",
+      "firms": "310 approved CASPs",
+      "inspections": "21/30 completed",
+      "status": "active_outreach",
+      "prospectsCount": 7,
+      "urgency": "high",
+      "color": "#E8A82B"
+    },
+    {
+      "id": "mkt_kazakhstan",
+      "name": "Kazakhstan (AIFC)",
+      "regulator": "AFSA",
+      "keyLaw": "AIFC Framework Amendments (Jan 2026)",
+      "deadline": "July 2026 transition",
+      "firms": "149 Authorised + 30 DASPs",
+      "status": "active_outreach",
+      "prospectsCount": "15+ (AIFC follow-ups)",
+      "urgency": "high",
+      "color": "#E8A82B"
+    },
+    {
+      "id": "mkt_ghana",
+      "name": "Ghana",
+      "regulator": "SEC Ghana",
+      "keyLaw": "VASP Act 2025",
+      "firms": "11 sandbox firms",
+      "status": "active_outreach",
+      "prospectsCount": 5,
+      "urgency": "medium",
+      "color": "#C97A2B"
+    },
+    {
+      "id": "mkt_kuwait",
+      "name": "Kuwait",
+      "regulator": "CBK",
+      "fatfStatus": "Grey listed Feb 2026 (freshly added)",
+      "status": "active_outreach",
+      "prospectsCount": 5,
+      "urgency": "high",
+      "color": "#E8A82B"
+    },
+    {
+      "id": "mkt_uzbekistan",
+      "name": "Uzbekistan",
+      "regulator": "NAPP",
+      "keyLaw": "Stablecoins legal April 2026",
+      "firms": "3 exchanges + 4 token issuers",
+      "status": "contacted",
+      "prospectsCount": 5,
+      "urgency": "medium",
+      "color": "#7C95AB"
+    },
+    {
+      "id": "mkt_kyrgyzstan",
+      "name": "Kyrgyzstan",
+      "regulator": "TBD",
+      "keyLaw": "Virtual assets law Jan 2026",
+      "firms": "13 licensed exchanges",
+      "imfFlag": "April 2026 - stronger AML/CFT monitoring recommended",
+      "status": "researched",
+      "prospectsCount": 0,
+      "urgency": "medium",
+      "color": "#7C95AB"
+    },
+    {
+      "id": "mkt_georgia",
+      "name": "Georgia",
+      "regulator": "NBG",
+      "keyLaw": "VASP registration enforcement Oct 2025",
+      "status": "researched",
+      "prospectsCount": 0,
+      "urgency": "medium",
+      "color": "#7C95AB"
+    },
+    {
+      "id": "mkt_azerbaijan",
+      "name": "Azerbaijan",
+      "regulator": "None (no framework yet)",
+      "keyLaw": "Central Bank Strategy 2024-2026",
+      "status": "pre_positioning",
+      "prospectsCount": 2,
+      "urgency": "low",
+      "color": "#4F6A82"
+    }
+  ]
 }
