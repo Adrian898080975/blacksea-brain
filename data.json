@@ -1,6 +1,6 @@
 {
-  "version": "2.3-defense-drafts-ready",
-  "lastUpdated": "2026-05-28T23:00:00Z",
+  "version": "3.0-mega-update",
+  "lastUpdated": "2026-05-28T23:59:00Z",
   "owner": "Adri\u00e1n P\u00e1le\u0161",
   "brand": {
     "id": "blacksea",
@@ -71,19 +71,21 @@
       "id": "svc_fund_structuring",
       "name": "Fund Structuring Strategy",
       "businessModel": "bm_defense",
-      "price_min_eur": 25000,
+      "price_min_eur": 35000,
       "price_max_eur": 75000,
       "duration_days": 60,
-      "description": "Flagship product \u2014 full fund setup blueprint pre defense/dual-use VC"
+      "description": "Flagship product \u2014 full fund setup blueprint pre defense/dual-use VC",
+      "marketContext": "Big law charges EUR 100-300K for full fund formation. Boutique advisory at EUR 35-75K is correctly positioned as structuring/regulatory layer. Defense premium: +30-50%."
     },
     {
       "id": "svc_fractional_cco",
       "name": "Fractional CCO",
       "businessModel": "bm_defense",
-      "price_min_eur": 3500,
+      "price_min_eur": 5000,
       "price_max_eur": 15000,
       "duration_days": 365,
-      "description": "Monthly retainer ako Chief Compliance Officer pre mal\u00e9-stredn\u00e9 fondy"
+      "description": "Monthly retainer ako Chief Compliance Officer pre mal\u00e9-stredn\u00e9 fondy",
+      "marketContext": "EUR 2-8K basic monitoring, EUR 5-15K full outsourced CCO. Floor raised from EUR 3.5K to EUR 5K."
     },
     {
       "id": "svc_nigeria_arip",
@@ -206,28 +208,94 @@
       "id": "svc_defense_fund_setup",
       "name": "Defense Fund Full Setup",
       "businessModel": "bm_defense",
-      "price_min_eur": 50000,
-      "price_max_eur": 150000,
+      "price_min_eur": 75000,
+      "price_max_eur": 200000,
       "duration_days": 120,
-      "description": "End-to-end defense/dual-use fund formation. AIFMD II compliance, MFSA/FCA/BaFin licensing pathway, LP onboarding infrastructure, compliance framework, regulatory filings. Adrian's A27 SICAV experience is the differentiator."
+      "description": "End-to-end defense/dual-use fund formation. AIFMD II compliance, MFSA/FCA/BaFin licensing pathway, LP onboarding infrastructure, compliance framework, regulatory filings. Adrian's A27 SICAV experience is the differentiator.",
+      "marketContext": "End-to-end defense fund setup including ITAR/export control overlay, restricted investor screening, SFDR defense classification. Premium justified."
     },
     {
       "id": "svc_aifmd2_gap",
       "name": "AIFMD II Compliance Gap Analysis",
       "businessModel": "bm_defense",
-      "price_min_eur": 5000,
-      "price_max_eur": 12000,
+      "price_min_eur": 15000,
+      "price_max_eur": 40000,
       "duration_days": 10,
-      "description": "Gap analysis for existing fund managers vs. AIFMD II requirements. Specific focus on defense/dual-use classification, LP reporting, risk management framework updates."
+      "description": "Gap analysis for existing fund managers vs. AIFMD II requirements. Specific focus on defense/dual-use classification, LP reporting, risk management framework updates.",
+      "marketContext": "Market range EUR 15-40K for AIFMD II gap analysis. Defense overlay adds complexity. Previous pricing (EUR 5-12K) was too low."
     },
     {
       "id": "svc_lp_readiness",
       "name": "Institutional LP Readiness Package",
       "businessModel": "bm_defense",
-      "price_min_eur": 15000,
-      "price_max_eur": 35000,
+      "price_min_eur": 20000,
+      "price_max_eur": 45000,
       "duration_days": 30,
-      "description": "For defense-tech startups raising Series A-B. Compliance infrastructure, DD room, KYC/AML framework, governance documentation that institutional LPs expect."
+      "description": "For defense-tech startups raising Series A-B. Compliance infrastructure, DD room, KYC/AML framework, governance documentation that institutional LPs expect.",
+      "marketContext": "Defense LP readiness more complex than general (restricted investor screening, security classification, ESG defense overlay)."
+    },
+    {
+      "id": "svc_edf_grant_advisory",
+      "name": "EDF / EU Defense Grant Advisory",
+      "businessModel": "bm_defense",
+      "price_min_eur": 3000,
+      "price_max_eur": 8000,
+      "duration_days": 365,
+      "description": "Monthly retainer to help defense-tech companies bid on EDF, EDIP, NATO contracts. Plus 3-8% success fee on grants secured. EUR 5M grant = EUR 150-400K success fee. HIGH MARGIN.",
+      "pricingModel": "retainer + success_fee",
+      "successFeeRange": "3-8% of grant amount"
+    },
+    {
+      "id": "svc_expert_network",
+      "name": "Expert Network Calls (GLG/AlphaSights/Guidepoint)",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 400,
+      "price_max_eur": 1200,
+      "duration_days": 1,
+      "description": "Per-call expert consulting via expert networks. EUR 400-1200/hour for frontier market compliance expertise. IMMEDIATE CASH - sign up takes 1-2 weeks.",
+      "pricingModel": "per_call",
+      "revenueType": "immediate"
+    },
+    {
+      "id": "svc_compliance_training",
+      "name": "AML/CFT Compliance Training Workshop",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 5000,
+      "price_max_eur": 15000,
+      "duration_days": 2,
+      "description": "Half-day to 2-day training for crypto exchange compliance teams. Covers AML/CFT framework design, STR filing, sanctions screening, Travel Rule. Can deliver online or in-person.",
+      "pricingModel": "fixed_fee"
+    },
+    {
+      "id": "svc_sanctions_advisory",
+      "name": "Sanctions Compliance Advisory",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 15000,
+      "price_max_eur": 50000,
+      "duration_days": 30,
+      "description": "For companies operating near sanctioned jurisdictions. Sanctions program design, OFAC/EU sanctions screening framework, correspondent banking risk assessment. HIGH DEMAND in frontier markets.",
+      "pricingModel": "fixed_fee"
+    },
+    {
+      "id": "svc_deferred_fee_structuring",
+      "name": "Defense Fund Structuring (Deferred Fee Model)",
+      "businessModel": "bm_defense",
+      "price_min_eur": 15000,
+      "price_max_eur": 25000,
+      "duration_days": 90,
+      "description": "For cash-constrained 1st-time GPs: EUR 15-25K upfront diagnostic + EUR 10-25K deferred fee payable on first close. Aligns advisor with GP success. Conversion tool for Tier 1 targets.",
+      "pricingModel": "hybrid_deferred"
+    },
+    {
+      "id": "svc_template_packs",
+      "name": "White-Label AML/CFT Template Pack",
+      "businessModel": "bm_frontier",
+      "price_min_eur": 2000,
+      "price_max_eur": 5000,
+      "duration_days": 1,
+      "description": "Pre-built AML/CFT policy packs by jurisdiction (Turkey, Nigeria, Kenya, AIFC, UAE). Scalable product - write once, sell many. IMMEDIATE REVENUE potential.",
+      "pricingModel": "product",
+      "revenueType": "immediate"
     }
   ],
   "prospects": [
@@ -510,12 +578,17 @@
       "country": "Germany",
       "businessModel": "bm_defense",
       "segment": "VC Fund",
-      "stage": "contacted",
+      "stage": "needs_resend",
       "warmth": "cold",
       "probability": 25,
       "primaryContact": "info@sunfish.vc",
-      "notes": "EU/NATO deep tech VC. AIFMD II angle. Email sent (after hello@ bounce).",
-      "value": 50000
+      "notes": "EU/NATO deep tech VC. AIFMD II angle. Email sent (after hello@ bounce). | FIX: Wrong prefix. Also: co-founder is Marcus Erken, not Marcus Daniels",
+      "value": 50000,
+      "emailBounced": true,
+      "bouncedEmail": "hello@sunfish.vc",
+      "bounceReason": "Address not found",
+      "correctedEmail": "info@sunfish.vc",
+      "nextAction": "Resend with correct email: info@sunfish.vc"
     },
     {
       "id": "pr_underline",
@@ -620,9 +693,10 @@
       "channel": "Email + Meeting",
       "expected_value_eur": 50000,
       "probability": 40,
-      "nextAction": "Meeting May 29, 10:00 CEST. Bilateral referral partnership.",
+      "nextAction": "Meeting May 29 16:00 GMT+8 (10:00 CEST) with Jacelynn Pang",
       "nextActionDate": "2026-05-29",
-      "notes": "White-label exchange provider powering 500+ exchanges globally. Partnership model: ChainUp refers compliance clients to Black Sea, Black Sea refers infrastructure clients to ChainUp. Meeting prep done."
+      "notes": "White-label exchange provider powering 500+ exchanges globally. Partnership model: ChainUp refers compliance clients to Black Sea, Black Sea refers infrastructure clients to ChainUp. Meeting prep done. | POSITIVE REPLY May 28: Jacelynn Pang interested in bilateral partnership. Meeting booked.",
+      "replyStatus": "positive"
     },
     {
       "id": "pr_algoz",
@@ -1387,16 +1461,20 @@
       "businessModel": "bm_defense",
       "country": "Poland (Warsaw) + London + Paris",
       "segment": "Defense VC Fund (2nd-time GP)",
-      "stage": "email_drafted",
+      "stage": "needs_resend",
       "warmth": "cold",
       "primaryContact": "Stanislaw Kastory / Dr. Mikolaj Firlej (Co-founders)",
       "channel": "Website expeditionsfund.com",
       "expected_value_eur": 50000,
       "probability": 15,
-      "nextAction": "Review and send email (in Gmail drafts)",
+      "nextAction": "Resend with correct email: info@expeditionsfund.com",
       "nextActionDate": "2026-06-02",
-      "notes": "Fund II at EUR 100M first close (target EUR 150M). Backed by NATO Innovation Fund + Polish Development Fund. Dual-use deep tech: cyber, autonomy, AI, quantum, space. Second-time GP scaling significantly - needs institutional LP onboarding infrastructure.",
-      "tier": 2
+      "notes": "Fund II at EUR 100M first close (target EUR 150M). Backed by NATO Innovation Fund + Polish Development Fund. Dual-use deep tech: cyber, autonomy, AI, quantum, space. Second-time GP scaling significantly - needs institutional LP onboarding infrastructure. | EMAIL BOUNCED (info@expeditions.fund domain not found). Need correct email. | FIX: Wrong domain. Correct: expeditionsfund.com (no dot)",
+      "tier": 2,
+      "emailBounced": true,
+      "bouncedEmail": "info@expeditions.fund",
+      "bounceReason": "Domain not found",
+      "correctedEmail": "info@expeditionsfund.com"
     },
     {
       "id": "pr_hyperion",
@@ -1540,7 +1618,7 @@
       "businessModel": "bm_defense",
       "country": "EU-wide (European Commission)",
       "segment": "Defense Accelerator (Referral Partner)",
-      "stage": "email_drafted",
+      "stage": "email_bounced",
       "warmth": "cold",
       "primaryContact": "Via European Commission DG DEFIS",
       "channel": "Website eudis-business-accelerator.eu",
@@ -1549,7 +1627,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "EU's own defense accelerator. 20 startups/cohort (Spring + Autumn 2026). EUR 120K seed voucher per company. EUR 1.5B budget 2025-2027. EUDIS Matchmaking events connect founders with capital. Portfolio companies = direct compliance leads.",
-      "partnerType": "accelerator_referral"
+      "partnerType": "accelerator_referral",
+      "emailBounced": true,
+      "bouncedEmail": "info@eudis.eu",
+      "bounceReason": "Address not found"
     },
     {
       "id": "pr_edth",
@@ -1618,6 +1699,73 @@
       "nextActionDate": "2026-06-10",
       "notes": "Produces European Family Office Report (102 FOs, 20 countries). European Family Office Forum (27th edition). 24% of avg FO portfolio in private markets. Platform to publish thought leadership on defense allocation.",
       "partnerType": "fo_research"
+    },
+    {
+      "id": "pr_mourant",
+      "name": "Mourant Ozannes",
+      "businessModel": "bm_defense",
+      "country": "Jersey/Cayman/BVI/HK",
+      "segment": "Law Firm (Referral Partner)",
+      "stage": "reply_received",
+      "warmth": "warm",
+      "primaryContact": "Alistair Horn",
+      "channel": "Email (direct reply)",
+      "expected_value_eur": 0,
+      "probability": 70,
+      "nextAction": "Schedule call with Alistair Horn next week (he is on leave this week)",
+      "nextActionDate": "2026-06-02",
+      "notes": "WARM REPLY May 28: Alistair Horn 'delighted to speak next week'. Mourant = top offshore law firm for fund structuring. Referral partner potential for defense fund clients.",
+      "replyStatus": "positive",
+      "partnerType": "referral"
+    },
+    {
+      "id": "pr_ebrd_finea",
+      "name": "EBRD (Sivan Dharmar)",
+      "businessModel": "bm_frontier",
+      "country": "UK (HQ) / Tunisia (project)",
+      "segment": "Multilateral (Procurement)",
+      "stage": "reply_received",
+      "warmth": "warm",
+      "primaryContact": "Sivan Dharmar (DHARMARS@ebrd.com)",
+      "channel": "SMART by GEP procurement platform + direct email",
+      "expected_value_eur": 30000,
+      "probability": 15,
+      "nextAction": "Complete SMART vendor registration. Monitor future EBRD tenders matching our profile.",
+      "nextActionDate": "2026-06-05",
+      "notes": "WARM REPLY May 26: Shared TOR for PR 17598 FINEA (Tunisia SCF/factoring). We declined that specific one (needs multidisciplinary team) but EBRD contact established. Future tenders possible.",
+      "replyStatus": "positive"
+    },
+    {
+      "id": "pr_amber_group",
+      "name": "Amber Group",
+      "businessModel": "bm_frontier",
+      "country": "Hong Kong / Singapore",
+      "segment": "Crypto Trading / Asset Management",
+      "stage": "reply_received",
+      "warmth": "lukewarm",
+      "primaryContact": "Support ticket #144870",
+      "channel": "Email (contact@ambergroup.io)",
+      "expected_value_eur": 25000,
+      "probability": 10,
+      "nextAction": "Wait for substantive response from Amber Group team",
+      "nextActionDate": "2026-06-05",
+      "notes": "Ticket created May 28. Awaiting response."
+    },
+    {
+      "id": "pr_bitpapa",
+      "name": "Bitpapa",
+      "businessModel": "bm_frontier",
+      "country": "Russia / Turkey",
+      "segment": "P2P Exchange",
+      "stage": "reply_received",
+      "warmth": "lukewarm",
+      "primaryContact": "@bitpapateam (Telegram)",
+      "channel": "Telegram (redirected from email)",
+      "expected_value_eur": 15000,
+      "probability": 15,
+      "nextAction": "Contact @bitpapateam on Telegram with July 2026 Russia regulatory pitch",
+      "nextActionDate": "2026-05-30",
+      "notes": "Email reply May 28: 'Please send your suggestion to Telegram @bitpapateam'. Russia P2P, July 2026 BoR deadline."
     }
   ],
   "tasks": [
@@ -2157,6 +2305,116 @@
       "assignee": "adrian",
       "dueDate": "2026-06-06",
       "notes": "13 defense emails drafted. Schedule: Jun 2 (3), Jun 3 (3), Jun 4 (3), Jun 5 (2), Jun 6 (2 referral). Mix with frontier emails, max 15/day total."
+    },
+    {
+      "id": "task_fix_bounced_emails",
+      "title": "Fix 37 bounced email addresses - verify all remaining drafts",
+      "status": "urgent",
+      "priority": "critical",
+      "businessModel": "all",
+      "assignee": "both",
+      "dueDate": "2026-05-29",
+      "notes": "40% bounce rate is destroying domain reputation. Run all addresses through NeverBounce/ZeroBounce. Check MXToolbox blacklists for blackseaspv.com."
+    },
+    {
+      "id": "task_expert_networks_signup",
+      "title": "Register on GLG + AlphaSights + Guidepoint + Third Bridge",
+      "status": "pending",
+      "priority": "critical",
+      "businessModel": "all",
+      "assignee": "adrian",
+      "dueDate": "2026-05-30",
+      "notes": "FASTEST CASH. EUR 400-1200/hour expert calls. Onboarding 1-2 weeks. Apply today."
+    },
+    {
+      "id": "task_mourant_call",
+      "title": "Schedule call with Alistair Horn (Mourant Ozannes) - defense referral partner",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "bm_defense",
+      "assignee": "adrian",
+      "dueDate": "2026-06-02",
+      "notes": "WARM LEAD. Alistair Horn replied 'delighted to speak next week'. Mourant = top offshore law firm. Potential defense fund referral pipeline."
+    },
+    {
+      "id": "task_publish_content",
+      "title": "Publish Substack articles + first LinkedIn post",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "all",
+      "assignee": "adrian",
+      "dueDate": "2026-05-31",
+      "notes": "Content already written. Must publish before defense outreach (prospects Google you). AIFMD II defense angle for LinkedIn."
+    },
+    {
+      "id": "task_website_advisory_page",
+      "title": "Create advisory landing page on blackseaspv.com",
+      "status": "pending",
+      "priority": "high",
+      "businessModel": "all",
+      "assignee": "both",
+      "dueDate": "2026-06-05",
+      "notes": "Current site is OTC-focused. Need /advisory or /compliance page with services, credentials, contact form."
+    },
+    {
+      "id": "task_register_directories",
+      "title": "Register on Preqin, HFM, TED, UNGM, DevelopmentAid",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "all",
+      "assignee": "adrian",
+      "dueDate": "2026-06-07",
+      "notes": "Preqin service provider = defense GPs find you. TED/UNGM = EU/UN tenders. DevelopmentAid = development sector tenders."
+    },
+    {
+      "id": "task_template_packs",
+      "title": "Create first AML/CFT template pack (Turkey CMB or Nigeria CBN)",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "bm_frontier",
+      "assignee": "both",
+      "dueDate": "2026-06-10",
+      "notes": "Write once, sell many. Turkey CMB pack most urgent (Jun 30 deadline, 76 CASPs). EUR 2-5K per pack."
+    },
+    {
+      "id": "task_speaker_applications",
+      "title": "Submit speaker applications: EDIF, Defense TechConnect, Money20/20",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "bm_defense",
+      "assignee": "adrian",
+      "dueDate": "2026-06-10",
+      "notes": "EDIF The Hague Sep 17-18 (defense procurement), Defense TechConnect Sep 22-24 (dual-use), Money20/20 Europe (fintech regulatory)."
+    },
+    {
+      "id": "task_case_study",
+      "title": "Write A27 SICAV case study + get Seena testimonial",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "all",
+      "assignee": "both",
+      "dueDate": "2026-06-07",
+      "notes": "Need social proof. A27 = from idea to Bloomberg ticker. Anonymize if needed. Ask Seena for 2-sentence testimonial."
+    },
+    {
+      "id": "task_bitpapa_telegram",
+      "title": "Contact Bitpapa on Telegram (@bitpapateam)",
+      "status": "pending",
+      "priority": "medium",
+      "businessModel": "bm_frontier",
+      "assignee": "adrian",
+      "dueDate": "2026-05-30",
+      "notes": "Bitpapa replied: send proposal to Telegram. Russia P2P exchange, July 2026 BoR regulatory deadline."
+    },
+    {
+      "id": "task_domain_health_check",
+      "title": "Check blackseaspv.com domain health (SPF/DKIM/DMARC + blacklists)",
+      "status": "urgent",
+      "priority": "critical",
+      "businessModel": "all",
+      "assignee": "both",
+      "dueDate": "2026-05-29",
+      "notes": "37 bounced emails may have damaged domain reputation. Check mxtoolbox.com/blacklists.aspx, mxtoolbox.com/SuperTool.aspx for full health check."
     }
   ],
   "documents": [
@@ -2602,6 +2860,71 @@
       "title": "Defense BD target map complete - 13 VCs, 6 accelerators, 7 associations, 8 events",
       "date": "2026-05-28T12:32:21.112221+00:00",
       "content": "Full defense BD research completed. Key findings: TIER 1 targets (1st-time GPs, highest need): Darkstar Coalition (EST), D3 VC (UKR), ScaleWolf (LIT), Presto Tech Horizons (CZE - Prague!), Green Flag Ventures (USA/UKR). TIER 2 targets (scaling GPs): Expeditions Fund (POL, NATO-backed), Hyperion (ESP, EUR 500M Fund II), Join Capital (DEU, EIF's largest defense commitment), Karista (FRA, CNES), OTB Ventures (POL, NATO). Accelerator partnerships: NATO DIANA (150 companies), EUDIS (EU, EUR 1.5B budget). Investor networks: EDIN = highest priority for immediate membership. Events: SuperReturn Tech Sovereignty (Berlin Jun 11) = #1 priority. Czech target Presto is particularly interesting - Prague proximity for Adrian."
+    },
+    {
+      "id": "ins_bounce_crisis",
+      "title": "EMAIL BOUNCE CRISIS: 40% bounce rate - domain at risk",
+      "date": "2026-05-28",
+      "category": "operations",
+      "severity": "critical",
+      "detail": "37 of ~90 sent emails bounced (hard bounce). This is a domain reputation emergency. Google/Microsoft will start flagging blackseaspv.com as spam. Must: (1) stop sending unverified emails, (2) check blacklists, (3) verify all remaining addresses before sending."
+    },
+    {
+      "id": "ins_pricing_underpriced",
+      "title": "Defense pricing was 30-50% below market - now corrected",
+      "date": "2026-05-28",
+      "category": "pricing",
+      "detail": "Market research shows: AIFMD II gap analysis should be EUR 15-40K (was EUR 5-12K). Defense fund setup should be EUR 75-200K (was EUR 50-150K). Fractional CCO floor should be EUR 5K/mo (was EUR 3.5K). Defense specialization commands 30-50% premium over general fund advisory."
+    },
+    {
+      "id": "ins_expert_networks_fastest_cash",
+      "title": "Expert networks = fastest path to cash (EUR 400-1200/hour)",
+      "date": "2026-05-28",
+      "category": "revenue",
+      "detail": "GLG, AlphaSights, Guidepoint, Third Bridge pay EUR 400-1200/hour for expert calls. Adrian's combination of MFSA/MiFID II + frontier markets + defense = rare expert profile. Onboarding: 1-2 weeks. Could generate EUR 2-8K/month immediately."
+    },
+    {
+      "id": "ins_deferred_fee_model",
+      "title": "Deferred fee model for cash-constrained 1st-time defense GPs",
+      "date": "2026-05-28",
+      "category": "pricing",
+      "detail": "Market research: EUR 15-25K upfront + EUR 10-25K deferred to first close is standard for emerging manager advisory. Better conversion than full upfront pricing. Also: 0.1-0.25% of capital raised as success component is viable."
+    },
+    {
+      "id": "ins_edf_grant_advisory_huge",
+      "title": "EDF grant advisory = potential EUR 150-400K success fees per deal",
+      "date": "2026-05-28",
+      "category": "revenue",
+      "detail": "EU defense grant procurement advisory uses success-based models. 3-8% success fee on grant amount. For EUR 5M EDF grant = EUR 150-400K in success fees. One firm reported 71% success rate securing EUR 190M+ in EDF funding. HIGH MARGIN adjacency."
+    },
+    {
+      "id": "ins_mourant_breakthrough",
+      "title": "Mourant Ozannes (Alistair Horn) = potential defense referral pipeline breakthrough",
+      "date": "2026-05-28",
+      "category": "pipeline",
+      "detail": "First warm reply from a top-tier offshore law firm. Mourant does fund formation but not ongoing compliance - perfect referral partner profile. One Mourant referral could be worth EUR 25-75K. Call scheduled next week."
+    },
+    {
+      "id": "ins_chainup_partnership",
+      "title": "ChainUp partnership confirmed - bilateral referral model",
+      "date": "2026-05-28",
+      "category": "pipeline",
+      "detail": "Jacelynn Pang (ChainUp): 'we have a chance for bilateral partnerships'. ChainUp powers 500+ exchange clients. If 5% need compliance = 25 potential engagements. Meeting May 29."
+    },
+    {
+      "id": "ins_procurement_registered",
+      "title": "Registered on 3 procurement platforms: EBRD, IFAD, UNICEF",
+      "date": "2026-05-28",
+      "category": "procurement",
+      "detail": "Already registered: SAP Ariba (UNICEF, account AN11380147296), GEP SMART (EBRD, contact Sivan Dharmar), IFAD In-Tend (approved supplier, Central Asia tender active). Need: TED, UNGM, DevelopmentAid."
+    },
+    {
+      "id": "ins_500k_gap_honest",
+      "title": "EUR 500K/month reality check: need team + brand + pipeline conversion",
+      "date": "2026-05-28",
+      "category": "strategy",
+      "severity": "high",
+      "detail": "EUR 500K/month from near-zero in 2 months is not achievable through advisory alone. Realistic 2-month target: EUR 25-75K/month. To reach EUR 500K/month needs: 12-18 months pipeline, 2-3 hires, law firm partnership, published brand, procurement wins, AND defense fund structuring mandates converting."
     }
   ],
   "edges": [
@@ -3006,6 +3329,13 @@
   "customEdges": [],
   "inbox": [
     {
+      "id": "inbox_v3_mega_update",
+      "date": "2026-05-28",
+      "type": "status_update",
+      "priority": "critical",
+      "message": "BLACK SEA v3.0 MEGA UPDATE - May 28, 2026\n\nURGENT ISSUES:\n1. EMAIL BOUNCE CRISIS: 37/90 emails bounced (40%). Domain at risk. STOP sending unverified emails.\n2. PRICING CORRECTED: Defense services were 30-50% below market. Updated across board.\n3. 5 POSITIVE REPLIES: ChainUp (meeting May 29), Mourant Ozannes (call next week), SadaPay, Bitpapa (Telegram), EBRD\n\nNEW BD CHANNELS (beyond cold email):\n- Expert networks (FASTEST CASH: EUR 400-1200/hr)\n- Conference speaking (EDIF, Defense TechConnect, Money20/20)\n- Referral partnerships (Mourant WARM, 4 more law firms pending)\n- Procurement (EBRD, IFAD, UNICEF registered)\n- Content/LinkedIn (must publish now)\n- Directories (Preqin, HFM, ACA)\n\nGAP ANALYSIS FOR EUR 500K/MONTH:\n- Realistic 2-month: EUR 25-75K/month\n- Realistic 6-month: EUR 250K/month\n- EUR 500K needs: team (2-3 hires), brand, procurement wins, 12-18 months\n- CRITICAL GAPS: no team, no website for advisory, no published content, no expert network registration, 40% email bounce rate\n\nIMMEDIATE ACTIONS (this week):\n1. Fix domain health + verify all remaining emails\n2. Register on expert networks (GLG, AlphaSights)\n3. Publish Substack + start LinkedIn\n4. ChainUp meeting May 29\n5. AlgoZ meeting May 29\n6. Schedule Mourant call Jun 2"
+    },
+    {
       "id": "inbox_defense_attack_ready",
       "content": "DEFENSE CAPITAL ADVISORY - BD ATTACK READY\n\nTARGETS IDENTIFIED:\n- 13 defense VC funds (5 Tier 1, 6 Tier 2, 2 Tier 3)\n- 6 accelerators/networks for referral pipeline\n- 4 industry associations to join\n- 8 conferences to apply as speaker\n- 2 family office networks for LP access\n\nPRIORITY OUTREACH (Tier 1 - first-time GPs):\n1. Darkstar Coalition (Estonia) - EUR 25M defense fund\n2. D3 Venture Capital (Ukraine) - scaling defense VC\n3. ScaleWolf (Lithuania) - dual-use accelerator+fund\n4. Presto Tech Horizons (Prague!) - EUR 150M with CSG\n5. Green Flag Ventures (USA/Ukraine) - $20M\n\nIMMEDIATE ACTIONS:\n1. Draft outreach emails for Tier 1 (5 emails)\n2. Apply to EDIN membership (investor network)\n3. Apply to speak at SuperReturn Tech Sovereignty (Jun 11)\n4. Write defense Substack article (AIFMD II angle)\n5. Draft Tier 2 emails (6 emails)\n\nTOTAL ADDRESSABLE VALUE:\nTier 1+2 combined: ~EUR 450K potential pipeline\nPlus: accelerator referral pipeline ongoing",
       "date": "2026-05-28T12:32:21.112221+00:00"
@@ -3227,14 +3557,17 @@
     {
       "id": "ch_cold_email",
       "name": "Cold Email Outreach",
-      "status": "active",
+      "status": "needs_email_verification",
       "priority": "P0",
       "description": "Direct email to crypto exchanges, fintechs, banks, and law firms across 13+ markets",
       "metrics": {
         "totalDraftsCreated": 85,
         "totalSent": 90,
         "sendingCapacity": "10-15/day",
-        "estimatedWeeksToComplete": "5-6"
+        "estimatedWeeksToComplete": "5-6",
+        "bounceRate": "40%",
+        "hardBounces": 34,
+        "softBounces": 3
       },
       "markets": [
         "UAE",
@@ -3256,7 +3589,8 @@
         "Gmail API drafts",
         "blacksea_bulk_email.py"
       ],
-      "color": "#18C26B"
+      "color": "#18C26B",
+      "healthWarning": "CRITICAL: 40% bounce rate. Must verify all remaining emails before sending. Domain reputation at risk."
     },
     {
       "id": "ch_vc_portfolio",
@@ -3700,6 +4034,252 @@
       "priority": "P2",
       "description": "Join ASD, BDSV, or relevant defense industry associations. Visibility + networking with defense fund managers and defense-tech companies.",
       "color": "#2E8B6F"
+    },
+    {
+      "id": "ch_expert_networks",
+      "name": "Expert Networks (GLG, AlphaSights, Guidepoint, Third Bridge)",
+      "status": "not_started",
+      "priority": "P0",
+      "description": "Sign up as compliance expert. EUR 400-1200/hour for expert calls. FASTEST path to cash. Onboarding: 1-2 weeks. Adrian's frontier market + MFSA + defense expertise = rare profile.",
+      "revenueType": "immediate",
+      "estimatedMonthlyEur": "2000-8000",
+      "nextAction": "Apply to GLG, AlphaSights, Guidepoint, Third Bridge this week",
+      "color": "#FF4444"
+    },
+    {
+      "id": "ch_conference_speaking",
+      "name": "Conference Speaking (Defense + Compliance)",
+      "status": "not_started",
+      "priority": "P1",
+      "description": "Apply as speaker to defense/compliance conferences. Free BD channel - one talk = 50-200 warm leads. Targets: EDIF The Hague Sep 17-18, Defense TechConnect Sep 22-24, Money20/20 Europe, ACAMS Assembly.",
+      "targets": [
+        {
+          "name": "EDIF The Hague",
+          "date": "2026-09-17",
+          "status": "apply_now"
+        },
+        {
+          "name": "Defense TechConnect",
+          "date": "2026-09-22",
+          "status": "apply_now"
+        },
+        {
+          "name": "Money20/20 Europe",
+          "date": "2026-06-15",
+          "status": "apply_now"
+        },
+        {
+          "name": "ACAMS Chapter Events",
+          "date": "ongoing",
+          "status": "join_chapter"
+        }
+      ],
+      "nextAction": "Submit speaker bios to EDIF, Defense TechConnect, Money20/20 this week"
+    },
+    {
+      "id": "ch_content_thought_leadership",
+      "name": "Content / Thought Leadership",
+      "status": "ready_to_launch",
+      "priority": "P1",
+      "description": "LinkedIn articles (defense GPs live there), Substack, podcast guest spots, op-eds. Content already written (3 blog posts, newsletter). Need to publish and distribute.",
+      "subChannels": [
+        {
+          "name": "LinkedIn Articles",
+          "status": "not_started",
+          "note": "Defense GPs live on LinkedIn. 2-3x/week on AIFMD II, defense fund compliance."
+        },
+        {
+          "name": "Substack",
+          "status": "content_ready",
+          "note": "3 articles + newsletter ready. Publish now."
+        },
+        {
+          "name": "Podcast Guest Spots",
+          "status": "not_started",
+          "targets": [
+            "Financial Crime Matters (ACAMS)",
+            "The Compliance Podcast",
+            "AML Conversations",
+            "Defense One Radio"
+          ]
+        },
+        {
+          "name": "Op-eds",
+          "status": "not_started",
+          "targets": [
+            "Global Custodian",
+            "Hedge Fund Journal",
+            "The Defense Post"
+          ]
+        }
+      ],
+      "nextAction": "Publish first Substack article + first LinkedIn post this week"
+    },
+    {
+      "id": "ch_referral_partnerships",
+      "name": "Law Firm + Fund Admin Referral Network",
+      "status": "warm_leads",
+      "priority": "P1",
+      "description": "Law firms that do fund formation but not ongoing compliance (refer out). Fund administrators needing compliance partners. 15-25% referral fee or reciprocal.",
+      "warmLeads": [
+        {
+          "name": "Mourant Ozannes",
+          "contact": "Alistair Horn",
+          "status": "WARM - wants to speak next week",
+          "value": "high"
+        },
+        {
+          "name": "White & Case Dubai",
+          "contact": "Arnold Krutilins",
+          "status": "On Eid leave, will respond",
+          "value": "medium"
+        },
+        {
+          "name": "White & Case Africa",
+          "contact": "Deji Adegoke",
+          "status": "On leave until Jun 1",
+          "value": "medium"
+        },
+        {
+          "name": "Ogier",
+          "contact": "Niamh Lalor",
+          "status": "On sabbatical until Jun 1, referred to Julie Lagadu",
+          "value": "medium"
+        },
+        {
+          "name": "Kinstellar Kazakhstan",
+          "contact": "Joel Benjamin",
+          "status": "Holiday, will respond",
+          "value": "medium"
+        }
+      ],
+      "coldTargets": [
+        "Alter Domus (fund admin)",
+        "Apex Group (fund admin)",
+        "Citco",
+        "CMS Law",
+        "Linklaters fund formation"
+      ],
+      "nextAction": "Call Alistair Horn (Mourant) next week. Follow up White & Case + Ogier Jun 2."
+    },
+    {
+      "id": "ch_procurement_platforms",
+      "name": "Public Procurement / Tenders",
+      "status": "registered",
+      "priority": "P1",
+      "description": "Government and multilateral procurement for advisory services. Already registered on SAP Ariba, GEP SMART (EBRD), IFAD In-Tend.",
+      "platforms": [
+        {
+          "name": "SAP Ariba (UNICEF/UN)",
+          "status": "registered",
+          "accountId": "AN11380147296"
+        },
+        {
+          "name": "GEP SMART (EBRD)",
+          "status": "registered",
+          "contact": "DHARMARS@ebrd.com"
+        },
+        {
+          "name": "IFAD In-Tend",
+          "status": "approved_supplier",
+          "note": "Central Asia policy tender active"
+        },
+        {
+          "name": "TED (EU tenders)",
+          "status": "not_registered",
+          "url": "ted.europa.eu"
+        },
+        {
+          "name": "UNGM (UN Global Marketplace)",
+          "status": "not_registered",
+          "url": "ungm.org"
+        },
+        {
+          "name": "SAM.gov (US government)",
+          "status": "not_registered"
+        },
+        {
+          "name": "DevelopmentAid",
+          "status": "not_registered",
+          "url": "developmentaid.org"
+        }
+      ],
+      "activeTenders": [
+        {
+          "name": "UNICEF LTA HR/Admin/Logistics",
+          "status": "invited",
+          "deadline": "TBD"
+        },
+        {
+          "name": "IFAD Central Asia Employability",
+          "status": "approved_supplier",
+          "deadline": "TBD"
+        }
+      ],
+      "nextAction": "Register on TED, UNGM, DevelopmentAid. Monitor EBRD SMART weekly."
+    },
+    {
+      "id": "ch_community_networks",
+      "name": "Online Communities & Industry Networks",
+      "status": "not_started",
+      "priority": "P2",
+      "description": "Telegram groups, LinkedIn groups, ACAMS chapters, defense investor networks. Low effort, high visibility.",
+      "targets": [
+        {
+          "name": "ACAMS Vienna/Bratislava chapter",
+          "type": "professional_association"
+        },
+        {
+          "name": "NATO DIANA Capital Network",
+          "type": "investor_network",
+          "url": "diana.nato.int"
+        },
+        {
+          "name": "European Defense Tech LinkedIn Group",
+          "type": "linkedin",
+          "members": "8000+"
+        },
+        {
+          "name": "Alt Investment Fund Managers LinkedIn",
+          "type": "linkedin",
+          "members": "12000+"
+        },
+        {
+          "name": "EDIN (European Defense Investor Network)",
+          "type": "investor_network"
+        }
+      ],
+      "nextAction": "Join ACAMS chapter + EDIN membership application"
+    },
+    {
+      "id": "ch_strategic_alliances",
+      "name": "Strategic Alliances (Fund Admins + Prime Brokers)",
+      "status": "not_started",
+      "priority": "P2",
+      "description": "Get on recommended vendor lists of fund administrators and prime brokers. One alliance = steady referral flow.",
+      "targets": [
+        {
+          "name": "Alter Domus",
+          "angle": "Private credit + infrastructure, defense overlap"
+        },
+        {
+          "name": "Apex Group",
+          "angle": "ESG focus creates defense screening bridge"
+        },
+        {
+          "name": "Preqin Service Provider Directory",
+          "url": "preqin.com/service-providers"
+        },
+        {
+          "name": "HFM/With Intelligence Provider Guide",
+          "type": "directory"
+        },
+        {
+          "name": "ACA Compliance Group Directory",
+          "url": "acaglobal.com"
+        }
+      ],
+      "nextAction": "Register on Preqin + HFM directories. Email Alter Domus with co-referral proposal."
     }
   ],
   "pipelineStatus": {
@@ -4165,6 +4745,505 @@
       "members": "221 companies",
       "relevance": "Member of BDI, ASD, NATO NIAG. Key defense industry association.",
       "website": "bdsv.eu"
+    }
+  ],
+  "emailHealth": {
+    "lastAudit": "2026-05-28",
+    "totalSent": 90,
+    "hardBounces": 34,
+    "softBounces": 3,
+    "delayedThenFailed": 3,
+    "bounceRate": "40%",
+    "status": "CRITICAL",
+    "domainReputation": "AT RISK - 40% bounce rate is dangerous. Must verify emails before sending.",
+    "recommendations": [
+      "STOP sending to unverified emails immediately",
+      "Use email verification tool (Hunter.io, NeverBounce, ZeroBounce) before every send",
+      "37 emails bounced in 7 days = domain reputation damage likely",
+      "Consider warming domain with positive sends (newsletters to opted-in contacts)",
+      "Check SPF/DKIM/DMARC records for blackseaspv.com",
+      "Monitor blacklist status at mxtoolbox.com/blacklists.aspx"
+    ],
+    "bouncedAddresses": [
+      "info@expeditions.fund",
+      "info@eudis.eu",
+      "hello@sunfish.vc",
+      "corporate@exmo.com",
+      "dpo@exmo.com",
+      "info@scorechain.com",
+      "partnerships@moniepoint.com",
+      "podcast@soliduslabs.com",
+      "info@cvvc.com",
+      "press@chainalysis.com",
+      "info@shorooq.com",
+      "sameer@versifi.io",
+      "kz@deloitte.com",
+      "kz_info@pwc.com",
+      "giaba@giaba.org",
+      "secretariat@eurasiangroup.org",
+      "capacitydevelopment@imf.org",
+      "info@dbn.ng",
+      "ana.kostava@bog.ge",
+      "nkalandarishvili@bog.ge",
+      "nbg@nbg.gov.ge",
+      "info@cryptoassets.fund",
+      "ashton.h@gda.fund",
+      "james@libertyroadcapital.com",
+      "compliance@qcp.group",
+      "madina@aifb.kz",
+      "bitbear@lghstrllp.com",
+      "olaniyi.alao@operapay.com",
+      "jakub.princ@hashkey.com",
+      "cso@ifc.org",
+      "bd@pezesha.com",
+      "support@sadapay.pk",
+      "rao@muzaini.com",
+      "membership@sacryptoassociation.org",
+      "hello@hxafrica.com",
+      "support@hashgreed.com",
+      "rae@du.capital",
+      "info@itsx.kz"
+    ],
+    "workingAddresses": [
+      "hello@sadapay.pk",
+      "dpo@paystack.com",
+      "support@bitpapa.com",
+      "contact@ambergroup.io",
+      "marketing@chainup.com",
+      "jacelynn.pang@chainup.com",
+      "stephen.w@algoz.io",
+      "nick@xerof.com",
+      "fsra@adgm.com",
+      "Alistair.Horn@mourant.com",
+      "DHARMARS@ebrd.com",
+      "Joel.Benjamin@kinstellar.com",
+      "arnold.krutilins@whitecase.com",
+      "deji.adegoke@whitecase.com",
+      "Niamh.Lalor@ogier.com",
+      "WokurkaU@schneider-group.com"
+    ]
+  },
+  "gapAnalysis": {
+    "target": "EUR 500K/month by August 2026",
+    "currentMonthlyRevenue": 600,
+    "currentMonthlyRevenueSource": "Seena/AIR Labs retainer ($600/mo) + pending invoice ($2K)",
+    "gapToTarget": 499400,
+    "analysisDate": "2026-05-28",
+    "verdictHonest": "EUR 500K/month in 2 months from near-zero is not achievable through advisory alone. BUT EUR 50-100K/month by August IS achievable with the right moves. EUR 500K/month requires 12-18 months of pipeline building OR one massive procurement win OR the AIR Labs fund scaling to EUR 5M+ AUM.",
+    "revenueScenarios": {
+      "conservative_2months": {
+        "monthlyEur": 25000,
+        "breakdown": [
+          "2-3 frontier gap analyses @ EUR 8-15K each = EUR 20-40K",
+          "1 fractional CCO retainer @ EUR 5-10K/mo = EUR 5-10K",
+          "Expert network calls (10-15 @ EUR 500) = EUR 5-7.5K",
+          "Template pack sales (2-3 @ EUR 3K) = EUR 6-9K"
+        ]
+      },
+      "aggressive_2months": {
+        "monthlyEur": 75000,
+        "breakdown": [
+          "1 defense fund structuring (deferred start, EUR 15K upfront) = EUR 15K",
+          "3-4 frontier gap analyses @ EUR 10-15K = EUR 30-60K",
+          "2 fractional CCO retainers @ EUR 5-10K = EUR 10-20K",
+          "Expert network calls = EUR 5-8K",
+          "1 procurement subcontract win = EUR 10-20K"
+        ]
+      },
+      "moonshot_6months": {
+        "monthlyEur": 250000,
+        "breakdown": [
+          "3 defense fund structuring mandates @ EUR 50-75K = EUR 150-225K",
+          "5 retainer clients @ EUR 8-15K = EUR 40-75K",
+          "EDF grant advisory success fees = EUR 50-100K",
+          "Frontier compliance mandates = EUR 50-100K",
+          "Expert networks + training = EUR 10-20K"
+        ]
+      },
+      "unicorn_12months": {
+        "monthlyEur": 500000,
+        "breakdown": [
+          "5 defense fund structuring (including 2 full setups @ EUR 150-200K) = EUR 300K",
+          "10 retainer clients @ EUR 10-15K = EUR 100-150K",
+          "EDF grant advisory = EUR 50-100K",
+          "Procurement contracts = EUR 50K",
+          "AIR Labs fund revenue (at EUR 5M AUM) = EUR 25K"
+        ],
+        "requirements": "Requires hiring 2-3 people, partnership with a law firm, established brand, and pipeline conversion"
+      }
+    },
+    "criticalGaps": [
+      {
+        "gap": "ZERO DELIVERY TEAM",
+        "severity": "critical",
+        "detail": "Adrian is solo. Cannot deliver 5+ mandates simultaneously. Need: 1 junior compliance analyst (EUR 2-3K/mo), 1 senior associate/subcontractor for defense work.",
+        "fix": "Hire one junior (student/intern) immediately. Use subcontractors for overflow. Consider revenue-share model with experienced compliance professionals.",
+        "timeToFix": "2-4 weeks"
+      },
+      {
+        "gap": "NO EMAIL VERIFICATION = DOMAIN DAMAGE",
+        "severity": "critical",
+        "detail": "40% bounce rate is destroying domain reputation. blackseaspv.com may already be on spam lists.",
+        "fix": "Stop all sending. Run remaining draft emails through NeverBounce/ZeroBounce. Check MXToolbox blacklists. Set up email authentication (SPF/DKIM/DMARC) if not done.",
+        "timeToFix": "1-2 days"
+      },
+      {
+        "gap": "NO WEBSITE FOR ADVISORY",
+        "severity": "high",
+        "detail": "blackseaspv.com is OTC-focused. Defense GPs and frontier clients see an OTC desk, not a compliance advisory firm. Need a proper advisory website or at minimum a landing page.",
+        "fix": "Create advisory landing page at blackseaspv.com/advisory or separate domain. Must have: services, credentials, case study outline, contact form.",
+        "timeToFix": "1 week"
+      },
+      {
+        "gap": "NO PUBLISHED THOUGHT LEADERSHIP",
+        "severity": "high",
+        "detail": "3 Substack articles written but not all published. No LinkedIn presence. No op-eds. Defense GPs Google you before responding to cold email - they find nothing.",
+        "fix": "Publish all Substack articles this week. Start LinkedIn posting. Submit 2 op-eds.",
+        "timeToFix": "1 week"
+      },
+      {
+        "gap": "NO CASE STUDIES OR TESTIMONIALS",
+        "severity": "high",
+        "detail": "A27 SICAV build is the proof point but there is no written case study. No client testimonials. Frontier prospects need social proof.",
+        "fix": "Write A27 SICAV case study (anonymized if needed). Ask Seena for a testimonial quote. Create '3 things we built' credentials doc.",
+        "timeToFix": "3 days"
+      },
+      {
+        "gap": "NO EXPERT NETWORK REGISTRATION",
+        "severity": "medium",
+        "detail": "EUR 400-1200/hour expert calls are the FASTEST cash. Not registered on any network.",
+        "fix": "Apply to GLG, AlphaSights, Guidepoint, Third Bridge today.",
+        "timeToFix": "1-2 weeks to onboard"
+      },
+      {
+        "gap": "NO LINKEDIN FOR DEFENSE BD",
+        "severity": "medium",
+        "detail": "Defense GPs, family offices, and fund admins live on LinkedIn. Adrian has no active presence. This blocks the entire defense BD channel.",
+        "fix": "Activate LinkedIn (even minimal). Post 1-2x/week on AIFMD II and defense fund compliance. Connect with all defense prospect contacts.",
+        "timeToFix": "Ongoing"
+      },
+      {
+        "gap": "PIPELINE IS 95% COLD",
+        "severity": "high",
+        "detail": "86 prospects but only 5 have responded positively (ChainUp, Mourant, SadaPay, Bitpapa, EBRD). Need to convert cold to warm at 10x rate.",
+        "fix": "Focus on warm leads FIRST. Mourant call next week could unlock defense referral pipeline. ChainUp meeting May 29 could unlock frontier referrals. EBRD relationship could unlock procurement.",
+        "timeToFix": "2-4 weeks"
+      },
+      {
+        "gap": "NO PROCUREMENT CAPABILITY",
+        "severity": "medium",
+        "detail": "Registered on EBRD SMART, IFAD In-Tend, SAP Ariba. But cannot bid on most tenders solo - they require teams, past performance references, and specific certifications.",
+        "fix": "Partner with established consulting firm for joint bids. Use subcontractor role on larger tenders. Build track record on smaller UN/EBRD assignments first.",
+        "timeToFix": "3-6 months for first win"
+      },
+      {
+        "gap": "INVOICING + PAYMENT INFRASTRUCTURE",
+        "severity": "medium",
+        "detail": "Need to ensure Black Sea SPV can invoice in EUR, USD, GBP. Need SWIFT/SEPA capability. Need proper invoice template with VAT handling.",
+        "fix": "Verify bank can handle multi-currency. Set up invoice template. Consider Wise Business for multi-currency if needed.",
+        "timeToFix": "1 week"
+      }
+    ],
+    "immediateRevenueActions": [
+      {
+        "action": "Register on expert networks (GLG, AlphaSights, Guidepoint, Third Bridge)",
+        "timeline": "This week",
+        "expectedRevenue": "EUR 2-8K/month within 2-3 weeks",
+        "effort": "Low (1-2 hours to apply)"
+      },
+      {
+        "action": "Create and sell AML/CFT template packs per jurisdiction",
+        "timeline": "1 week to create",
+        "expectedRevenue": "EUR 2-5K per pack, potentially EUR 10-20K/month",
+        "effort": "Medium (2-3 days to create first pack)"
+      },
+      {
+        "action": "Convert ChainUp meeting (May 29) to referral partnership",
+        "timeline": "May 29",
+        "expectedRevenue": "EUR 15-30K in referrals over 3 months",
+        "effort": "Low (meeting already booked)"
+      },
+      {
+        "action": "Convert Mourant call to defense referral pipeline",
+        "timeline": "Jun 2-6",
+        "expectedRevenue": "EUR 25-75K per referral",
+        "effort": "Low (call to schedule)"
+      },
+      {
+        "action": "Push Nigeria CBN deadline urgency (Jun 10 = 13 days)",
+        "timeline": "This week",
+        "expectedRevenue": "EUR 20-50K per engagement",
+        "effort": "Medium (need to find working emails for OPay, Moniepoint)"
+      },
+      {
+        "action": "Push Turkey CMB deadline (Jun 30 = 33 days)",
+        "timeline": "This week",
+        "expectedRevenue": "EUR 15-40K per CASP",
+        "effort": "Medium (76 CASPs need authorization)"
+      }
+    ]
+  },
+  "procurement": {
+    "registeredPlatforms": [
+      {
+        "name": "SAP Ariba (UNICEF/UN)",
+        "accountId": "AN11380147296",
+        "status": "registered"
+      },
+      {
+        "name": "GEP SMART (EBRD)",
+        "status": "registered",
+        "contact": "DHARMARS@ebrd.com"
+      },
+      {
+        "name": "IFAD In-Tend",
+        "status": "approved_supplier"
+      }
+    ],
+    "toRegister": [
+      {
+        "name": "TED (EU tenders)",
+        "url": "ted.europa.eu",
+        "priority": "high",
+        "cost": "free",
+        "cpvCodes": "79411000 (mgmt consultancy), 75220000 (defence)"
+      },
+      {
+        "name": "UNGM",
+        "url": "ungm.org",
+        "priority": "high",
+        "cost": "free"
+      },
+      {
+        "name": "EBRD ECEPP",
+        "url": "ecepp.ebrd.com",
+        "priority": "high",
+        "cost": "free"
+      },
+      {
+        "name": "ADB CMS",
+        "url": "cms.adb.org",
+        "priority": "high",
+        "cost": "free",
+        "note": "Central/South Asia overlap with our markets"
+      },
+      {
+        "name": "NSPA (NATO)",
+        "url": "eportal.nspa.nato.int",
+        "priority": "medium",
+        "cost": "free",
+        "note": "Slovakia = NATO member, straightforward"
+      },
+      {
+        "name": "Slovak UVO",
+        "url": "uvo.gov.sk",
+        "priority": "high",
+        "cost": "free"
+      },
+      {
+        "name": "EDA eTendering",
+        "url": "eda.europa.eu/procurement",
+        "priority": "medium",
+        "cost": "free"
+      },
+      {
+        "name": "EU Funding & Tenders Portal",
+        "url": "ec.europa.eu/info/funding-tenders",
+        "priority": "high",
+        "cost": "free"
+      },
+      {
+        "name": "DevelopmentAid",
+        "url": "developmentaid.org",
+        "priority": "medium",
+        "cost": "paid membership"
+      }
+    ],
+    "highValueOpportunities": [
+      {
+        "name": "EDF 2026 Work Programme",
+        "value": "EUR 50-300K as compliance work package in consortium",
+        "deadline": "2026-09-29",
+        "note": "Cannot bid solo - need to join R&D consortium. But defense startups funded by EDF need compliance advisors = client sourcing"
+      },
+      {
+        "name": "FATF/EAG Mutual Evaluation Assessor",
+        "value": "USD 300-700/day, 2-6 week assignments",
+        "note": "Apply as individual expert to EAG (covers Russia, KZ, UZ, KG). Adrian's jurisdiction knowledge = perfect fit."
+      },
+      {
+        "name": "Sanctions Compliance Advisory (B2B)",
+        "value": "EUR 15-50K per engagement, EUR 3.8B global market",
+        "note": "NOT a tender - direct B2B to banks/fintechs/commodity traders in UAE/Turkey/Central Asia. Global market growing 10.2% CAGR."
+      },
+      {
+        "name": "EBRD transition economy consultancies",
+        "value": "EUR 30-500K, 300 contracts/year",
+        "note": "EBRD operates in almost all our target markets. Sivan Dharmar is active contact."
+      }
+    ]
+  },
+  "immediateRevenue": {
+    "analysisDate": "2026-05-28",
+    "fastestToRevenue": [
+      {
+        "channel": "Expert Networks (GLG, AlphaSights, Guidepoint, Third Bridge, CleverX)",
+        "timeToFirstPayment": "2 weeks",
+        "revenuePerUnit": "EUR 400-1200/call",
+        "monthlyPotential": "EUR 2-8K",
+        "action": "Apply to all 5 today. URLs: glginsights.com/network-members, alphasights.com/experts, guidepointglobaladvisors.com/apply, thirdbridge.com, cleverx.com",
+        "priority": 1
+      },
+      {
+        "channel": "Fractional CCO/MLRO (direct + Fraxtional.co + Upwork)",
+        "timeToFirstPayment": "2-4 weeks",
+        "revenuePerUnit": "EUR 3-18K/month per client",
+        "monthlyPotential": "EUR 5-15K",
+        "action": "Register on Fraxtional.co. Post on Upwork. Contact 23 scraped ADGM VA firms directly.",
+        "priority": 2
+      },
+      {
+        "channel": "MiCA Emergency Gap Analysis",
+        "timeToFirstPayment": "1-3 weeks",
+        "revenuePerUnit": "EUR 5-25K per engagement",
+        "monthlyPotential": "EUR 10-50K",
+        "action": "Only 47 CASPs have full MiCA auth. 130+ provisional. Deadline stress = urgent demand. Adrian's MFSA background is directly relevant.",
+        "priority": 3
+      },
+      {
+        "channel": "AML/CFT Template Packs (Gumroad/direct)",
+        "timeToFirstPayment": "1 week (after creation)",
+        "revenuePerUnit": "EUR 2-5K per pack",
+        "monthlyPotential": "EUR 5-20K",
+        "action": "Create Turkey CMB pack first (Jun 30 deadline, 76 CASPs). List on Gumroad + sell direct.",
+        "priority": 4
+      },
+      {
+        "channel": "Training Workshops (virtual)",
+        "timeToFirstPayment": "2-4 weeks",
+        "revenuePerUnit": "EUR 2-10K per session",
+        "monthlyPotential": "EUR 5-15K",
+        "action": "Package frontier market AML training for crypto exchanges. Virtual delivery = zero cost.",
+        "priority": 5
+      }
+    ],
+    "urgentDeadlinePlays": [
+      {
+        "market": "Nigeria CBN",
+        "deadline": "2026-06-10",
+        "daysLeft": 13,
+        "opportunity": "AML roadmap submissions for fintechs/PSPs"
+      },
+      {
+        "market": "Turkey CMB",
+        "deadline": "2026-06-30",
+        "daysLeft": 33,
+        "opportunity": "76 CASPs need licensing by Jun 30 or face liquidation"
+      },
+      {
+        "market": "MiCA EU",
+        "deadline": "2026-07-01",
+        "daysLeft": 34,
+        "opportunity": "130+ CASPs on provisional licenses need full compliance"
+      },
+      {
+        "market": "Kazakhstan AIFC",
+        "deadline": "2026-07-11",
+        "daysLeft": 44,
+        "opportunity": "New Digital Code requires licensing for all DAOs"
+      },
+      {
+        "market": "Kenya VASP Act",
+        "deadline": "2026-11-01",
+        "daysLeft": 157,
+        "opportunity": "50+ firms, zero licensed"
+      }
+    ]
+  },
+  "emailFixes": [
+    {
+      "company": "Expeditions Fund",
+      "bounced": "info@expeditions.fund",
+      "correct": "info@expeditionsfund.com",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Sunfish Partners",
+      "bounced": "hello@sunfish.vc",
+      "correct": "info@sunfish.vc",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "EXMO",
+      "bounced": "corporate@exmo.com",
+      "correct": "support@exmo.me or pr@exmo.com",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Scorechain",
+      "bounced": "info@scorechain.com",
+      "correct": "contact@scorechain.com",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Moniepoint",
+      "bounced": "partnerships@moniepoint.com",
+      "correct": "info@moniepoint.com",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "CV VC",
+      "bounced": "info@cvvc.com",
+      "correct": "hello@cvvc.com",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Shorooq",
+      "bounced": "info@shorooq.com",
+      "correct": "hello@shorooq.com or hello@shorooq.ae",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "Chainalysis",
+      "bounced": "press@chainalysis.com",
+      "correct": "info@chainalysis.com or partner.chainalysis.com",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "QCP Capital",
+      "bounced": "compliance@qcp.group",
+      "correct": "firstname@qcp.capital",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "OPay",
+      "bounced": "olaniyi.alao@operapay.com",
+      "correct": "customerservice@opay-inc.com",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Solidus Labs",
+      "bounced": "podcast@soliduslabs.com",
+      "correct": "hello@soliduslabs.com",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "SadaPay",
+      "bounced": "support@sadapay.pk",
+      "correct": "hello@sadapay.pk (confirmed working)",
+      "confidence": "HIGH"
+    },
+    {
+      "company": "Bank of Georgia",
+      "bounced": "ana.kostava@bog.ge",
+      "correct": "customerservice@bog.ge or ir@bgeo.com",
+      "confidence": "MEDIUM"
+    },
+    {
+      "company": "HashKey",
+      "bounced": "jakub.princ@hashkey.com",
+      "correct": "contact@hashkey.com or support@hashkeyglobal.com",
+      "confidence": "MEDIUM"
     }
   ]
 }
