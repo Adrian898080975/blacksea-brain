@@ -1,6 +1,6 @@
 {
-  "version": "3.3-session-deliverables-may28",
-  "lastUpdated": "2026-05-28T20:00:00Z",
+  "version": "3.4-chainup-call-may29",
+  "lastUpdated": "2026-05-29T11:00:00Z",
   "owner": "Adri\u00e1n P\u00e1le\u0161",
   "brand": {
     "id": "blacksea",
@@ -1862,38 +1862,17 @@
       "market": "Global (Singapore HQ)",
       "type": "technology_provider",
       "businessModel": "bm_frontier",
-      "status": "warm_reply_meeting_booked",
+      "status": "Partnership agreed - NDA pending",
       "priority": "high",
-      "contact": "Jacelynn Pang (Global Channel & Group Marketing Director)",
+      "contact": "Jacelynn Pang, Global Channel & Group Marketing Director",
       "email": "jacelynn.pang@chainup.com",
       "phone": "+65 9172 3519",
-      "telegram": "@jacelynnbernice",
+      "telegram": "@jacelynn (check exact handle)",
       "website": "https://chainup.com",
       "description": "Blockchain infrastructure provider (exchange-in-a-box). Bilateral referral partnership opportunity - they refer clients needing compliance, we refer clients needing exchange infrastructure.",
-      "interaction": [
-        {
-          "date": "2026-05-28",
-          "type": "outreach",
-          "note": "Sent partnership pitch to marketing@chainup.com"
-        },
-        {
-          "date": "2026-05-28",
-          "type": "warm_reply",
-          "note": "Jacelynn replied enthusiastically: 'I believe we have a chance for bilateral partnerships'. Shared scheduling link."
-        },
-        {
-          "date": "2026-05-28",
-          "type": "meeting_booked",
-          "note": "Meeting booked May 29, 16:00 SGT (10:00 CEST)"
-        },
-        {
-          "date": "2026-05-28",
-          "type": "draft_reply",
-          "note": "Confirmation reply drafted in Gmail"
-        }
-      ],
+      "interaction": "Call completed May 29. Jacelynn agreed bilateral partnership with revenue share. Waiting for NDA from ChainUp.",
       "expectedValue": "Referral partnership (ongoing revenue from referred clients)",
-      "nextAction": "Meeting May 29 10:00 CEST - discuss bilateral referral model",
+      "nextAction": "Wait for NDA from Jacelynn, sign and return. Then exchange company materials.",
       "tags": [
         "partnership",
         "referral",
@@ -1904,9 +1883,9 @@
       "x": 900,
       "y": 250,
       "country": "Singapore",
-      "stage": "meeting_booked",
+      "stage": "negotiation",
       "segment": "Blockchain Infrastructure",
-      "warmth": "warm",
+      "warmth": "hot",
       "primaryContact": "Jacelynn Pang",
       "channel": "Email",
       "probability": 50,
@@ -4138,9 +4117,11 @@
       "name": "ChainUp (Jacelynn Pang)",
       "company": "ChainUp",
       "type": "warm_lead_partnership",
-      "status": "active",
+      "status": "Partnership agreed - NDA pending",
       "addedDate": "2026-05-28",
-      "note": "Bilateral referral partnership. Meeting May 29 10:00 CEST."
+      "note": "Bilateral referral partnership. Meeting May 29 10:00 CEST.",
+      "nextAction": "Wait for NDA, sign, exchange materials",
+      "lastContact": "2026-05-29"
     },
     {
       "id": "wn_mourant",
@@ -5034,9 +5015,9 @@
     "summary": {
       "totalDraftsCreated": "95+",
       "totalSent": "~100",
-      "meetingsBooked": 3,
-      "warmReplies": 4,
-      "activePartnerships": 0,
+      "meetingsBooked": 2,
+      "warmReplies": 6,
+      "activePartnerships": 1,
       "bouncesTotal": 56,
       "bouncesFixed": 14,
       "oooFollowupsPending": 4,
@@ -5051,7 +5032,8 @@
         "type": "Partnership (bilateral referral)",
         "contact": "Jacelynn Pang",
         "prepFile": "MEETING_PREP_ChainUp_May29.md",
-        "status": "CONFIRMED"
+        "status": "completed",
+        "outcome": "Bilateral partnership agreed. NDA pending from Jacelynn. Revenue share model. Telegram for day-to-day."
       },
       {
         "company": "AlgoZ",
