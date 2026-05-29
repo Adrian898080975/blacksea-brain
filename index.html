@@ -3129,13 +3129,14 @@ function buildCRMContacts() {
     id: p.id,
     company: p.name,
     region: p.country,
-    email: p.primaryContact || '',
+    email: p.email || p.primaryContact || '',
     contactPerson: p.primaryContact || '',
-    product: DATA.services.find(s => s.businessModel === p.businessModel)?.name || p.segment || '',
-    priority: p.warmth === 'active' ? 'High' : (p.probability > 30 ? 'High' : 'Medium'),
-    status: p.stage === 'active_client' ? 'replied' :
-            (OUTREACH_STATUS[p.primaryContact] || 'not-sent'),
-    notes: p.notes || '',
+    product: p.crmProduct || DATA.services.find(s => s.businessModel === p.businessModel)?.name || p.segment || '',
+    priority: (p.stage === 'negotiation' || p.stage === 'meeting_booked' || p.warmth === 'hot') ? 'High' :
+              (p.warmth === 'warm' || p.probability > 30) ? 'High' : 'Medium',
+    status: p.emailStatus || (p.stage === 'active_client' ? 'replied' :
+            (OUTREACH_STATUS[p.email] || OUTREACH_STATUS[p.primaryContact] || 'not-sent')),
+    notes: p.crmNotes || p.notes || '',
     stage: p.stage,
     source: 'brain',
   }));

@@ -314,7 +314,9 @@
       "nextAction": "Send outreach email",
       "nextActionDate": "2026-05-19",
       "notes": "P2P + exchange platform with Nigerian-Egyptian-Ghanaian operations. Series A funded (~$2-3M). Per ISA 2025 + ARIP framework, MUST apply for full SEC registration. Has NOT publicly applied. Urgent window. Ruth Iselema (CEO) is Nigerian female founder, ex-banking \u2014 likely values regulatory credibility from EU-side counsel. Cold email draft prepared in Execution_Day_1.docx. First angle: '\u20ac2-3K ARIP gap analysis to find what's missing in current structure before full app'.",
-      "firstEmailHook": "Subject: 'ARIP application gap \u2014 30 min audit'. Body angle: framing as low-commitment audit, not full retainer."
+      "firstEmailHook": "Subject: 'ARIP application gap \u2014 30 min audit'. Body angle: framing as low-commitment audit, not full retainer.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_yellowcard",
@@ -331,7 +333,9 @@
       "nextAction": "Send compliance-to-compliance email",
       "nextActionDate": "2026-05-19",
       "notes": "Series B+, 16 African countries (Nigeria, Ghana, Kenya, South Africa, Botswana, Cameroon, C\u00f4te d'Ivoire, etc.). Likely has primary counsel locally. Compliance Director Janet Bandele is the right entry \u2014 compliance-to-compliance professional respect. Angle: NOT 'replace your counsel' but 'EU/MiCA-side perspective on cross-jurisdictional structure'. Multi-jurisdiction angle = where we add value vs. local Nigerian firms.",
-      "firstEmailHook": "Subject: 'EU-side perspective on Yellow Card's multi-jurisdiction structure'."
+      "firstEmailHook": "Subject: 'EU-side perspective on Yellow Card's multi-jurisdiction structure'.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_quidax",
@@ -348,7 +352,9 @@
       "nextAction": "Send post-AIP advisory email",
       "nextActionDate": "2026-05-19",
       "notes": "Initial SEC ARIP approval RECEIVED (one of 2 firms with provisional). Full registration in progress. Buchi Okoro (CEO) actively building. Different angle from Bitmama: NOT 'help you apply' but 'post-AIP ongoing advisory + scaling compliance ops as you go full retail'. Higher probability because they're actively in regulatory motion.",
-      "firstEmailHook": "Subject: 'Post-AIP advisory \u2014 congratulations on the provisional approval'."
+      "firstEmailHook": "Subject: 'Post-AIP advisory \u2014 congratulations on the provisional approval'.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_pashapay",
@@ -365,7 +371,9 @@
       "nextAction": "Research LinkedIn, find decision-maker",
       "nextActionDate": "2026-05-22",
       "notes": "Pasha Holding IPO 2025 (dual listing Dubai/Istanbul) creates international compliance pressure on entire group. AzFina member. Need to find specific decision-maker via LinkedIn (compliance director or strategy head). Long-term positioning play \u2014 Azerbaijan has no crypto framework yet, so we're pre-positioning before regulator catches up. Adri\u00e1n has appetite to fly to Baku \u2014 'crypto, dual-use consulting plan v Azerbajd\u017eane dod\u00e1m aj zajtra a vyp\u00fdtam si raketu'.",
-      "firstEmailHook": "Subject: 'EU-side regulatory positioning for Pasha Holding post-IPO'. Approach via Pasha Holding IR team first."
+      "firstEmailHook": "Subject: 'EU-side regulatory positioning for Pasha Holding post-IPO'. Approach via Pasha Holding IR team first.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Payment Infrastructure"
     },
     {
       "id": "pr_goldenpay",
@@ -381,7 +389,9 @@
       "probability": 10,
       "nextAction": "Email cez goldenpay.az",
       "nextActionDate": "2026-05-22",
-      "notes": "AzFina member. Smaller than PashaPay = faster decision-making + less bureaucracy. Good for first AZ deal. Direct email via goldenpay.az + secondary path through AzFina inquiry."
+      "notes": "AzFina member. Smaller than PashaPay = faster decision-making + less bureaucracy. Good for first AZ deal. Direct email via goldenpay.az + secondary path through AzFina inquiry.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Payment Platform"
     },
     {
       "id": "pr_aifc_freedom",
@@ -397,7 +407,9 @@
       "probability": 5,
       "nextAction": "Research IR team, prepare email",
       "nextActionDate": "2026-05-20",
-      "notes": "AIX-listed (AIFC Astana exchange). Large player but emerging fund management arm may be the entry point. Owner Timur Turlov well-known. Investor Relations team is approach vector. AIFC framework changes Jan 2026 create gap-analysis opportunity."
+      "notes": "AIX-listed (AIFC Astana exchange). Large player but emerging fund management arm may be the entry point. Owner Timur Turlov well-known. Investor Relations team is approach vector. AIFC framework changes Jan 2026 create gap-analysis opportunity.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Broker-Dealer / Asset Manager"
     },
     {
       "id": "pr_seena",
@@ -441,7 +453,9 @@
       },
       "driveFolder": "https://drive.google.com/drive/folders/1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
       "retainerStatus": "$600/mo agreed, pending formal addendum",
-      "invoiceStatus": "Invoice 2 (2K) due now. Invoice 1 (2K) paid 30d ago."
+      "invoiceStatus": "Invoice 2 (2K) due now. Invoice 1 (2K) paid 30d ago.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Prop Trading + Fund Formation"
     },
     {
       "id": "pr_eu_familyoffice_target",
@@ -457,7 +471,9 @@
       "probability": 8,
       "nextAction": "Publish first Substack article \u2014 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'",
       "nextActionDate": "2026-05-25",
-      "notes": "TARGET ARCHETYPE - not a specific company. Strategy: Substack thought leadership -> inbound from family office CIOs. Defense Capital Advisory primary channel."
+      "notes": "TARGET ARCHETYPE - not a specific company. Strategy: Substack thought leadership -> inbound from family office CIOs. Defense Capital Advisory primary channel.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Family Office \u00b7 Defense allocation"
     },
     {
       "id": "pr_defense_startup_target",
@@ -473,7 +489,9 @@
       "probability": 10,
       "nextAction": "Identify 10 Defense Equity Facility recipients lacking institutional fund structure",
       "nextActionDate": "2026-05-26",
-      "notes": "TARGET ARCHETYPE - not a specific company. Track EDF / Defense Equity Facility recipients. Look for Series A-B defense-tech without fund ops."
+      "notes": "TARGET ARCHETYPE - not a specific company. Track EDF / Defense Equity Facility recipients. Look for Series A-B defense-tech without fund ops.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense-tech \u00b7 raising Series A-B"
     },
     {
       "id": "pr_aifc_emerging_dasp",
@@ -489,7 +507,9 @@
       "probability": 15,
       "nextAction": "AIFC public register research \u2014 identify top 5 emerging DASPs at risk under amendments",
       "nextActionDate": "2026-05-20",
-      "notes": "TARGET ARCHETYPE - 30 DASPs in AIFC need to adapt to new frameworks. Volume play. Specific contacts in AIFC follow-up list."
+      "notes": "TARGET ARCHETYPE - 30 DASPs in AIFC need to adapt to new frameworks. Volume play. Specific contacts in AIFC follow-up list.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Digital Asset Service Provider \u00b7 transitioning to amended framework"
     },
     {
       "id": "pr_airlabs_fff_lp",
@@ -505,7 +525,9 @@
       "probability": 25,
       "nextAction": "Need to lock: pitch deck, monthly reporting template, 6+ month track record",
       "nextActionDate": "2026-09-01",
-      "notes": "Phase 2 fundraise target: \u20ac200k-500k FFF by Month 6-12. Requires QIIF fund formed in CZ. Adri\u00e1n's revenue: 1.5% mgmt fee + 20% perf fee carry. At \u20ac500k AUM with 30% return: ~\u20ac29.5k/year. At \u20ac2M AUM: ~\u20ac118k/year."
+      "notes": "Phase 2 fundraise target: \u20ac200k-500k FFF by Month 6-12. Requires QIIF fund formed in CZ. Adri\u00e1n's revenue: 1.5% mgmt fee + 20% perf fee carry. At \u20ac500k AUM with 30% return: ~\u20ac29.5k/year. At \u20ac2M AUM: ~\u20ac118k/year.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Early-stage LP \u00b7 AIR Labs Phase 2 fundraise"
     },
     {
       "id": "pr_lockton",
@@ -518,7 +540,9 @@
       "probability": 20,
       "primaryContact": "legal@lockton.uz",
       "notes": "NAPP-licensed token issuer. Email sent. Stablecoin framework April 2026.",
-      "value": 12000
+      "value": 12000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Token Issuer"
     },
     {
       "id": "pr_humo",
@@ -531,7 +555,9 @@
       "probability": 20,
       "primaryContact": "info@humo-token.uz",
       "notes": "State-adjacent brand. High credibility. Email sent.",
-      "value": 12000
+      "value": 12000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Token Issuer"
     },
     {
       "id": "pr_finbrok",
@@ -544,7 +570,9 @@
       "probability": 25,
       "primaryContact": "finbrok@umail.uz",
       "notes": "AUZ token issued April 21 2026 \u2014 freshest. Email sent.",
-      "value": 12000
+      "value": 12000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Token Issuer"
     },
     {
       "id": "pr_napp",
@@ -557,7 +585,9 @@
       "probability": 15,
       "primaryContact": "info@napp.uz",
       "notes": "Regulator outreach \u2014 credibility play. Email sent.",
-      "value": 0
+      "value": 0,
+      "emailStatus": "not-sent",
+      "crmProduct": "Regulator"
     },
     {
       "id": "pr_burjx",
@@ -570,7 +600,9 @@
       "probability": 20,
       "primaryContact": "compliance@burjx.com",
       "notes": "First UAE-born ADGM-licensed exchange. Email sent.",
-      "value": 25000
+      "value": 25000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange"
     },
     {
       "id": "pr_sunfish",
@@ -588,7 +620,9 @@
       "bouncedEmail": "hello@sunfish.vc",
       "bounceReason": "Address not found",
       "correctedEmail": "info@sunfish.vc",
-      "nextAction": "Resend with correct email: info@sunfish.vc"
+      "nextAction": "Resend with correct email: info@sunfish.vc",
+      "emailStatus": "not-sent",
+      "crmProduct": "VC Fund"
     },
     {
       "id": "pr_underline",
@@ -601,7 +635,9 @@
       "probability": 25,
       "primaryContact": "bogdan@underline.vc",
       "notes": "Solo GP raising Fund II. LP onboarding angle. Email sent.",
-      "value": 40000
+      "value": 40000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Solo GP"
     },
     {
       "id": "pr_smartcap",
@@ -614,7 +650,9 @@
       "probability": 20,
       "primaryContact": "info@smartcap.ee",
       "notes": "Baltic, NATO eastern frontier. AIFMD II gap. Email sent.",
-      "value": 40000
+      "value": 40000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Fund Manager"
     },
     {
       "id": "pr_eif",
@@ -627,7 +665,9 @@
       "probability": 10,
       "primaryContact": "info@eif.org",
       "notes": "Referral relationship angle for portfolio managers. Email sent.",
-      "value": 0
+      "value": 0,
+      "emailStatus": "not-sent",
+      "crmProduct": "Institutional LP"
     },
     {
       "id": "pr_nif",
@@ -640,7 +680,9 @@
       "probability": 10,
       "primaryContact": "info@nif.fund",
       "notes": "Investee fund manager advisory angle. Email sent.",
-      "value": 0
+      "value": 0,
+      "emailStatus": "not-sent",
+      "crmProduct": "Institutional LP"
     },
     {
       "id": "pr_binance",
@@ -653,7 +695,9 @@
       "probability": 15,
       "primaryContact": "link@binance.com",
       "notes": "Binance Link partnership email sent. AIFC + frontier markets angle.",
-      "value": 75000
+      "value": 75000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange"
     },
     {
       "id": "pr_okx",
@@ -666,7 +710,9 @@
       "probability": 30,
       "primaryContact": "Telegram: Black Sea <> OKX (Insti)",
       "notes": "Direct Telegram channel \u2014 Qing Rui, Ryan Dawson, Simon OKG. Warm.",
-      "value": 75000
+      "value": 75000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange"
     },
     {
       "id": "pr_kraken",
@@ -679,7 +725,9 @@
       "probability": 30,
       "primaryContact": "Mats (account manager)",
       "notes": "Existing AM relationship with Mats. Reconnected as Black Sea founder.",
-      "value": 75000
+      "value": 75000,
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange"
     },
     {
       "id": "pr_chainup",
@@ -696,7 +744,9 @@
       "nextAction": "Meeting May 29 16:00 GMT+8 (10:00 CEST) with Jacelynn Pang",
       "nextActionDate": "2026-05-29",
       "notes": "White-label exchange provider powering 500+ exchanges globally. Partnership model: ChainUp refers compliance clients to Black Sea, Black Sea refers infrastructure clients to ChainUp. Meeting prep done. | POSITIVE REPLY May 28: Jacelynn Pang interested in bilateral partnership. Meeting booked.",
-      "replyStatus": "positive"
+      "replyStatus": "positive",
+      "emailStatus": "replied",
+      "crmProduct": "White-label Exchange Infrastructure"
     },
     {
       "id": "pr_algoz",
@@ -713,7 +763,10 @@
       "nextAction": "Meeting May 29 13:00 CEST with Stephen Wundke (Google Meet)",
       "nextActionDate": "2026-05-29",
       "notes": "VARA-licensed market maker. Meeting prep done.",
-      "replyStatus": "positive"
+      "replyStatus": "positive",
+      "emailStatus": "replied",
+      "crmProduct": "VARA Compliance Advisory",
+      "crmNotes": "Meeting Jun 3 9:00 CEST. Stephen Wundke. $250M+ AUM."
     },
     {
       "id": "pr_xerof",
@@ -730,7 +783,10 @@
       "nextAction": "Meeting Jun 1 13:00 CEST with Nick Ntigrintakis",
       "nextActionDate": "2026-06-01",
       "notes": "Swiss OTC crypto broker. Meeting prep done.",
-      "replyStatus": "positive"
+      "replyStatus": "positive",
+      "emailStatus": "replied",
+      "crmProduct": "OTC Compliance Advisory",
+      "crmNotes": "Meeting Jun 1 13:00 CEST. Nick Ntigrintakis. Swiss-regulated OTC."
     },
     {
       "id": "pr_amcone",
@@ -746,7 +802,10 @@
       "probability": 25,
       "nextAction": "Follow-up May 30 if no response",
       "nextActionDate": "2026-05-30",
-      "notes": "AIFC-based asset manager. Warm reply received. Follow-up scheduled."
+      "notes": "AIFC-based asset manager. Warm reply received. Follow-up scheduled.",
+      "emailStatus": "sent",
+      "crmProduct": "AIFC Fund Compliance",
+      "crmNotes": "AFSA gap note sent May 26. Kanat + team CC. Follow up Jun 2."
     },
     {
       "id": "pr_bitexen",
@@ -762,7 +821,9 @@
       "probability": 20,
       "nextAction": "Send email (scheduled May 29)",
       "nextActionDate": "2026-05-29",
-      "notes": "Just got ADGM license May 21, 2026. Dual CMB+ADGM jurisdiction. HIGH PRIORITY. Draft ready in Gmail."
+      "notes": "Just got ADGM license May 21, 2026. Dual CMB+ADGM jurisdiction. HIGH PRIORITY. Draft ready in Gmail.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_bitci",
@@ -778,7 +839,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled May 29)",
       "nextActionDate": "2026-05-29",
-      "notes": "Multi-jurisdiction (TR+BR+ES). Fan tokens. 5M+ users. CMB deadline June 30. Draft ready."
+      "notes": "Multi-jurisdiction (TR+BR+ES). Fan tokens. 5M+ users. CMB deadline June 30. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_kfh",
@@ -794,7 +857,9 @@
       "probability": 10,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "Major Islamic bank. FATF grey list since Feb 2026. Direct compliance dept email. Draft ready."
+      "notes": "Major Islamic bank. FATF grey list since Feb 2026. Direct compliance dept email. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Islamic Bank"
     },
     {
       "id": "pr_almulla",
@@ -810,7 +875,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "88 branches. FATF grey list pressure. Draft ready."
+      "notes": "88 branches. FATF grey list pressure. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange House"
     },
     {
       "id": "pr_opay",
@@ -826,7 +893,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "Massive fintech. CBN AML deadline June 10. Personal liability for compliance officers. Draft ready."
+      "notes": "Massive fintech. CBN AML deadline June 10. Personal liability for compliance officers. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Fintech / Payments"
     },
     {
       "id": "pr_kuda",
@@ -842,7 +911,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "Leading Nigerian digital bank. CBN AML deadline. Draft ready."
+      "notes": "Leading Nigerian digital bank. CBN AML deadline. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Digital Bank"
     },
     {
       "id": "pr_palmpay",
@@ -858,7 +929,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "Major Nigerian payments platform. CBN AML June 10 deadline. Direct compliance email confirmed. Draft ready."
+      "notes": "Major Nigerian payments platform. CBN AML June 10 deadline. Direct compliance email confirmed. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Fintech / Payments"
     },
     {
       "id": "pr_carbon",
@@ -874,7 +947,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "Nigerian digital bank and lending platform. CBN AML deadline. Draft ready."
+      "notes": "Nigerian digital bank and lending platform. CBN AML deadline. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Digital Bank / Lending"
     },
     {
       "id": "pr_fairmoney",
@@ -890,7 +965,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "Nigerian fintech. Paris-founded. CBN AML deadline. Draft ready."
+      "notes": "Nigerian fintech. Paris-founded. CBN AML deadline. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Digital Bank / Lending"
     },
     {
       "id": "pr_valr",
@@ -906,7 +983,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled May 30)",
       "nextActionDate": "2026-05-30",
-      "notes": "Largest SA exchange. Pantera + Coinbase Ventures backed. $50M Series B. FSCA licensed CASP. Inspection readiness angle. Draft ready."
+      "notes": "Largest SA exchange. Pantera + Coinbase Ventures backed. $50M Series B. FSCA licensed CASP. Inspection readiness angle. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_ovex",
@@ -922,7 +1001,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled May 30)",
       "nextActionDate": "2026-05-30",
-      "notes": "SA exchange + OTC. FSCA CASP. Known for arbitrage. Draft ready."
+      "notes": "SA exchange + OTC. FSCA CASP. Known for arbitrage. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange / OTC"
     },
     {
       "id": "pr_altify",
@@ -938,7 +1019,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled May 30)",
       "nextActionDate": "2026-05-30",
-      "notes": "SA crypto investment platform. FSCA licensed. Draft ready."
+      "notes": "SA crypto investment platform. FSCA licensed. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Investment Platform"
     },
     {
       "id": "pr_altcointrader",
@@ -954,7 +1037,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled Jun 1)",
       "nextActionDate": "2026-06-01",
-      "notes": "SA crypto exchange. FSCA licensed CASP. Draft ready."
+      "notes": "SA crypto exchange. FSCA licensed CASP. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_chainex",
@@ -970,7 +1055,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled Jun 1)",
       "nextActionDate": "2026-06-01",
-      "notes": "SA crypto exchange. FSCA licensed. Draft ready."
+      "notes": "SA crypto exchange. FSCA licensed. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_fasset",
@@ -986,7 +1073,9 @@
       "probability": 15,
       "nextAction": "Send email (scheduled Jun 3)",
       "nextActionDate": "2026-06-03",
-      "notes": "VARA-licensed, expanding to Pakistan. PVARA sandbox opportunity. Draft ready."
+      "notes": "VARA-licensed, expanding to Pakistan. PVARA sandbox opportunity. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_nayapay",
@@ -1002,7 +1091,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 3)",
       "nextActionDate": "2026-06-03",
-      "notes": "Pakistani EMI. SBP licensed. PVARA consideration. Draft ready."
+      "notes": "Pakistani EMI. SBP licensed. PVARA consideration. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Digital Payments / EMI"
     },
     {
       "id": "pr_sadapay",
@@ -1018,7 +1109,10 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 3)",
       "nextActionDate": "2026-06-03",
-      "notes": "Pakistani EMI. SBP licensed. PVARA opportunity. Draft ready. (Original support@ bounced, fixed to hello@)."
+      "notes": "Pakistani EMI. SBP licensed. PVARA opportunity. Draft ready. (Original support@ bounced, fixed to hello@).",
+      "emailStatus": "sent",
+      "crmProduct": "PVARA Compliance Advisory",
+      "crmNotes": "Intercom auto-reply. Redirect to compliance team sent."
     },
     {
       "id": "pr_chippercash",
@@ -1034,7 +1128,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 3)",
       "nextActionDate": "2026-06-03",
-      "notes": "Pan-African fintech with crypto. VASP Act 2025 compliance. Draft ready."
+      "notes": "Pan-African fintech with crypto. VASP Act 2025 compliance. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Fintech / Crypto"
     },
     {
       "id": "pr_aza_finance",
@@ -1050,7 +1146,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 4)",
       "nextActionDate": "2026-06-04",
-      "notes": "Pioneer African crypto-FX. VASP Act licensing. Draft ready."
+      "notes": "Pioneer African crypto-FX. VASP Act licensing. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Fintech / FX"
     },
     {
       "id": "pr_kotani_pay",
@@ -1066,7 +1164,9 @@
       "probability": 10,
       "nextAction": "Send email (scheduled Jun 4)",
       "nextActionDate": "2026-06-04",
-      "notes": "Kenyan blockchain payments. VASP Act 2025. Draft ready."
+      "notes": "Kenyan blockchain payments. VASP Act 2025. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Blockchain Payments"
     },
     {
       "id": "pr_blu_penguin",
@@ -1082,7 +1182,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "SEC Ghana sandbox firm. Fastest-growing fintech award. Draft ready."
+      "notes": "SEC Ghana sandbox firm. Fastest-growing fintech award. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Exchange"
     },
     {
       "id": "pr_bsystem",
@@ -1098,7 +1200,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "SEC Ghana sandbox. Software co since 1999. Fractionalized ownership. Draft ready."
+      "notes": "SEC Ghana sandbox. Software co since 1999. Fractionalized ownership. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Asset Tokenization"
     },
     {
       "id": "pr_hashkey_mena",
@@ -1114,7 +1218,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "Hong Kong exchange expanding MENA. VARA licensed. Federal Law angle. Slovak contact (Jakub Princ). Draft ready."
+      "notes": "Hong Kong exchange expanding MENA. VARA licensed. Federal Law angle. Slovak contact (Jakub Princ). Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Exchange / Custody"
     },
     {
       "id": "pr_mantra",
@@ -1130,7 +1236,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-28",
-      "notes": "VARA-licensed RWA/DeFi. Federal Law compliance angle. Draft ready."
+      "notes": "VARA-licensed RWA/DeFi. Federal Law compliance angle. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "DeFi / RWA"
     },
     {
       "id": "pr_sumsub",
@@ -1146,7 +1254,9 @@
       "probability": 30,
       "nextAction": "Send partnership proposal",
       "nextActionDate": "2026-05-29",
-      "notes": "KYC/AML platform. Referral partnership: Sumsub refers compliance advisory clients, Black Sea refers KYC tool clients. Draft ready."
+      "notes": "KYC/AML platform. Referral partnership: Sumsub refers compliance advisory clients, Black Sea refers KYC tool clients. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "RegTech / KYC"
     },
     {
       "id": "pr_chainalysis_partner",
@@ -1162,7 +1272,9 @@
       "probability": 25,
       "nextAction": "Send partnership proposal",
       "nextActionDate": "2026-05-29",
-      "notes": "Blockchain analytics leader. Referral partnership. Draft ready."
+      "notes": "Blockchain analytics leader. Referral partnership. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "RegTech / Blockchain Analytics"
     },
     {
       "id": "pr_notabene",
@@ -1178,7 +1290,9 @@
       "probability": 25,
       "nextAction": "Send partnership proposal",
       "nextActionDate": "2026-05-29",
-      "notes": "Travel rule compliance. Partnership referral model. Draft ready. (Original partners@ bounced, fixed to hello@)."
+      "notes": "Travel rule compliance. Partnership referral model. Draft ready. (Original partners@ bounced, fixed to hello@).",
+      "emailStatus": "not-sent",
+      "crmProduct": "RegTech / Travel Rule"
     },
     {
       "id": "pr_scorechain",
@@ -1194,7 +1308,9 @@
       "probability": 25,
       "nextAction": "Send partnership proposal",
       "nextActionDate": "2026-05-29",
-      "notes": "AML/compliance tool. EU-based, good frontier market fit. Draft ready."
+      "notes": "AML/compliance tool. EU-based, good frontier market fit. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "RegTech / AML"
     },
     {
       "id": "pr_elliptic",
@@ -1210,7 +1326,9 @@
       "probability": 25,
       "nextAction": "Send partnership proposal",
       "nextActionDate": "2026-05-29",
-      "notes": "Blockchain analytics. Partnership referral model. Draft ready."
+      "notes": "Blockchain analytics. Partnership referral model. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "RegTech / Compliance"
     },
     {
       "id": "pr_cvvc",
@@ -1226,7 +1344,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-29",
-      "notes": "77 African blockchain investments. Backed by Circle Ventures. One meeting = access to 77 portfolio companies. Free diagnostic offer for portfolio founders."
+      "notes": "77 African blockchain investments. Backed by Circle Ventures. One meeting = access to 77 portfolio companies. Free diagnostic offer for portfolio founders.",
+      "emailStatus": "not-sent",
+      "crmProduct": "VC Fund (Africa Blockchain)"
     },
     {
       "id": "pr_shorooq",
@@ -1242,7 +1362,9 @@
       "probability": 15,
       "nextAction": "Send email",
       "nextActionDate": "2026-05-29",
-      "notes": "Leading MENA+Pakistan fintech/crypto VC. 50+ portfolio companies. ADGM-regulated. One meeting = portfolio access."
+      "notes": "Leading MENA+Pakistan fintech/crypto VC. 50+ portfolio companies. ADGM-regulated. One meeting = portfolio access.",
+      "emailStatus": "not-sent",
+      "crmProduct": "VC Fund (MENA + Pakistan)"
     },
     {
       "id": "pr_pantera",
@@ -1258,7 +1380,9 @@
       "probability": 10,
       "nextAction": "Send email (week 2)",
       "nextActionDate": "2026-06-03",
-      "notes": "Led VALR $50M round. Direct connection to frontier market portfolio companies."
+      "notes": "Led VALR $50M round. Direct connection to frontier market portfolio companies.",
+      "emailStatus": "not-sent",
+      "crmProduct": "VC Fund (Global Crypto)"
     },
     {
       "id": "pr_coindesk_oped",
@@ -1274,7 +1398,9 @@
       "probability": 30,
       "nextAction": "Send op-ed pitch",
       "nextActionDate": "2026-05-29",
-      "notes": "Pitch: 'The Compliance Crisis Nobody Is Watching' - frontier markets angle. Permanent SEO authority if published."
+      "notes": "Pitch: 'The Compliance Crisis Nobody Is Watching' - frontier markets angle. Permanent SEO authority if published.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Media / Authority Building"
     },
     {
       "id": "pr_solidus_podcast",
@@ -1290,7 +1416,9 @@
       "probability": 25,
       "nextAction": "Send podcast pitch",
       "nextActionDate": "2026-05-29",
-      "notes": "Digital Assets Compliance podcast. Angle: 'Compliance on the Frontier'. One appearance = thousands of compliance professionals."
+      "notes": "Digital Assets Compliance podcast. Angle: 'Compliance on the Frontier'. One appearance = thousands of compliance professionals.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Media / Podcast"
     },
     {
       "id": "pr_chainalysis_podcast",
@@ -1306,7 +1434,9 @@
       "probability": 20,
       "nextAction": "Send podcast pitch",
       "nextActionDate": "2026-05-29",
-      "notes": "Frontier market compliance angle. One of the biggest compliance podcasts."
+      "notes": "Frontier market compliance angle. One of the biggest compliance podcasts.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Media / Podcast"
     },
     {
       "id": "pr_schindlers",
@@ -1322,7 +1452,9 @@
       "probability": 30,
       "nextAction": "Send partnership proposal (scheduled Jun 2)",
       "nextActionDate": "2026-06-02",
-      "notes": "SA law firm with crypto practice. Co-advisory model: Schindlers handles legal, Black Sea handles compliance. Draft ready."
+      "notes": "SA law firm with crypto practice. Co-advisory model: Schindlers handles legal, Black Sea handles compliance. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Law Firm Partnership"
     },
     {
       "id": "pr_cm_advocates",
@@ -1338,7 +1470,9 @@
       "probability": 30,
       "nextAction": "Send partnership proposal (scheduled Jun 4)",
       "nextActionDate": "2026-06-04",
-      "notes": "Kenyan law firm. Co-publishing + referral model. VASP Act expertise. Draft ready."
+      "notes": "Kenyan law firm. Co-publishing + referral model. VASP Act expertise. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Law Firm Partnership"
     },
     {
       "id": "pr_lex_bridge",
@@ -1354,7 +1488,9 @@
       "probability": 30,
       "nextAction": "Send partnership proposal (scheduled Jun 3)",
       "nextActionDate": "2026-06-03",
-      "notes": "Pakistani law firm. PVARA expertise. Co-advisory model. Draft ready."
+      "notes": "Pakistani law firm. PVARA expertise. Co-advisory model. Draft ready.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Law Firm Partnership"
     },
     {
       "id": "pr_caasa",
@@ -1370,7 +1506,9 @@
       "probability": 50,
       "nextAction": "Send membership application",
       "nextActionDate": "2026-05-29",
-      "notes": "Crypto Asset Association SA. Membership = credibility + network access. Original caasa.co.za was WRONG domain (commercial aviation!). Corrected to sacryptoassociation.org."
+      "notes": "Crypto Asset Association SA. Membership = credibility + network access. Original caasa.co.za was WRONG domain (commercial aviation!). Corrected to sacryptoassociation.org.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Industry Association"
     },
     {
       "id": "pr_darkstar",
@@ -1387,7 +1525,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "EUR 25M pure-defense fund (EUR 15M first close, backed by SmartCap). Founded 2024. Pre-seed/seed, EUR 500K-1M tickets. FIRST-TIME GP = prime candidate for fund structuring + AIFMD II compliance.",
-      "tier": 1
+      "tier": 1,
+      "emailStatus": "bounced",
+      "crmProduct": "AIFMD II Fund Structuring",
+      "crmNotes": "ragnar@darkstar.ee bounced. Try LinkedIn."
     },
     {
       "id": "pr_d3vc",
@@ -1404,7 +1545,9 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "Founded 2023. Early-stage defense VC. 16 investments, 5 countries. Backed by Denmark EIFO ($5M). Young GP scaling rapidly - needs institutional readiness as they attract sovereign LPs.",
-      "tier": 1
+      "tier": 1,
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense VC Fund (1st-time GP)"
     },
     {
       "id": "pr_scalewolf",
@@ -1421,7 +1564,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "Founded 2023. VC fund + dual-use tech accelerator aligned with NATO EDTs. Backed by INVEGA + Lithuanian Ministry of Economy. First-time GP needing fund structuring.",
-      "tier": 1
+      "tier": 1,
+      "emailStatus": "sent",
+      "crmProduct": "AIFMD II Fund Compliance",
+      "crmNotes": "Sent May 28."
     },
     {
       "id": "pr_presto_tech",
@@ -1438,7 +1584,9 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "EUR 150M fund launched 2024 with Czechoslovak Group (CSG). EUR 500K-5M tickets. Focus defense/security/resilience from NATO countries. New defense vehicle from established VC (Presto Ventures, 2016). Prague = Adrian can visit easily.",
-      "tier": 1
+      "tier": 1,
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense VC Fund"
     },
     {
       "id": "pr_greenflag",
@@ -1455,7 +1603,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "$20M fund backing Ukrainian dual-use/defense startups. Earliest US fund with full-time Kyiv presence. As they grow European portfolio, need EU fund structuring + AIFMD compliance.",
-      "tier": 1
+      "tier": 1,
+      "emailStatus": "sent",
+      "crmProduct": "EU Fund Structuring",
+      "crmNotes": "Sent May 28. Ukrainian dual-use."
     },
     {
       "id": "pr_expeditions",
@@ -1476,7 +1627,10 @@
       "emailBounced": true,
       "bouncedEmail": "info@expeditions.fund",
       "bounceReason": "Domain not found",
-      "correctedEmail": "info@expeditionsfund.com"
+      "correctedEmail": "info@expeditionsfund.com",
+      "emailStatus": "sent",
+      "crmProduct": "Fund II Compliance",
+      "crmNotes": "Resent to info@expeditionsfund.com (corrected)."
     },
     {
       "id": "pr_hyperion",
@@ -1493,7 +1647,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "First European fund specializing in defense+aerospace. EUR 150M raised. Planning EUR 500M Fund II for 2026. Fast-growing GP needing institutional compliance as they scale to Fund II. HIGH POTENTIAL.",
-      "tier": 2
+      "tier": 2,
+      "emailStatus": "sent",
+      "crmProduct": "AIFMD II Fund II",
+      "crmNotes": "Sent May 28. EUR 500M target."
     },
     {
       "id": "pr_join_capital",
@@ -1510,7 +1667,9 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "Fund III targeting EUR 235M for defense/dual-use/space deeptech. EUR 50M commitment from EIF (largest EIF defense commitment to date). 25 early-stage investments planned. Fund III is major step-up into defense - needs defense-specific compliance infrastructure.",
-      "tier": 2
+      "tier": 2,
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense/Dual-Use VC Fund"
     },
     {
       "id": "pr_karista",
@@ -1527,7 +1686,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "Established VC (founded 2001) but Tech I is new SpaceTech/Defence/Cyber fund sponsored by CNES (French space agency). Dual-use, software, AI for defense. New defense-specific vehicle from experienced manager.",
-      "tier": 2
+      "tier": 2,
+      "emailStatus": "sent",
+      "crmProduct": "Tech I Fund Compliance",
+      "crmNotes": "Sent May 28. CNES sponsorship."
     },
     {
       "id": "pr_gohub",
@@ -1544,7 +1706,10 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "Early-stage VC, B2B software in AI and dual-use. Actively publishing defense tech market maps. Emerging into defense as new vertical.",
-      "tier": 2
+      "tier": 2,
+      "emailStatus": "sent",
+      "crmProduct": "Defense Fund Compliance",
+      "crmNotes": "Resent to contact@gohub.vc (corrected)."
     },
     {
       "id": "pr_keen_ventures",
@@ -1561,7 +1726,9 @@
       "nextAction": "Draft outreach email",
       "nextActionDate": "2026-06-03",
       "notes": "EUR 150M+ = Europe's largest defense-tech VC fund. EUR 40M from EIF, EUR 40M from Dutch pension PME. Invests EUR 1-10M. Large enough for in-house compliance, BUT portfolio companies (25+) all need compliance help. Referral partnership angle.",
-      "tier": 3
+      "tier": 3,
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense VC Fund (largest EU)"
     },
     {
       "id": "pr_tikehau",
@@ -1578,7 +1745,9 @@
       "nextAction": "Research portfolio companies for direct outreach",
       "nextActionDate": "2026-06-05",
       "notes": "Major alt asset manager. Launched 'Tikehau Defence et Securite' (TDS) = Europe's first unlisted PE fund for defense/security. EUR 800M fund with Airbus, Safran, Thales. TOO LARGE for fund structuring. BUT portfolio companies = direct compliance leads. Referral target.",
-      "tier": 3
+      "tier": 3,
+      "emailStatus": "not-sent",
+      "crmProduct": "Alternative Asset Manager (Defense PE)"
     },
     {
       "id": "pr_otb_ventures",
@@ -1595,7 +1764,9 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "$185M deeptech Fund II, backed by NATO Innovation Fund. SpaceTech, AI, FinTech, Cybersecurity. $350M+ total AUM. Second-time GP with NATO backing scaling into defense.",
-      "tier": 2
+      "tier": 2,
+      "emailStatus": "not-sent",
+      "crmProduct": "DeepTech VC (NATO-backed)"
     },
     {
       "id": "pr_nato_diana",
@@ -1612,7 +1783,9 @@
       "nextAction": "Review and send email (in Gmail drafts)",
       "nextActionDate": "2026-06-02",
       "notes": "150 companies in 2026 cohort across 24 NATO countries. EUR 100K each. 16 accelerator sites, 200+ test centers. These startups need compliance help to raise institutional capital post-accelerator. REFERRAL PIPELINE.",
-      "partnerType": "accelerator_referral"
+      "partnerType": "accelerator_referral",
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense Accelerator (Referral Partner)"
     },
     {
       "id": "pr_eudis",
@@ -1632,7 +1805,10 @@
       "partnerType": "accelerator_referral",
       "emailBounced": true,
       "bouncedEmail": "info@eudis.eu",
-      "bounceReason": "Address not found"
+      "bounceReason": "Address not found",
+      "emailStatus": "sent",
+      "crmProduct": "EUDIS Advisory Partner",
+      "crmNotes": "Resent to contact@eudis-business-accelerator.eu."
     },
     {
       "id": "pr_edth",
@@ -1649,7 +1825,9 @@
       "nextAction": "Join community + apply to speak",
       "nextActionDate": "2026-06-05",
       "notes": "Connects builders, investors, policymakers. Organized Invest in Bravery Summit. Community platform for defense tech ecosystem. Speaking/partnership opportunity.",
-      "partnerType": "network"
+      "partnerType": "network",
+      "emailStatus": "not-sent",
+      "crmProduct": "Defense Network (Referral Partner)"
     },
     {
       "id": "pr_edin",
@@ -1666,7 +1844,9 @@
       "nextAction": "Apply for membership",
       "nextActionDate": "2026-06-05",
       "notes": "Community of investors supporting defense/security tech ventures. Directly connects investors with founders. Membership = direct access to defense GP network. HIGH PRIORITY for visibility.",
-      "partnerType": "investor_network"
+      "partnerType": "investor_network",
+      "emailStatus": "not-sent",
+      "crmProduct": "Investor Network"
     },
     {
       "id": "pr_gpfo",
@@ -1683,7 +1863,9 @@
       "nextAction": "Apply to speak at GPFO event",
       "nextActionDate": "2026-06-10",
       "notes": "Leading European FO network for 15+ years. Private investment clubs, discrete forums. FOs increasingly interested in defense/dual-use. Speaking at GPFO events positions Black Sea as defense compliance advisor to LP base.",
-      "partnerType": "fo_network"
+      "partnerType": "fo_network",
+      "emailStatus": "not-sent",
+      "crmProduct": "Family Office Network"
     },
     {
       "id": "pr_campden",
@@ -1700,7 +1882,9 @@
       "nextAction": "Research speaking/publishing opportunities",
       "nextActionDate": "2026-06-10",
       "notes": "Produces European Family Office Report (102 FOs, 20 countries). European Family Office Forum (27th edition). 24% of avg FO portfolio in private markets. Platform to publish thought leadership on defense allocation.",
-      "partnerType": "fo_research"
+      "partnerType": "fo_research",
+      "emailStatus": "not-sent",
+      "crmProduct": "Family Office Research + Events"
     },
     {
       "id": "pr_mourant",
@@ -1718,7 +1902,9 @@
       "nextActionDate": "2026-06-02",
       "notes": "WARM REPLY May 28: Alistair Horn 'delighted to speak next week'. Mourant = top offshore law firm for fund structuring. Referral partner potential for defense fund clients.",
       "replyStatus": "positive",
-      "partnerType": "referral"
+      "partnerType": "referral",
+      "emailStatus": "not-sent",
+      "crmProduct": "Law Firm (Referral Partner)"
     },
     {
       "id": "pr_ebrd_finea",
@@ -1735,7 +1921,9 @@
       "nextAction": "Complete SMART vendor registration. Monitor future EBRD tenders matching our profile.",
       "nextActionDate": "2026-06-05",
       "notes": "WARM REPLY May 26: Shared TOR for PR 17598 FINEA (Tunisia SCF/factoring). We declined that specific one (needs multidisciplinary team) but EBRD contact established. Future tenders possible.",
-      "replyStatus": "positive"
+      "replyStatus": "positive",
+      "emailStatus": "not-sent",
+      "crmProduct": "Multilateral (Procurement)"
     },
     {
       "id": "pr_amber_group",
@@ -1751,7 +1939,9 @@
       "probability": 10,
       "nextAction": "Wait for substantive response from Amber Group team",
       "nextActionDate": "2026-06-05",
-      "notes": "Ticket created May 28. Awaiting response."
+      "notes": "Ticket created May 28. Awaiting response.",
+      "emailStatus": "not-sent",
+      "crmProduct": "Crypto Trading / Asset Management"
     },
     {
       "id": "pr_bitpapa",
@@ -1767,7 +1957,9 @@
       "probability": 15,
       "nextAction": "Contact @bitpapateam on Telegram with July 2026 Russia regulatory pitch",
       "nextActionDate": "2026-05-30",
-      "notes": "Email reply May 28: 'Please send your suggestion to Telegram @bitpapateam'. Russia P2P, July 2026 BoR deadline."
+      "notes": "Email reply May 28: 'Please send your suggestion to Telegram @bitpapateam'. Russia P2P, July 2026 BoR deadline.",
+      "emailStatus": "not-sent",
+      "crmProduct": "P2P Exchange"
     },
     {
       "id": "pr_eag_assessor",
@@ -1785,7 +1977,10 @@
       "nextActionDate": "2026-06-02",
       "notes": "UNPAID peer review role BUT: (1) massive credibility builder, (2) access to all central banks/FIUs in member states, (3) insider knowledge of regulatory gaps = client pipeline. Barrier: Slovakia is not EAG member - may need nomination through observer org (UNODC, IMF, OSCE). Apply directly to Secretariat first. Also: MENAFATF for UAE/Turkey (hr@menafatf.org). UAE evaluation onsite Jun 2026 - high profile.",
       "applicationProcess": "Electronic form + CV to EAG Secretariat. Must complete FATF assessor training (annual). 2-4 weeks for pool entry. First assignment 12-18 months.",
-      "strategicValue": "extreme"
+      "strategicValue": "extreme",
+      "emailStatus": "sent",
+      "crmProduct": "EAG Assessor Application",
+      "crmNotes": "Application sent May 28."
     },
     {
       "id": "pr_menafatf_assessor",
@@ -1802,7 +1997,10 @@
       "nextAction": "Contact hr@menafatf.org about expert assessment opportunities",
       "nextActionDate": "2026-06-02",
       "notes": "UAE onsite evaluation JUNE 2026 - happening NOW. Turkey evaluation timing TBD. Assessors nominated by member state delegations. Harder entry than EAG but strategically valuable.",
-      "strategicValue": "extreme"
+      "strategicValue": "extreme",
+      "emailStatus": "sent",
+      "crmProduct": "MENAFATF Assessor Application",
+      "crmNotes": "Application sent May 28."
     },
     {
       "id": "p_lcg_kazakhstan",
@@ -1854,7 +2052,10 @@
       "primaryContact": "LCG Team",
       "channel": "Email",
       "probability": 40,
-      "expected_value_eur": "EUR 5-15K (advisory) OR referral partnership (ongoing)"
+      "expected_value_eur": "EUR 5-15K (advisory) OR referral partnership (ongoing)",
+      "emailStatus": "sent",
+      "crmProduct": "AIFC Compliance Advisory",
+      "crmNotes": "AFSA gap note sent. Saltanat engaged. Follow up Jun 2."
     },
     {
       "id": "p_chainup",
@@ -1890,7 +2091,10 @@
       "channel": "Email",
       "probability": 50,
       "expected_value_eur": "Referral partnership (ongoing revenue from referred clients)",
-      "notes": "Call May 29. Bilateral partnership with revenue share. Jacelynn = Channel & Institutional Sales Director. Telegram for day-to-day."
+      "notes": "Call May 29. Bilateral partnership with revenue share. Jacelynn = Channel & Institutional Sales Director. Telegram for day-to-day.",
+      "emailStatus": "replied",
+      "crmProduct": "Bilateral Referral Partnership",
+      "crmNotes": "NDA SIGNED May 29. Revenue share agreed. Telegram for coordination."
     },
     {
       "id": "p_mourant",
@@ -1941,7 +2145,10 @@
       "primaryContact": "Mourant Team",
       "channel": "Email",
       "probability": 35,
-      "expected_value_eur": "Referral partnership (high-value fund manager clients)"
+      "expected_value_eur": "Referral partnership (high-value fund manager clients)",
+      "emailStatus": "replied",
+      "crmProduct": "Defense Referral Partnership",
+      "crmNotes": "Alistair Horn replied, OOO until Jun 1. Call next week."
     },
     {
       "id": "p_ogier_julie",
@@ -1989,7 +2196,10 @@
       "primaryContact": "Julie Lagadu",
       "channel": "Email",
       "probability": 30,
-      "expected_value_eur": "Referral partnership"
+      "expected_value_eur": "Referral partnership",
+      "emailStatus": "sent",
+      "crmProduct": "Jersey Referral Partnership",
+      "crmNotes": "Intro sent to Julie Lagadu (referred by Niamh)."
     },
     {
       "id": "p_georgia_nbg",
@@ -2040,7 +2250,10 @@
       "primaryContact": "Evelina Sulava",
       "channel": "Email",
       "probability": 15,
-      "expected_value_eur": "EUR 50-100K (World Bank procurement assignments)"
+      "expected_value_eur": "EUR 50-100K (World Bank procurement assignments)",
+      "emailStatus": "sent",
+      "crmProduct": "NBG Procurement Advisory",
+      "crmNotes": "Tender roster request sent."
     },
     {
       "id": "p_masibolaw",
@@ -2057,7 +2270,10 @@
       "probability": 60,
       "nextAction": "Meeting Tue Jun 2 10:00 CEST",
       "notes": "Kenya crypto licensing law firm. Referral partner. Rescheduled from Mon (Kenya holiday).",
-      "status": "Meeting booked Jun 2"
+      "status": "Meeting booked Jun 2",
+      "emailStatus": "replied",
+      "crmProduct": "Kenya Referral Partnership",
+      "crmNotes": "Meeting Jun 2 10:00 CEST. Rescheduled (Kenya holiday)."
     },
     {
       "id": "p_shahid_tubrazy",
@@ -2074,7 +2290,10 @@
       "probability": 50,
       "nextAction": "Wait for booking via scheduling page",
       "notes": "PVARA specialist. Referral partner for Pakistan. Replied positively May 29.",
-      "status": "Scheduling link sent"
+      "status": "Scheduling link sent",
+      "emailStatus": "replied",
+      "crmProduct": "Pakistan Referral Partnership",
+      "crmNotes": "Positive reply. Scheduling link sent May 29."
     },
     {
       "id": "p_cm_advocates",
@@ -2091,7 +2310,10 @@
       "probability": 50,
       "nextAction": "Wait for booking via scheduling page",
       "notes": "Largest East Africa law firm. Offices: Nairobi, Mombasa, Kampala, DSM, Kigali, Lagos. Published on Kenya VASP Act. Referral partner.",
-      "status": "Scheduling link sent + timezone follow-up"
+      "status": "Scheduling link sent + timezone follow-up",
+      "emailStatus": "replied",
+      "crmProduct": "Kenya Referral Partnership",
+      "crmNotes": "Cyrus Maina replied. Scheduling link sent + timezone follow-up."
     },
     {
       "id": "p_kuda",
@@ -2108,7 +2330,10 @@
       "probability": 15,
       "nextAction": "Wait for substantive reply from compliance team",
       "notes": "CBN June 10 AML deadline pitch. Auto-reply ticket created.",
-      "status": "Sent, auto-reply received"
+      "status": "Sent, auto-reply received",
+      "emailStatus": "sent",
+      "crmProduct": "CBN AML Roadmap Advisory",
+      "crmNotes": "Auto-reply ticket. Jun 10 deadline."
     },
     {
       "id": "p_aza_finance",
@@ -2125,7 +2350,10 @@
       "probability": 15,
       "nextAction": "Wait for routing to compliance team",
       "notes": "Pan-African crypto payments, 20 countries. Kenya VASP licensing pitch.",
-      "status": "Sent, auto-reply received"
+      "status": "Sent, auto-reply received",
+      "emailStatus": "sent",
+      "crmProduct": "Kenya VASP Licensing",
+      "crmNotes": "Auto-reply ticket. Pan-Africa 20 countries."
     },
     {
       "id": "p_fairmoney",
@@ -2142,7 +2370,10 @@
       "probability": 10,
       "nextAction": "Wait for compliance team response",
       "notes": "CBN AML deadline pitch. Auto-reply.",
-      "status": "Sent, auto-reply received"
+      "status": "Sent, auto-reply received",
+      "emailStatus": "sent",
+      "crmProduct": "CBN AML Compliance",
+      "crmNotes": "Auto-reply ticket #12167062."
     },
     {
       "id": "p_schindlers",
@@ -2159,7 +2390,10 @@
       "probability": 30,
       "nextAction": "Wait for reply",
       "notes": "SA blockchain law firm. Referral partner for FSCA CASP compliance.",
-      "status": "Sent May 29"
+      "status": "Sent May 29",
+      "emailStatus": "sent",
+      "crmProduct": "SA Referral Partnership",
+      "crmNotes": "Sent May 29. FSCA CASP expertise."
     },
     {
       "id": "p_elliptic",
@@ -2176,7 +2410,10 @@
       "probability": 20,
       "nextAction": "Wait for reply",
       "notes": "Referral partnership - their analytics + our advisory.",
-      "status": "Sent May 28"
+      "status": "Sent May 28",
+      "emailStatus": "sent",
+      "crmProduct": "Analytics Referral Partnership",
+      "crmNotes": "Sent May 28. Their analytics + our advisory."
     },
     {
       "id": "p_alphapoint",
@@ -2193,7 +2430,9 @@
       "probability": 25,
       "nextAction": "Wait for reply",
       "notes": "150+ exchange clients. Partnership: their tech, our compliance.",
-      "status": "Sent (draft from May 28)"
+      "status": "Sent (draft from May 28)",
+      "emailStatus": "sent",
+      "crmProduct": "Exchange Infrastructure"
     }
   ],
   "tasks": [
