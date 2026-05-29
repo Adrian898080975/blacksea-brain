@@ -1,6 +1,6 @@
 {
   "version": "4.1-clean-layout-may29",
-  "lastUpdated": "2026-05-29T12:30:00Z",
+  "lastUpdated": "2026-05-29T10:52:57.950Z",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -4345,7 +4345,7 @@
       "content": "RED LINES (locked):\n\n• No sanctioned persons\n• No shell opacity\n• No UBO nominee evasion\n• No sanctions evasion facilitation\n• No dummy wallets for income\n\nWhen in doubt → escalate to counsel.",
       "x": 60,
       "y": 420,
-      "rotate": -1.0,
+      "rotate": -1,
       "color": "pink"
     },
     {
@@ -4361,7 +4361,7 @@
       "content": "FULL ATTACK MODE\nMay 28, 2026\n\n13 markets. 10 channels.\n85+ drafts. 3 meetings.\n\nFirst payment is coming.",
       "x": 60,
       "y": 1100,
-      "rotate": 1.0,
+      "rotate": 1,
       "color": "green"
     },
     {
@@ -4660,8 +4660,8 @@
       "y": 220
     },
     "bm_frontier": {
-      "x": 341,
-      "y": 9
+      "x": -15.73516845703125,
+      "y": -245.57156944274902
     },
     "svc_otc_compliance": {
       "x": -353,
