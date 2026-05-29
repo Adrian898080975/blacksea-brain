@@ -1,6 +1,6 @@
 {
-  "version": "3.4-chainup-call-may29",
-  "lastUpdated": "2026-05-29T11:00:00Z",
+  "version": "4.0-full-overhaul-may29",
+  "lastUpdated": "2026-05-29T12:00:00Z",
   "owner": "Adri\u00e1n P\u00e1le\u0161",
   "brand": {
     "id": "blacksea",
@@ -1810,7 +1810,7 @@
       "market": "AIFC Kazakhstan",
       "type": "compliance_firm",
       "businessModel": "bm_frontier",
-      "status": "warm_reply",
+      "status": "AFSA gap note sent, waiting for reply",
       "priority": "high",
       "contact": "Saltanat Serikova (Client Relationship Manager)",
       "email": "saltanat.serikova@lcg.kz",
@@ -1837,7 +1837,7 @@
         }
       ],
       "expectedValue": "EUR 5-15K (advisory) OR referral partnership (ongoing)",
-      "nextAction": "Adrian to review and send AFSA gaps reply (2 versions in drafts - use the longer research-backed one)",
+      "nextAction": "Follow up if no reply by Jun 2",
       "tags": [
         "aifc",
         "afsa",
@@ -1862,7 +1862,7 @@
       "market": "Global (Singapore HQ)",
       "type": "technology_provider",
       "businessModel": "bm_frontier",
-      "status": "Partnership agreed - NDA pending",
+      "status": "NDA SIGNED - Partnership agreed, kick-off pending",
       "priority": "high",
       "contact": "Jacelynn Pang, Global Channel & Group Marketing Director",
       "email": "jacelynn.pang@chainup.com",
@@ -1872,7 +1872,7 @@
       "description": "Blockchain infrastructure provider (exchange-in-a-box). Bilateral referral partnership opportunity - they refer clients needing compliance, we refer clients needing exchange infrastructure.",
       "interaction": "Call completed May 29. Jacelynn agreed bilateral partnership with revenue share. Waiting for NDA from ChainUp.",
       "expectedValue": "Referral partnership (ongoing revenue from referred clients)",
-      "nextAction": "Wait for NDA from Jacelynn, sign and return. Then exchange company materials.",
+      "nextAction": "Wait for countersigned NDA, exchange materials, formalize referral agreement",
       "tags": [
         "partnership",
         "referral",
@@ -1889,7 +1889,8 @@
       "primaryContact": "Jacelynn Pang",
       "channel": "Email",
       "probability": 50,
-      "expected_value_eur": "Referral partnership (ongoing revenue from referred clients)"
+      "expected_value_eur": "Referral partnership (ongoing revenue from referred clients)",
+      "notes": "Call May 29. Bilateral partnership with revenue share. Jacelynn = Channel & Institutional Sales Director. Telegram for day-to-day."
     },
     {
       "id": "p_mourant",
@@ -1897,7 +1898,7 @@
       "market": "Jersey / Offshore",
       "type": "law_firm",
       "businessModel": "bm_frontier",
-      "status": "warm_reply",
+      "status": "OOO until Jun 1, Adrian replied available Mon-Thu",
       "priority": "high",
       "contact": "Alistair Horn (Partner)",
       "email": "Alistair.Horn@mourant.com",
@@ -1923,7 +1924,7 @@
         }
       ],
       "expectedValue": "Referral partnership (high-value fund manager clients)",
-      "nextAction": "Adrian to send scheduling reply. Call week of Jun 2.",
+      "nextAction": "Alistair back Jun 1, expect reply to schedule call",
       "tags": [
         "law_firm",
         "jersey",
@@ -1948,7 +1949,7 @@
       "market": "Jersey / Offshore",
       "type": "law_firm",
       "businessModel": "bm_frontier",
-      "status": "outreach_draft",
+      "status": "Intro email sent to Julie Lagadu (referred by Niamh)",
       "priority": "medium",
       "contact": "Julie Lagadu (referred by Niamh Lalor)",
       "email": "Julie.Lagadu@ogier.com",
@@ -1972,7 +1973,7 @@
         }
       ],
       "expectedValue": "Referral partnership",
-      "nextAction": "Adrian to review and send Julie Lagadu draft",
+      "nextAction": "Wait for reply",
       "tags": [
         "law_firm",
         "jersey",
@@ -1982,9 +1983,9 @@
       "x": 950,
       "y": 350,
       "country": "Jersey",
-      "stage": "warm",
+      "stage": "outreach",
       "segment": "Law Firm (Offshore)",
-      "warmth": "warm",
+      "warmth": "cool",
       "primaryContact": "Julie Lagadu",
       "channel": "Email",
       "probability": 30,
@@ -1996,7 +1997,7 @@
       "market": "Georgia",
       "type": "central_bank",
       "businessModel": "bm_frontier",
-      "status": "procurement_monitoring",
+      "status": "Draft updated re tender, needs send",
       "priority": "medium",
       "contact": "Evelina Sulava (Chief Specialist, Procurement Division)",
       "email": "Evelina.Sulava@nbg.gov.ge",
@@ -2022,7 +2023,7 @@
         }
       ],
       "expectedValue": "EUR 50-100K (World Bank procurement assignments)",
-      "nextAction": "Adrian to send updated NBG reply. Register on World Bank STEP procurement system.",
+      "nextAction": "Review and send NBG reply",
       "tags": [
         "central_bank",
         "procurement",
@@ -2040,6 +2041,159 @@
       "channel": "Email",
       "probability": 15,
       "expected_value_eur": "EUR 50-100K (World Bank procurement assignments)"
+    },
+    {
+      "id": "p_masibolaw",
+      "name": "MasiboLaw",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "stage": "meeting_booked",
+      "segment": "Law Firm",
+      "warmth": "hot",
+      "primaryContact": "Meshack Masibo, Managing Partner",
+      "channel": "Email",
+      "email": "info@masibolaw.co.ke",
+      "expected_value_eur": 0,
+      "probability": 60,
+      "nextAction": "Meeting Tue Jun 2 10:00 CEST",
+      "notes": "Kenya crypto licensing law firm. Referral partner. Rescheduled from Mon (Kenya holiday).",
+      "status": "Meeting booked Jun 2"
+    },
+    {
+      "id": "p_shahid_tubrazy",
+      "name": "CryptoLawConsult (Shahid Tubrazy)",
+      "businessModel": "bm_frontier",
+      "country": "Pakistan",
+      "stage": "warm",
+      "segment": "Law Firm",
+      "warmth": "warm",
+      "primaryContact": "Shahid Jamal Tubrazy, Founder",
+      "channel": "Email",
+      "email": "shahidtubrazy@gmail.com",
+      "expected_value_eur": 0,
+      "probability": 50,
+      "nextAction": "Wait for booking via scheduling page",
+      "notes": "PVARA specialist. Referral partner for Pakistan. Replied positively May 29.",
+      "status": "Scheduling link sent"
+    },
+    {
+      "id": "p_cm_advocates",
+      "name": "CM Advocates LLP",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "stage": "warm",
+      "segment": "Law Firm",
+      "warmth": "warm",
+      "primaryContact": "Cyrus Maina, Managing Partner",
+      "channel": "Email",
+      "email": "cmaina@cmadvocates.com",
+      "expected_value_eur": 0,
+      "probability": 50,
+      "nextAction": "Wait for booking via scheduling page",
+      "notes": "Largest East Africa law firm. Offices: Nairobi, Mombasa, Kampala, DSM, Kigali, Lagos. Published on Kenya VASP Act. Referral partner.",
+      "status": "Scheduling link sent + timezone follow-up"
+    },
+    {
+      "id": "p_kuda",
+      "name": "Kuda Bank",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "stage": "outreach",
+      "segment": "Digital Bank",
+      "warmth": "cool",
+      "primaryContact": "Support ticket #215474495450988",
+      "channel": "Email",
+      "email": "help@kuda.com",
+      "expected_value_eur": 25000,
+      "probability": 15,
+      "nextAction": "Wait for substantive reply from compliance team",
+      "notes": "CBN June 10 AML deadline pitch. Auto-reply ticket created.",
+      "status": "Sent, auto-reply received"
+    },
+    {
+      "id": "p_aza_finance",
+      "name": "AZA Finance (ex-BitPesa)",
+      "businessModel": "bm_frontier",
+      "country": "Kenya",
+      "stage": "outreach",
+      "segment": "Cross-Border Payments",
+      "warmth": "cool",
+      "primaryContact": "Support ticket #00755666",
+      "channel": "Email",
+      "email": "support@azafinance.com",
+      "expected_value_eur": 30000,
+      "probability": 15,
+      "nextAction": "Wait for routing to compliance team",
+      "notes": "Pan-African crypto payments, 20 countries. Kenya VASP licensing pitch.",
+      "status": "Sent, auto-reply received"
+    },
+    {
+      "id": "p_fairmoney",
+      "name": "FairMoney",
+      "businessModel": "bm_frontier",
+      "country": "Nigeria",
+      "stage": "outreach",
+      "segment": "Digital Bank",
+      "warmth": "cool",
+      "primaryContact": "Ticket #12167062",
+      "channel": "Email",
+      "email": "help@fairmoney.io",
+      "expected_value_eur": 20000,
+      "probability": 10,
+      "nextAction": "Wait for compliance team response",
+      "notes": "CBN AML deadline pitch. Auto-reply.",
+      "status": "Sent, auto-reply received"
+    },
+    {
+      "id": "p_schindlers",
+      "name": "Schindlers Attorneys (Crypto Dept)",
+      "businessModel": "bm_frontier",
+      "country": "South Africa",
+      "stage": "outreach",
+      "segment": "Law Firm",
+      "warmth": "cool",
+      "primaryContact": "Maurice / Crypto Department",
+      "channel": "Email",
+      "email": "crypto@schindlers.co.za",
+      "expected_value_eur": 0,
+      "probability": 30,
+      "nextAction": "Wait for reply",
+      "notes": "SA blockchain law firm. Referral partner for FSCA CASP compliance.",
+      "status": "Sent May 29"
+    },
+    {
+      "id": "p_elliptic",
+      "name": "Elliptic",
+      "businessModel": "bm_frontier",
+      "country": "UK",
+      "stage": "outreach",
+      "segment": "Blockchain Analytics",
+      "warmth": "cool",
+      "primaryContact": "Info",
+      "channel": "Email",
+      "email": "info@elliptic.co",
+      "expected_value_eur": 0,
+      "probability": 20,
+      "nextAction": "Wait for reply",
+      "notes": "Referral partnership - their analytics + our advisory.",
+      "status": "Sent May 28"
+    },
+    {
+      "id": "p_alphapoint",
+      "name": "AlphaPoint",
+      "businessModel": "bm_frontier",
+      "country": "USA",
+      "stage": "outreach",
+      "segment": "Exchange Infrastructure",
+      "warmth": "cool",
+      "primaryContact": "Partnerships Team",
+      "channel": "Email",
+      "email": "support@alphapoint.com",
+      "expected_value_eur": 0,
+      "probability": 25,
+      "nextAction": "Wait for reply",
+      "notes": "150+ exchange clients. Partnership: their tech, our compliance.",
+      "status": "Sent (draft from May 28)"
     }
   ],
   "tasks": [
@@ -2393,7 +2547,7 @@
       "id": "task_meeting_chainup",
       "title": "ChainUp meeting - bilateral referral partnership",
       "priority": "P0",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_frontier",
       "dueDate": "2026-05-29",
       "description": "May 29, 10:00 CEST. Jacelynn Pang. Partnership: ChainUp refers compliance clients, Black Sea refers infrastructure clients. Prep done (MEETING_PREP_ChainUp_May29.md)."
@@ -2520,7 +2674,7 @@
       "id": "task_defense_email_drafts",
       "title": "Draft Defense Capital Advisory outreach emails",
       "priority": "P1",
-      "status": "todo",
+      "status": "done",
       "businessModel": "bm_defense",
       "dueDate": "2026-06-01",
       "description": "After research completes: draft personalized emails for defense VCs, accelerators, associations. Fund structuring + Fractional CCO angles."
@@ -2683,7 +2837,7 @@
     {
       "id": "task_domain_health_check",
       "title": "Check blackseaspv.com domain health (SPF/DKIM/DMARC + blacklists)",
-      "status": "urgent",
+      "status": "done",
       "priority": "critical",
       "businessModel": "all",
       "assignee": "both",
@@ -2693,7 +2847,7 @@
     {
       "id": "task_eag_apply",
       "title": "Apply to EAG Experts Pool + MENAFATF",
-      "status": "pending",
+      "status": "done",
       "priority": "high",
       "businessModel": "all",
       "assignee": "adrian",
@@ -2754,7 +2908,7 @@
       "id": "t_send_lcg_reply",
       "title": "Send LCG Kazakhstan AFSA gaps reply",
       "description": "Review and send the detailed AFSA gaps note to Saltanat Serikova. Use the longer research-backed version in Gmail drafts. This is the highest-value warm lead - potential partnership with AIFC compliance firm.",
-      "status": "todo",
+      "status": "done",
       "priority": "critical",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2769,7 +2923,7 @@
       "id": "t_send_mourant_reply",
       "title": "Send Mourant scheduling reply",
       "description": "Send scheduling reply to Alistair Horn at Mourant Ozannes. Available Mon-Thu next week.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2784,7 +2938,7 @@
       "id": "t_send_chainup_reply",
       "title": "Send ChainUp meeting confirmation",
       "description": "Send confirmation reply to Jacelynn Pang. Meeting tomorrow May 29 10:00 CEST.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2814,7 +2968,7 @@
       "id": "t_send_ogier_julie",
       "title": "Send Julie Lagadu intro email",
       "description": "Send introduction to Julie Lagadu at Ogier, referenced by Niamh Lalor (on sabbatical). Draft in Gmail.",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2829,7 +2983,7 @@
       "id": "t_send_eag_application",
       "title": "Send EAG Experts Pool application",
       "description": "Send expression of interest to join EAG Experts Pool (info@eurasiangroup.org). Draft in Gmail. References MONEYVAL membership (Slovakia), KZ/UZ experience, willingness to complete JAT.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2845,7 +2999,7 @@
       "id": "t_send_menafatf_application",
       "title": "Send MENAFATF assessor pool application",
       "description": "Send expression of interest to MENAFATF (hr@menafatf.org). Draft in Gmail. UAE evaluation June 2026 makes timing perfect. References ADGM/VARA experience + MONEYVAL bridge.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2861,7 +3015,7 @@
       "id": "t_expert_network_register",
       "title": "Register on expert networks (GLG, AlphaSights, Guidepoint, Third Bridge, CleverX)",
       "description": "Profiles prepared at /Users/Adrian/Desktop/blacksea-bulk/expert_network_profiles.md. 5 platforms, EUR 600-750/hour rates. Frontier market digital asset + defense fund angle has very few competing practitioners. Register on each platform using the prepared profiles.",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
       "assignee": "Adrian",
@@ -2962,6 +3116,78 @@
         "domain",
         "email_health"
       ]
+    },
+    {
+      "id": "t_xerof_prep",
+      "title": "Xerof meeting - Jun 1 13:00 CEST",
+      "businessModel": "bm_frontier",
+      "status": "done",
+      "priority": "P0",
+      "notes": "Briefing ready: XEROF_MEETING_BRIEFING.md"
+    },
+    {
+      "id": "t_masibolaw_prep",
+      "title": "MasiboLaw meeting prep - Jun 2 10:00 CEST",
+      "businessModel": "bm_frontier",
+      "status": "todo",
+      "priority": "P0",
+      "notes": "Kenya crypto law firm. Need research + briefing."
+    },
+    {
+      "id": "t_algoz_prep",
+      "title": "AlgoZ meeting - Jun 3 9:00 CEST",
+      "businessModel": "bm_frontier",
+      "status": "done",
+      "priority": "P0",
+      "notes": "Briefing ready: ALGOZ_MEETING_BRIEFING.md"
+    },
+    {
+      "id": "t_chainup_nda_materials",
+      "title": "ChainUp - exchange materials after NDA countersigned",
+      "businessModel": "bm_frontier",
+      "status": "waiting",
+      "priority": "P1",
+      "notes": "NDA signed our side. Wait for their countersignature then exchange materials."
+    },
+    {
+      "id": "t_turkey_template_pack",
+      "title": "Build Turkey CMB AML/CFT template pack (12 docs)",
+      "businessModel": "bm_frontier",
+      "status": "todo",
+      "priority": "P1",
+      "notes": "Jun 30 deadline. 53 mid-tier CASPs as targets. EUR 8-12K per pack. See TURKEY_CMB_76_CASPS.md"
+    },
+    {
+      "id": "t_kenya_vaak_outreach",
+      "title": "Contact VAAK (Virtual Asset Association of Kenya) for member access",
+      "businessModel": "bm_frontier",
+      "status": "todo",
+      "priority": "P1",
+      "notes": "50 member firms. Template pack opportunity EUR 250-500K."
+    },
+    {
+      "id": "t_d3vc_alternative_contact",
+      "title": "Find D3 VC alternative contact (info@d3.vc bounces)",
+      "businessModel": "bm_defense",
+      "status": "todo",
+      "priority": "P2",
+      "notes": "Try Airtable pitch form or LinkedIn. Eveline Buchatskiy."
+    },
+    {
+      "id": "t_followup_mourant_jun2",
+      "title": "Follow up Mourant (Alistair Horn) if no reply by Jun 2",
+      "businessModel": "bm_defense",
+      "status": "todo",
+      "priority": "P2",
+      "notes": "OOO until Jun 1"
+    },
+    {
+      "id": "t_sa_batch_send",
+      "title": "Send SA batch: ChainEX, AltCoinTrader, Yellow Card, Altify, OVEX",
+      "businessModel": "bm_frontier",
+      "status": "todo",
+      "priority": "P2",
+      "notes": "Drafts in Gmail ready. Send tomorrow."
     }
   ],
   "documents": [
@@ -3520,6 +3746,62 @@
       "category": "operational",
       "addedDate": "2026-05-28",
       "source": "DNS dig + bounce header analysis"
+    },
+    {
+      "id": "ins_kenya_traction",
+      "title": "Kenya market showing strong traction",
+      "businessModel": "bm_frontier",
+      "content": "Three Kenya contacts engaged in 24 hours: CM Advocates (Managing Partner replied), MasiboLaw (meeting booked), AZA Finance (ticket created). VASP Act 2025 creating real demand. VAAK association has 50 member firms.",
+      "date": "2026-05-29",
+      "type": "market_signal"
+    },
+    {
+      "id": "ins_pakistan_opening",
+      "title": "Pakistan PVARA market opening up",
+      "businessModel": "bm_frontier",
+      "content": "Shahid Tubrazy (CryptoLawConsult) replied positively for referral partnership. SadaPay redirected to compliance team. Binance + HTX have NOCs. PVARA sandbox open. Market is moving.",
+      "date": "2026-05-29",
+      "type": "market_signal"
+    },
+    {
+      "id": "ins_turkey_urgency",
+      "title": "Turkey CMB deadline Jun 30 - 76 CASPs need compliance",
+      "businessModel": "bm_frontier",
+      "content": "Full list of 76 Turkish CASPs compiled. Jun 30 hard deadline for operating licence or liquidation. 53 mid-tier platforms need external compliance. Template pack opportunity EUR 424-636K. Bitci and Bitexen emails sent.",
+      "date": "2026-05-29",
+      "type": "revenue_opportunity"
+    },
+    {
+      "id": "ins_sa_inspections",
+      "title": "South Africa FSCA running 30 inspections - mass market",
+      "businessModel": "bm_frontier",
+      "content": "300 licensed CASPs, 56 under investigation, 30 active inspections. Most failing on AML/CFT governance. Template pack + gap assessment opportunity across 200+ targets.",
+      "date": "2026-05-29",
+      "type": "revenue_opportunity"
+    },
+    {
+      "id": "ins_d3vc_bounce",
+      "title": "D3 VC email (info@d3.vc) confirmed dead - need alternative",
+      "businessModel": "bm_defense",
+      "content": "Tried info@d3.vc twice, both bounced. hello@d3.vc also bounced earlier. Need to find Eveline Buchatskiy direct email or use LinkedIn/Airtable pitch form.",
+      "date": "2026-05-29",
+      "type": "operational"
+    },
+    {
+      "id": "ins_tactiq_setup",
+      "title": "Tactiq installed - meeting transcript pipeline working",
+      "businessModel": "all",
+      "content": "Tactiq Chrome extension installed. ChainUp call transcribed. Workflow: prep briefing -> call with Tactiq -> transcript -> action items -> follow-up drafts -> brain update. Operational.",
+      "date": "2026-05-29",
+      "type": "operational"
+    },
+    {
+      "id": "ins_full_attack_results",
+      "title": "Full frontal BD attack: 70+ targets identified across 9 markets",
+      "businessModel": "bm_frontier",
+      "content": "Comprehensive BD research completed. EUR 3-6M total addressable pipeline. Highest urgency: Turkey (31 days), Kenya (KBCC momentum), Pakistan (sandbox), South Africa (inspections). 13 new law firm referral partners identified. 3 associations to join.",
+      "date": "2026-05-29",
+      "type": "strategy"
     }
   ],
   "edges": [
@@ -4086,78 +4368,112 @@
   ],
   "warmNetwork": [
     {
-      "id": "wn_legacy",
-      "name": "A27 IC SICAV alumni / counterparts (Malta)",
-      "type": "professional_network",
-      "status": "passive"
-    },
-    {
-      "id": "wn_prague",
-      "name": "Prague + Amsterdam network (A27 Management Services, Opportunity Fund CCO)",
-      "type": "professional_network",
-      "status": "passive"
-    },
-    {
-      "id": "wn_crypto",
-      "name": "Crypto OTC + exchange network (Black Sea SPV legacy)",
-      "type": "professional_network",
-      "status": "active"
-    },
-    {
-      "id": "wn_lcg_kz",
-      "name": "LCG Kazakhstan (Saltanat Serikova)",
-      "company": "Legal & Compliance Group Ltd.",
-      "type": "warm_lead_partnership",
-      "status": "active",
-      "addedDate": "2026-05-28",
-      "note": "Asked for AFSA gaps note. AIFC-licensed compliance firm. Potential cooperation partner."
-    },
-    {
-      "id": "wn_chainup",
       "name": "ChainUp (Jacelynn Pang)",
-      "company": "ChainUp",
-      "type": "warm_lead_partnership",
-      "status": "Partnership agreed - NDA pending",
-      "addedDate": "2026-05-28",
-      "note": "Bilateral referral partnership. Meeting May 29 10:00 CEST.",
-      "nextAction": "Wait for NDA, sign, exchange materials",
-      "lastContact": "2026-05-29"
+      "type": "Partnership",
+      "status": "NDA SIGNED - Kick-off pending",
+      "lastContact": "2026-05-29",
+      "channel": "Email + Telegram",
+      "nextAction": "Wait for countersigned NDA, exchange materials",
+      "priority": "P0"
     },
     {
-      "id": "wn_mourant",
-      "name": "Mourant Ozannes (Alistair Horn)",
-      "company": "Mourant Ozannes (Jersey) LLP",
-      "type": "warm_lead_partnership",
-      "status": "active",
-      "addedDate": "2026-05-28",
-      "note": "Partner at top Jersey law firm. Wants to speak next week. Potential referral partner."
-    },
-    {
-      "id": "wn_amc_one",
-      "name": "AMC One Capital (Kanat Kenbayev)",
-      "company": "Asset Management Company One Ltd.",
-      "type": "warm_lead_client",
-      "status": "active",
-      "addedDate": "2026-05-22",
-      "note": "AIFC asset manager. Replied warmly, CC'd colleagues. Follow-up sent."
-    },
-    {
-      "id": "wn_algoz",
       "name": "AlgoZ (Stephen Wundke)",
-      "company": "AlgoZ",
-      "type": "warm_lead_client",
-      "status": "meeting_booked",
-      "addedDate": "2026-05-27",
-      "note": "Meeting May 29 13:00 CEST. Compliance advisory."
+      "type": "Client prospect",
+      "status": "Meeting Jun 3 9:00 CEST",
+      "lastContact": "2026-05-27",
+      "channel": "Email + Google Meet",
+      "nextAction": "Prep done (ALGOZ_MEETING_BRIEFING.md)",
+      "priority": "P0"
     },
     {
-      "id": "wn_xerof",
       "name": "Xerof (Nick Ntigrintakis)",
-      "company": "Xerof",
-      "type": "warm_lead_client",
-      "status": "meeting_booked",
-      "addedDate": "2026-05-27",
-      "note": "Meeting Jun 1 13:00 CEST. Compliance advisory."
+      "type": "Client prospect",
+      "status": "Meeting Jun 1 13:00 CEST",
+      "lastContact": "2026-05-27",
+      "channel": "Email + Calendly",
+      "nextAction": "Prep done (XEROF_MEETING_BRIEFING.md)",
+      "priority": "P0"
+    },
+    {
+      "name": "MasiboLaw (Meshack Masibo)",
+      "type": "Referral partner",
+      "status": "Meeting Jun 2 10:00 CEST",
+      "lastContact": "2026-05-29",
+      "channel": "Email",
+      "nextAction": "Prep briefing needed",
+      "priority": "P0"
+    },
+    {
+      "name": "CM Advocates (Cyrus Maina)",
+      "type": "Referral partner",
+      "status": "Scheduling link sent, waiting",
+      "lastContact": "2026-05-29",
+      "channel": "Email",
+      "nextAction": "Wait for booking",
+      "priority": "P1"
+    },
+    {
+      "name": "CryptoLawConsult (Shahid Tubrazy)",
+      "type": "Referral partner",
+      "status": "Scheduling link sent",
+      "lastContact": "2026-05-29",
+      "channel": "Email",
+      "nextAction": "Wait for booking",
+      "priority": "P1"
+    },
+    {
+      "name": "LCG Kazakhstan (Saltanat Serikova)",
+      "type": "Referral partner",
+      "status": "AFSA gap note sent",
+      "lastContact": "2026-05-28",
+      "channel": "Email",
+      "nextAction": "Follow up Jun 2 if no reply",
+      "priority": "P1"
+    },
+    {
+      "name": "Mourant Ozannes (Alistair Horn)",
+      "type": "Referral partner",
+      "status": "OOO until Jun 1",
+      "lastContact": "2026-05-28",
+      "channel": "Email",
+      "nextAction": "He replies Mon/Tue to schedule call",
+      "priority": "P1"
+    },
+    {
+      "name": "AMC One Capital (Kanat Kenbayev)",
+      "type": "Client prospect",
+      "status": "AFSA gap note sent May 26, no reply yet",
+      "lastContact": "2026-05-26",
+      "channel": "Email",
+      "nextAction": "Follow up Jun 2",
+      "priority": "P2"
+    },
+    {
+      "name": "White & Case Dubai (Arnold Krutilins)",
+      "type": "Referral partner",
+      "status": "OOO for Eid until May 29",
+      "lastContact": "2026-05-27",
+      "channel": "Email",
+      "nextAction": "Should be back - follow up Jun 2",
+      "priority": "P2"
+    },
+    {
+      "name": "White & Case Africa (Deji Adegoke)",
+      "type": "Referral partner",
+      "status": "Annual leave until Jun 1",
+      "lastContact": "2026-05-27",
+      "channel": "Email",
+      "nextAction": "Follow up Jun 2",
+      "priority": "P2"
+    },
+    {
+      "name": "ADGM FSRA",
+      "type": "Regulator",
+      "status": "Auto-reply received, waiting for team response",
+      "lastContact": "2026-05-27",
+      "channel": "Email",
+      "nextAction": "Wait",
+      "priority": "P3"
     }
   ],
   "nodePositions": {},
@@ -5008,21 +5324,71 @@
       "expectedRevenue": "EUR 10-50K/month from referred clients (ongoing)",
       "nextStep": "Convert meetings into formal referral agreements",
       "addedDate": "2026-05-28"
+    },
+    {
+      "id": "bd_turkey_cmb",
+      "name": "Turkey CMB Template Pack",
+      "type": "direct_outreach",
+      "status": "active",
+      "description": "76 CASPs need AML/CFT compliance by Jun 30. Template pack EUR 8-12K each.",
+      "targetCount": 53,
+      "estimatedPipeline": "EUR 424-636K"
+    },
+    {
+      "id": "bd_kenya_vaak",
+      "name": "Kenya VAAK Association",
+      "type": "association",
+      "status": "identified",
+      "description": "50 member firms. Template pack + advisory opportunity.",
+      "targetCount": 50,
+      "estimatedPipeline": "EUR 250-500K"
+    },
+    {
+      "id": "bd_sa_fsca_inspections",
+      "name": "South Africa FSCA Inspection Prep",
+      "type": "direct_outreach",
+      "status": "active",
+      "description": "300 licensed CASPs, 30 inspections ongoing. Gap assessment + template packs.",
+      "targetCount": 200,
+      "estimatedPipeline": "EUR 1-2.5M"
+    },
+    {
+      "id": "bd_pakistan_pvara_sandbox",
+      "name": "Pakistan PVARA Sandbox",
+      "type": "direct_outreach",
+      "status": "active",
+      "description": "Sandbox applications open. AML/CFT framework for entrants.",
+      "targetCount": 20,
+      "estimatedPipeline": "EUR 200-500K"
+    },
+    {
+      "id": "bd_kenya_law_firms",
+      "name": "Kenya Law Firm Referral Network",
+      "type": "referral",
+      "status": "active",
+      "description": "CM Advocates + MasiboLaw + S.N. Nyaga + WKA + AMG Advocates",
+      "targetCount": 5,
+      "notes": "2 warm (CM Advocates, MasiboLaw), 3 sent"
     }
   ],
   "pipelineStatus": {
-    "asOf": "2026-05-28",
+    "asOf": "2026-05-29",
     "summary": {
-      "totalDraftsCreated": "95+",
-      "totalSent": "~100",
-      "meetingsBooked": 2,
-      "warmReplies": 6,
+      "totalDraftsCreated": "110+",
+      "totalSent": "120+",
+      "meetingsCompleted": 1,
+      "meetingsBooked": 4,
+      "warmReplies": 8,
       "activePartnerships": 1,
-      "bouncesTotal": 56,
-      "bouncesFixed": 14,
-      "oooFollowupsPending": 4,
-      "bdChannelsActive": 15,
-      "gmailDraftsReady": 8
+      "partnershipsNegotiating": 1,
+      "referralPartnersWarm": 4,
+      "bouncesTotal": 60,
+      "bouncesFixed": 18,
+      "declinedTotal": 1,
+      "autoRepliesReceived": 12,
+      "oooFollowupsPending": 3,
+      "bdChannelsActive": 18,
+      "gmailDraftsReady": 12
     },
     "meetings": [
       {
@@ -5031,35 +5397,44 @@
         "time": "10:00 CEST",
         "type": "Partnership (bilateral referral)",
         "contact": "Jacelynn Pang",
-        "prepFile": "MEETING_PREP_ChainUp_May29.md",
-        "status": "completed",
-        "outcome": "Bilateral partnership agreed. NDA pending from Jacelynn. Revenue share model. Telegram for day-to-day."
-      },
-      {
-        "company": "AlgoZ",
-        "date": "2026-05-29",
-        "time": "13:00 CEST",
-        "type": "Compliance advisory",
-        "contact": "Stephen Wundke",
-        "prepFile": "MEETING_PREP_AlgoZ_May29.md",
-        "status": "CONFIRMED"
+        "status": "COMPLETED",
+        "outcome": "NDA signed, bilateral partnership agreed with revenue share"
       },
       {
         "company": "Xerof",
         "date": "2026-06-01",
         "time": "13:00 CEST",
-        "type": "Compliance advisory",
+        "type": "OTC Compliance Advisory",
         "contact": "Nick Ntigrintakis",
-        "prepFile": "MEETING_PREP_Xerof_Jun1.md",
-        "status": "CONFIRMED"
+        "status": "confirmed",
+        "prep": "XEROF_MEETING_BRIEFING.md"
+      },
+      {
+        "company": "MasiboLaw",
+        "date": "2026-06-02",
+        "time": "10:00 CEST",
+        "type": "Referral Partnership",
+        "contact": "Meshack Masibo",
+        "status": "confirmed",
+        "notes": "Rescheduled from Jun 1 (Kenya holiday)"
+      },
+      {
+        "company": "AlgoZ",
+        "date": "2026-06-03",
+        "time": "09:00 CEST",
+        "type": "VARA Compliance Advisory",
+        "contact": "Stephen Wundke",
+        "status": "confirmed",
+        "prep": "ALGOZ_MEETING_BRIEFING.md"
       },
       {
         "company": "Mourant Ozannes",
-        "date": "2026-06-02-05",
+        "date": "2026-06-02",
         "time": "TBD",
-        "type": "Referral partnership",
+        "type": "Defense Referral Partnership",
         "contact": "Alistair Horn",
-        "status": "SCHEDULING"
+        "status": "pending",
+        "notes": "OOO until Jun 1, will reply to schedule"
       }
     ],
     "warmLeads": [
@@ -5499,26 +5874,18 @@
     }
   ],
   "emailHealth": {
-    "asOf": "2026-05-28",
-    "domainStatus": "HEALTHY",
-    "spf": {
-      "status": "PASS",
-      "record": "v=spf1 include:icloud.com include:_spf.google.com ~all"
-    },
-    "dkim": {
-      "status": "PASS",
-      "note": "Confirmed from bounce headers: dkim=pass header.i=@blackseaspv.com header.s=google"
-    },
-    "dmarc": {
-      "status": "CONFIGURED",
-      "record": "v=DMARC1; p=none; rua=mailto:adrian@blackseaspv.com; pct=100",
-      "recommendation": "Consider upgrading p=none to p=quarantine for stronger spoofing protection"
-    },
-    "mxtoolbox": "ALL GREEN (confirmed by Adrian May 28)",
-    "bounceRate": "~40% (mostly wrong addresses, NOT domain reputation issue)",
-    "bounceAnalysis": "19 hard bounces on May 28 - all due to wrong email addresses or non-existent domains. Zero bounces from domain reputation. SPF/DKIM/DMARC all passing correctly.",
-    "coinuzIncident": "554.5.7.1 bounce from coinuz.net was NOT a domain issue - it was a forwarding chain failure at the receiving server. Our DKIM/SPF/DMARC all passed.",
-    "action": "Verify all email addresses via NeverBounce/Hunter.io BEFORE creating drafts. Zero tolerance policy."
+    "lastChecked": "2026-05-29",
+    "spf": "PASS",
+    "dkim": "PASS",
+    "dmarc": "p=none (consider upgrading to p=quarantine)",
+    "blacklists": "CLEAN",
+    "totalSentThisWeek": 45,
+    "bouncesThisWeek": 8,
+    "bounceRate": "17.7%",
+    "warmRepliesThisWeek": 8,
+    "autoRepliesThisWeek": 12,
+    "declinedThisWeek": 1,
+    "domainHealth": "GOOD - mixing warm replies with cold outreach, staying under 15/day"
   },
   "gapAnalysis": {
     "target": "EUR 500K/month by August 2026",
