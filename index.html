@@ -1173,41 +1173,49 @@
           <span class="crm-urgency now"></span>All regions
           <span class="crm-region-count" id="crm-count-ALL">0</span>
         </button>
-        <button class="crm-region-btn" data-region="Uzbekistan" onclick="filterCRM('Uzbekistan',this)">
-          <span class="crm-urgency now"></span>Uzbekistan
-          <span class="crm-region-count" id="crm-count-Uzbekistan">0</span>
+        <button class="crm-region-btn" data-region="UAE" onclick="filterCRM('UAE',this)">
+          <span class="crm-urgency q3"></span>UAE / ADGM
+          <span class="crm-region-count" id="crm-count-UAE">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Kazakhstan" onclick="filterCRM('Kazakhstan',this)">
+          <span class="crm-urgency done"></span>Kazakhstan (AIFC)
+          <span class="crm-region-count" id="crm-count-Kazakhstan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Turkey" onclick="filterCRM('Turkey',this)">
+          <span class="crm-urgency now"></span>Turkey
+          <span class="crm-region-count" id="crm-count-Turkey">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Pakistan" onclick="filterCRM('Pakistan',this)">
+          <span class="crm-urgency now"></span>Pakistan
+          <span class="crm-region-count" id="crm-count-Pakistan">0</span>
+        </button>
+        <button class="crm-region-btn" data-region="Kenya" onclick="filterCRM('Kenya',this)">
+          <span class="crm-urgency now"></span>Kenya
+          <span class="crm-region-count" id="crm-count-Kenya">0</span>
         </button>
         <button class="crm-region-btn" data-region="Nigeria" onclick="filterCRM('Nigeria',this)">
           <span class="crm-urgency now"></span>Nigeria
           <span class="crm-region-count" id="crm-count-Nigeria">0</span>
         </button>
-        <button class="crm-region-btn" data-region="Azerbaijan" onclick="filterCRM('Azerbaijan',this)">
-          <span class="crm-urgency now"></span>Azerbaijan
-          <span class="crm-region-count" id="crm-count-Azerbaijan">0</span>
+        <button class="crm-region-btn" data-region="SouthAfrica" onclick="filterCRM('SouthAfrica',this)">
+          <span class="crm-urgency q3"></span>South Africa
+          <span class="crm-region-count" id="crm-count-SouthAfrica">0</span>
         </button>
-        <button class="crm-region-btn" data-region="Kazakhstan (AIFC)" onclick="filterCRM('Kazakhstan (AIFC)',this)">
-          <span class="crm-urgency done"></span>AIFC Kazakhstan
-          <span class="crm-region-count" id="crm-count-Kazakhstan">0</span>
+        <button class="crm-region-btn" data-region="Uzbekistan" onclick="filterCRM('Uzbekistan',this)">
+          <span class="crm-urgency now"></span>Uzbekistan
+          <span class="crm-region-count" id="crm-count-Uzbekistan">0</span>
         </button>
-        <button class="crm-region-btn" data-region="UAE / ADGM" onclick="filterCRM('UAE / ADGM',this)">
-          <span class="crm-urgency q3"></span>UAE / ADGM
-          <span class="crm-region-count" id="crm-count-UAE">0</span>
+        <button class="crm-region-btn" data-region="Jersey" onclick="filterCRM('Jersey',this)">
+          <span class="crm-urgency q3"></span>Jersey / Offshore
+          <span class="crm-region-count" id="crm-count-Jersey">0</span>
         </button>
-        <button class="crm-region-btn" data-region="Pan-Africa" onclick="filterCRM('Pan-Africa',this)">
-          <span class="crm-urgency q3"></span>Pan-Africa
-          <span class="crm-region-count" id="crm-count-PanAfrica">0</span>
+        <button class="crm-region-btn" data-region="Defense" onclick="filterCRM('Defense',this)">
+          <span class="crm-urgency done"></span>Defense (EU)
+          <span class="crm-region-count" id="crm-count-Defense">0</span>
         </button>
-        <button class="crm-region-btn" data-region="Kyrgyzstan" onclick="filterCRM('Kyrgyzstan',this)">
-          <span class="crm-urgency now"></span>Kyrgyzstan
-          <span class="crm-region-count" id="crm-count-Kyrgyzstan">0</span>
-        </button>
-        <button class="crm-region-btn" data-region="Georgia" onclick="filterCRM('Georgia',this)">
-          <span class="crm-urgency now"></span>Georgia
-          <span class="crm-region-count" id="crm-count-Georgia">0</span>
-        </button>
-        <button class="crm-region-btn" data-region="Armenia" onclick="filterCRM('Armenia',this)">
-          <span class="crm-urgency q3"></span>Armenia
-          <span class="crm-region-count" id="crm-count-Armenia">0</span>
+        <button class="crm-region-btn" data-region="Global" onclick="filterCRM('Global',this)">
+          <span class="crm-urgency q3"></span>Global
+          <span class="crm-region-count" id="crm-count-Global">0</span>
         </button>
 
         <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line)">
@@ -3097,6 +3105,58 @@ const PRIORITY_ORDER = { 'High': 0, 'Medium': 1, 'Low': 2 };
 
 // Known sent/draft/bounced from outreach history
 const OUTREACH_STATUS = {
+  // REPLIED
+  'jacelynn.pang@chainup.com': 'replied',
+  'cmaina@cmadvocates.com': 'replied',
+  'info@masibolaw.co.ke': 'replied',
+  'shahidtubrazy@gmail.com': 'replied',
+  'Alistair.Horn@mourant.com': 'replied',
+  'saltanat.serikova@lcg.kz': 'replied',
+  'kanat.kenbayev@amcone.kz': 'replied',
+  'dpo@paystack.com': 'replied',
+  'hello@sadapay.pk': 'replied',
+  // SENT
+  'crypto@schindlers.co.za': 'sent',
+  'help@kuda.com': 'sent',
+  'support@azafinance.com': 'sent',
+  'help@fairmoney.io': 'sent',
+  'customer@getcarbon.co': 'sent',
+  'antifraud@opay.team': 'sent',
+  'info@elliptic.co': 'sent',
+  'info@scalewolf.vc': 'sent',
+  'hello@prestoventures.com': 'sent',
+  'info@greenflag.vc': 'sent',
+  'contact@otb.vc': 'sent',
+  'hello@join.capital': 'sent',
+  'contact@karista.vc': 'sent',
+  'info@hyperion.fund': 'sent',
+  'accelerator@diana.nato.int': 'sent',
+  'contact@gohub.vc': 'sent',
+  'info@expeditionsfund.com': 'sent',
+  'contact@eudis-business-accelerator.eu': 'sent',
+  'pr@afsa.kz': 'sent',
+  'hello@pezesha.com': 'sent',
+  'info@njagaadvocates.com': 'sent',
+  'info@amgadvocates.com': 'sent',
+  'pitch@panteracapital.com': 'sent',
+  'ventures@circle.com': 'sent',
+  'editorial@theblock.co': 'sent',
+  'hr@menafatf.org': 'sent',
+  'info@eurasiangroup.org': 'sent',
+  'Julie.Lagadu@ogier.com': 'sent',
+  // BOUNCED
+  'ragnar@darkstar.ee': 'bounced',
+  'hello@d3.vc': 'bounced',
+  'info@d3.vc': 'bounced',
+  'info@gohubventures.com': 'bounced',
+  'info@expeditions.fund': 'bounced',
+  'info@eudis.eu': 'bounced',
+  'info@scorechain.com': 'bounced',
+  'membership@sacryptoassociation.org': 'bounced',
+  'partnerships@moniepoint.com': 'bounced',
+  'podcast@soliduslabs.com': 'bounced',
+  'info@afsa.aifc.kz': 'bounced',
+  // Legacy (kept from previous)
   'info@goldenpay.az': 'sent',
   'legal@blockvault.global': 'sent',
   'compliance@busha.co': 'sent',
@@ -3192,10 +3252,22 @@ function renderCRM() {
 
   // Region filter
   if (CRM_REGION_FILTER !== 'ALL') {
-    contacts = contacts.filter(c =>
-      c.region === CRM_REGION_FILTER ||
-      c.region.includes(CRM_REGION_FILTER.split(' ')[0])
-    );
+    contacts = contacts.filter(c => {
+      const r = (c.region || '').toLowerCase();
+      const f = CRM_REGION_FILTER;
+      if (f === 'UAE') return r.includes('uae') || r.includes('adgm') || r.includes('vara');
+      if (f === 'Kazakhstan') return r.includes('kazakh') || r.includes('aifc');
+      if (f === 'Turkey') return r.includes('turkey');
+      if (f === 'Pakistan') return r.includes('pakistan');
+      if (f === 'Kenya') return r.includes('kenya');
+      if (f === 'Nigeria') return r.includes('nigeria');
+      if (f === 'SouthAfrica') return r.includes('south africa');
+      if (f === 'Uzbekistan') return r.includes('uzbek');
+      if (f === 'Jersey') return r.includes('jersey') || r.includes('cayman') || r.includes('bvi') || r.includes('offshore');
+      if (f === 'Defense') return c.source === 'brain' && (DATA.prospects.find(p => p.id === c.id)?.businessModel === 'bm_defense');
+      if (f === 'Global') return r.includes('global') || r.includes('singapore') || r.includes('usa') || r.includes('uk') || r.includes('luxemb') || r.includes('switzerland') || r.includes('hong kong') || r.includes('pan-') || r.includes('eu');
+      return r.includes(f.toLowerCase());
+    });
   }
 
   // Status filter
@@ -3223,17 +3295,21 @@ function renderCRM() {
   document.getElementById('crm-s-replied').textContent = all.filter(c => c.status === 'replied').length;
 
   // Update region counts
+  const rl = (c) => (c.region || '').toLowerCase();
+  const isDefense = (c) => c.source === 'brain' && (DATA.prospects.find(p => p.id === c.id)?.businessModel === 'bm_defense');
   const regionMap = {
     'ALL': all.length,
-    'Uzbekistan': all.filter(c => c.region === 'Uzbekistan').length,
-    'Nigeria': all.filter(c => c.region.includes('Nigeria')).length,
-    'Azerbaijan': all.filter(c => c.region === 'Azerbaijan').length,
-    'Kazakhstan': all.filter(c => c.region.includes('Kazakhstan')).length,
-    'UAE': all.filter(c => c.region.includes('UAE')).length,
-    'PanAfrica': all.filter(c => c.region.includes('Africa') && !c.region.includes('Nigeria')).length,
-    'Kyrgyzstan': all.filter(c => c.region === 'Kyrgyzstan').length,
-    'Georgia': all.filter(c => c.region === 'Georgia').length,
-    'Armenia': all.filter(c => c.region === 'Armenia').length,
+    'UAE': all.filter(c => rl(c).includes('uae') || rl(c).includes('adgm') || rl(c).includes('vara')).length,
+    'Kazakhstan': all.filter(c => rl(c).includes('kazakh') || rl(c).includes('aifc')).length,
+    'Turkey': all.filter(c => rl(c).includes('turkey')).length,
+    'Pakistan': all.filter(c => rl(c).includes('pakistan')).length,
+    'Kenya': all.filter(c => rl(c).includes('kenya')).length,
+    'Nigeria': all.filter(c => rl(c).includes('nigeria')).length,
+    'SouthAfrica': all.filter(c => rl(c).includes('south africa')).length,
+    'Uzbekistan': all.filter(c => rl(c).includes('uzbek')).length,
+    'Jersey': all.filter(c => rl(c).includes('jersey') || rl(c).includes('cayman') || rl(c).includes('bvi')).length,
+    'Defense': all.filter(c => isDefense(c)).length,
+    'Global': all.filter(c => rl(c).includes('global') || rl(c).includes('singapore') || rl(c).includes('usa') || rl(c).includes('uk') || rl(c).includes('luxemb') || rl(c).includes('switzerland') || rl(c).includes('hong kong') || rl(c).includes('pan-') || rl(c).includes('eu')).length,
   };
   Object.entries(regionMap).forEach(([key, val]) => {
     const el = document.getElementById('crm-count-' + key);
