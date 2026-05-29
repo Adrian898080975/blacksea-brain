@@ -1,6 +1,6 @@
 {
   "version": "4.1-clean-layout-may29",
-  "lastUpdated": "2026-05-29T10:52:57.950Z",
+  "lastUpdated": "2026-05-29T10:53:58.255Z",
   "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
@@ -4660,8 +4660,8 @@
       "y": 220
     },
     "bm_frontier": {
-      "x": -15.73516845703125,
-      "y": -245.57156944274902
+      "x": 341,
+      "y": 9
     },
     "svc_otc_compliance": {
       "x": -353,
