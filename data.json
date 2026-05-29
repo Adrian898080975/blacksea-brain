@@ -1,14 +1,14 @@
 {
   "version": "4.0-full-overhaul-may29",
-  "lastUpdated": "2026-05-29T12:00:00Z",
-  "owner": "Adri\u00e1n P\u00e1le\u0161",
+  "lastUpdated": "2026-05-29T09:49:14.596Z",
+  "owner": "Adrián Páleš",
   "brand": {
     "id": "blacksea",
     "name": "Black Sea",
-    "tagline": "Where capital meets complexity \u00b7 Sovereign positioning",
+    "tagline": "Where capital meets complexity · Sovereign positioning",
     "established": "2023",
-    "founder": "Adri\u00e1n P\u00e1le\u0161",
-    "founderContext": "Fund Manager A27 IC SICAV (Malta, MiFID II, MFSA-regulated). MD A27 Management Services (Prague). Owner Black Sea SPV (Bratislava, OTC desk + crypto). CCO Opportunity Fund (Amsterdam). Built A27 from idea to Bloomberg ticker. Prior exits: Komoio IP sale, Ridelo patent. ADHD + dyslexia + dysgraphia + depression \u2014 channels purpose into building. No NDA / non-compete from A27 (lawsuit pending, expects dismissal at highest court). Working language: Slovak + English business terminology."
+    "founder": "Adrián Páleš",
+    "founderContext": "Fund Manager A27 IC SICAV (Malta, MiFID II, MFSA-regulated). MD A27 Management Services (Prague). Owner Black Sea SPV (Bratislava, OTC desk + crypto). CCO Opportunity Fund (Amsterdam). Built A27 from idea to Bloomberg ticker. Prior exits: Komoio IP sale, Ridelo patent. ADHD + dyslexia + dysgraphia + depression — channels purpose into building. No NDA / non-compete from A27 (lawsuit pending, expects dismissal at highest court). Working language: Slovak + English business terminology."
   },
   "businessModels": [
     {
@@ -17,7 +17,7 @@
       "type": "operational",
       "status": "active",
       "color": "#8B6F47",
-      "description": "Existing OTC trading desk with licence (Black Sea SPV s.r.o., Bratislava). Legacy crypto + corporate advisory work. Includes AIR Labs / Seena Houman active consulting mandate. Public web at blackseaspv.com currently uses 'sovereign necessity / where others hesitate' tone \u2014 pending decision: rewrite for legitimacy vs. keep for OTC positioning. Compliance constraint: any income on file must clear FinCEN/AMLD KYC, no dummy wallets.",
+      "description": "Existing OTC trading desk with licence (Black Sea SPV s.r.o., Bratislava). Legacy crypto + corporate advisory work. Includes AIR Labs / Seena Houman active consulting mandate. Public web at blackseaspv.com currently uses 'sovereign necessity / where others hesitate' tone — pending decision: rewrite for legitimacy vs. keep for OTC positioning. Compliance constraint: any income on file must clear FinCEN/AMLD KYC, no dummy wallets.",
       "revenue_y1_target_eur": 150000,
       "revenue_y1_realistic_eur": 80000,
       "x": 200,
@@ -33,14 +33,14 @@
       "type": "growth",
       "status": "attack_mode_launching",
       "color": "#2E8B6F",
-      "description": "EU defense + dual-use fund advisory. HIGHEST TICKET business model (\u20ac25-75K per fund structuring + \u20ac3.5-15K/mo retainers). Target client segments: (1) Emerging defense fund managers (1st-2nd time GPs), (2) European family offices reconsidering defense allocation, (3) Defense-tech startups raising Series A-B needing institutional readiness. Premium positioning on Adrian's MFSA + MiFID II + A27 SICAV (Bloomberg ticker) credibility. EU policy tailwind: Defense Equity Facility (\u20ac500M+), proposed \u20ac1B Fund-of-Funds, NATO 5% GDP commitment, EDF \u20ac1B in 2026. BD attack launching May 28: research targets, draft emails, Substack content, speaker applications. Previously contacted: Sunfish Partners (DE), Underline Ventures (RO), SmartCap (EE), EIF, NATO Innovation Fund.",
+      "description": "EU defense + dual-use fund advisory. HIGHEST TICKET business model (€25-75K per fund structuring + €3.5-15K/mo retainers). Target client segments: (1) Emerging defense fund managers (1st-2nd time GPs), (2) European family offices reconsidering defense allocation, (3) Defense-tech startups raising Series A-B needing institutional readiness. Premium positioning on Adrian's MFSA + MiFID II + A27 SICAV (Bloomberg ticker) credibility. EU policy tailwind: Defense Equity Facility (€500M+), proposed €1B Fund-of-Funds, NATO 5% GDP commitment, EDF €1B in 2026. BD attack launching May 28: research targets, draft emails, Substack content, speaker applications. Previously contacted: Sunfish Partners (DE), Underline Ventures (RO), SmartCap (EE), EIF, NATO Innovation Fund.",
       "revenue_y1_target_eur": 500000,
       "revenue_y1_realistic_eur": 250000,
       "x": 600,
       "y": 200,
       "anchorThesis": "Family offices and emerging managers reconsidering defense allocation post-2024. Capital exists, structuring expertise scarce.",
       "proofPoints": "A27 SICAV launch (MFSA full license), MiFID II implementation, Bloomberg ticker delivery, AIFMD/UCITS familiarity, OTC licensed operations.",
-      "flagshipService": "svc_fund_structuring (\u20ac25-75K, 60-day delivery)"
+      "flagshipService": "svc_fund_structuring (€25-75K, 60-day delivery)"
     },
     {
       "id": "bm_frontier",
@@ -54,7 +54,7 @@
       "x": 400,
       "y": 450,
       "urgencyWindow": "Turkey CMB authorization deadline June 30, 2026 (33 days). Nigeria CBN AML roadmap deadline June 10, 2026 (13 days). AIFC AFSA transition deadline July 2026. Kenya VASP Act licensing deadline November 2026. FATF June 2026 plenary imminent. Pakistan PVARA sandbox live April 2026. South Africa FSCA inspections ongoing (21/30 done).",
-      "investmentNeeded": "\u20ac15-40K Y1 compliance infrastructure (counsel retainer, World-Check or LexisNexis screening tools, Charles Russell Speechlys / Kingsley Napley / K2 Integrity)."
+      "investmentNeeded": "€15-40K Y1 compliance infrastructure (counsel retainer, World-Check or LexisNexis screening tools, Charles Russell Speechlys / Kingsley Napley / K2 Integrity)."
     }
   ],
   "services": [
@@ -74,7 +74,7 @@
       "price_min_eur": 35000,
       "price_max_eur": 75000,
       "duration_days": 60,
-      "description": "Flagship product \u2014 full fund setup blueprint pre defense/dual-use VC",
+      "description": "Flagship product — full fund setup blueprint pre defense/dual-use VC",
       "marketContext": "Big law charges EUR 100-300K for full fund formation. Boutique advisory at EUR 35-75K is correctly positioned as structuring/regulatory layer. Defense premium: +30-50%."
     },
     {
@@ -84,7 +84,7 @@
       "price_min_eur": 5000,
       "price_max_eur": 15000,
       "duration_days": 365,
-      "description": "Monthly retainer ako Chief Compliance Officer pre mal\u00e9-stredn\u00e9 fondy",
+      "description": "Monthly retainer ako Chief Compliance Officer pre malé-stredné fondy",
       "marketContext": "EUR 2-8K basic monitoring, EUR 5-15K full outsourced CCO. Floor raised from EUR 3.5K to EUR 5K."
     },
     {
@@ -313,8 +313,8 @@
       "probability": 15,
       "nextAction": "Send outreach email",
       "nextActionDate": "2026-05-19",
-      "notes": "P2P + exchange platform with Nigerian-Egyptian-Ghanaian operations. Series A funded (~$2-3M). Per ISA 2025 + ARIP framework, MUST apply for full SEC registration. Has NOT publicly applied. Urgent window. Ruth Iselema (CEO) is Nigerian female founder, ex-banking \u2014 likely values regulatory credibility from EU-side counsel. Cold email draft prepared in Execution_Day_1.docx. First angle: '\u20ac2-3K ARIP gap analysis to find what's missing in current structure before full app'.",
-      "firstEmailHook": "Subject: 'ARIP application gap \u2014 30 min audit'. Body angle: framing as low-commitment audit, not full retainer."
+      "notes": "P2P + exchange platform with Nigerian-Egyptian-Ghanaian operations. Series A funded (~$2-3M). Per ISA 2025 + ARIP framework, MUST apply for full SEC registration. Has NOT publicly applied. Urgent window. Ruth Iselema (CEO) is Nigerian female founder, ex-banking — likely values regulatory credibility from EU-side counsel. Cold email draft prepared in Execution_Day_1.docx. First angle: '€2-3K ARIP gap analysis to find what's missing in current structure before full app'.",
+      "firstEmailHook": "Subject: 'ARIP application gap — 30 min audit'. Body angle: framing as low-commitment audit, not full retainer."
     },
     {
       "id": "pr_yellowcard",
@@ -330,7 +330,7 @@
       "probability": 10,
       "nextAction": "Send compliance-to-compliance email",
       "nextActionDate": "2026-05-19",
-      "notes": "Series B+, 16 African countries (Nigeria, Ghana, Kenya, South Africa, Botswana, Cameroon, C\u00f4te d'Ivoire, etc.). Likely has primary counsel locally. Compliance Director Janet Bandele is the right entry \u2014 compliance-to-compliance professional respect. Angle: NOT 'replace your counsel' but 'EU/MiCA-side perspective on cross-jurisdictional structure'. Multi-jurisdiction angle = where we add value vs. local Nigerian firms.",
+      "notes": "Series B+, 16 African countries (Nigeria, Ghana, Kenya, South Africa, Botswana, Cameroon, Côte d'Ivoire, etc.). Likely has primary counsel locally. Compliance Director Janet Bandele is the right entry — compliance-to-compliance professional respect. Angle: NOT 'replace your counsel' but 'EU/MiCA-side perspective on cross-jurisdictional structure'. Multi-jurisdiction angle = where we add value vs. local Nigerian firms.",
       "firstEmailHook": "Subject: 'EU-side perspective on Yellow Card's multi-jurisdiction structure'."
     },
     {
@@ -348,7 +348,7 @@
       "nextAction": "Send post-AIP advisory email",
       "nextActionDate": "2026-05-19",
       "notes": "Initial SEC ARIP approval RECEIVED (one of 2 firms with provisional). Full registration in progress. Buchi Okoro (CEO) actively building. Different angle from Bitmama: NOT 'help you apply' but 'post-AIP ongoing advisory + scaling compliance ops as you go full retail'. Higher probability because they're actively in regulatory motion.",
-      "firstEmailHook": "Subject: 'Post-AIP advisory \u2014 congratulations on the provisional approval'."
+      "firstEmailHook": "Subject: 'Post-AIP advisory — congratulations on the provisional approval'."
     },
     {
       "id": "pr_pashapay",
@@ -364,7 +364,7 @@
       "probability": 8,
       "nextAction": "Research LinkedIn, find decision-maker",
       "nextActionDate": "2026-05-22",
-      "notes": "Pasha Holding IPO 2025 (dual listing Dubai/Istanbul) creates international compliance pressure on entire group. AzFina member. Need to find specific decision-maker via LinkedIn (compliance director or strategy head). Long-term positioning play \u2014 Azerbaijan has no crypto framework yet, so we're pre-positioning before regulator catches up. Adri\u00e1n has appetite to fly to Baku \u2014 'crypto, dual-use consulting plan v Azerbajd\u017eane dod\u00e1m aj zajtra a vyp\u00fdtam si raketu'.",
+      "notes": "Pasha Holding IPO 2025 (dual listing Dubai/Istanbul) creates international compliance pressure on entire group. AzFina member. Need to find specific decision-maker via LinkedIn (compliance director or strategy head). Long-term positioning play — Azerbaijan has no crypto framework yet, so we're pre-positioning before regulator catches up. Adrián has appetite to fly to Baku — 'crypto, dual-use consulting plan v Azerbajdžane dodám aj zajtra a vypýtam si raketu'.",
       "firstEmailHook": "Subject: 'EU-side regulatory positioning for Pasha Holding post-IPO'. Approach via Pasha Holding IR team first."
     },
     {
@@ -408,8 +408,8 @@
       "stage": "active_client",
       "warmth": "active",
       "primaryContact": "Seena Matthew Houman (UBO + Director, AIR Labs Investments Ltd BVI)",
-      "channel": "Direct \u00b7 Signal \u00b7 Telegram \u00b7 operations@airlabs.live",
-      "expected_value_eur": 25000,
+      "channel": "Direct · Signal · Telegram · operations@airlabs.live",
+      "expected_value_eur": 4000,
       "probability": 100,
       "nextAction": "Continue exchange onboarding (Binance, Bybit, Kraken, OKX) + sign updated Software Licensing Agreement",
       "nextActionDate": "2026-05-22",
@@ -423,21 +423,21 @@
         "adrianRole": "External Compliance Advisor + Licensed Operator (personal accounts approach Phase 1)",
         "adrianFee": "20% of net Trading Revenue (Licence Fee), AIR Labs receives 80%",
         "initialCapital": "USD 50,000 shareholder contribution",
-        "centralProblem": "US Nexus \u2014 Seena as US person UBO causes systematic rejection from regulated exchanges (Binance, BingX, Bitget, KuCoin, Gate.io, Airwallex all rejected Apr 2026). Mercury blocked (US EIN required, BVI not eligible).",
-        "currentSolution": "Phase 1 / Option A \u2014 Adri\u00e1n opens personal exchange accounts as Slovak national (zero US nexus). Seena gets full API + withdrawal rights via two legal agreements (Silent Partnership + Operational Agreement). Withdrawal whitelist protects Seena's funds technically + legally.",
-        "phase1Investment": "\u20ac800-1,400 (lawyer drafts + YubiKey + setup)",
-        "phase2Roadmap": "Month 6-18: Czech s.r.o. (\u20ac3,300-6,400) + Czech QIIF fund (\u20ac40k-70k legal + audit). Target AUM \u20ac500k-2M by Month 12.",
-        "phase3Roadmap": "Month 18-36: Tokenization (Estonia/Liechtenstein/EU MiCA) + scale to \u20ac5M+ AUM, possible Malta MFSA AIF.",
+        "centralProblem": "US Nexus — Seena as US person UBO causes systematic rejection from regulated exchanges (Binance, BingX, Bitget, KuCoin, Gate.io, Airwallex all rejected Apr 2026). Mercury blocked (US EIN required, BVI not eligible).",
+        "currentSolution": "Phase 1 / Option A — Adrián opens personal exchange accounts as Slovak national (zero US nexus). Seena gets full API + withdrawal rights via two legal agreements (Silent Partnership + Operational Agreement). Withdrawal whitelist protects Seena's funds technically + legally.",
+        "phase1Investment": "€800-1,400 (lawyer drafts + YubiKey + setup)",
+        "phase2Roadmap": "Month 6-18: Czech s.r.o. (€3,300-6,400) + Czech QIIF fund (€40k-70k legal + audit). Target AUM €500k-2M by Month 12.",
+        "phase3Roadmap": "Month 18-36: Tokenization (Estonia/Liechtenstein/EU MiCA) + scale to €5M+ AUM, possible Malta MFSA AIF.",
         "exchangesActive": "Bybit EU, Kraken (via Black Sea SPV), MEXC, WhiteBit, CoinW, Phemex, HTX",
         "exchangesInProgress": "Binance (started), OKX (started), Kraken (in review), Bybit (UBO submitted), BingX (entity verification 26 Apr), Gate.io (KYC pending), Bitget (passport needed), KuCoin (step 2)",
         "exchangesSkipped": "Coinbase Prime ($5K fee), Airwallex (rejected)",
-        "redLines": "Adri\u00e1n is NOT beneficial owner of Trading Capital. Trading Capital remains AIR Labs property at all times. Adri\u00e1n holds accounts in administrative capacity only. Per Software Licensing Agreement clause 3.1.",
-        "agentSystem": "AIR Labs has internal agent system: CEO (Seena), CTO (idle), Librarian (Notion organizer, running), Doctor (DevOps), CoderData/CoderStorage (engineering), CCO (Adri\u00e1n, building), CFO (active).",
+        "redLines": "Adrián is NOT beneficial owner of Trading Capital. Trading Capital remains AIR Labs property at all times. Adrián holds accounts in administrative capacity only. Per Software Licensing Agreement clause 3.1.",
+        "agentSystem": "AIR Labs has internal agent system: CEO (Seena), CTO (idle), Librarian (Notion organizer, running), Doctor (DevOps), CoderData/CoderStorage (engineering), CCO (Adrián, building), CFO (active).",
         "infraStatus": "Tesla server (data ingestion), Postgres server (trading DB), 13-exchange data pipeline in development. Trading API in development. Live strategy: NONE (pending exchange access).",
         "monthlyDeliverables": "Monthly settlement statement (gross revenue - exchange fees - losses = net) within 5 business days of month-end. Remittance to AIR Labs designated wallet/bank within same window.",
         "agreementStatus": "DRAFT v1.0 dated 3 May 2026. Slovak law governing. Slovak Arbitration Court (Bratislava) jurisdiction. PENDING SIGNATURE both parties.",
-        "complianceCerts": "Adri\u00e1n holds: ACAMS, CKYCA, MAR UK, EU Sanctions, AML/CTF",
-        "phase2Gaps": "Sales process (Seena), Marketing/outreach (Seena), Reporting template (Adri\u00e1n), Branding/deck (both), Performance tracking system (Seena), Whitepaper (Seena), Legal structure decision QIIF vs other (Adri\u00e1n)"
+        "complianceCerts": "Adrián holds: ACAMS, CKYCA, MAR UK, EU Sanctions, AML/CTF",
+        "phase2Gaps": "Sales process (Seena), Marketing/outreach (Seena), Reporting template (Adrián), Branding/deck (both), Performance tracking system (Seena), Whitepaper (Seena), Legal structure decision QIIF vs other (Adrián)"
       },
       "driveFolder": "https://drive.google.com/drive/folders/1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
       "retainerStatus": "$600/mo agreed, pending formal addendum",
@@ -448,14 +448,14 @@
       "name": "EU Family Office (target archetype)",
       "businessModel": "bm_defense",
       "country": "EU multi (DE/CH/AT/NL primary)",
-      "segment": "Family Office \u00b7 Defense allocation",
+      "segment": "Family Office · Defense allocation",
       "stage": "archetype",
       "warmth": "cold",
-      "primaryContact": "TBD \u2014 identify via Substack engagement",
-      "channel": "Substack article \u2192 LinkedIn / intro",
+      "primaryContact": "TBD — identify via Substack engagement",
+      "channel": "Substack article → LinkedIn / intro",
       "expected_value_eur": 60000,
       "probability": 8,
-      "nextAction": "Publish first Substack article \u2014 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'",
+      "nextAction": "Publish first Substack article — 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'",
       "nextActionDate": "2026-05-25",
       "notes": "TARGET ARCHETYPE - not a specific company. Strategy: Substack thought leadership -> inbound from family office CIOs. Defense Capital Advisory primary channel."
     },
@@ -464,10 +464,10 @@
       "name": "Defense-tech Startup (Series A target)",
       "businessModel": "bm_defense",
       "country": "EU (DE/FR/PL/NL primary)",
-      "segment": "Defense-tech \u00b7 raising Series A-B",
+      "segment": "Defense-tech · raising Series A-B",
       "stage": "archetype",
       "warmth": "cold",
-      "primaryContact": "TBD \u2014 track via EDF / Defense Equity Facility recipients",
+      "primaryContact": "TBD — track via EDF / Defense Equity Facility recipients",
       "channel": "EDF recipients list + Bruegel/Dechert reports",
       "expected_value_eur": 40000,
       "probability": 10,
@@ -480,14 +480,14 @@
       "name": "AIFC DASP (transition target)",
       "businessModel": "bm_frontier",
       "country": "Kazakhstan (AIFC, Astana)",
-      "segment": "Digital Asset Service Provider \u00b7 transitioning to amended framework",
+      "segment": "Digital Asset Service Provider · transitioning to amended framework",
       "stage": "archetype",
       "warmth": "cold",
-      "primaryContact": "TBD \u2014 research publicreg.myafsa.com",
+      "primaryContact": "TBD — research publicreg.myafsa.com",
       "channel": "Cold email after register research",
       "expected_value_eur": 12000,
       "probability": 15,
-      "nextAction": "AIFC public register research \u2014 identify top 5 emerging DASPs at risk under amendments",
+      "nextAction": "AIFC public register research — identify top 5 emerging DASPs at risk under amendments",
       "nextActionDate": "2026-05-20",
       "notes": "TARGET ARCHETYPE - 30 DASPs in AIFC need to adapt to new frameworks. Volume play. Specific contacts in AIFC follow-up list."
     },
@@ -496,16 +496,16 @@
       "name": "AIR Labs FFF round (Friends/Family/Fools)",
       "businessModel": "bm_otc",
       "country": "Mixed (US/EU)",
-      "segment": "Early-stage LP \u00b7 AIR Labs Phase 2 fundraise",
+      "segment": "Early-stage LP · AIR Labs Phase 2 fundraise",
       "stage": "lead",
       "warmth": "warm",
-      "primaryContact": "Seena to lead \u2014 sourced from his network",
+      "primaryContact": "Seena to lead — sourced from his network",
       "channel": "Seena's existing network",
       "expected_value_eur": 200000,
       "probability": 25,
       "nextAction": "Need to lock: pitch deck, monthly reporting template, 6+ month track record",
       "nextActionDate": "2026-09-01",
-      "notes": "Phase 2 fundraise target: \u20ac200k-500k FFF by Month 6-12. Requires QIIF fund formed in CZ. Adri\u00e1n's revenue: 1.5% mgmt fee + 20% perf fee carry. At \u20ac500k AUM with 30% return: ~\u20ac29.5k/year. At \u20ac2M AUM: ~\u20ac118k/year."
+      "notes": "Phase 2 fundraise target: €200k-500k FFF by Month 6-12. Requires QIIF fund formed in CZ. Adrián's revenue: 1.5% mgmt fee + 20% perf fee carry. At €500k AUM with 30% return: ~€29.5k/year. At €2M AUM: ~€118k/year."
     },
     {
       "id": "pr_lockton",
@@ -543,7 +543,7 @@
       "warmth": "cold",
       "probability": 25,
       "primaryContact": "finbrok@umail.uz",
-      "notes": "AUZ token issued April 21 2026 \u2014 freshest. Email sent.",
+      "notes": "AUZ token issued April 21 2026 — freshest. Email sent.",
       "value": 12000
     },
     {
@@ -556,7 +556,7 @@
       "warmth": "cold",
       "probability": 15,
       "primaryContact": "info@napp.uz",
-      "notes": "Regulator outreach \u2014 credibility play. Email sent.",
+      "notes": "Regulator outreach — credibility play. Email sent.",
       "value": 0
     },
     {
@@ -665,7 +665,7 @@
       "warmth": "warm",
       "probability": 30,
       "primaryContact": "Telegram: Black Sea <> OKX (Insti)",
-      "notes": "Direct Telegram channel \u2014 Qing Rui, Ryan Dawson, Simon OKG. Warm.",
+      "notes": "Direct Telegram channel — Qing Rui, Ryan Dawson, Simon OKG. Warm.",
       "value": 75000
     },
     {
@@ -2199,40 +2199,40 @@
   "tasks": [
     {
       "id": "task_credentials_pdf",
-      "title": "Pripravi\u0165 1-page credentials PDF",
+      "title": "Pripraviť 1-page credentials PDF",
       "priority": "P1",
       "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "1-2 hod",
       "dueDate": "2026-05-19",
-      "description": "Black Sea credentials one-pager pre cold outreach. Obsah hotov\u00fd v Execution Day 1 dokumente.",
+      "description": "Black Sea credentials one-pager pre cold outreach. Obsah hotový v Execution Day 1 dokumente.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_nigeria_emails",
-      "title": "Odosla\u0165 3 Nigerian outreach emails",
+      "title": "Odoslať 3 Nigerian outreach emails",
       "priority": "P1",
       "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-19",
-      "description": "Bitmama (Ruth Iselema), Yellow Card (Janet Bandele), Quidax (Buchi Okoro). Drafty hotov\u00e9.",
+      "description": "Bitmama (Ruth Iselema), Yellow Card (Janet Bandele), Quidax (Buchi Okoro). Drafty hotové.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_aifc_research",
-      "title": "AIFC public register research \u2014 5 targets",
+      "title": "AIFC public register research — 5 targets",
       "priority": "P1",
       "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "45 min",
       "dueDate": "2026-05-20",
-      "description": "publicreg.myafsa.com \u2014 identifikova\u0165 top 5 emerging Authorised Firms / DASPs",
+      "description": "publicreg.myafsa.com — identifikovať top 5 emerging Authorised Firms / DASPs",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_aifc_emails",
-      "title": "Odosla\u0165 5 AIFC outreach emails",
+      "title": "Odoslať 5 AIFC outreach emails",
       "priority": "P1",
       "status": "done",
       "businessModel": "bm_frontier",
@@ -2243,18 +2243,18 @@
     },
     {
       "id": "task_az_research",
-      "title": "AZ research \u2014 LinkedIn na PashaPay, GoldenPay",
+      "title": "AZ research — LinkedIn na PashaPay, GoldenPay",
       "priority": "P3",
       "status": "blocked",
       "businessModel": "bm_frontier",
       "estimatedTime": "30 min",
       "dueDate": "2026-05-22",
-      "description": "N\u00e1js\u0165 konkr\u00e9tnych decision-makers",
+      "description": "Nájsť konkrétnych decision-makers",
       "notes": "LinkedIn not being used. Deprioritized until Baku trip planning activates."
     },
     {
       "id": "task_az_emails",
-      "title": "Odosla\u0165 AZ outreach emails",
+      "title": "Odoslať AZ outreach emails",
       "priority": "P2",
       "status": "done",
       "businessModel": "bm_frontier",
@@ -2265,62 +2265,62 @@
     },
     {
       "id": "task_substack",
-      "title": "Substack zalo\u017ei\u0165 + prv\u00fd article draft",
+      "title": "Substack založiť + prvý article draft",
       "priority": "P2",
       "status": "done",
       "businessModel": "bm_defense",
       "estimatedTime": "2-3 hod",
       "dueDate": "2026-05-25",
-      "description": "Topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. 1500-2000 words. Anchor: NATO 5% GDP commitment + Defense Equity Facility \u20ac500M + proposed \u20ac1B Fund-of-Funds Q1 2026 + family office allocation gaps. Soft CTA: 'If you're navigating this allocation shift, reach out \u2014 we structure these mandates from the LP side.' Goal: 2-3 inbound DMs/emails in first 30 days.",
+      "description": "Topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. 1500-2000 words. Anchor: NATO 5% GDP commitment + Defense Equity Facility €500M + proposed €1B Fund-of-Funds Q1 2026 + family office allocation gaps. Soft CTA: 'If you're navigating this allocation shift, reach out — we structure these mandates from the LP side.' Goal: 2-3 inbound DMs/emails in first 30 days.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_warm_network",
-      "title": "Mapova\u0165 warm network \u2014 zoznam 30-50 \u013eud\u00ed",
+      "title": "Mapovať warm network — zoznam 30-50 ľudí",
       "priority": "P1",
       "status": "todo",
       "businessModel": "bm_defense",
       "estimatedTime": "2 hod",
       "dueDate": "2026-06-07",
-      "description": "Z mailov/Telegramu/kontaktov \u2014 identifik\u00e1cia Tier A/B/C. P\u00f4vodn\u00fd \u00faloha z Master Strategic Document.",
+      "description": "Z mailov/Telegramu/kontaktov — identifikácia Tier A/B/C. Pôvodný úloha z Master Strategic Document.",
       "notes": "Rescheduled. Critical for Defense Capital Advisory BD. Adrian needs to export contacts."
     },
     {
       "id": "task_web_rewrite",
-      "title": "Black Sea SPV web \u2014 copy review",
+      "title": "Black Sea SPV web — copy review",
       "priority": "P2",
       "status": "done",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-25",
-      "description": "Current web has 'sovereign necessity / where others hesitate' tone \u2014 works for OTC positioning, problematic for Defense Capital Advisory institutional credibility. Decision tree: (A) keep current for OTC, build separate brand.blackseaspv.com positioning (done \u2014 brain is there); (B) rewrite entirely for legitimacy; (C) two-page split \u2014 front page neutral, /otc page keeps current tone. Default lean: C.",
+      "description": "Current web has 'sovereign necessity / where others hesitate' tone — works for OTC positioning, problematic for Defense Capital Advisory institutional credibility. Decision tree: (A) keep current for OTC, build separate brand.blackseaspv.com positioning (done — brain is there); (B) rewrite entirely for legitimacy; (C) two-page split — front page neutral, /otc page keeps current tone. Default lean: C.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_compliance_partner",
-      "title": "Compliance counsel retainer \u2014 research firms",
+      "title": "Compliance counsel retainer — research firms",
       "priority": "P2",
       "status": "todo",
       "businessModel": "bm_frontier",
       "estimatedTime": "1 hod",
       "dueDate": "2026-06-10",
-      "description": "Three firms to quote for \u20ac5-15K/year retainer: Charles Russell Speechlys (London \u2014 financial services + private wealth, premium), Kingsley Napley (London \u2014 financial crime + regulatory enforcement, mid-tier with depth), K2 Integrity (New York/London \u2014 investigations + sanctions advisory, best for due diligence). Email each: 'Looking for retainer for sanctions/PEP review on cross-border crypto + fund advisory engagements, target client base in MENA/CIS/West Africa.'",
+      "description": "Three firms to quote for €5-15K/year retainer: Charles Russell Speechlys (London — financial services + private wealth, premium), Kingsley Napley (London — financial crime + regulatory enforcement, mid-tier with depth), K2 Integrity (New York/London — investigations + sanctions advisory, best for due diligence). Email each: 'Looking for retainer for sanctions/PEP review on cross-border crypto + fund advisory engagements, target client base in MENA/CIS/West Africa.'",
       "notes": "Rescheduled. Prioritize after first Frontier Markets payment lands."
     },
     {
       "id": "task_credentials_onepager_design",
-      "title": "Black Sea credentials one-pager \u2014 DESIGN + COPY",
+      "title": "Black Sea credentials one-pager — DESIGN + COPY",
       "priority": "P1",
       "status": "done",
       "businessModel": "bm_frontier",
       "estimatedTime": "2 hod",
       "dueDate": "2026-05-19",
-      "description": "Content already in Execution_Day_1.docx. Format: A4 PDF, Black Sea brand manual aesthetic (Frost/Steel/Signal Green/Alert palette, Archivo + Inter + JetBrains Mono). Sections: (1) Who we are, (2) Adri\u00e1n credentials (MFSA, MiFID II, Bloomberg ticker, etc.), (3) Service modules, (4) Engagement model, (5) Contact. Use Horizon Mark + BLACK\u00b7SEA wordmark per brand manual.",
+      "description": "Content already in Execution_Day_1.docx. Format: A4 PDF, Black Sea brand manual aesthetic (Frost/Steel/Signal Green/Alert palette, Archivo + Inter + JetBrains Mono). Sections: (1) Who we are, (2) Adrián credentials (MFSA, MiFID II, Bloomberg ticker, etc.), (3) Service modules, (4) Engagement model, (5) Contact. Use Horizon Mark + BLACK·SEA wordmark per brand manual.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_substack_setup",
-      "title": "Substack setup \u2014 domain blackseapublication.substack.com (or similar)",
+      "title": "Substack setup — domain blackseapublication.substack.com (or similar)",
       "priority": "P2",
       "status": "done",
       "businessModel": "bm_defense",
@@ -2337,7 +2337,7 @@
       "businessModel": "bm_frontier",
       "estimatedTime": "varies",
       "dueDate": "2026-07-01",
-      "description": "Adri\u00e1n's quote: 'dod\u00e1m aj zajtra a vyp\u00fdtam si raketu'. AZ in-person carries weight. Target: chain 5-7 meetings in single 4-day Baku visit. Pre-req: at least 2 confirmed meetings before booking flights. Visa requirements + appropriate cover story for visit purpose."
+      "description": "Adrián's quote: 'dodám aj zajtra a vypýtam si raketu'. AZ in-person carries weight. Target: chain 5-7 meetings in single 4-day Baku visit. Pre-req: at least 2 confirmed meetings before booking flights. Visa requirements + appropriate cover story for visit purpose."
     },
     {
       "id": "task_dataroom_setup",
@@ -2347,7 +2347,7 @@
       "businessModel": "bm_defense",
       "estimatedTime": "3 hod",
       "dueDate": "2026-05-30",
-      "description": "When prospects ask 'tell me about you' beyond credentials one-pager \u2014 need actual data room: licensing docs (MFSA, A27), prior engagement testimonials (anonymized if needed), case study from A27 launch, sample compliance work product. Use existing Google Drive or set up dedicated DocSend-style access.",
+      "description": "When prospects ask 'tell me about you' beyond credentials one-pager — need actual data room: licensing docs (MFSA, A27), prior engagement testimonials (anonymized if needed), case study from A27 launch, sample compliance work product. Use existing Google Drive or set up dedicated DocSend-style access.",
       "notes": "Important for both Defense and Frontier. Google Drive setup exists. Need to add: credentials PDF, case study, sample work product."
     },
     {
@@ -2363,24 +2363,24 @@
     },
     {
       "id": "task_warm_network_export",
-      "title": "Warm network \u2014 export ALL emails / Telegram / LinkedIn contacts",
+      "title": "Warm network — export ALL emails / Telegram / LinkedIn contacts",
       "priority": "P1",
       "status": "todo",
       "businessModel": "bm_defense",
       "estimatedTime": "1 hod",
       "dueDate": "2026-06-07",
-      "description": "Extracted from: Gmail contacts, Telegram chat list, A27 client database (only what's permissible post-departure), Malta/Prague/Amsterdam connections. Goal: list of 30-50 names. Tier A (warm, can DM directly today), Tier B (warm but cold for a year \u2014 needs re-engagement), Tier C (cold but plausibly receptive).",
+      "description": "Extracted from: Gmail contacts, Telegram chat list, A27 client database (only what's permissible post-departure), Malta/Prague/Amsterdam connections. Goal: list of 30-50 names. Tier A (warm, can DM directly today), Tier B (warm but cold for a year — needs re-engagement), Tier C (cold but plausibly receptive).",
       "notes": "Rescheduled. Merge with warm_network task. Adrian needs to do this manually."
     },
     {
       "id": "task_lawsuit_status_review",
-      "title": "A27 lawsuit \u2014 status review with counsel",
+      "title": "A27 lawsuit — status review with counsel",
       "priority": "P3",
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-07-01",
-      "description": "Highest court ruling lets case be dismissed. If not dismissed, can appeal and case drags for years. Mostly affecting positioning (Adri\u00e1n references former role freely as no NDA / non-compete). Periodic status check with counsel \u2014 every 60 days minimum.",
+      "description": "Highest court ruling lets case be dismissed. If not dismissed, can appeal and case drags for years. Mostly affecting positioning (Adrián references former role freely as no NDA / non-compete). Periodic status check with counsel — every 60 days minimum.",
       "notes": "Periodic review. Next check Q3 2026."
     },
     {
@@ -2391,18 +2391,18 @@
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-05-19",
-      "description": "v1.2 deployed. Cloudflare Access policy created. PAT generated. data.json sync verified. Push tested with auto-sync. Currently sync was failing due to wrong setting \u2014 fixed by Adri\u00e1n.",
+      "description": "v1.2 deployed. Cloudflare Access policy created. PAT generated. data.json sync verified. Push tested with auto-sync. Currently sync was failing due to wrong setting — fixed by Adrián.",
       "completedAt": "2026-05-22T07:12:48.630949+00:00"
     },
     {
       "id": "task_seena_agreement_sign",
-      "title": "Sign Software Licensing & Operational Agreement (AIR Labs / Adri\u00e1n)",
+      "title": "Sign Software Licensing & Operational Agreement (AIR Labs / Adrián)",
       "priority": "P1",
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-06-05",
-      "description": "DRAFT v1.0 dated 3 May 2026. Slovak law. Bratislava arbitration. CRITICAL before further capital deployment. Both signatures needed. Schedule C (wallet addresses) needs Seena to fill BTC/ERC-20/TRC-20 addresses. Schedule A (exchange accounts) \u2014 confirm current status. Suggest review by qualified SK lawyer before signing.",
+      "description": "DRAFT v1.0 dated 3 May 2026. Slovak law. Bratislava arbitration. CRITICAL before further capital deployment. Both signatures needed. Schedule C (wallet addresses) needs Seena to fill BTC/ERC-20/TRC-20 addresses. Schedule A (exchange accounts) — confirm current status. Suggest review by qualified SK lawyer before signing.",
       "notes": "OVERDUE. DRAFT v1.0 dated 3 May 2026. Pending signature. CRITICAL before capital deployment."
     },
     {
@@ -2413,7 +2413,7 @@
       "businessModel": "bm_otc",
       "estimatedTime": "2 hod",
       "dueDate": "2026-06-05",
-      "description": "Per Phase 1 Action Plan. ~\u20ac60 YubiKey. Authy backup 2FA. Per agreement Part V \u2014 mandatory security. Then withdrawal whitelist Seena's wallet addresses on all accounts.",
+      "description": "Per Phase 1 Action Plan. ~€60 YubiKey. Authy backup 2FA. Per agreement Part V — mandatory security. Then withdrawal whitelist Seena's wallet addresses on all accounts.",
       "notes": "OVERDUE. Blocked by agreement signing. Do immediately after signing."
     },
     {
@@ -2424,7 +2424,7 @@
       "businessModel": "bm_otc",
       "estimatedTime": "15 min",
       "dueDate": "2026-06-05",
-      "description": "Required for Schedule C of agreement + technical whitelist setup on each exchange. 24-48h exchange-enforced delay after each new whitelist add \u2014 needs to happen BEFORE any capital deployment.",
+      "description": "Required for Schedule C of agreement + technical whitelist setup on each exchange. 24-48h exchange-enforced delay after each new whitelist add — needs to happen BEFORE any capital deployment.",
       "notes": "OVERDUE. Waiting on Seena to provide addresses."
     },
     {
@@ -2435,7 +2435,7 @@
       "businessModel": "bm_otc",
       "estimatedTime": "1 hod",
       "dueDate": "2026-06-05",
-      "description": "Per agreement clause 3.2 \u2014 within 48h of opening each exchange account. Seena gets full trading + withdrawal permissions, IP-whitelisted to his device(s). Separate from Adri\u00e1n's admin access.",
+      "description": "Per agreement clause 3.2 — within 48h of opening each exchange account. Seena gets full trading + withdrawal permissions, IP-whitelisted to his device(s). Separate from Adrián's admin access.",
       "notes": "OVERDUE. Do after whitelist setup."
     },
     {
@@ -2457,17 +2457,17 @@
       "businessModel": "bm_otc",
       "estimatedTime": "3 hod",
       "dueDate": "2026-06-05",
-      "description": "Per agreement Schedule D template + Part IV.2. Gross revenue \u2192 exchange fees \u2192 trading losses \u2192 net revenue \u2192 80/20 split \u2192 remittance log. Should auto-pull from exchange CSV exports if possible. First monthly settlement due 5 business days after first month of live trading."
+      "description": "Per agreement Schedule D template + Part IV.2. Gross revenue → exchange fees → trading losses → net revenue → 80/20 split → remittance log. Should auto-pull from exchange CSV exports if possible. First monthly settlement due 5 business days after first month of live trading."
     },
     {
       "id": "task_airlabs_qiif_research",
-      "title": "Czech QIIF fund formation \u2014 preliminary research",
+      "title": "Czech QIIF fund formation — preliminary research",
       "priority": "P3",
       "status": "todo",
       "businessModel": "bm_otc",
       "estimatedTime": "4 hod",
       "dueDate": "2026-07-01",
-      "description": "Phase 2 prep. Czech QIIF (Fond kvalifikovan\u00fdch investor\u016f) \u2014 Z\u00e1kon \u010d. 240/2013 Sb. Max 20 investors, min CZK 1M per LP (~\u20ac40k). Light \u010cNB regulation. \u20ac10-19k legal setup + \u20ac500-1k \u010cNB registration. Triggered when: 6+ month track record + first interested LPs. Decision timing: Month 6 (Oct/Nov 2026)."
+      "description": "Phase 2 prep. Czech QIIF (Fond kvalifikovaných investorů) — Zákon č. 240/2013 Sb. Max 20 investors, min CZK 1M per LP (~€40k). Light ČNB regulation. €10-19k legal setup + €500-1k ČNB registration. Triggered when: 6+ month track record + first interested LPs. Decision timing: Month 6 (Oct/Nov 2026)."
     },
     {
       "id": "task_airlabs_track_record_start",
@@ -2477,11 +2477,11 @@
       "businessModel": "bm_otc",
       "estimatedTime": "ongoing",
       "dueDate": "2026-05-31",
-      "description": "Per Phase 2 timeline. Monthly reports from May 2026. Target metrics: Sharpe >1.5 by Month 6, Max DD <20% by Month 12, Win rate >55%. Mandatory for any external fundraise. Tools: exchange CSV exports \u2192 reporting system Seena building."
+      "description": "Per Phase 2 timeline. Monthly reports from May 2026. Target metrics: Sharpe >1.5 by Month 6, Max DD <20% by Month 12, Win rate >55%. Mandatory for any external fundraise. Tools: exchange CSV exports → reporting system Seena building."
     },
     {
       "id": "task_bulk_batches",
-      "title": "Bulk email script \u2014 daily 30 batch (291 remaining)",
+      "title": "Bulk email script — daily 30 batch (291 remaining)",
       "status": "done",
       "priority": "high",
       "businessModel": "bm_frontier",
@@ -2489,7 +2489,7 @@
     },
     {
       "id": "task_substack_4",
-      "title": "Substack article #4 \u2014 AFSA deadline urgency",
+      "title": "Substack article #4 — AFSA deadline urgency",
       "status": "todo",
       "priority": "high",
       "businessModel": "bm_frontier",
@@ -2505,7 +2505,7 @@
     },
     {
       "id": "task_okx_telegram",
-      "title": "OKX Institutional \u2014 follow up via Telegram channel",
+      "title": "OKX Institutional — follow up via Telegram channel",
       "status": "in_progress",
       "priority": "high",
       "businessModel": "bm_otc",
@@ -2513,7 +2513,7 @@
     },
     {
       "id": "task_kraken_mats",
-      "title": "Kraken \u2014 reconnect with Mats as Black Sea founder",
+      "title": "Kraken — reconnect with Mats as Black Sea founder",
       "status": "in_progress",
       "priority": "high",
       "businessModel": "bm_otc",
@@ -2521,7 +2521,7 @@
     },
     {
       "id": "task_binance_link",
-      "title": "Binance Link \u2014 partnership email sent, await reply",
+      "title": "Binance Link — partnership email sent, await reply",
       "status": "in_progress",
       "priority": "medium",
       "businessModel": "bm_otc",
@@ -2529,7 +2529,7 @@
     },
     {
       "id": "task_speaker_proposals",
-      "title": "Speaker proposals \u2014 Astana Finance Days, Africa Fintech Summit, Malta",
+      "title": "Speaker proposals — Astana Finance Days, Africa Fintech Summit, Malta",
       "status": "todo",
       "priority": "medium",
       "businessModel": "bm_frontier",
@@ -2537,7 +2537,7 @@
     },
     {
       "id": "task_new_markets",
-      "title": "Source contacts \u2014 Kyrgyzstan, Georgia, more UAE/ADGM",
+      "title": "Source contacts — Kyrgyzstan, Georgia, more UAE/ADGM",
       "status": "todo",
       "priority": "high",
       "businessModel": "bm_frontier",
@@ -3197,7 +3197,7 @@
       "type": "strategy",
       "businessModel": "bm_defense",
       "filename": "Black_Sea_Defense_Advisory_Playbook.docx",
-      "description": "Verzia 1.0 \u2014 strategick\u00fd playbook pre defense fund advisory",
+      "description": "Verzia 1.0 — strategický playbook pre defense fund advisory",
       "created": "2026-05-18"
     },
     {
@@ -3206,7 +3206,7 @@
       "type": "strategy",
       "businessModel": "bm_defense",
       "filename": "Black_Sea_HQ_Master_Strategic_Document.docx",
-      "description": "Verzia 2.0 \u2014 Notion blueprint + financial model + strategic deep-dive + operational playbook + 90-day Gantt",
+      "description": "Verzia 2.0 — Notion blueprint + financial model + strategic deep-dive + operational playbook + 90-day Gantt",
       "created": "2026-05-18",
       "driveUrl": "https://docs.google.com/document/d/13Lq6OFRkTpHIUgZdltDz-MPH5wPM-oQ-WNsDxrrG0Q4"
     },
@@ -3235,7 +3235,7 @@
       "type": "execution",
       "businessModel": "bm_frontier",
       "filename": "Execution_Day_1.docx",
-      "description": "Komu zajtra p\u00ed\u0161e\u0161, pre\u010do, \u010do posiela\u0161. 10 prospects, pripraven\u00e9 emaily, t\u00fd\u017ede\u0148 pl\u00e1n",
+      "description": "Komu zajtra píšeš, prečo, čo posielaš. 10 prospects, pripravené emaily, týždeň plán",
       "created": "2026-05-18"
     },
     {
@@ -3350,183 +3350,183 @@
   "insights": [
     {
       "id": "ins_brain_show_whole_map_doctrine",
-      "title": "Brain operating doctrine \u2014 show the WHOLE map",
+      "title": "Brain operating doctrine — show the WHOLE map",
       "date": "2026-05-18",
-      "content": "Operating principle for brain.blackseaspv.com (and for me when working with Adri\u00e1n): never reduce him to a checklist. He explicitly stated: 'ja funugjem na vizualz\u00e1cii ve\u013ek\u00fdch cielov a pl\u00e1nov... v\u017edy som sn\u00edval a chcel a chcem aj dnes... aj ked moja hlava m\u00e1 v sebe \u010dasto ve\u013ek\u00e9 temno, smuto a \u010dernotu'. PRACTICAL IMPLICATIONS: (1) Map view (\u00a701) is PRIMARY \u2014 it shows the whole multi-business system at once; (2) Today view (\u00a700) is for dopamine ticks but NEVER becomes the default \u2014 that would collapse the picture; (3) When proposing new work, frame it within the 3-business architecture first, THEN drill to tactical tasks; (4) Insights view (\u00a706) is where the THINKING lives \u2014 must keep growing; (5) Inbox (\u00a707) catches half-thoughts so they don't get lost in the dark periods; (6) Sticky notes on map = floating thoughts on Adri\u00e1n's mental canvas, NEVER auto-organize them away."
+      "content": "Operating principle for brain.blackseaspv.com (and for me when working with Adrián): never reduce him to a checklist. He explicitly stated: 'ja funugjem na vizualzácii veľkých cielov a plánov... vždy som sníval a chcel a chcem aj dnes... aj ked moja hlava má v sebe často veľké temno, smuto a černotu'. PRACTICAL IMPLICATIONS: (1) Map view (§01) is PRIMARY — it shows the whole multi-business system at once; (2) Today view (§00) is for dopamine ticks but NEVER becomes the default — that would collapse the picture; (3) When proposing new work, frame it within the 3-business architecture first, THEN drill to tactical tasks; (4) Insights view (§06) is where the THINKING lives — must keep growing; (5) Inbox (§07) catches half-thoughts so they don't get lost in the dark periods; (6) Sticky notes on map = floating thoughts on Adrián's mental canvas, NEVER auto-organize them away."
     },
     {
       "id": "ins_complex_clients_comfort",
-      "title": "Comfort with complex environment clients \u2014 operational stance",
+      "title": "Comfort with complex environment clients — operational stance",
       "date": "2026-05-11",
-      "content": "Direct quote: 'u\u017e som jednal s r\u00f4znymi \u013eu\u010fmi a nem\u00e1m s t\u00fdm probl\u00e9m'. Adri\u00e1n has dealt with non-standard clients before through A27 + Black Sea SPV OTC work. This is not na\u00efvet\u00e9 but earned position \u2014 he knows where the compliance lines are because he's the one who built them. Implication for client triage: 'complex' is fine as a client attribute IF deal hits \u22652 of military/finance/compliance AND clears red lines (no sanctioned persons / shell opacity / UBO nominee evasion / sanctions evasion facilitation / dummy wallets). Adri\u00e1n is NOT looking for 'easy' clients \u2014 he's looking for clients where his expertise is the differentiating value. A 'difficult' client at Bitmama or PashaPay scale is exactly the kind of work that justifies \u20ac25-75K engagements."
+      "content": "Direct quote: 'už som jednal s rôznymi ľuďmi a nemám s tým problém'. Adrián has dealt with non-standard clients before through A27 + Black Sea SPV OTC work. This is not naïveté but earned position — he knows where the compliance lines are because he's the one who built them. Implication for client triage: 'complex' is fine as a client attribute IF deal hits ≥2 of military/finance/compliance AND clears red lines (no sanctioned persons / shell opacity / UBO nominee evasion / sanctions evasion facilitation / dummy wallets). Adrián is NOT looking for 'easy' clients — he's looking for clients where his expertise is the differentiating value. A 'difficult' client at Bitmama or PashaPay scale is exactly the kind of work that justifies €25-75K engagements."
     },
     {
       "id": "ins_public_procurement_nuance",
-      "title": "Public procurement & 'War Dogs' archetype \u2014 nuanced read",
+      "title": "Public procurement & 'War Dogs' archetype — nuanced read",
       "date": "2026-05-11",
-      "content": "Adri\u00e1n's actual position (not War Dogs as cautionary tale): public procurement \u2014 Slovak VO, US gov contracts, Dubai \u2014 represents a genuine pattern where one tender has zero applicants because nobody understands compliance + dual-use + military overlap. He's not naive about War Dogs ('to bol pr\u00faser') \u2014 uses it as ARCHETYPE for the pattern of finding complex scaled deals with few competitors. Translation for Black Sea: NOT actual arms procurement (compliance kills us). YES the pattern applied to: cross-border crypto compliance under emerging frameworks (Nigeria ARIP, AIFC), defense-fund advisory where most consultancies have no fund-launch credibility, AZ pre-licensing positioning. Same underlying instinct (find complex, scaled, low-competition deal flow) at radically lower criminal risk."
+      "content": "Adrián's actual position (not War Dogs as cautionary tale): public procurement — Slovak VO, US gov contracts, Dubai — represents a genuine pattern where one tender has zero applicants because nobody understands compliance + dual-use + military overlap. He's not naive about War Dogs ('to bol prúser') — uses it as ARCHETYPE for the pattern of finding complex scaled deals with few competitors. Translation for Black Sea: NOT actual arms procurement (compliance kills us). YES the pattern applied to: cross-border crypto compliance under emerging frameworks (Nigeria ARIP, AIFC), defense-fund advisory where most consultancies have no fund-launch credibility, AZ pre-licensing positioning. Same underlying instinct (find complex, scaled, low-competition deal flow) at radically lower criminal risk."
     },
     {
       "id": "ins_multi_role_positioning",
       "title": "Multi-role positioning across entities",
       "date": "2026-05-18",
-      "content": "Active operational roles: Fund Manager A27 IC SICAV (Malta, separating), Managing Director A27 Management Services (Prague), Owner Black Sea SPV (Bratislava), CCO Opportunity Fund (Amsterdam), External CCO + Operator AIR Labs (BVI/US Seena). FIVE distinct hats across 4 jurisdictions. Each one is verifiable and clean. This is what credibility looks like for a defense fund advisory pitch \u2014 not a deck about 'experience' but a registry trail across MFSA/AFM/CFR/BVI. Use sparingly in outreach (no resume dump) but make available in data room. Implication: A27 separation logistics must close cleanly Q3 2026 \u2014 current dual MD+Fund Manager status is the messiest variable."
+      "content": "Active operational roles: Fund Manager A27 IC SICAV (Malta, separating), Managing Director A27 Management Services (Prague), Owner Black Sea SPV (Bratislava), CCO Opportunity Fund (Amsterdam), External CCO + Operator AIR Labs (BVI/US Seena). FIVE distinct hats across 4 jurisdictions. Each one is verifiable and clean. This is what credibility looks like for a defense fund advisory pitch — not a deck about 'experience' but a registry trail across MFSA/AFM/CFR/BVI. Use sparingly in outreach (no resume dump) but make available in data room. Implication: A27 separation logistics must close cleanly Q3 2026 — current dual MD+Fund Manager status is the messiest variable."
     },
     {
       "id": "ins_attraction_zones",
-      "title": "Adri\u00e1n's attraction zones (what energizes vs. what drains)",
+      "title": "Adrián's attraction zones (what energizes vs. what drains)",
       "date": "2026-05-11",
-      "content": "Quote: 'laka ma aj svery military/finance/ complaice'. These are the three zones where Adri\u00e1n naturally lights up. Defense Capital Advisory = military \u00d7 finance \u00d7 compliance \u2014 perfect overlap = bm_defense exists. Frontier Markets = finance \u00d7 compliance \u00d7 complex jurisdiction = bm_frontier exists. Black Sea SPV OTC = finance \u00d7 crypto compliance = bm_otc. Implication for picking deals: when a prospect inquiry comes in, primary filter is 'does this hit at least 2 of military/finance/compliance?' If no \u2014 politely decline or refer out. If yes \u2014 accept and let purpose vs. depression dynamic kick in. This is the working filter, not 'will it pay X'."
+      "content": "Quote: 'laka ma aj svery military/finance/ complaice'. These are the three zones where Adrián naturally lights up. Defense Capital Advisory = military × finance × compliance — perfect overlap = bm_defense exists. Frontier Markets = finance × compliance × complex jurisdiction = bm_frontier exists. Black Sea SPV OTC = finance × crypto compliance = bm_otc. Implication for picking deals: when a prospect inquiry comes in, primary filter is 'does this hit at least 2 of military/finance/compliance?' If no — politely decline or refer out. If yes — accept and let purpose vs. depression dynamic kick in. This is the working filter, not 'will it pay X'."
     },
     {
       "id": "ins_sovereign_adjacent_rejected",
       "title": "Anti-decision: NO separate US LLC for 'complex environment clients'",
       "date": "2026-05-18",
-      "content": "ADHD-stress mode briefly proposed: 'alebo zalo\u017eil black sea niekde v usa anonymne a pod e\u0161te' \u2014 separate anonymous US LLC for 'kokoti who pay big.' Considered, pushed back, rejected. Reasons: (1) anonymous US LLC for opacity = exactly the structure that gets you flagged in DD; (2) Adri\u00e1n's enforcement profile (former MFSA fund manager + lawsuit visibility) makes him a high-quality target for prosecutors making examples; (3) volume of legitimate work in defense + frontier markets is enough \u2014 no need for opacity premium. Red lines locked from this discussion: no sanctioned persons, no shell opacity, no UBO nominee evasion, no facilitation of sanctions evasion. Captured in note_no_baddeals sticky note."
+      "content": "ADHD-stress mode briefly proposed: 'alebo založil black sea niekde v usa anonymne a pod ešte' — separate anonymous US LLC for 'kokoti who pay big.' Considered, pushed back, rejected. Reasons: (1) anonymous US LLC for opacity = exactly the structure that gets you flagged in DD; (2) Adrián's enforcement profile (former MFSA fund manager + lawsuit visibility) makes him a high-quality target for prosecutors making examples; (3) volume of legitimate work in defense + frontier markets is enough — no need for opacity premium. Red lines locked from this discussion: no sanctioned persons, no shell opacity, no UBO nominee evasion, no facilitation of sanctions evasion. Captured in note_no_baddeals sticky note."
     },
     {
       "id": "ins_three_business_lock_v2",
-      "title": "3-business architecture \u2014 final lock (v2)",
+      "title": "3-business architecture — final lock (v2)",
       "date": "2026-05-18",
-      "content": "Adri\u00e1n's original framing (from transcript): 'kludne to sprav tak \u017ee Black sea je brand mozog a z toho idu business modely \u010do sme tu riei\u0161li. eu defeence, consulting, potom to \u010do je teraz na webe \u010do posob\u00ed ako dual use pre rusk\u00fdch kokotov ale napr\u00edklad aj to \u010do sme rie\u0161ili teraz azerbajd\u017ean atd.' Final mapping: bm_otc (existing dual-use OTC at blackseaspv.com + AIR Labs Seena), bm_defense (EU defense fund advisory, new), bm_frontier (AZ/KZ AIFC/Nigeria, new). Brand colors: Steel/Signal Green/Alert. No 4th business. ALL future Black Sea work falls in one of these three buckets \u2014 if it doesn't, it's a sticky note in Inbox, not a new business model."
+      "content": "Adrián's original framing (from transcript): 'kludne to sprav tak že Black sea je brand mozog a z toho idu business modely čo sme tu rieišli. eu defeence, consulting, potom to čo je teraz na webe čo posobí ako dual use pre ruských kokotov ale napríklad aj to čo sme riešili teraz azerbajdžan atd.' Final mapping: bm_otc (existing dual-use OTC at blackseaspv.com + AIR Labs Seena), bm_defense (EU defense fund advisory, new), bm_frontier (AZ/KZ AIFC/Nigeria, new). Brand colors: Steel/Signal Green/Alert. No 4th business. ALL future Black Sea work falls in one of these three buckets — if it doesn't, it's a sticky note in Inbox, not a new business model."
     },
     {
       "id": "ins_tax_exposure_reality",
       "title": "Tax exposure reality check (Slovakia)",
       "date": "2026-05-11",
-      "content": "Adri\u00e1n's self-assessment: 'mo\u017eno nepodan\u00e9 da\u0148ov\u00e9 priznanie na Slovensku alebo nie\u010do, ale moja expoz\u00edcia je do 1000\u20ac na t\u00fdchto veciach.' = small ADHD-bordel typical, NOT a structural problem. Counterweight: years of clean track record \u2014 built structures, moved millions across the world, everything clean+upraced+documented. Profile of someone who knows where the lines are (compliance officer mindset). Implication: not a blocker for licensed work. But: any backlog (unfiled returns, late filings) should be cleaned up Q3 2026 BEFORE any Defense Capital Advisory family-office prospect runs DD on Adri\u00e1n personally."
+      "content": "Adrián's self-assessment: 'možno nepodané daňové priznanie na Slovensku alebo niečo, ale moja expozícia je do 1000€ na týchto veciach.' = small ADHD-bordel typical, NOT a structural problem. Counterweight: years of clean track record — built structures, moved millions across the world, everything clean+upraced+documented. Profile of someone who knows where the lines are (compliance officer mindset). Implication: not a blocker for licensed work. But: any backlog (unfiled returns, late filings) should be cleaned up Q3 2026 BEFORE any Defense Capital Advisory family-office prospect runs DD on Adrián personally."
     },
     {
       "id": "ins_track_record_exits",
-      "title": "Adri\u00e1n track record \u2014 exits & build patterns",
+      "title": "Adrián track record — exits & build patterns",
       "date": "2026-05-09",
-      "content": "Prior exits (verifiable): Komoio (IP sale), Ridelo (patent sale). Recent build: A27 IC SICAV \u2014 built from idea to Bloomberg ticker. This pattern is rare. Most crypto people can't finish a fund; most fund people can't move with startup speed. Adri\u00e1n has documented both. Implication for positioning: NOT 'compliance consultant who knows crypto.' YES 'operator who built a regulated fund and exited IP and now offers what only operators can \u2014 full-stack structuring + execution.' This is what justifies \u20ac25-75K fund structuring price points and \u20ac5-15K/mo Fractional CCO retainers vs. consultancy \u20ac2-5K commodity work."
+      "content": "Prior exits (verifiable): Komoio (IP sale), Ridelo (patent sale). Recent build: A27 IC SICAV — built from idea to Bloomberg ticker. This pattern is rare. Most crypto people can't finish a fund; most fund people can't move with startup speed. Adrián has documented both. Implication for positioning: NOT 'compliance consultant who knows crypto.' YES 'operator who built a regulated fund and exited IP and now offers what only operators can — full-stack structuring + execution.' This is what justifies €25-75K fund structuring price points and €5-15K/mo Fractional CCO retainers vs. consultancy €2-5K commodity work."
     },
     {
       "id": "ins_seena_workspace_separation",
-      "title": "Notion workspace separation \u2014 AIR Labs is separate",
+      "title": "Notion workspace separation — AIR Labs is separate",
       "date": "2026-05-18",
-      "content": "AIR Labs work lives in Seena's Notion workspace (Teamspace Home \u2192 Command Center). NOT in Black Sea HQ workspace. Brain at brain.blackseaspv.com is Adri\u00e1n's command interface \u2014 it tracks AIR Labs AS A CLIENT engagement but doesn't replace AIR Labs's internal infrastructure. AIR Labs has its own agent system (CEO/CTO/Librarian/Doctor/CoderData/CoderStorage/CCO/CFO) and Notion is single source of truth for AIR Labs operations. Brain just shows Adri\u00e1n's view of the engagement from Black Sea side."
+      "content": "AIR Labs work lives in Seena's Notion workspace (Teamspace Home → Command Center). NOT in Black Sea HQ workspace. Brain at brain.blackseaspv.com is Adrián's command interface — it tracks AIR Labs AS A CLIENT engagement but doesn't replace AIR Labs's internal infrastructure. AIR Labs has its own agent system (CEO/CTO/Librarian/Doctor/CoderData/CoderStorage/CCO/CFO) and Notion is single source of truth for AIR Labs operations. Brain just shows Adrián's view of the engagement from Black Sea side."
     },
     {
       "id": "ins_air_labs_revenue_potential",
-      "title": "AIR Labs revenue potential \u2014 Adri\u00e1n's view",
+      "title": "AIR Labs revenue potential — Adrián's view",
       "date": "2026-04-30",
-      "content": "Phase 1: 20% Licence Fee on net Trading Revenue. With initial USD 50k capital and 30-50% annualized returns target: Adri\u00e1n's licence fee = \u20ac3-5k/year initially, scaling with AUM. Phase 2: shifts to fund manager economics (1.5% mgmt + 20% carry). At \u20ac500k AUM = \u20ac29.5k/yr to Adri\u00e1n (post-split with Seena). At \u20ac2M AUM = \u20ac118k/yr. At \u20ac10M AUM = \u20ac590k/yr. This is the LONG TERM cashflow anchor for Black Sea SPV \u2014 recurring, predictable, scaling with track record."
+      "content": "Phase 1: 20% Licence Fee on net Trading Revenue. With initial USD 50k capital and 30-50% annualized returns target: Adrián's licence fee = €3-5k/year initially, scaling with AUM. Phase 2: shifts to fund manager economics (1.5% mgmt + 20% carry). At €500k AUM = €29.5k/yr to Adrián (post-split with Seena). At €2M AUM = €118k/yr. At €10M AUM = €590k/yr. This is the LONG TERM cashflow anchor for Black Sea SPV — recurring, predictable, scaling with track record."
     },
     {
       "id": "ins_air_labs_security_doctrine",
-      "title": "AIR Labs security architecture \u2014 non-negotiable",
+      "title": "AIR Labs security architecture — non-negotiable",
       "date": "2026-04-30",
-      "content": "Per agreement Part V \u2014 mandatory on all exchange accounts: Hardware 2FA (YubiKey ~\u20ac60), Authy backup, dedicated email with hardware 2FA, withdrawal whitelist Seena-only with 48h lock, Seena's API keys IP-whitelisted, anti-phishing codes, sub-accounts for all trading (main account admin only), Bitwarden/1Password unique per exchange, always-on VPN. Emergency protocol: Adri\u00e1n detects threat \u2192 Signal/Telegram alert \u2192 Seena executes withdrawal via API \u2192 assets secured in 1-4 hours. SK legal process takes 6-18 months \u2192 Seena always has time."
+      "content": "Per agreement Part V — mandatory on all exchange accounts: Hardware 2FA (YubiKey ~€60), Authy backup, dedicated email with hardware 2FA, withdrawal whitelist Seena-only with 48h lock, Seena's API keys IP-whitelisted, anti-phishing codes, sub-accounts for all trading (main account admin only), Bitwarden/1Password unique per exchange, always-on VPN. Emergency protocol: Adrián detects threat → Signal/Telegram alert → Seena executes withdrawal via API → assets secured in 1-4 hours. SK legal process takes 6-18 months → Seena always has time."
     },
     {
       "id": "ins_air_labs_phase3_roadmap",
       "title": "AIR Labs Phase 3 roadmap (Month 18-36)",
       "date": "2026-04-30",
-      "content": "Target AUM \u20ac5M+ by Month 24, \u20ac5-10M by Month 36. Considerations: tokenization (Estonia digital share register / Liechtenstein TVTG / EU MiCA), Malta MFSA AIF authorization, institutional capital. Tokenization unlocks fractional ownership (\u20ac100 not \u20ac40k tickets), 24/7 secondary market, automated dividend via smart contracts. Cost: \u20ac22-50k for full tokenization legal + smart contract development. Total 36-month investment: \u20ac99k-213k. Total 36-month revenue potential: \u20ac500k-1M/year by Month 24-36."
+      "content": "Target AUM €5M+ by Month 24, €5-10M by Month 36. Considerations: tokenization (Estonia digital share register / Liechtenstein TVTG / EU MiCA), Malta MFSA AIF authorization, institutional capital. Tokenization unlocks fractional ownership (€100 not €40k tickets), 24/7 secondary market, automated dividend via smart contracts. Cost: €22-50k for full tokenization legal + smart contract development. Total 36-month investment: €99k-213k. Total 36-month revenue potential: €500k-1M/year by Month 24-36."
     },
     {
       "id": "ins_air_labs_phase2_roadmap",
       "title": "AIR Labs Phase 2 roadmap (Month 6-18)",
       "date": "2026-04-30",
-      "content": "When Phase 1 track record (6+ months) is built and first interested LPs surface: form Czech s.r.o. (\u20ac3.3-6.4k Y1) + Czech QIIF investment fund (\u20ac40-70k legal + audit). QIIF allows max 20 investors, min CZK 1M per LP (~\u20ac40k), light \u010cNB regulation. Revenue model: 1.5% mgmt fee + 20% perf fee above 8% hurdle. At \u20ac500k AUM with 30% return: \u20ac29.5k/year. At \u20ac2M AUM: \u20ac118k/year. At \u20ac10M AUM: \u20ac590k/year. THIS is Adri\u00e1n's long-term cashflow base."
+      "content": "When Phase 1 track record (6+ months) is built and first interested LPs surface: form Czech s.r.o. (€3.3-6.4k Y1) + Czech QIIF investment fund (€40-70k legal + audit). QIIF allows max 20 investors, min CZK 1M per LP (~€40k), light ČNB regulation. Revenue model: 1.5% mgmt fee + 20% perf fee above 8% hurdle. At €500k AUM with 30% return: €29.5k/year. At €2M AUM: €118k/year. At €10M AUM: €590k/year. THIS is Adrián's long-term cashflow base."
     },
     {
       "id": "ins_air_labs_phase1_solution",
-      "title": "Phase 1 solution: Adri\u00e1n personal accounts + dual-layer protection",
+      "title": "Phase 1 solution: Adrián personal accounts + dual-layer protection",
       "date": "2026-04-30",
-      "content": "OPTION A from playbook chosen. Adri\u00e1n opens personal exchange accounts on Binance/Bybit/Kraken/OKX as Slovak national. Seena gets full API + withdrawal rights protected by: (1) Withdrawal whitelist \u2014 Seena's wallets only, 24-48h exchange-enforced delay on changes; (2) Seena's own API keys with withdraw permission, IP-whitelisted; (3) Two legal agreements (Silent Partnership + Operational). Result: Adri\u00e1n physically cannot redirect funds even if he wanted to. Composite risk to Seena's capital = VERY LOW. Time to operational: 2-5 days. Cost to Seena: \u20ac0."
+      "content": "OPTION A from playbook chosen. Adrián opens personal exchange accounts on Binance/Bybit/Kraken/OKX as Slovak national. Seena gets full API + withdrawal rights protected by: (1) Withdrawal whitelist — Seena's wallets only, 24-48h exchange-enforced delay on changes; (2) Seena's own API keys with withdraw permission, IP-whitelisted; (3) Two legal agreements (Silent Partnership + Operational). Result: Adrián physically cannot redirect funds even if he wanted to. Composite risk to Seena's capital = VERY LOW. Time to operational: 2-5 days. Cost to Seena: €0."
     },
     {
       "id": "ins_air_labs_us_nexus_problem",
       "title": "AIR Labs central problem: US Nexus",
       "date": "2026-04-30",
-      "content": "Seena Houman is US national. Every regulated exchange (Binance, BingX, Bitget, KuCoin, Gate.io, Airwallex) auto-rejects AIR Labs BVI because of US beneficial owner. Driven by FinCEN BSA/AML + FATCA 30% withholding penalty rules. Cannot be fixed on BVI entity \u2014 structure itself is the problem. Solution: non-US person becomes UBO and director. That non-US person is Adri\u00e1n (Slovak national, zero US nexus)."
+      "content": "Seena Houman is US national. Every regulated exchange (Binance, BingX, Bitget, KuCoin, Gate.io, Airwallex) auto-rejects AIR Labs BVI because of US beneficial owner. Driven by FinCEN BSA/AML + FATCA 30% withholding penalty rules. Cannot be fixed on BVI entity — structure itself is the problem. Solution: non-US person becomes UBO and director. That non-US person is Adrián (Slovak national, zero US nexus)."
     },
     {
       "id": "ins_fastcash_vs_growth_split",
       "title": "Parallel cashflow vs. growth strategy",
       "date": "2026-05-11",
-      "content": "Frontier Markets (Nigeria ARIP, AIFC gap) = FAST cashflow, lower per-deal, faster close (\u20ac8-60K, 2-12 weeks). Defense Capital Advisory = SLOW build, higher per-deal, longer close cycle (\u20ac25-75K + retainers, 60-180 days). Parallel execution: Frontier closes first deals in Q2-Q3 to fund overhead and counsel retainer; Defense Capital builds via Substack + warm network through Q3-Q4 for institutional retainers starting Q4/Q1 2027. Both feed back into brand authority on the other."
+      "content": "Frontier Markets (Nigeria ARIP, AIFC gap) = FAST cashflow, lower per-deal, faster close (€8-60K, 2-12 weeks). Defense Capital Advisory = SLOW build, higher per-deal, longer close cycle (€25-75K + retainers, 60-180 days). Parallel execution: Frontier closes first deals in Q2-Q3 to fund overhead and counsel retainer; Defense Capital builds via Substack + warm network through Q3-Q4 for institutional retainers starting Q4/Q1 2027. Both feed back into brand authority on the other."
     },
     {
       "id": "ins_substack_strategy",
       "title": "Substack as inbound channel for Defense Capital Advisory",
       "date": "2026-05-18",
-      "content": "Cold outreach to family offices is hard (gatekept, low response). Substack inverts the funnel: publish smart thinking on defense allocation \u2192 family office CIO / next-gen reads \u2192 they reach out. First article topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. Anchor on NATO 5% GDP, Defense Equity Facility \u20ac500M, \u20ac1B Fund-of-Funds Q1 2026. Cadence: 1-2 long-form per month + briefings. Eventually paid tier for institutional memos."
+      "content": "Cold outreach to family offices is hard (gatekept, low response). Substack inverts the funnel: publish smart thinking on defense allocation → family office CIO / next-gen reads → they reach out. First article topic locked: 'Why European Family Offices Are Reconsidering Defense Allocation in 2026'. Anchor on NATO 5% GDP, Defense Equity Facility €500M, €1B Fund-of-Funds Q1 2026. Cadence: 1-2 long-form per month + briefings. Eventually paid tier for institutional memos."
     },
     {
       "id": "ins_notion_seena_conflict",
-      "title": "Notion abandoned for brain \u2014 Seena workspace conflict",
+      "title": "Notion abandoned for brain — Seena workspace conflict",
       "date": "2026-05-18",
-      "content": "Reason for building custom brain instead of using Notion: Notion connector was bound to Seena Houman's AIR Labs workspace (active client). Switching connection to Black Sea HQ workspace risked disconnecting Seena work. Plus Notion 'Add connection' across multiple workspaces required paid plan. Decision: keep Notion connector on Seena (don't disturb active mandate), build brain.blackseaspv.com as Black Sea's own infrastructure. Side benefit: brain is fully under Adri\u00e1n's control, brand-aligned, on his domain."
+      "content": "Reason for building custom brain instead of using Notion: Notion connector was bound to Seena Houman's AIR Labs workspace (active client). Switching connection to Black Sea HQ workspace risked disconnecting Seena work. Plus Notion 'Add connection' across multiple workspaces required paid plan. Decision: keep Notion connector on Seena (don't disturb active mandate), build brain.blackseaspv.com as Black Sea's own infrastructure. Side benefit: brain is fully under Adrián's control, brand-aligned, on his domain."
     },
     {
       "id": "ins_brain_ui_brand_mandate",
       "title": "Brain UI is also brand expression",
       "date": "2026-05-18",
-      "content": "Initial v1.0 brain was gold/dark Palantir aesthetic. Adri\u00e1n then uploaded Black Sea Brand Manual (tokens.jsx, Horizon Mark, Archivo + Inter + JetBrains Mono + Instrument Serif, cool palette Frost/Steel/Signal Green/Alert). Brain v1.1 entirely rebuilt to match brand manual exactly. Lesson: every Black Sea surface must read as Black Sea. The brain at brain.blackseaspv.com is itself a positioning statement \u2014 if prospects ever see a screenshot, it signals 'this person does serious work.'"
+      "content": "Initial v1.0 brain was gold/dark Palantir aesthetic. Adrián then uploaded Black Sea Brand Manual (tokens.jsx, Horizon Mark, Archivo + Inter + JetBrains Mono + Instrument Serif, cool palette Frost/Steel/Signal Green/Alert). Brain v1.1 entirely rebuilt to match brand manual exactly. Lesson: every Black Sea surface must read as Black Sea. The brain at brain.blackseaspv.com is itself a positioning statement — if prospects ever see a screenshot, it signals 'this person does serious work.'"
     },
     {
       "id": "ins_az_crypto_window",
-      "title": "Azerbaijan crypto positioning \u2014 pre-regulation window open",
+      "title": "Azerbaijan crypto positioning — pre-regulation window open",
       "date": "2026-05-18",
-      "content": "Per FSB confirmation: AZ has NO crypto framework yet. Central Bank Strategy 2024-2026 pivots to digital finance. Pasha Holding IPO 2025 (dual Dubai/Istanbul listing) creates international compliance pressure on entire group. AzFina has 20 members (PashaPay, GoldenPay, eManat, Mpay etc.). Window: AZ regulator will eventually create framework, but right now it's policy vacuum. Position as 'EU-side compliance partner' before they need one. Adri\u00e1n's appetite: 'dod\u00e1m aj zajtra a vyp\u00fdtam si raketu' \u2014 willing to fly to Baku in person."
+      "content": "Per FSB confirmation: AZ has NO crypto framework yet. Central Bank Strategy 2024-2026 pivots to digital finance. Pasha Holding IPO 2025 (dual Dubai/Istanbul listing) creates international compliance pressure on entire group. AzFina has 20 members (PashaPay, GoldenPay, eManat, Mpay etc.). Window: AZ regulator will eventually create framework, but right now it's policy vacuum. Position as 'EU-side compliance partner' before they need one. Adrián's appetite: 'dodám aj zajtra a vypýtam si raketu' — willing to fly to Baku in person."
     },
     {
       "id": "ins_3business_architecture_locked",
-      "title": "3-business architecture under Black Sea brand \u2014 LOCKED",
+      "title": "3-business architecture under Black Sea brand — LOCKED",
       "date": "2026-05-18",
-      "content": "Decision: Black Sea = parent brand mozog. Three business models: (1) Black Sea SPV \u2014 operational base, OTC + crypto + AIR Labs work; (2) Defense Capital Advisory \u2014 growth bet, EU defense + dual-use fund advisory; (3) Frontier Markets \u2014 expansion, AZ + KZ AIFC + West Africa crypto. NO separate US LLC for opaque clients (briefly considered, rejected after pushback). NO 4th entity for 'sovereign-adjacent' work (was ADHD-stress escalation). Brand colors locked: Steel (OTC), Signal Green (Defense), Alert (Frontier)."
+      "content": "Decision: Black Sea = parent brand mozog. Three business models: (1) Black Sea SPV — operational base, OTC + crypto + AIR Labs work; (2) Defense Capital Advisory — growth bet, EU defense + dual-use fund advisory; (3) Frontier Markets — expansion, AZ + KZ AIFC + West Africa crypto. NO separate US LLC for opaque clients (briefly considered, rejected after pushback). NO 4th entity for 'sovereign-adjacent' work (was ADHD-stress escalation). Brand colors locked: Steel (OTC), Signal Green (Defense), Alert (Frontier)."
     },
     {
       "id": "ins_war_dogs_archetype",
-      "title": "War Dogs is a misread \u2014 but the underlying instinct is right",
+      "title": "War Dogs is a misread — but the underlying instinct is right",
       "date": "2026-05-11",
-      "content": "Adri\u00e1n referenced War Dogs in context of public procurement (Slovak + global VO). Acknowledged the film ended in disaster ('to bol pr\u00faser'). But the underlying instinct \u2014 find complex deals at huge scale with no competitors \u2014 is legitimate. Translation to Black Sea: NOT government arms procurement (where compliance kills us). YES: cross-border crypto compliance gap deals, AIFC framework transition advisory, Azerbaijan pre-licensing positioning. Same pattern (complex, scaled, big payday, few competitors) without the criminal exposure."
+      "content": "Adrián referenced War Dogs in context of public procurement (Slovak + global VO). Acknowledged the film ended in disaster ('to bol prúser'). But the underlying instinct — find complex deals at huge scale with no competitors — is legitimate. Translation to Black Sea: NOT government arms procurement (where compliance kills us). YES: cross-border crypto compliance gap deals, AIFC framework transition advisory, Azerbaijan pre-licensing positioning. Same pattern (complex, scaled, big payday, few competitors) without the criminal exposure."
     },
     {
       "id": "ins_compliance_dialectic",
-      "title": "Compliance is paper \u2014 but for Adri\u00e1n, must be real paper",
+      "title": "Compliance is paper — but for Adrián, must be real paper",
       "date": "2026-05-11",
-      "content": "Mindset clarified: B (compliance is often badly implemented in real world \u2014 'pre finan\u010dnu spravodajsku jednotku mus\u00ed by\u0165 podpisan\u00fd modr\u00fdm perom' \u2014 but for Adri\u00e1n's profile, given current A27 lawsuit + visibility, must do REAL compliance, not theater). KYC officers want papers + peace of mind, not actual analysis \u2014 Adri\u00e1n knows this from inside. But his enforcement risk profile means: REAL World-Check screens, REAL UBO trace, REAL counsel retainer. Red lines locked in Frontier Markets Pack. Working principle: 'compliance is a joke on paper but I'm the one who'll be made an example of, so we do it right.'"
+      "content": "Mindset clarified: B (compliance is often badly implemented in real world — 'pre finančnu spravodajsku jednotku musí byť podpisaný modrým perom' — but for Adrián's profile, given current A27 lawsuit + visibility, must do REAL compliance, not theater). KYC officers want papers + peace of mind, not actual analysis — Adrián knows this from inside. But his enforcement risk profile means: REAL World-Check screens, REAL UBO trace, REAL counsel retainer. Red lines locked in Frontier Markets Pack. Working principle: 'compliance is a joke on paper but I'm the one who'll be made an example of, so we do it right.'"
     },
     {
       "id": "ins_adhd_multitrack",
-      "title": "ADHD multitrack mode \u2014 feature, not bug",
+      "title": "ADHD multitrack mode — feature, not bug",
       "date": "2026-05-11",
-      "content": "Direct quote: 'ano viem ej to matuce pre teba ko model ale proste tak funguje zajtra rob\u00edem zase na inej \u010dasti mojho business'. Don't try to linearize Adri\u00e1n. He works on BM1 today, BM3 tomorrow, BM2 the day after \u2014 this is HIS pattern. Brain architecture (3 parallel business models with shared brand mozog) is designed for this. Same for assistant approach: don't force sequential focus, support all three in parallel."
+      "content": "Direct quote: 'ano viem ej to matuce pre teba ko model ale proste tak funguje zajtra robíem zase na inej časti mojho business'. Don't try to linearize Adrián. He works on BM1 today, BM3 tomorrow, BM2 the day after — this is HIS pattern. Brain architecture (3 parallel business models with shared brand mozog) is designed for this. Same for assistant approach: don't force sequential focus, support all three in parallel."
     },
     {
       "id": "ins_purpose_vs_depression",
-      "title": "Purpose as antidepressant \u2014 Adri\u00e1n's operating principle",
+      "title": "Purpose as antidepressant — Adrián's operating principle",
       "date": "2026-05-11",
-      "content": "Direct quote: 'ked m\u00e1m puspose nie\u010do stava\u0165 a v\u00edzu depreis aide dos\u0165 do uzadia a m\u00f4\u017eem rie\u0161i\u0165 a som \u0161tastn\u00fd a idealen aby to donieslo aj nejak\u00e9 peniaze.' Building from 0 to working system is what gets Adri\u00e1n out of the dark. Practical implication: brain UX must support BIG goals and BIG visualization (network graph, multi-business map) \u2014 not just micro tasks. Don't reduce him to a to-do list. The 'Today' view is the dopamine loop; the 'Map' view is the purpose anchor."
+      "content": "Direct quote: 'ked mám puspose niečo stavať a vízu depreis aide dosť do uzadia a môžem riešiť a som štastný a idealen aby to donieslo aj nejaké peniaze.' Building from 0 to working system is what gets Adrián out of the dark. Practical implication: brain UX must support BIG goals and BIG visualization (network graph, multi-business map) — not just micro tasks. Don't reduce him to a to-do list. The 'Today' view is the dopamine loop; the 'Map' view is the purpose anchor."
     },
     {
       "id": "ins_compliance",
       "title": "Compliance mindset clarification",
       "date": "2026-05-18",
-      "content": "Po diskusii o compliance: prijat\u00fd mindset B (compliance je \u010dasto zle implementovan\u00e1 ale pre tvoj profil treba re\u00e1lnu compliance). Red lines nastaven\u00e9 v Frontier Markets Pack. \u017diadne dummy wallets pre business income."
+      "content": "Po diskusii o compliance: prijatý mindset B (compliance je často zle implementovaná ale pre tvoj profil treba reálnu compliance). Red lines nastavené v Frontier Markets Pack. Žiadne dummy wallets pre business income."
     },
     {
       "id": "ins_brand_split",
-      "title": "Brand architekt\u00fara",
+      "title": "Brand architektúra",
       "date": "2026-05-18",
-      "content": "Rozhodnutie: Black Sea ost\u00e1va ako brand mozog. Tri biznis modely pod n\u00edm. \u017diadna 4. entita pre 'sovereign-adjacent' klientov \u2014 to bola eskal\u00e1cia v ADHD-stres m\u00f3de."
+      "content": "Rozhodnutie: Black Sea ostáva ako brand mozog. Tri biznis modely pod ním. Žiadna 4. entita pre 'sovereign-adjacent' klientov — to bola eskalácia v ADHD-stres móde."
     },
     {
       "id": "ins_nigeria_window",
       "title": "Nigeria fastest cash window",
       "date": "2026-05-18",
-      "content": "ISA 2025 + ARIP live. \u20a6500M minimum capital, penalty \u20a610M/mes pre non-compliance. 50+ firiem v licensing wave. Toto je prim\u00e1rny target pre prv\u00fd cashflow."
+      "content": "ISA 2025 + ARIP live. ₦500M minimum capital, penalty ₦10M/mes pre non-compliance. 50+ firiem v licensing wave. Toto je primárny target pre prvý cashflow."
     },
     {
       "id": "ins_aifc_window",
       "title": "AIFC framework transition window",
       "date": "2026-05-18",
-      "content": "AFSA frameworks update 1.1.2026. 149 Authorised Firms + 30 DASPs musia adaptova\u0165. 6-mes transition pre Crowdfunding (deadline j\u00fan-j\u00fal 2026). Sweet spot."
+      "content": "AFSA frameworks update 1.1.2026. 149 Authorised Firms + 30 DASPs musia adaptovať. 6-mes transition pre Crowdfunding (deadline jún-júl 2026). Sweet spot."
     },
     {
       "id": "ins_uzbek_window",
@@ -3537,7 +3537,7 @@
     },
     {
       "id": "ins_kyrgyz_gap",
-      "title": "Kyrgyzstan \u2014 IMF-flagged AML gap = direct fit",
+      "title": "Kyrgyzstan — IMF-flagged AML gap = direct fit",
       "content": "New virtual assets law signed Jan 2026. $11.4B turnover in 7 months 2025. 13 licensed exchanges. IMF April 2026 recommended stronger AML/CFT monitoring. Black Sea Compliance Advisory is exactly that. Zero EU advisors present.",
       "businessModel": "bm_frontier",
       "date": "2026-05-22T07:13:18.829686+00:00"
@@ -3552,7 +3552,7 @@
     {
       "id": "ins_big_players_warm",
       "title": "OKX and Kraken are warm, not cold",
-      "content": "OKX: direct Telegram institutional channel exists. Kraken: existing account manager relationship (Mats). These are the highest-probability big-ticket leads \u2014 warm intros beat cold email.",
+      "content": "OKX: direct Telegram institutional channel exists. Kraken: existing account manager relationship (Mats). These are the highest-probability big-ticket leads — warm intros beat cold email.",
       "businessModel": "bm_otc",
       "date": "2026-05-22T07:13:18.829686+00:00"
     },
@@ -3608,13 +3608,13 @@
       "id": "ins_defense_attack_launch",
       "title": "Defense Capital Advisory BD attack launching",
       "date": "2026-05-28T10:31:47.182972+00:00",
-      "content": "May 28, 2026: Adrian realized we completely forgot Defense Capital Advisory in the BD blitz. This is the HIGHEST TICKET business model (\u20ac25-75K per engagement, \u20ac3.5-15K/mo retainers). EU defense spending explosion creates massive fund formation demand. Emerging GPs need someone who has actually built an MFSA-regulated fund from zero. That is Adrian. Launching: research defense VC targets, draft outreach, write Substack content, speaker applications."
+      "content": "May 28, 2026: Adrian realized we completely forgot Defense Capital Advisory in the BD blitz. This is the HIGHEST TICKET business model (€25-75K per engagement, €3.5-15K/mo retainers). EU defense spending explosion creates massive fund formation demand. Emerging GPs need someone who has actually built an MFSA-regulated fund from zero. That is Adrian. Launching: research defense VC targets, draft outreach, write Substack content, speaker applications."
     },
     {
       "id": "ins_defense_eu_spending_boom",
       "title": "EU defense spending boom = fund formation boom",
       "date": "2026-05-28T10:31:47.182972+00:00",
-      "content": "EU Defense Roadmap March 2026 opens defense sector to innovation. Defense Equity Facility: \u20ac500M+ equity (EIF-backed). Proposed \u20ac1B Fund-of-Funds. NATO 5% GDP commitment. EDF \u20ac1B in 2026. This capital needs fund structures. Emerging GPs with defense-tech deal flow need compliant fund vehicles. Most law firms can do fund formation. Almost none have someone who built an MFSA SICAV AND understands crypto/dual-use compliance. Adrian is that person. The defense fund structuring market is underserved by people with actual operator experience."
+      "content": "EU Defense Roadmap March 2026 opens defense sector to innovation. Defense Equity Facility: €500M+ equity (EIF-backed). Proposed €1B Fund-of-Funds. NATO 5% GDP commitment. EDF €1B in 2026. This capital needs fund structures. Emerging GPs with defense-tech deal flow need compliant fund vehicles. Most law firms can do fund formation. Almost none have someone who built an MFSA SICAV AND understands crypto/dual-use compliance. Adrian is that person. The defense fund structuring market is underserved by people with actual operator experience."
     },
     {
       "id": "ins_defense_vs_frontier_synergy",
@@ -4164,7 +4164,7 @@
   "stickyNotes": [
     {
       "id": "note_purpose_anchor",
-      "content": "PURPOSE > PROFIT.\n\nWhen depression is loud, build something. Cash follows.\n\n\u2014 2026-05-11 self",
+      "content": "PURPOSE > PROFIT.\n\nWhen depression is loud, build something. Cash follows.\n\n— 2026-05-11 self",
       "x": 60,
       "y": 80,
       "rotate": -2.5,
@@ -4172,15 +4172,15 @@
     },
     {
       "id": "note_no_baddeals",
-      "content": "RED LINES (locked):\n\n\u2022 No sanctioned persons\n\u2022 No shell opacity\n\u2022 No UBO nominee evasion\n\u2022 No sanctions evasion facilitation\n\u2022 No dummy wallets for income\n\nWhen in doubt \u2192 escalate to counsel.",
+      "content": "RED LINES (locked):\n\n• No sanctioned persons\n• No shell opacity\n• No UBO nominee evasion\n• No sanctions evasion facilitation\n• No dummy wallets for income\n\nWhen in doubt → escalate to counsel.",
       "x": 60,
       "y": 420,
-      "rotate": -1.0,
+      "rotate": -1,
       "color": "pink"
     },
     {
       "id": "note_attraction_filter",
-      "content": "DEAL FILTER:\n\nDoes it hit \u22652 of:\n\u2022 Military\n\u2022 Finance\n\u2022 Compliance\n\nIF YES \u2192 engage.\nIF NO \u2192 decline or refer out.",
+      "content": "DEAL FILTER:\n\nDoes it hit ≥2 of:\n• Military\n• Finance\n• Compliance\n\nIF YES → engage.\nIF NO → decline or refer out.",
       "x": 60,
       "y": 760,
       "rotate": 1.5,
@@ -4191,12 +4191,12 @@
       "content": "FULL ATTACK MODE\nMay 28, 2026\n\n13 markets. 10 channels.\n85+ drafts. 3 meetings.\n\nFirst payment is coming.",
       "x": 60,
       "y": 1100,
-      "rotate": 1.0,
+      "rotate": 1,
       "color": "green"
     },
     {
       "id": "note_defense_attack",
-      "content": "DEFENSE CAPITAL ADVISORY\nHighest ticket: \u20ac25-75K/deal\n+ \u20ac3.5-15K/mo retainers\n\nA27 SICAV = proof.\nEU defense boom = timing.\n\nATTACK MODE.",
+      "content": "DEFENSE CAPITAL ADVISORY\nHighest ticket: €25-75K/deal\n+ €3.5-15K/mo retainers\n\nA27 SICAV = proof.\nEU defense boom = timing.\n\nATTACK MODE.",
       "x": 600,
       "y": 1100,
       "rotate": -1.5,
@@ -4493,32 +4493,32 @@
       "strategy": {
         "id": "11dveLbjj5bIcs8PFuGFHpwuwmEVuMgJa",
         "url": "https://drive.google.com/drive/folders/11dveLbjj5bIcs8PFuGFHpwuwmEVuMgJa",
-        "name": "01 \u2014 Strategy & Brand"
+        "name": "01 — Strategy & Brand"
       },
       "clients": {
         "id": "1TOp7Kk6Lbm8jZ1_JsPkUdwC9P9MhLg4q",
         "url": "https://drive.google.com/drive/folders/1TOp7Kk6Lbm8jZ1_JsPkUdwC9P9MhLg4q",
-        "name": "02 \u2014 Clients"
+        "name": "02 — Clients"
       },
       "bizdev": {
         "id": "1D9zxIoGGBSy-ES8rwUAGB9_BNCVKFlpZ",
         "url": "https://drive.google.com/drive/folders/1D9zxIoGGBSy-ES8rwUAGB9_BNCVKFlpZ",
-        "name": "03 \u2014 Business Development"
+        "name": "03 — Business Development"
       },
       "intelligence": {
         "id": "16vdka21IH8Xu5XIoRgoEbth_2Cp6DFIX",
         "url": "https://drive.google.com/drive/folders/16vdka21IH8Xu5XIoRgoEbth_2Cp6DFIX",
-        "name": "04 \u2014 Intelligence & Research"
+        "name": "04 — Intelligence & Research"
       },
       "web": {
         "id": "161dSYGvIFd9Fgq7XkIjQ3sVM9NCJj9fP",
         "url": "https://drive.google.com/drive/folders/161dSYGvIFd9Fgq7XkIjQ3sVM9NCJj9fP",
-        "name": "05 \u2014 Web & Marketing"
+        "name": "05 — Web & Marketing"
       },
       "airlabs": {
         "id": "1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
         "url": "https://drive.google.com/drive/folders/1tv8KyfF1LNggC3j6SLdz_LWMWGodVSW0",
-        "name": "02 \u2014 Clients / AIR Labs \u2014 Seena Houman"
+        "name": "02 — Clients / AIR Labs — Seena Houman"
       }
     },
     "keyDocs": {
